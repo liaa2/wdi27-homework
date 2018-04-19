@@ -18,31 +18,31 @@ const percentOf = function(numberInput1, numberInput2, surpressLog){
   let numberOutput = (numberInput1 / numberInput2) * 100;
   if(!surpressLog){
     console.log(`${numberInput1} is ${numberOutput}% of ${numberInput2}`);
-  };
+  }
   return numberOutput;
-}
+};
 
 const areaOfCircle = function(circleRadius, surpressLog){
   let circleArea = squareNumber(circleRadius, true) * Math.PI;
   let circleAreaDisplay = circleArea.toFixed(2);
   if(!surpressLog){
     console.log(`The area for a circle with radius ${circleRadius} is ${circleAreaDisplay}`);
-  };
+  }
   return circleArea;
-}
+};
 
 const percentageOfCircleArea = function(numberInput){
   let halvedInput = halfNumber(numberInput, true);
   let squared = squareNumber(halvedInput, true);
   let area = areaOfCircle(squared, true);
   let areaPercentage = percentOf(squared, area);
-}
+};
 
 const DrEvil = function(numberInput){
   let pinky = null;
   numberInput === 1000000 ? pinky="(pinky)" : pinky="";
   console.log(`DrEvil(${numberInput}): ${numberInput} dollars ${pinky}`);
-}
+};
 
 const mixUp = function(stringInput1, stringInput2){
   let inputOneInitChars = stringInput1.substr(0, 2);
@@ -52,7 +52,7 @@ const mixUp = function(stringInput1, stringInput2){
 
   let stringOutput = `${inputTwoInitChars}${inputOneRemChars} ${inputOneInitChars}${inputTwoRemChars}`
   console.log(`mixUp('${stringInput1}', '${stringInput2}'): '${stringOutput}'`);
-}
+};
 
 const fixStart = function(stringInput){
   let stringInputInitChar = stringInput.substr(0, 1);
@@ -174,7 +174,7 @@ gradeAssigner(68);
 gradeAssigner(92);
 pluralizer("dog", 2);
 pluralizer("cat", 0);
-pluralizer("goose", 1);
+pluralizer("goose", 2);
 pluralizer("sheep", 10);
 console.log("\n=== The Calculator Homework (js-homework-1.md) ===");
 squareNumber(3);
