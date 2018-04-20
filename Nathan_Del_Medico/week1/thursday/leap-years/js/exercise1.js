@@ -8,6 +8,16 @@ const isLeapYear = function (year) {
   }
   console.log(`${year} ${leapYear} a leap year`);
 };
-for (i=1; i<=2018; i++) {
-  isLeapYear(i);
-}
+
+
+
+
+
+
+
+
+
+//
+// for (i=1; i<=2018; i++) {
+//   isLeapYear(i);
+// }

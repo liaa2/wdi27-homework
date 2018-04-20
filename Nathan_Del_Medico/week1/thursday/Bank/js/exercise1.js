@@ -13,14 +13,14 @@ const bank = {
   totalMoney: function () {
     let moneyTotal = 0;
     // Goes through all the accounts and adds up the money
-    for(i=0; i<bank.accounts.length; i++) {
-      moneyTotal += bank.accounts[i].balance;
+    for(i=0; i<this.accounts.length; i++) {
+      moneyTotal += this.accounts[i].balance;
     }
     return `The total money off all accounts combined is $${moneyTotal}`;
   },
   // Adds an accounts, takes account name and balance of the account
   addAccount: function (name, balance) {
-    bank.accounts.push({name, balance});
+    this.accounts.push({name, balance});
     return `Account sucessfully added! Account name: ${name}. Account balance: $${balance}`;
   },
   transaction: function (option, name1, amount, name2) {
@@ -29,12 +29,15 @@ const bank = {
     let secondAccount;
     let transfer = false;
     // Assigning accounts to variables
-    for (i=0; i<bank.accounts.length; i++) {
-      if (name1 === bank.accounts[i].name) {
+    for (i=0; i<this.accounts.length; i++) {
+      if (name1 === this.accounts[i].name) {
         firstAccount = i;
       }
       if (option === "transfer") {
-        if (name2 === bank.accounts[i].name) {
+        if (name2 === undefined) {
+          return `You need an account to transfer to`;
+        }
+        if (name2 === this.accounts[i].name) {
           secondAccount = i;
         }
         transfer = true;
@@ -48,11 +51,11 @@ const bank = {
     // Withdrawing
     if (option === "withdraw" || transfer) {
       // Checking to see if that much can be withdrawn
-      if (amount > bank.accounts[firstAccount].balance) {
+      if (amount > this.accounts[firstAccount].balance) {
         return `You can't withdraw that much!`;
       }
-      bank.accounts[firstAccount].balance -= amount;
-      console.log(`${name1} now has a balance of $${bank.accounts[firstAccount].balance}`);
+      this.accounts[firstAccount].balance -= amount;
+      console.log(`${name1} now has a balance of $${this.accounts[firstAccount].balance}`);
     }
     // Changing variables so deposit will work for transfer too
     if (transfer) {
@@ -61,8 +64,8 @@ const bank = {
     }
     // Depositing
     if (option === "deposit" || transfer) {
-      bank.accounts[firstAccount].balance += amount;
-      console.log(`${name1} now has a balance of $${bank.accounts[firstAccount].balance}`);
+      this.accounts[firstAccount].balance += amount;
+      console.log(`${name1} now has a balance of $${this.accounts[firstAccount].balance}`);
     }
   }
 };

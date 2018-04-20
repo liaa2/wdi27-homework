@@ -5,21 +5,21 @@ const rectangle = {
 };
 
 // Is Square
-const isSquare = function () {
-  if (rectangle.length === rectangle.width) {
+const isSquare = function (shape) {
+  if (shape.length === shape.width) {
     return `This is a square`;
   }
   return `This isnt a square`;
 }
 
 // Area
-const area = function () {
-  return `${rectangle.length * rectangle.width}`;
+const area = function (shape) {
+  return shape.length * shape.width;
 }
 
 // Perimiter
-const perimeter = function () {
-  return `${(rectangle.length*2) + (rectangle.width*2)}`;
+const perimeter = function (shape) {
+  return (shape.length*2) + (shape.width*2);
 }
 
 
