@@ -53,9 +53,9 @@ helloWorld("es");
 // takes 1 argument, a number score.
 // returns a grade for the score, either "A", "B", "C", "D", or "F".
 // Call that function for a few different scores and log the result to make sure it works.
+const assignedGrade = function (grade) {
 
-const grade = 99;
-if (grade >= 90) {
+  if (grade >= 90) {
   console.log("You get an A");
 } else if (grade >= 80) {
   console.log("You get a B");
@@ -65,7 +65,11 @@ if (grade >= 90) {
   rconsole.log("You get a D");
 } else {
   console.log("You get an F");
+
+}
 };
+
+assignedGrade(20);
 
 //console.log(grade);
 
