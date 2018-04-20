@@ -14,8 +14,8 @@ const rectangle = {
   width: 4
 };
 
-const isSquare = function () {
-  if (rectangle.length === rectangle.width) {
+const isSquare = function (shape) {
+  if (shape.length === shape.width) {
     console.log ("The rectangle is a square.");
   } else {
     console.log ("The rectangle is not a square.");
@@ -69,7 +69,7 @@ const isIsosceles = function () {
 
 const areaTriangle = function () {
   const p = (triangle.sideA+triangle.sideB+triangle.sideC)/2;
-  const area = [p*(p-triangle.sideA)*(p-triangle.sideB)*(p-triangle.sideC)]**0.5;
+  const area = (p*(p-triangle.sideA)*(p-triangle.sideB)*(p-triangle.sideC))**0.5;
   return area.toFixed(2);
 };
 
@@ -176,12 +176,15 @@ const bank = {
   },
 
   addAccount: function (name, initialBalance) {
-    const newAccount = {};
-    newAccount.ownerName = name;
-    // console.log(newAccount)
-    newAccount.currentBalance = Number(initialBalance);
-    // console.log(newAccount)
-    this.accounts.push(newAccount);
+    const newAccount = {
+      ownerName: name,
+      currentBalance: initialBalance
+    };
+    // newAccount.ownerName = name;
+    // // console.log(newAccount)
+    // newAccount.currentBalance = Number(initialBalance);
+    console.log(newAccount)
+    // this.accounts.push({ ownerName: name, currentBalance: initialBalance  });
     console.log(this.accounts)
   },
 
