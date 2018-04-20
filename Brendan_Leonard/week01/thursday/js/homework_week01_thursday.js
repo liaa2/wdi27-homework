@@ -20,7 +20,7 @@ const bank = {
     return false;
   },
   deposit: function(accountName, depositAmount){
-    const currentAccount = this.getAccountByName(accountName);
+    const currentAcco`unt = this.getAccountByName(accountName);
     if(currentAccount != null){
       currentAccount.balance += depositAmount;
       return currentAccount.balance;

@@ -31,7 +31,7 @@ const triangle = {
 };
 
 const isEquilateral = function(inputObject){
-  if(inputObject.sideA === inputObject.sideB === inputObject.sideC){
+  if((inputObject.sideA === inputObject.sideB) && (inputObject.sideA === inputObject.sideC)){
     return true;
   };
   return false;
