@@ -3,14 +3,18 @@
 // Write a function called squareNumber that will take one argument (a number), square that number, and return the result.
 //It should also log a string like "The result of squaring the number 3 is 9."
 const squareNumber = function(num) {
-  const squareResult = num**2;
+
+  let squareResult = num * num;
+  console.log(`${squareResult}`)
+
   console.log(`The result of squaring the number ${num} is ${squareResult}`);
 };
 
 
 squareNumber(199);
 squareNumber(1203);
-squareNumber(-1);
+// squareNumber(-1);
+
 
 
 
@@ -71,10 +75,15 @@ areaOfCircle(10);
 const calculator = function (number) {
   const half = halfNumber(number);
   const squared = squareNumber(half);
+  console.log(`${squared}`)
   const circle = areaOfCircle(squared);
+  console.log(`${circle}`)
   const percentage = percentOf(circle, squared);
+  console.log(`${percentage}`)
 
+  return number;
 };
+
 console.log(calculator(12));
 
 
@@ -211,8 +220,6 @@ verbing("eating");
 
 
 //warmup:
-
-
 
 const rainDrops = function (number) {
   let string = "";
