@@ -1,4 +1,5 @@
 //Word to guess
+
 const word = "singers";
 const wordToGuess = [];
 const lettersGuessed = [];
@@ -61,6 +62,9 @@ const guessLetter = function(letter) {
   else {
     correctGuess = false;
   }
+
+  // Logs the letters guessed in the word
+  console.log(lettersGuessed);
   // Checks to see if the user has had too many wrong guesses
   if (wrongGuesses === 6) {
     gameOver();
@@ -81,6 +85,7 @@ const guessLetter = function(letter) {
   // Adds the letter guessed to an array so that the user can't guess the same letter multiple times
   cantUse[totalGuessed] = letter;
   totalGuessed += 1;
+
   // Logs the letters guessed in the word
   return lettersGuessed;
 };

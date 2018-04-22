@@ -4,9 +4,9 @@
 //It should also log a string like "The result of squaring the number 3 is 9."
 const squareNumber = function(num) {
 
+
   let squareResult = num * num;
   console.log(`${squareResult}`)
-
   console.log(`The result of squaring the number ${num} is ${squareResult}`);
 };
 
@@ -14,7 +14,6 @@ const squareNumber = function(num) {
 squareNumber(199);
 squareNumber(1203);
 // squareNumber(-1);
-
 
 
 
@@ -267,6 +266,7 @@ const randrops = function(number) {
   return string;
 
 }
+
 
 // Examples
 // 28 has 7 as a factor.

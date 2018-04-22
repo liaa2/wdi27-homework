@@ -20,8 +20,10 @@ const wordGuesser = function(hiddenWord, letterGuesses, gameMode){
   }
 
   const guessLetter = function(charInput, supressLog){
+
     guesses++;
     console.log(`Checking letter [${charInput}] > guess number ${guesses}`);
+
 
     for (var i = 0; i < hiddenWord.length; i++) {
       if(hiddenWord[i] === charInput){
