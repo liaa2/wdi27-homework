@@ -3,6 +3,8 @@
 // Write a function called squareNumber that will take one argument (a number), square that number, and return the result.
 //It should also log a string like "The result of squaring the number 3 is 9."
 const squareNumber = function(num) {
+
+
   let squareResult = num * num;
   console.log(`${squareResult}`)
   console.log(`The result of squaring the number ${num} is ${squareResult}`);
@@ -218,8 +220,52 @@ verbing("eating");
 
 //warmup:
 
+const rainDrops = function (number) {
+  let string = "";
+  // if (number % 3 === 0 && number % 5 === 0) {
+  //   console.log("PlingPlang");
+   if (number % 3 === 0) {
+    string += "Pling";
+
+  } else if (number % 5 === 0) {
+    sring += "Plang";
+
+  } else if (number % 7 === 0) {
+    string += ("Plong");
+
+  } else {
+    const result = number;
+    console.log(result);
+  }
+};
+rainDrops(34);
+rainDrops(10);
+rainDrops(150);
 
 
+
+const isAFactor = function (number, factor) {
+  return number % factor === 0;
+}
+
+const randrops = function(number) {
+  let string = "";
+
+  if (isAFactor(number, 3)) {
+    string += "Pling"
+
+  } else if (isAFactor(number, 5)) {
+      string += "Plong"
+
+  } else if (isAFactor(number, 7)) {
+      string += "Plang"
+
+    } if(string.length === 0) {
+      string += number;
+    }
+  return string;
+
+}
 
 
 // Examples
