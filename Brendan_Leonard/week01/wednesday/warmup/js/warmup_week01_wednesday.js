@@ -18,37 +18,31 @@ const percentOf = function(numberInput1, numberInput2, surpressLog){
   let numberOutput = (numberInput1 / numberInput2) * 100;
   if(!surpressLog){
     console.log(`${numberInput1} is ${numberOutput}% of ${numberInput2}`);
-  }
+  };
   return numberOutput;
-};
-
+}
 
 const areaOfCircle = function(circleRadius, surpressLog){
   let circleArea = squareNumber(circleRadius, true) * Math.PI;
   let circleAreaDisplay = circleArea.toFixed(2);
   if(!surpressLog){
     console.log(`The area for a circle with radius ${circleRadius} is ${circleAreaDisplay}`);
-
-  }
+  };
   return circleArea;
-};
-
+}
 
 const percentageOfCircleArea = function(numberInput){
   let halvedInput = halfNumber(numberInput, true);
   let squared = squareNumber(halvedInput, true);
   let area = areaOfCircle(squared, true);
   let areaPercentage = percentOf(squared, area);
-
-};
-
+}
 
 const DrEvil = function(numberInput){
   let pinky = null;
   numberInput === 1000000 ? pinky="(pinky)" : pinky="";
   console.log(`DrEvil(${numberInput}): ${numberInput} dollars ${pinky}`);
-
-};
+}
 
 const mixUp = function(stringInput1, stringInput2){
   let inputOneInitChars = stringInput1.substr(0, 2);
@@ -58,8 +52,7 @@ const mixUp = function(stringInput1, stringInput2){
 
   let stringOutput = `${inputTwoInitChars}${inputOneRemChars} ${inputOneInitChars}${inputTwoRemChars}`
   console.log(`mixUp('${stringInput1}', '${stringInput2}'): '${stringOutput}'`);
-};
-
+}
 
 const fixStart = function(stringInput){
   let stringInputInitChar = stringInput.substr(0, 1);
@@ -88,108 +81,35 @@ const notBad = function(stringInput){
   console.log(`notBad('${stringInput}'): '${stringOutput}'`);
 }
 
-const whichIsBigger = function(numberInput1, numberInput2, surpressLog){
-  // Function will compare 2 numbers and return the greater of the 2
-  // If both are equal it will return null
-
-  let biggerNumber = null;
-  if(numberInput1 > numberInput2){
-    biggerNumber = numberInput1;
-  }else if(numberInput2 > numberInput1){
-    biggerNumber = numberInput2;
+const funcRaindrops = function(numberInput){
+  let stringOutput = "";
+  if(numberInput % 3 === 0){
+    stringOutput = stringOutput.concat("Pling ");
   }
+  if(numberInput % 5 === 0){
+    stringOutput = stringOutput.concat("Plang ");
+  }
+  if(numberInput % 7 === 0){
+    stringOutput = stringOutput.concat("Plong ");
+  }
+  stringOutput = stringOutput.trim();
 
-  if(!surpressLog){
-    if(biggerNumber === null){
-      console.log(`whichIsBigger: ${numberInput1} and ${numberInput2} are equal.`);
-    }else{
-      console.log(`whichIsBigger: The greater number of ${numberInput1} and ${numberInput2} is ${biggerNumber}.`);
-    };
-  };
-  return biggerNumber;
+  console.log(stringOutput);
 }
 
-const worldTranslator = function(stringInput, surpressLog){
-  let stringOutput = "Hello, World";
+// Warmup - Raindrops
+// Write a Javascript program that will take a number (eg 28 or 1755 or 9, etc) and output the following:
+//
+// If the number contains 3 as a factor, output 'Pling'.
+// If the number contains 5 as a factor, output 'Plang'.
+// If the number contains 7 as a factor, output 'Plong'.
+// If the number does not contain 3, 5, or 7 as a factor, output the number as a string.
 
-  if(stringInput === "es"){
-    stringOutput = "Hola Mundo"
-  }else if(stringInput === "de"){
-    stringOutput = "Hallo Welt"
-  }
-
-  if(!surpressLog){
-      console.log(`worldTranlator(${stringInput}): ${stringOutput}`);
-  };
-
-  return stringOutput;
-};
-
-const gradeAssigner = function(numberInput, surpressLog){
-  let gradeOutput = null;
-  if(numberInput >= 90){
-    gradeOutput = "A";
-  }else if(numberInput >= 75){
-    gradeOutput = "B";
-  }else if(numberInput >= 60){
-    gradeOutput = "C";
-  }else if(numberInput >= 45){
-    gradeOutput = "D";
-  }else{
-    gradeOutput = "F";
-  }
-
-  if(!surpressLog){
-    console.log(`gradeAssigner(${numberInput}): Grade is ${gradeOutput}`);
-  };
-  return gradeOutput;
-};
-
-const pluralizer = function(stringInput, numberInput, surpressLog){
-  let stringOutput = null;
-  let pluralException = {};
-  pluralException["sheep"] = "sheep";
-  pluralException["goose"] = "geese";
-
-  if(numberInput === 1){
-    pluralString = stringInput;
-  }else if(pluralException[stringInput] != null){
-    pluralString = pluralException[stringInput];
-  }else{
-    pluralString = stringInput.concat('s');
-  }
-
-  if(numberInput === 0){
-    stringOutput = `No ${pluralString}`
-  }else{
-    stringOutput = `${numberInput} ${pluralString}`;
-  };
-
-  if(!surpressLog){
-    console.log(`pluralizer(${stringInput}, ${numberInput}): ${stringOutput}}`);
-  };
-  return stringOutput;
-};
-
-console.log("=== if/else statements Homework (js-3-conditionals.md) ===");
-whichIsBigger(5, 10);
-whichIsBigger(15, 15);
-worldTranslator("de");
-worldTranslator("en");
-worldTranslator("es");
-gradeAssigner(68);
-gradeAssigner(92);
-pluralizer("dog", 2);
-pluralizer("cat", 0);
-pluralizer("goose", 2);
-pluralizer("sheep", 10);
-console.log("\n=== The Calculator Homework (js-homework-1.md) ===");
 squareNumber(3);
 halfNumber(5);
 percentOf(2, 4);
 areaOfCircle(2);
 percentageOfCircleArea(4);
-console.log("\n=== Strings Homework (js-homework-1.md) ===");
 DrEvil(10);
 DrEvil(1000000);
 DrEvil(1000);
@@ -202,4 +122,6 @@ verbing('go');
 notBad('This dinner is not that bad!');
 notBad('This movie is not so bad!');
 notBad('This movie is bad!');
-console.log("=== END OF HOMEWORK ===")
+funcRaindrops(28);
+funcRaindrops(1755);
+funcRaindrops(9);
