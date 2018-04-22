@@ -66,6 +66,7 @@ const assignedGrade = function (grade) {
   rconsole.log("You get a D");
 } else {
   console.log("You get an F");
+
 }
 };
 
