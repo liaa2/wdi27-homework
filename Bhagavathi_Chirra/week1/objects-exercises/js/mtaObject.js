@@ -1,5 +1,5 @@
 
-const mtiLines = {
+const mtaLines = {
 // Declaring variables
   lineL : ['8th','6th','Union Square','3rd','1st'],
   lineN : ['Times Square','34th','28th','23rd','Union Square','8th'],
@@ -46,9 +46,9 @@ const mtiLines = {
   }
 };
 
- console.log(mtiLines.planTrip('lineL','6th','lineL','1st'));
- console.log(mtiLines.planTrip('lineL','1st','lineL','6th'));
- console.log(mtiLines.planTrip('lineL','8th','lineN','23rd'));
- console.log(mtiLines.planTrip('lineL','8th','lineN','8th'));
- console.log(mtiLines.planTrip('line6','28th','lineL','8th'));
- console.log(mtiLines.planTrip('line6','28th','lineL','1st'));
+ console.log(mtaLines.planTrip('lineL','6th','lineL','1st'));
+ console.log(mtaLines.planTrip('lineL','1st','lineL','6th'));
+ console.log(mtaLines.planTrip('lineL','8th','lineN','23rd'));
+ console.log(mtaLines.planTrip('lineL','8th','lineN','8th'));
+ console.log(mtaLines.planTrip('line6','28th','lineL','8th'));
+ console.log(mtaLines.planTrip('line6','28th','lineL','1st'));
