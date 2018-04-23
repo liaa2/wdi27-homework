@@ -30,28 +30,28 @@
 
 const trains = {
   "N": [
-  "34th",
-  "28th",
-  "23rd",
-  "Union Square",
-  "8th"
+    "34th",
+    "28th",
+    "23rd",
+    "Union Square",
+    "8th"
   ],
 
   "L": [
-  "8th",
-  "6th",
-  "Union Square",
-  "3rd",
-  "1st"
+    "8th",
+    "6th",
+    "Union Square",
+    "3rd",
+    "1st"
   ],
 
   "6": [
-  "Grand Central",
-  "33rd",
-  "28th",
-  "23rd",
-  "Union Square",
-  "Astor Place"
+    "Grand Central",
+    "33rd",
+    "28th",
+    "23rd",
+    "Union Square",
+    "Astor Place"
   ],
 };
 
@@ -59,25 +59,25 @@ const trains = {
 // Multiple Trip Solution - Final
 
 // define a global scope trip which is an empty array
-let trip = [];
+// let trip = [];
 
 const planTrip = function (line1, start, line2, end) {
   // if it is the same train line
   if (line1===line2) {
     let sum = singleTrip(line1,start,end);
-    console.log(`You must travel through the following stops on the ${line1} line: ${trip}.`);
+    console.log(`You must travel through the following stops on the ${line1} line: ${sum}.`);
     console.log (sum.length + " stops in total.");
 
     // if line 1 and line 2 are different
   } else {
     let sum = singleTrip(line1,start,"Union Square")
-    console.log(`You must travel through the following stops on the ${line1} line: ${trip}.`);
+    console.log(`You must travel through the following stops on the ${line1} line: ${sum}.`);
     // console.log(sum1);
     // console.log(sum1.length);
     console.log("Change at Union Square.");
     let sum2 = singleTrip(line2,"Union Square",end);
     // console.log(sum2);
-    console.log(`Your journey continues through the following stops: ${trip}.`);
+    console.log(`Your journey continues through the following stops: ${sum2}.`);
     // console.log(sum2.length);
     console.log ((sum.length+sum2.length) + " stops in total.");
   }
@@ -86,7 +86,7 @@ const planTrip = function (line1, start, line2, end) {
 
 // Single trip function
 const singleTrip = function (train,fromStop,toStop) {
-
+  let trip = [];
   const line = trains[train];
   const start = line.indexOf(fromStop);
   const end = line.indexOf(toStop);
