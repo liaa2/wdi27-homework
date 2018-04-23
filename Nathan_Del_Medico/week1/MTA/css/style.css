@@ -1,0 +1,43 @@
+/* #4ABDAC
+   #FC4A1A
+   #F78733
+   #DFDCE3
+*/
+body {
+  font-family: 'Do Hyeon', sans-serif;
+  color: #DFDCE3;
+}
+.tripViewer {
+  margin: 0, auto;
+  text-align: center;
+  font-size: 90px;
+  padding-top: 100px;
+}
+.from {
+  display: inline-block;
+  font-size: 40px;
+  margin-left: 30%;
+  margin-top: -15%;
+}
+.to {
+  display: inline-block;
+  font-size: 40px;
+  margin-left: 25%;
+  margin-top: -20%;
+}
+.lineFrom {
+  font-size: 20px;
+  margin-left: 420px;
+}
+.stationFrom {
+  font-size: 20px;
+  margin-left: 10px;
+}
+.lineTo {
+  font-size: 20px;
+  margin-left: 210px;
+}
+.stationTo {
+  font-size: 20px;
+  margin-left: 10px;
+}

@@ -122,6 +122,84 @@ console.log(checkVowel("o"));
 
 // ## Bonus
 //
-// 5. Define a function `reverseString` that computes the reversal of a string. For example, reverseString("jag testar") should return the string "ratset gaj".
+// 5. Define a function `reverseString` that computes the reversal of a string.
+//For example, reverseString("jag testar") should return the string "ratset gaj".
+
+const reverseString = function (string) {
+  for (let i = string.length -1 ; i >= 0; i--) {
+    return string[i];
+  }
+};
+console.log(reverseString("hello world"));
+console.log(reverseString("random people"));
+
+
+
+
 // 6. Write a function `findLongestWord` that takes an array of words and returns the length of the longest one.
-// 7. Write a function `filterLongWords` that takes an array of words and an number `i` and returns the array of words that are longer than i.
+
+
+
+
+// 7. Write a function `filterLongWords` that takes an array of words and an number `i`
+//and returns the array of words that are longer than i.
+
+
+
+
+
+
+// Warmup - Serge Says
+// Examples
+// Serge answers 'Sure.' if you ask him a question.
+//
+// He answers 'Woah, chill out!' if you yell at him (ALL CAPS).
+//
+// He says 'Fine. Be that way!' if you address him without actually saying anything.
+//
+// He answers 'Whatever.' to anything else.
+//
+// Create a function that takes an input and returns Serge's response.
+
+
+
+
+// const sergeSays = function (yourQuestion) {
+//     if (yourQuestion === yourQuestion.toUpperCase()) {
+//     return "Woah, chill out!";
+//   } if (yourQuestion === "serge") {
+//     return "Fine, be that way";
+//   } if (yourQuestion === yourQuestion.toLowerCase() && yourQuestion[yourQuestion.length -1] === "?") {
+//     return "sure";
+//   }
+//     return "Whatever";
+// };
+//
+//
+// console.log(sergeSays("serge"));
+// console.log(sergeSays("WHY ARE YOU HERE?"));
+// console.log(sergeSays("are you a woman?"));
+// console.log(sergeSays("i like turtle"));
+// console.log(sergeSays("+.+ ^_^ t_t"));
+// console.log(sergeSays(""));
+
+
+
+
+
+const serSays = function (input) {
+  if (input === input.toUpperCase()) {
+    if(input.length === 0) {
+      return "fine"
+    } else {
+      return "Woah, chill out"
+    }
+  }
+  else if (input.endsWith("?")) {
+    return "sure"
+  } else {
+    return "Whatever"
+  }
+};
+console.log(serSays("ARE YOU BLIND?"));
+console.log(serSays(""));
