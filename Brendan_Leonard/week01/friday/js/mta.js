@@ -26,7 +26,7 @@ const mta = {
   },
   interchangeStation: { // interchange station to switch between lines
     'L': { 'N': 'Union Square', '6': 'Union Square' },
-    'N': { 'L': 'Union Square', '6': 'Union Square' },
+    'N': { 'L': 'Union Square', '6': '23rd' },
     '6': { 'L': 'Union Square', 'N': 'Union Square' }
   },
   journeyLines: { // Arrays that specify what line combinations to travel to move from any
@@ -53,7 +53,7 @@ const mta = {
     // and ending at a station on 'LINE-3' your would need to first travel from LINE-1 to
     // LINE-2 and then LINE-2 to LINE-3 to complete the journey"
 
-    'L': { 'L': [ 'L' ], 'N': [ 'L', 'N'], '6': [ 'L', '6' ] },
+    'L': { 'L': [ 'L' ], 'N': [ 'L', 'N'], '6': [ 'L', 'N', '6' ] },
     'N': { 'N': [ 'N' ], 'L': [ 'N', 'L'], '6': [ 'N', '6' ] },
     '6': { '6': [ '6' ], 'N': [ '6', 'N'], 'L': [ '6', 'L' ] },
   },
@@ -187,7 +187,7 @@ const mta = {
     }
 
     // Create a "journey" array to hold combinations of Line and Station that are part of the journey
-    this.journey = [];
+    let journey = [];
 
     // Next section of code will loop over all lines we need to use to move
     // from our start line to our end line
@@ -200,7 +200,7 @@ const mta = {
 
     if(journeyLines.length === 1){
       // Handle a single line journey
-      this.getStationsBetweenOnSameLine(startLine, startStation, endStation, this.journey);
+      this.getStationsBetweenOnSameLine(startLine, startStation, endStation, journey);
     }else{
       // Handle a multi-line journey
       for (let i = 0; i < journeyLines.length; i++) {
@@ -211,10 +211,10 @@ const mta = {
           nextLine = journeyLines[i + 1];
           interchangeStation1 = this.getInterchangeStation(currLine, nextLine);
           interchangeStation2 = interchangeStation1;
-          this.getStationsBetweenOnSameLine(currLine, startStation, interchangeStation1, this.journey);
+          this.getStationsBetweenOnSameLine(currLine, startStation, interchangeStation1, journey);
         }else if(i === journeyLines.length-1){
           // We are at the last line in the journey
-          this.getStationsBetweenOnSameLine(currLine, interchangeStation2, endStation, this.journey);
+          this.getStationsBetweenOnSameLine(currLine, interchangeStation2, endStation, journey);
         }else{
           // We are in an intermediate line of the journey and only need to move
           // between interchange stations on the line
@@ -223,15 +223,15 @@ const mta = {
           interchangeStation1 = this.getInterchangeStation(prevLine, currLine);
           interchangeStation2 = this.getInterchangeStation(currLine, nextLine);
 
-          this.getStationsBetweenOnSameLine(currLine, interchangeStation1, interchangeStation2, this.journey);
+          this.getStationsBetweenOnSameLine(currLine, interchangeStation1, interchangeStation2, journey);
         }
       }
     }
     // Once the "journey" array has been populated run the function to display the trip details
-    this.displayTripDetail(this.journey);
+    this.displayTripDetail(journey);
 
     // Empty the "journey" array to cater for future trip plans
-    this.journey = [];
+    journey = [];
 
     return true;
   }
