@@ -47,8 +47,13 @@ const mtaLines = {
 };
 
  console.log(mtaLines.planTrip('lineL','6th','lineL','1st'));
+ console.log("****************************************************************");
  console.log(mtaLines.planTrip('lineL','1st','lineL','6th'));
+ console.log("****************************************************************");
  console.log(mtaLines.planTrip('lineL','8th','lineN','23rd'));
+ console.log("****************************************************************");
  console.log(mtaLines.planTrip('lineL','8th','lineN','8th'));
+ console.log("****************************************************************");
  console.log(mtaLines.planTrip('line6','28th','lineL','8th'));
+ console.log("****************************************************************");
  console.log(mtaLines.planTrip('line6','28th','lineL','1st'));
