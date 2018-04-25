@@ -1,0 +1,65 @@
+
+@import url('https://fonts.googleapis.com/css?family=Black+Han+Sans');
+
+
+body {
+background-image: url("file:///Users/anh/Downloads/whitebackground.jpg");
+background-repeat: title;
+
+
+}
+
+nav div {
+  display: block;
+  color: white;
+  background-color: black;
+  border: 0;
+  padding: 10px;
+}
+
+
+h1, h2, h3 {
+  font-family: 'Black Han Sans', sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+
+#cat {
+  float: right;
+}
+
+
+footer {
+	text-transform: uppercase;
+	padding: 5px 20px 5px 20px;
+	background-color: black;
+	color: white;
+	font-size: 14px;
+	letter-spacing: .08em;
+	font-weight: 500;
+}
+
+.copyright {
+	float: left;
+}
+
+.message {
+	float: right;
+}
+
+.clearfix:after {
+visibility: hidden;
+display: block;
+content: " ";
+clear: both;
+height: 0;
+font-size: 0;
+}
+
+.name {
+	color: #F42A65;
+	font-weight: 700;
+}
