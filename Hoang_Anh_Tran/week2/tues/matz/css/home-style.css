@@ -1,28 +1,30 @@
-/*
-
-@import url('https://fonts.googleapis.com/css?family=Maven+Pro');
-
-img {
-  float: left;
-}
- */
-
 
  @import url('https://fonts.googleapis.com/css?family=Maven+Pro');
 
 
 * {
   font-family: 'Maven Pro', sans-serif;
-
-
 }
 
+/* a:link {
+    color: white;
+} */
 
+a:visited {
+    color: white;
+}
+
+a:hover {
+    color: #F42A65;
+}
 
 body {
 background-image: url("file:///Users/anh/Downloads/whitebackground.jpg");
 background-repeat: title;
+}
 
+h2 {
+  margin-bottom: 0px;;
 }
 
 nav div {
@@ -34,19 +36,23 @@ nav div {
   font-weight: bold;
 }
 
-
+/* resize photos without changing the content */
 .resize {
     width: 250px;
     height: auto;
 }
 
+/* put main text 270 pixels down the page, past the photos */
+.maintext {
+  margin-top: 270px;
+}
 
 .photos {
     position: absolute;
+    min-width: 1600px;
 }
 
-
-
+/* allows rotation for photos */
 .photos img:nth-of-type(1) {
     left: 50px;
     top: 50px;
@@ -77,14 +83,14 @@ nav div {
     transform: rotate(2deg);
 }
 
+
 .photos img:hover {
     transform: scale(1.5);
     z-index: 10;
 }
 
 
-
-
+/* adding border, create polaroid effect */
 .photos img {
     transition: all 0.5s ease-out;
     padding: 10px 10px 20px 10px;
@@ -104,4 +110,9 @@ nav div {
     content: "";
     display: table;
     clear: both;
+}
+
+.rows {
+  min-width: 1400px;
+  overflow: auto;
 }
