@@ -58,6 +58,7 @@ console.log(guessedLetter("k"));
 //
 // 1. Define a function `maxOfTwoNumbers` that takes two numbers as arguments and returns the largest of them.
 //Use the if-then-else construct available in Javascript. You'll have to remember your pre-work, or do some googling to figure this out.
+
 const maxOfTwo = function (num1, num2) {
   if (num1 - num2 === 0) {
     console.log("The numbers are even");
@@ -126,9 +127,8 @@ console.log(checkVowel("o"));
 //For example, reverseString("jag testar") should return the string "ratset gaj".
 
 const reverseString = function (string) {
-  for (let i = string.length -1 ; i >= 0; i--) {
-    return string[i];
-  }
+  return string.split("").reverse().join(""); // convert to array, change the position, rejoin
+
 };
 console.log(reverseString("hello world"));
 console.log(reverseString("random people"));
@@ -137,7 +137,6 @@ console.log(reverseString("random people"));
 
 
 // 6. Write a function `findLongestWord` that takes an array of words and returns the length of the longest one.
-
 
 
 
