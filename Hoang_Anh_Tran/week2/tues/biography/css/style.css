@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Indie+Flower|Lobster+Two|Montserrat|Raleway|Roboto+Mono');
+
+/* * {
+  padding: 5px;
+} */
+
+body {
+  background-color: #F9C8C7;
+}
+
+nav div {
+  display: block;
+  color: white;
+  background-color: black;
+  border: 0;
+  padding: 10px;
+}
+
+
+
+img {
+  float: right;
+
+}
+
+h2, p {
+  font-family: 'Roboto Mono', monospace;
+  color: #241514;
+}
+
+h3 {
+  text-decoration: underline;
+}
+
+
+footer {
+	text-transform: uppercase;
+	padding: 5px 20px 5px 20px;
+	background-color: black;
+	color: white;
+	font-size: 14px;
+	letter-spacing: .08em;
+	font-weight: 500;
+}
+
+.copyright {
+	float: left;
+}
+
+.message {
+	float: right;
+}
+
+.clearfix:after {
+visibility: hidden;
+display: block;
+content: " ";
+clear: both;
+height: 0;
+font-size: 0;
+}
+
+.name {
+	color: #F42A65;
+	font-weight: 700;
+}

@@ -46,12 +46,12 @@ li a:hover {
 }
 
 
-img#rightalign {
+img#rightAlign {
   float: right;
   margin-right: 0 auto;
 }
 
-img#lefttalign {
+img#leftAlign {
   float: left;
   margin-right: 0 auto;
 }
