@@ -1,0 +1,34 @@
+img.resize {
+  width: 200px;
+  height: 20px;
+}
+
+
+div.image-gallery {
+  display: inline-block;
+}
+
+div.image-gallery img {
+  display: block;
+  float: left;
+}
+.clear {
+  clear: both;
+  height: 0;
+  width: 0;
+  font-size: 1px;
+  line-height: 0;
+}
+
+a, #date {
+  color: #47A1F0;
+}
+
+h3 {
+  font-weight: none;
+  color: #606771;
+}
+
+p , footer {
+  color: #B0B2B5;
+}

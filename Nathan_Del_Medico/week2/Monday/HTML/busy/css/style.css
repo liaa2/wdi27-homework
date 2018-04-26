@@ -1,0 +1,259 @@
+* {
+     -moz-box-sizing: border-box; /* Firexfox */
+     -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+     box-sizing: border-box; /* IE */
+}
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+.clear {
+	clear: both;
+}
+body {
+  background-color: rgb(243, 243, 243);
+  color: #000000;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+.top {
+  width: 100%;
+  height: 100px;
+  background-color: black;
+}
+a {
+  text-decoration: none;
+  margin-left: 40px;
+  color: white;
+  font-size: 20px;
+  position: relative;
+  top: 40px;
+  color: lightgrey;
+}
+.top a {
+  left: -11px;
+  text-align: center;
+}
+.top a:hover {
+  border-bottom: 2px solid white;
+}
+.logo {
+  margin: 30px 16%;
+  position: relative;
+  z-index: 1;
+}
+.socialMedia {
+  position: relative;
+  left: 200px;
+  top: 62px;
+}
+.photobanner {
+  margin: 0px auto;
+  display: block;
+  position: relative;
+  z-index: 1;
+}
+.shadow {
+  margin: 0 225px;
+}
+.home {
+  margin-left: 250px;
+}
+.firstSection {
+  padding-left: 20px;
+  margin: 0 auto;
+  width: 67%;
+  border: 1px solid lightgrey;
+  border-bottom: 2px solid white;
+  border-right: 2px solid white;
+}
+.firstP {
+  width: 70%;
+  display: inline-block;
+  margin-top: 0px;
+}
+section img {
+  display: inline;
+  margin-top: 20px;
+  margin-left: 50px;
+}
+.homeBox1 {
+  display: inline-block;
+  width: 20%;
+  margin: 40px 16%;
+  padding-left: 5px;
+}
+.homeBox1 img {
+  margin-top: 15px;
+  padding: 1px;
+  border: 5px solid lightgrey;
+}
+.homeBox1 a {
+  color: blue;
+  position: relative;
+  left: -40px;
+  top: -10px;
+  font-size: 15px;
+}
+.homeHead {
+  font-size: 25px;
+  display: inline;
+}
+.homeBox2 {
+  display: inline-block;
+  position: relative;
+  left: -52px;
+  top: -124px;
+  width: 20%;
+}
+.homeBox2 p {
+  position: relative;
+  top: 128px;
+  left: -134px;
+}
+.homeBox2 img {
+  padding: 1px;
+  position: relative;
+  top: 125px;
+  left: -134px;
+  border: 5px solid lightgrey;
+}
+.homeBox2 a {
+  color: blue;
+  position: relative;
+  left: -174px;
+  top: 120px;
+  font-size: 15px;
+}
+#homeHead2 {
+  position: relative;
+  top: 110px;
+}
+.homeBox3 {
+  display: inline-block;
+  position: relative;
+  top: -224px;
+  left: 770px;
+}
+.homeBox3 p {
+  position: relative;
+  left: 131px;
+  top: -60px;
+  width: 32%;
+}
+.homeBox3 img {
+  position: relative;
+  padding: 1px;
+  top: -59px;
+  left: -8px;
+  border: 5px solid lightgrey;
+}
+#homeHead3 {
+  position: relative;
+  top: -190px;
+}
+.homeBox3 a {
+  color: blue;
+  position: relative;
+  left: 91px;
+  top: -67px;
+  font-size: 15px;
+}
+.footer {
+  position: relative;
+  top: -220px;
+  width: 100%;
+  height: 400px;
+  background-color: black;
+}
+.blogrollH {
+  color: white;
+  position: relative;
+  left: 236px;
+  top: 65px;
+  font-size: 25px;
+  border-bottom: 2px solid grey;
+  width: 210px;
+  padding-bottom: 10px;
+}
+.blogroll {
+  list-style-type: none;
+  color: grey;
+  position: relative;
+  left: 196px;
+  top: 50px;
+}
+li {
+  width: 15%;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid grey;
+}
+.textWidget {
+  color: white;
+  font-size: 25px;
+  position: relative;
+  left: 510px;
+  top: -580px;
+  border-bottom: 2px solid grey;
+  width: 450px;
+  padding-bottom: 10px;
+}
+.textWidgetIp {
+  position: relative;
+  color: grey;
+  top: -600px;
+  left: 510px;
+  width: 460px;
+}
+.metaWidget {
+  color: white;
+  position: relative;
+  left: 1000px;
+  top: -707px;
+  font-size: 25px;
+  border-bottom: 2px solid grey;
+  width: 210px;
+  padding-bottom: 10px;
+}
+.metaWidgetUl {
+  color: grey;
+  position: relative;
+  left: 960px;
+  top: -720px;
+  list-style-type: none;
+}
+footer {
+  height: 100px;
+}
+.greyFade {
+  position: absolute;
+  background: linear-gradient(white, lightgrey);
+  width: 100%;
+  height: 60%;
+  top: 100px;
+}
+.testers {
+  width: 10px;
+  height: 400px;
+  background: blue;
+  position: absolute;
+  top: 1000px;
+  left: 1210px;
+  z-index: 100;
+}
+
+.tester2s {
+  width: 400px;
+  height: 10px;
+  background: blue;
+  position: absolute;
+  top: 817px;
+  left: 820px;
+  z-index: 100;
+}
