@@ -183,6 +183,15 @@ const bank = {
     }
     else return "Invalid input. Enter name and balance.";
   },
+  accountNameFinder: function(a){
+    for (var i=0; i<bank.accounts.length; i++){
+      if (bank.accounts[i] !== a){
+        return "Account not found.";
+      }
+    }
+    return "Account found!";
+  },
+
   // accessAccount allows account holder to deposit and withdraw.
   // Prevents overdrafting.
   // Positive value indicates deposit, negative indicates withdrawal.
@@ -192,7 +201,7 @@ const bank = {
       // Upon a match, check if transaction is valid, then update.
       if (bank.accounts[i].name === a){
         // Full balance withdrawal is valid, therefore must check if balance will be < 0.
-        if (bank.accounts[i].balance - b < 0){
+        if (bank.accounts[i].balance + b < 0){
           bank.accounts[i].balance += b;
         }
         else return "Not enough money!";
@@ -238,5 +247,5 @@ console.log(bank.accessAccount("Scott", 10000));
 
 console.log("transferXFromAtoB");
 console.log("as it's name suggests transfers amount X")
-console.log("from account A and to accountB ")
+console.log("from account A and to account B ")
 console.log(bank.transferXFromAtoB("Alice","Bob",5));

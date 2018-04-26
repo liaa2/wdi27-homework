@@ -1,0 +1,151 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0px, 0px, 0px, 0px;
+    border: 0px, 0px, 0px, 0px,
+}
+
+nav {
+    border: 0px;
+    margin: 0px;
+    background-color: black;
+}
+
+ul {
+    border: 0px;
+    margin: 0px;
+}
+
+.navlist {
+    color: white;
+    display: inline-block;
+}
+
+.topicons {
+    display: inline-block;
+}
+
+#main-content {
+    position: relative;
+    width: 100%;
+    display: inline-block;
+}
+
+#linkedindef {
+    position: absolute;
+    right: 735px;
+    top: 0px;
+    z-index: 2;
+}
+#linkedindef:hover {
+    position: absolute;
+    right: 735px;
+    top: 0px;
+    z-index: -2;
+}
+#linkedinhover{
+    position: relative;
+    left: 630px;
+    top: -53px;
+    z-index: -2;
+}
+#linkedinhover:hover{
+    position: relative;
+    left: 630px;
+    top: -53px;
+    z-index: 0;
+}
+
+
+#twitterdef {
+    position: relative;
+    left: 630px;
+    top: -62px;
+}
+
+#twitterhover {
+    position: relative;
+    left: 560px;
+    top: -61px;
+    z-index: -1;
+}
+
+#twitterdef:hover {
+    position: relative;
+    left: 630px;
+    top: -62px;
+    z-index: -1;
+}
+
+#twitterdef:hover {
+    position: relative;
+    left: 560px;
+    top: -61px;
+}
+
+
+
+#facebookdef {
+    position: relative;
+    left: 570px;
+    top: -61px;
+}
+
+#facebookhover {
+    position: relative;
+    left: 510px;
+    top: -58px;
+    z-index: -1;
+}
+
+#facebookdef:hover {
+    position: relative;
+    left: 570px;
+    top: -61px;
+    z-index: -1;
+}
+
+#facebookhover:hover {
+    position: relative;
+    left: 510px;
+    top: -58px;
+}
+
+#rssdef {
+    position: relative;
+    left: 520px;
+    top: -58px;
+}
+#rssdef:hover {
+    position: relative;
+    left: 520px;
+    top: -58px;
+    z-index: -1;
+}
+#rsshover {
+    position: relative;
+    left: 460px;
+    top: -58px;
+    z-index: -1;
+}
+
+#rsshover:hover {
+    position: relative;
+    left: 460px;
+    top: -58px;
+}
+
+
+.button_blurb {
+    position: relative;
+    float: right;
+    bottom: 40px;
+}
+
+#homebox {
+}
+
+.homeboxes box {
+    display: inline;
+}

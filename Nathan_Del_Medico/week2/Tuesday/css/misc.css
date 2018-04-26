@@ -1,0 +1,49 @@
+body {
+  margin: 0 auto;
+  font-family: 'Roboto', sans-serif;
+  background: url( http://www.ideasphere.com/wp-content/uploads/2016/08/Grey-website-background-1.png);
+}
+a {
+  text-decoration: none;
+}
+nav {
+  width: 100%;
+  background: black;
+  padding: 20px 0;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  border-bottom: 2px solid grey;
+}
+nav a {
+  color: white;
+  margin-left: 50px;
+  font-size: 20px;
+}
+nav a:hover {
+  border-bottom: 2px solid white;
+}
+nav #Home {
+  margin-left: 144px;
+}
+.image {
+  margin: 100px 28%;
+}
+.text {
+  margin: -120px auto;
+  width: 50%;
+  text-align: center;
+  position: relative;
+  color: white;
+}
+.text h1 {
+  font-size: 50px;
+  margin-left: 41%;
+  width: 18%;
+  margin-bottom: 0;
+  border-bottom: 2px solid white;
+}
+.text p {
+  font-size: 22px;
+  padding-bottom: 60px;
+}
