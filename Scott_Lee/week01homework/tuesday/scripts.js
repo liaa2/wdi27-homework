@@ -186,9 +186,12 @@ verbing(`do`);
 
 
 // Not Bad
+const replaceNotBad = (sentence) => {
+  return sentence.replace(/not.*bad/, 'good')
+}
 
 const notBad = function(badCheck){
-  const firstNot = /\bnot/;
+  const firstNot = /\bnot/; // b.?\bbad[\b$]/;
   const firstBad = /\bbad/;
   if (typeof badCheck.match(firstBad) === `number` && typeof badCheck.match(firstNot) === `number`){
     const indexOfBad = badCheck.match(firstBad).index;

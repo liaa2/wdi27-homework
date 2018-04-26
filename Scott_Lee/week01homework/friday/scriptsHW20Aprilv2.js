@@ -138,6 +138,13 @@ mta = {
         // build string for final return statement (list stations in order, list line change, list total stations traversed)
         // console.log(`Station and line info.`);
         // console.log(`Your trip requires ${recordOfTravel.length} stops.`)
+        // let subArraysToCombine = this.linesInCommon(a,b);
+        // for (var i=0; i < subArraysToCombine; i++){
+        //     for (var j=0; j<this.travelLog[i].length; j++){
+        //         recordOfTravel.push(this.travelLog[i][j]);
+        //     }
+        // }
+        // console.log(recordOfTravel);
         console.log(this.travelLog);
     },
 
