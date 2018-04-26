@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css?family=BCardo|Caveat|Lobster|Playfair+Display+SC|Rokkitt|Sacramento|Yantramanav|PT+Sans');
+/* font-family: 'Lobster', cursive;
+font-family: 'Sacramento', cursive;
+font-family: 'Caveat', cursive;
+font-family: 'Playfair Display SC', serif;
+font-family: 'Cardo', serif;
+font-family: 'Yantramanav', sans-serif;
+font-family: 'Rokkitt', serif;
+font-family: 'PT Sans', sans-serif;
+*/
+
+body{
+  margin-left:300px;
+  margin-right: 400px;
+  background-image:url("bc1.jpg");
+  font-family: 'PT Sans', sans-serif;
+  font-size: 14px;
+}
+ul.menue{
+  font-size: 20px;
+  list-style-type: none;
+}
+li.main{
+  display: inline-block;
+  width:90px;
+}
+li.bio{
+  display: inline-block;
+  width:120px;
+}
+li.interFacts{
+  display: inline-block;
+  width:180px;
+}
+li.feedback{
+  display: inline-block;
+  width:200px;
+}
+a:hover{
+  color: #1ac6ff;
+}
+header{
+  font-family: 'Caveat', cursive;
+  font-size: 38px;
+  color: #4d3319;
+}
+img.al3{
+  display:inline;
+  height: 350px;
+  width:280px;
+  border: 5px solid #e6ccb3;
+}
+p.shortpres{
+  font-family: 'PT Sans', sans-serif;
+  font-size: 14px;
+  display:inline-block;
+  height:60px;
+  width:450px;
+  text-align:inherit;
+  position:relative;
+  left:30px;
+  bottom: 50px;
+}
+p.quotes{
+  font-family: 'Caveat', cursive;
+  font-size: 30px;
+  color: #4d3319;
+}
+div.quotes{
+  font-style: italic;
+  color: white;
+  background-color: #b3b3b3;
+  text-align: center;
+  padding: 20px;
+  top:10px;
+}
+div.q1{
+  display: inline-block;
+  width:250px;
+  border: 2px solid white;
+  position: relative;
+}
+div.q2{
+  display: inline-block;
+  width:250px;
+  border: 2px solid white;
+  position: relative;
+  left:30px;
+}
+div.q3{
+  display: inline-block;
+  width:250px;
+  border: 2px solid white;
+  position: relative;
+  left:60px;
+}
+div.q4{
+  display: inline-block;
+  width:250px;
+  text-align: justify;
+  border: 2px solid white;
+  position: relative;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  top:30px;
+}
+div.q5{
+  display: inline-block;
+  width:250px;
+  border: 2px solid white;
+  position: relative;
+  left:30px;
+  top:50px;
+}
+div.q6{
+  display: inline-block;
+  width:250px;
+  border: 2px solid white;
+  position: relative;
+  left:60px;
+  top:50px;
+}
