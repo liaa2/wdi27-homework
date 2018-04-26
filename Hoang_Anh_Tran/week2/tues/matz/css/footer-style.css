@@ -1,3 +1,11 @@
+nav div {
+  display: block;
+  color: white;
+  background-color: black;
+  border: 0;
+  padding: 10px;
+}
+
 
 footer {
 	text-transform: uppercase;
@@ -28,5 +36,5 @@ font-size: 0;
 
 .name {
 	color: #F42A65;
-	font-weight: 700;
+	font-weight: 1000;
 }

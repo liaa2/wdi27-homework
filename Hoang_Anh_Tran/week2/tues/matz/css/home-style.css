@@ -27,14 +27,6 @@ h2 {
   margin-bottom: 0px;;
 }
 
-nav div {
-  display: block;
-  color: white;
-  background-color: black;
-  border: 0;
-  padding: 10px;
-  font-weight: bold;
-}
 
 /* resize photos without changing the content */
 .resize {

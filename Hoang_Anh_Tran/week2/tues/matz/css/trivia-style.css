@@ -1,9 +1,7 @@
 
 @import url('https://fonts.googleapis.com/css?family=Black+Han+Sans');
+@import url('https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Indie+Flower|Lobster+Two|PT+Serif');
 
-/* a:link {
-    color: white;
-} */
 
 a:visited {
     color: white;
@@ -17,16 +15,8 @@ body {
 background-image: url("file:///Users/anh/Downloads/whitebackground.jpg");
 background-repeat: title;
 
-
 }
 
-nav div {
-  display: block;
-  color: white;
-  background-color: black;
-  border: 0;
-  padding: 10px;
-}
 
 
 h1, h2, h3 {
@@ -37,6 +27,9 @@ ul {
   list-style: none;
 }
 
+blockquote, li {
+  font-family: 'PT Serif', serif;
+}
 
 #cat {
   float: right;
