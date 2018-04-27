@@ -75,14 +75,14 @@ const shortestLine = function(lineFrom, stopFrom, lineTo, stopTo) {
 };
 const shortestLine2 = function(lineFrom, stopFrom, lineTo, stopTo) {
   shortLength2 = 999;
-  //let counter = 0;
+  let counter = 0;
   for (let i = 0; i < lineTransfers[lineFrom].length; i++) {
     for (let j = 0; j < lineNames.length; j++) {
       middleLine = lineNames[j];
       for (let k = 0; k < lineTransfers[middleLine].length; k++) {
         for (let l = 0; l < lineTransfers[middleLine].length; l++) {
           for (let m = 0; m < lineTransfers[lineTo].length; m++) {
-            //counter = counter + 1;
+            counter = counter + 1;
             if (lineTransfers[lineFrom][i] === lineTransfers[middleLine][k] && lineTransfers[middleLine][l] == lineTransfers[lineTo][m]) {
               singleLine(lineFrom, stopFrom, lineTransfers[lineFrom][i]);
               singleLine(middleLine, lineTransfers[middleLine][k],lineTransfers[middleLine][l]);
@@ -101,7 +101,7 @@ const shortestLine2 = function(lineFrom, stopFrom, lineTo, stopTo) {
       }
     }
   }
-  //console.log(counter);
+  console.log(counter);
 };
 const singleLine = function(lineName, stopFrom, stopTo) {
   let reversed = false;
