@@ -1,0 +1,44 @@
+body {
+  background: url("../image/background.jpg");
+  background-size: contain;
+  /* width:1340px; */
+  /* background-repeat: no-repeat; */
+}
+
+div {
+  overflow: hidden;
+  `  /* display: flex; */`
+  flex-direction: column;
+}
+
+ul {
+  list-style-type: none;
+}
+
+img {
+  /* display: flex; */
+  position: relative;
+  left: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .listItems {
+  color: red;
+  } */
