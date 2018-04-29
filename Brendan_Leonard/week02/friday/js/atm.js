@@ -38,19 +38,10 @@ const bank = {
       if ( this.getBalance() >= amount ){
         // Code below handles overdraft functionality
         const transferAmount = amount - this.balance[account];
-        let fromAccount = '';
-        let toAccount = '';
-        
-        if( account === 'savings' ){
-          fromAccount = 'checking';
-          toAccount = 'savings';
-        } else {
-          fromAccount = 'savings';
-          toAccount = 'checking';
-        }
+	const fromAccount = account === 'savings' ? 'checking' : 'savings'; 
 
         // Transfer sufficient funds to cover the withdrawal
-        this.transfer( fromAccount, toAccount, transferAmount );
+        this.transfer( fromAccount, account, transferAmount );
       } else { 
         return false; // Even with overdraft there is not enough funds
       }
