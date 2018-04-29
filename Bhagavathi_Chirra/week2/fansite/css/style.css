@@ -35,7 +35,7 @@ ul.navBar li a:hover:not(.active){
 ul.navBar li.right{
   float: right;
 }
-@@media screen and (max-width: 600px) {
+@media screen and (max-width: 600px) {
   ul.navBar li.right,
   ul.navBar li{
     text-align: center;
