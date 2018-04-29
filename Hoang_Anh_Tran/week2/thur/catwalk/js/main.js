@@ -8,6 +8,7 @@ img.style.left = "0px";
 let direction = "forward"; //checking direction cat going
 
 
+
 //
 const catWalk = function () {
   // if src is not the walking cat, set it to walking cat
@@ -59,7 +60,7 @@ dance.style.top = '70%';
 
 
 
-const flying = function() {
+const flyingCat = function() {
     hotCat.src="file:///Users/anh/Downloads/flying-cat.gif";
 };
 const curiousCat = function() {
@@ -68,5 +69,5 @@ const curiousCat = function() {
 
 
 
-hotCat.addEventListener("mouseover", flying);
+hotCat.addEventListener("mouseover", flyingCat);
 hotCat.addEventListener("mouseout", curiousCat);
