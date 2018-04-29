@@ -43,22 +43,77 @@ const atm = {
 
   savings: 200,
 
-  // deposit to any account
+  //Simple deposit to savings account - dont call this method
+  depositSavings: function (amount) {
+    // console.log(this.savings);
+    this.savings += amount;
+    console.log(`Your balance for savings is ${this.savings}.`);;
+  },
+
+  // deposit to any account - Official
   deposit: function (account, amount) {
     this[account] += amount;
     // console.log(this[account]);
     console.log(`Your balance for ${account} is ${this[account]}.`);;
   },
 
-  // withdraw with overdraft protection going both ways
+
+  // Simple withdraw, withdraw money from savings account - dont call this method
+  withdrawSimple: function (amount) {
+    if(amount <= this.savings) {
+      this.savings -= amount;
+      console.log(`Your remaining balance for savings is ${this.savings}.`);
+      return;
+    }
+    console.log("No enough balance. Try Again.")
+  },
+
+
+  //Simple withdraw from checking account - dont call this method
+  withdrawCheckingSimple: function (amount) {
+    if(amount > this.checking) {
+      this.savings = this.savings - (amount - this.checking);
+      // console.log(this.savings)
+      this.checking = 0;
+      console.log(`Your remaining balance for checking is: ${this.checking}.`);
+      console.log(`Your remaining balance for savings is: ${this.savings}.`);
+      return;
+    }
+     this.checking -= amount;
+     console.log(`Your remaining balance for checking is ${this.checking}.`)
+  },
+
+
+  //Withdraw from checking account, with -ve balance warning - dont call this method
+  withdrawChecking: function (amount) {
+    if(amount > (this.checking+this.savings)) {
+      console.log("No enough balance. Try again.")
+      return false;
+    } else if(amount > this.checking) {
+      this.savings = this.savings - (amount - this.checking);
+      // console.log(this.savings)
+      this.checking = 0;
+      console.log(`Your remaining balance for checking is: ${this.checking}.`);
+      console.log(`Your remaining balance for savings is: ${this.savings}.`);
+      return;
+    }
+     this.checking -=amount;
+     console.log(`Your remaining balance for checking is ${this.checking}.`)
+  },
+
+
+
+  // withdraw with overdraft protection going both ways - Official
   withdraw: function (account, amount) {
     if(amount > (this.checking+this.savings)) {
       alert("No enough balance. Try again.")
       return;
     }
 
-    let otherAccount;
+    let otherAccount; //<--shorter expression
+     //OR let otherAccount = '';
 
+  // store the next account's name to an variable, easier to find it. No need to create if/else amount comparison inside another if/else account checking
     if( account === 'savings') {
       otherAccount = 'checking';
     } else {
@@ -66,19 +121,32 @@ const atm = {
     }
 
     if (amount > this[account]) {
+      // ???if no enough money in this account, get money from the next account???
+      // take EVERYTHING from current account,
+      // AND then take the remaining
+
+      //Below are different coding styles
+      // ===option1===
+      // const remainder = amount - this[account];
+      // this[account] = 0;
+      // this[otherAccount] -= remainder;
+
+      // ===option2===
+      // this[otherAccount] = this[otherAccount] - (amount - this[account]);
+      // this[account]=0;
+
+      // ===Option3===
       this[otherAccount] -= amount-this[account];
       this[account]=0;
 
       console.log(`Your remaining balance for ${account} is: $${this[account]}.`);
       console.log(`Your remaining balance for ${otherAccount} is: $${this[otherAccount]}.`);
       return;
-    }
+    } //else {   <--- no need "else" if we put "return" in the previous condition
       this[account] -= amount;
       console.log(`Your remaining balance for ${account} is $${this[account]}.`)
   }
 };
-
-
 
 
 
@@ -115,14 +183,15 @@ $(document).ready(function () {
 
   // store the savingsDeposit button's list of events once click it
   $("#savingsDeposit").on('click', function () {
-    let amount = parseInt($("#savingsAmount").val());
+    let amount = parseInt($("#savingsAmount").val());//use parseInt to ensure the input is a number, otherwise cant do the calculation later on
+    // console.log(amount);
     atm.deposit("savings", amount);
     updateDisplay();
     changeBackground();
   });
 
 
-
+  // same as above, for savingsWithdraw button
   $("#savingsWithdraw").on('click', function () {
     let amount = parseInt($("#savingsAmount").val());
     atm.withdraw("savings",amount);
@@ -131,9 +200,10 @@ $(document).ready(function () {
   });
 
 
-
+  //same as savings account buttons
   $("#checkingDeposit").on('click', function () {
     let amount = parseInt($("#checkingAmount").val());
+    // console.log(amount)
     atm.deposit("checking",amount);
     updateDisplay();
     changeBackground();

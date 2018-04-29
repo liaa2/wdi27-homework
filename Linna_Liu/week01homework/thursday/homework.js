@@ -178,7 +178,7 @@ const bank = {
     console.log(total);
   },
 
-  addAccount: function(ownerName,currentBalance){
+  addAccountSimple: function(ownerName,currentBalance){
     let account = this.accounts;
     account.push({ownerName, currentBalance})
     // OR account.push({ownerName:ownerName, currentBalance:currentBalance})
@@ -189,29 +189,26 @@ const bank = {
   // 2. if yes, console.log("account exists")
   // 3. if not, call add account to existing array.
 
-  addAccount: function(ownerName,currentBalance){
+  addAccount: function(name, balance){
     let account = this.accounts;
-    let accountExist = false;
-    for (i=0;i<account.length;i++) {
-      if ()
+    for (i = 0;i < account.length;i ++) {
+      if (account[i].ownerName === name) {
+        console.log("Account already existed.");
+        return false;
+      }
     }
-    account.push({ownerName, currentBalance})
+    account.push({name, balance})
     return account;
   },
 
 
-
-  calculation: function (amount) {
-    if (amount>0) {
-      let balance = this.accounts[i].currentBalance +=ammount;
-      console.log(`New balance is : ${amount}`)
-    }
-  },
-}
-
-
   transaction: function (name, amount) {
-    let account = this.Accounts
+    let account = this.accounts
+    let customer = Object.key(account);
+    let value = Object.values(account);
+
+    
+
     for (var i = 0; i < account.length; i++) {
       if (account[i].ownerName === name) {
          if (amount>=0) {
@@ -223,9 +220,9 @@ const bank = {
       }
     }
   }
+};
 
 
-}
 
 
 
