@@ -1,0 +1,10 @@
+#words{
+  display: none;
+}
+
+.word{
+  font-family: Georgia, serif;
+  font-size: 60px;
+  color: red;
+  position: absolute;
+}

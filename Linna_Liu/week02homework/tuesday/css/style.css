@@ -309,7 +309,7 @@ p {
 
 .flipCard:hover .card {
   transform: rotateY(180deg);
-}
+}.flip
 
 #map {
   bottom: 0;
