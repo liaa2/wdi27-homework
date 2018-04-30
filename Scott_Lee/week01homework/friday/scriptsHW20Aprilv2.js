@@ -83,7 +83,7 @@ mta = {
     },
 
     // given a line, checks for junctions
-    // returns object of junctions and its connections
+    // returns object of junctions and number of connections
     connectorsInLine: function(line){
         let junctions = {};
         // iterate through a line
@@ -111,8 +111,46 @@ mta = {
         return distancesToJunction;
     },
 
+    // given a station (junction or non-junction), returns object of connected junctions and distances from current position
+    connectedJunctions: function(station){
+        let junctionList = {};
+        // to find junctions connected to a station, must find lines going through station first
+        // iterate through array of lines going through input station
+        for (var i=0; i<this.linesThrough(station).length; i++){
+            // obtain junctions on each line going through input station as an array
+            let prefilterJunctions = Object.keys(this.connectorsInLine(this.linesThrough(station)[i]));
+            // if not added already, add junction and its distance from origin to junctionList
+            for (var j=0; j<prefilterJunctions.length; j++){
+                if (!junctionList.hasOwnProperty(prefilterJunctions[j]) && prefilterJunctions[j] !== station){
+                    junctionList[prefilterJunctions[j]] = this.distance(station, prefilterJunctions[j]);
+                }
+            }
+        }
+        return junctionList;
+    },
+    
+    // logs travel
+    travelLogArray: [],
+    travelLogObject: {},
+    travelDistance = 0,
+
+    // describes shortest path from a station (junction or non-junction) to destination junction
+    junctionPath: function(currentStation,finalJunction){
+        let currentDistance = 0;
+        let newDistance = 0;
+        if (!this.linesInCommon(currentStation,finalJunction)){
+            // given a station, obtain object of connected junctions (and respective distances)
+            let currentNode = this.connectedJunctions(currentStation);
+            // loop through and add currentDistance to each junction connection
+            for (eachNode in currentNode){
+                currentNode[eachNode] += currentDistance;
+            }
+        }
+    },
+
     // check junctions on given a line for connections to destination station's line
     // these junctions are returned in an object with their distances from origin
+    // this method is shit
     junctionConnections: function(a,b){
         // obtain keys of junctions to on current line
         let junctionsToCheck = Object.keys(this.nearestJunctions(a));
@@ -148,8 +186,6 @@ mta = {
         console.log(this.travelLog);
     },
 
-    // logs travel
-    travelLog: [],
     
     // initial journey
     findPath: function(a,b){
@@ -196,16 +232,7 @@ mta = {
     },
 
 
-    // junctionFinder finds the shortest possible path to the junction that exists on destination station's line
-    junctionFinder: function(a,b){
-        // if our origin had a line in common with the destination, the findPath method would cut straight to finalJourneyLeg
-        let lineHistory = [];
-        // Having only one intermediate train line at most means can automatically push the single line through a
-        
-    },
-
-
-    // finalJourneyLeg returns array of stations from a to b
+    // finalJourneyLeg returns array of stations from a to b, on the same line
     // checks for every possible path between a and b and selects the shortest one
     finalJourneyLeg: function(a,b){
         let stationsStoppedBy = [];
