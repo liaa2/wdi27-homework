@@ -61,10 +61,10 @@ dance.style.top = '70%';
 
 
 const flyingCat = function() {
-    hotCat.src="file:///Users/anh/Downloads/flying-cat.gif";
+    hotCat.src="img/flying-cat.gif";
 };
 const curiousCat = function() {
-    hotCat.src="file:///Users/anh/Downloads/giphy.gif";
+    hotCat.src="img/giphy.gif";
 };
 
 
