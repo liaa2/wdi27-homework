@@ -3,45 +3,40 @@ $(document).ready(function(){
   const bank = {
     checkingBalance : 0,
     savingsBalance : 0,
-    totlaBalance : 0,
-    // function to deposit checkingAccount
-    checkingDeposit : function (amtToDep){
+    totalBalance : 0,
+    // function to deposit
+    Deposit : function (amtToDep, acc){
       if(Math.sign(amtToDep) === 1){
-        this.checkingBalance = this.checkingBalance + parseInt(amtToDep);
-      }
-    },
-    //fucntion to deposit savingsAccount
-    savingsDeposit : function (amtToDep){
-      if(Math.sign(amtToDep) === 1){
-        this.savingsBalance = this.savingsBalance + parseInt(amtToDep);
-      }
-    },
-    //function to withdraw checkingAccount
-    checkingWithdraw : function(amtToWdr){
-      this.totlaBalance = this.checkingBalance + this.savingsBalance;
-      if(Math.sign(amtToWdr) === 1){
-        if(this.totlaBalance >= parseInt(amtToWdr)){
-          if(this.checkingBalance >=           parseInt(amtToWdr)){
-            this.checkingBalance = this.checkingBalance - parseInt(amtToWdr);
-          }
-          else{
-            this.checkingBalance = 0;
-            this.savingsBalance = this.totlaBalance - parseInt(amtToWdr);
-          }
+        if(acc == 1){
+          this.checkingBalance = this.checkingBalance + parseInt(amtToDep);
+        }else if(acc == 2){
+          this.savingsBalance = this.savingsBalance + parseInt(amtToDep);
         }
       }
     },
-    //function to withdraw savingsAccount
-    savingsWithdraw : function(amtToWdr){
+    //function to withdraw
+    Withdraw : function(amtToWdr, acc){
       this.totalBalance = this.checkingBalance + this.savingsBalance;
       if(Math.sign(amtToWdr) === 1){
-        if(this.totalBalance >= parseInt(amtToWdr)){
-          if(this.savingsBalance >= parseInt(amtToWdr)){
-            this.savingsBalance = this.savingsBalance - parseInt(amtToWdr);
+        if(acc == 1){
+          if(this.totalBalance >= parseInt(amtToWdr)){
+            if(this.checkingBalance >=       parseInt(amtToWdr)){
+              this.checkingBalance = this.checkingBalance - parseInt(amtToWdr);
+            }
+            else{
+              this.checkingBalance = 0;
+              this.savingsBalance = this.totalBalance - parseInt(amtToWdr);
+            }
           }
-          else{
-            this.savingsBalance = 0;
-            this.checkingBalance = this.totalBalance - parseInt(amtToWdr);
+        }else if(acc == 2){
+          if(this.totalBalance >= parseInt(amtToWdr)){
+            if(this.savingsBalance >= parseInt(amtToWdr)){
+              this.savingsBalance = this.savingsBalance - parseInt(amtToWdr);
+            }
+            else{
+              this.savingsBalance = 0;
+              this.checkingBalance = this.totalBalance - parseInt(amtToWdr);
+            }
           }
         }
       }
@@ -78,18 +73,18 @@ $(document).ready(function(){
     switch (eventId) {
       case "checkingDeposit":
         $amtToDepOrWdr = $("#checkingAmount").val();
-        bank.checkingDeposit($amtToDepOrWdr);
+        bank.Deposit($amtToDepOrWdr,1);
       break;
       case "savingsDeposit":
         $amtToDepOrWdr = $("#savingsAmount").val();
-        bank.savingsDeposit($amtToDepOrWdr);
+        bank.Deposit($amtToDepOrWdr,2);
       case "checkingWithdraw":
         $amtToDepOrWdr = $("#checkingAmount").val();
-        bank.checkingWithdraw($amtToDepOrWdr);
+        bank.Withdraw($amtToDepOrWdr,1);
       break;
       case "savingsWithdraw":
         $amtToDepOrWdr = $("#savingsAmount").val();
-        bank.savingsWithdraw($amtToDepOrWdr);
+        bank.Withdraw($amtToDepOrWdr,2);
     }
     displayClear();
   }
