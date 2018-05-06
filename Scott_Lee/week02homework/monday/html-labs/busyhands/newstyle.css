@@ -1,0 +1,125 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+nav {
+    background-color: black;
+    color: white;;
+}
+
+.navlist {
+    height: 60px;
+    display: inline-block;
+    font-size: 18px;
+    align-content: center;
+    line-height: 60px;
+    padding: 0px 15px;
+}
+
+.navlist:hover {
+    background: url(images/bg_nav_rollover.png) 0px 0px;
+}
+
+#ulnavlist {
+    padding-left: 50px;
+}
+
+header {
+    height: 110px;
+    padding: 35px 60px;
+}
+
+#socnavlist {
+    position: relative;
+}
+
+#socnavlist li {
+    height: 65px;
+    top: -50px;
+    margin: 0px;
+    padding: 0px;
+    position: absolute;
+    list-style: none;
+    display: block;
+}
+
+#linkedinicon {
+    right: 210px;
+    width: 65px;
+    background: url(images/socialNav.png) 0 0;
+}
+
+#linkedinicon:hover {
+    background: url(images/socialNav.png) 0 -60px;
+}
+
+#twittericon {
+    right: 147px;
+    width: 65px;
+    background: url(images/socialNav.png) -60px 0;
+}
+
+#twittericon:hover {
+    background: url(images/socialNav.png) -60px -60px;
+}
+
+#facebookicon {
+    right: 87px;
+    width: 65px;
+    background: url(images/socialNav.png) -115px 0;
+}
+
+#facebookicon:hover {
+    background: url(images/socialNav.png) -115px -60px;
+    
+}
+
+#rssicon {
+    right: 16px;
+    width: 65px;
+    background: url(images/socialNav.png) -180px 0;
+}
+
+#rssicon:hover {
+    background: url(images/socialNav.png) -180px -60px;    
+}
+
+.photobanner {
+    position: relative;
+    padding-left: 50px;
+}
+
+.photobanner img {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+}
+
+#shadow {
+    position: absolute;
+    left: 50px;
+    bottom: -46px;
+}
+
+.blurb {
+    display: inline-block;
+    width: 960px;
+    height: 140px;
+    border: 2px solid black;
+    margin-left: 50px;
+}
+
+.blurb p {
+    display: inline-block;
+    font-size: 16px;
+    width: 600px;
+    padding: 50px 30px;
+}
+.blurb img {
+    display: inline-block;
+    padding-left: 90px;
+}

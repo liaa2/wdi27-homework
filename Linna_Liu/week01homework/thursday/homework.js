@@ -150,6 +150,9 @@ const cashRegister = function (cart) {
 // Begin exploring the JavaScript Koans. Fork, clone and start trying them.
 
 
+
+
+
 const bank = {
   accounts: [
     {
@@ -166,53 +169,139 @@ const bank = {
     },
   ],
 
-
-  sumofMoney: function () {
-    let sum = 0;
-    for (let i = 0; i < this.accounts.length; i++) {
-      sum += this.accounts[i].currentBalance
-    };
-    console.log(sum);
+  sum: function(){
+    let total = 0;
+    let account = this.accounts;
+    for (var i = 0; i < account.length; i++) {
+      total+=account[i].currentBalance
+    }
+    console.log(total);
   },
 
-  addAccount: function (name, initialBalance) {
-    const newAccount = {
-      ownerName: name,
-      currentBalance: initialBalance
-    };
-    // newAccount.ownerName = name;
-    // // console.log(newAccount)
-    // newAccount.currentBalance = Number(initialBalance);
-    console.log(newAccount)
-    // this.accounts.push({ ownerName: name, currentBalance: initialBalance  });
-    console.log(this.accounts)
+  addAccountSimple: function(ownerName,currentBalance){
+    let account = this.accounts;
+    account.push({ownerName, currentBalance})
+    // OR account.push({ownerName:ownerName, currentBalance:currentBalance})
+    return account;
+  },
+
+  // 1. check if account exists
+  // 2. if yes, console.log("account exists")
+  // 3. if not, call add account to existing array.
+
+  addAccount: function(name, balance){
+    let account = this.accounts;
+    for (i = 0;i < account.length;i ++) {
+      if (account[i].ownerName === name) {
+        console.log("Account already existed.");
+        return false;
+      }
+    }
+    account.push({name, balance})
+    return account;
   },
 
 
-  depositMoney: function (money) {
-    let amount = 0;
-    amount+=Number(money);
-    // console.log(amount);
-    return amount;
-  },
+  transaction: function (name, amount) {
+    let account = this.accounts
+    let customer = Object.key(account);
+    let value = Object.values(account);
 
-  withdrawMoney: function (money) {
-    let amount = 0;
-    amount-=Number(money);
-    // console.log(amount);
-    return amount;
-  },
+    
 
-  makeTransactions: function (depositOrWithdraw, money) {
-    if (depositOrWithdraw === "deposit") {
-      // console.log(depositOrWithdraw)
-      this.depositMoney(money);
-    } else if (depositOrWithdraw === "withdraw") {
-      // console.log(depositOrWithdraw)
-      this.withdrawMoney(money);
-    } else {
-      console.log ("Please enter: deposit or withdraw")
-      return;
+    for (var i = 0; i < account.length; i++) {
+      if (account[i].ownerName === name) {
+         if (amount>=0) {
+           let balance = account[i].currentBalance + amount;
+           console.log(`New balance is ${balance}.`);
+        } else {
+          if Math.abs(amount)
+        }
+      }
     }
   }
 };
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// const bank = {
+//   accounts: [
+//     {
+//       ownerName: "Abby Joe",
+//       currentBalance: 300
+//     },
+//     {
+//       ownerName: "Bob Smith",
+//       currentBalance: 1000
+//     },
+//     {
+//       ownerName: "Charlie Gerrard",
+//       currentBalance: 50
+//     },
+//   ],
+//
+//
+//   sumofMoney: function () {
+//     let sum = 0;
+//     for (let i = 0; i < this.accounts.length; i++) {
+//       sum += this.accounts[i].currentBalance
+//     };
+//     console.log(sum);
+//   },
+//
+//   addAccount: function (name, initialBalance) {
+//     const newAccount = {
+//       ownerName: name,
+//       currentBalance: initialBalance
+//     };
+//     // newAccount.ownerName = name;
+//     // // console.log(newAccount)
+//     // newAccount.currentBalance = Number(initialBalance);
+//     console.log(newAccount)
+//     // this.accounts.push({ ownerName: name, currentBalance: initialBalance  });
+//     console.log(this.accounts)
+//   },
+//
+//
+//   depositMoney: function (money) {
+//     let amount = 0;
+//     amount+=Number(money);
+//     // console.log(amount);
+//     return amount;
+//   },
+//
+//   withdrawMoney: function (money) {
+//     let amount = 0;
+//     amount-=Number(money);
+//     // console.log(amount);
+//     return amount;
+//   },
+//
+//   makeTransactions: function (depositOrWithdraw, money) {
+//     if (depositOrWithdraw === "deposit") {
+//       // console.log(depositOrWithdraw)
+//       this.depositMoney(money);
+//     } else if (depositOrWithdraw === "withdraw") {
+//       // console.log(depositOrWithdraw)
+//       this.withdrawMoney(money);
+//     } else {
+//       console.log ("Please enter: deposit or withdraw")
+//       return;
+//     }
+//   }
+// };
