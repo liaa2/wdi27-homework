@@ -16,7 +16,7 @@ const bank = {
   checkingWithdraw: function (amount) {
     if (amount > this.balance()) {
       alert("You cannot withdraw this much")
-    } else if (amount <= this.balance() && amount > this.checking) {
+    } else if (amount > this.checking) {
       this.savingsWithdraw(amount - this.checking);
       this.checkingWithdraw(this.checking)
     } else {
@@ -31,7 +31,7 @@ const bank = {
   savingsWithdraw: function (amount) {
     if (amount > this.balance()) {
       alert("You cannot withdraw this much");
-    } else if (amount <= this.balance() && amount > this.savings) {
+    } else if (amount > this.savings) {
       this.checkingWithdraw(amount - this.savings);
       this.savingsWithdraw(this.savings)
     } else {
