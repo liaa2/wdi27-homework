@@ -1,5 +1,5 @@
 body {
-background-image: url("file:///Users/anh/Downloads/html-labs/ecardly/images/background.jpg");
+background-image: url("../img/background.jpg");
 background-repeat: repeat-x;
 background-color: gray;
 }

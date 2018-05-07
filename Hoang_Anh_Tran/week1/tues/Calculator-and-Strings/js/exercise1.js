@@ -154,6 +154,19 @@ console.log(mixUp("mix", "pod"));
 
 
 
+const fixStart = function(word) {
+  let firstLetter = word[0];
+  let wordArray = word.split('');
+  for (let i = 1; i <= word.length; i++) {
+    if (wordArray[i] === firstLetter) {
+      wordArray[i] = "*";
+    }
+  }
+  return wordArray.join('');
+};
+
+console.log(`My fixStart result is ${fixStart("bubble")}`);
+
 
 // Verbing
 // Create a function called verbing. It should take a single argument, a string. If its length is at least 3, it should add 'ing' to its end,
@@ -167,7 +180,7 @@ console.log(mixUp("mix", "pod"));
 const verbing = function(word) {
   if (word.length < 3) {
     console.log(word);
-  } else if (word[word.length - 1 ] === "g" && (word[word.length - 2] === "n") && word[word.length - 3] === "i") {
+  } else if (word.endsWith("ing")) {
     console.log(`${word}ly`);
   } else {
     console.log(`${word}ing`);
@@ -234,7 +247,7 @@ const rainDrops = function (number) {
     string += "Pling";
 
   } else if (number % 5 === 0) {
-    sring += "Plang";
+    string += "Plang";
 
   } else if (number % 7 === 0) {
     string += ("Plong");
