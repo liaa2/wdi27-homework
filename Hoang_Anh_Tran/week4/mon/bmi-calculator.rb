@@ -1,5 +1,5 @@
 #!/usr/bin/env ruby
-require 'pry'
+# require 'pry'
 
 # BMI Calculator
 # Calculate the body mass index (BMI) for an individual, given their height and weight
