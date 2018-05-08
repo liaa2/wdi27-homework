@@ -92,25 +92,31 @@ $(document).ready(function () {
   const updateDisplay = function () {
     $("#balance1").html( '$' + atm.checking );
     $("#balance2").html( '$' + atm.savings );
+    $('.balance').each(function(){
+      if($('.balance').text("$0")){
+        $('.balance').css("backgroundColor","red")
+      }
+      $(".balance").css({backgroundColor: "#E3E3E3"})
+    })
   };
 
-  updateDisplay();
+  // updateDisplay();
 
-
-
-  const changeBackground = function () {
-    if(($("#balance1").html())=="$0"){
-    $("#balance1").css({backgroundColor: "red"})
-    } else {
-    $("#balance1").css({backgroundColor: "#E3E3E3"})
-    };
-
-    if(($("#balance2").html())=="$0"){
-    $("#balance2").css({backgroundColor: "red"})
-    } else {
-    $("#balance2").css({backgroundColor: "#E3E3E3"})
-    }
-  };
+  //
+  //
+  // const changeBackground = function () {
+  //   if(($("#balance1").html())=="$0"){
+  //   $("#balance1").css({backgroundColor: "red"})
+  //   } else {
+  //   $("#balance1").css({backgroundColor: "#E3E3E3"})
+  //   };
+  //
+  //   if(($("#balance2").html())=="$0"){
+  //   $("#balance2").css({backgroundColor: "red"})
+  //   } else {
+  //   $("#balance2").css({backgroundColor: "#E3E3E3"})
+  //   }
+  // };
 
 
   // store the savingsDeposit button's list of events once click it
@@ -118,7 +124,7 @@ $(document).ready(function () {
     let amount = parseInt($("#savingsAmount").val());
     atm.deposit("savings", amount);
     updateDisplay();
-    changeBackground();
+    // changeBackground();
   });
 
 
@@ -127,7 +133,7 @@ $(document).ready(function () {
     let amount = parseInt($("#savingsAmount").val());
     atm.withdraw("savings",amount);
     updateDisplay();
-    changeBackground();
+    // changeBackground();
   });
 
 
@@ -136,7 +142,7 @@ $(document).ready(function () {
     let amount = parseInt($("#checkingAmount").val());
     atm.deposit("checking",amount);
     updateDisplay();
-    changeBackground();
+    // changeBackground();
   });
 
 
@@ -144,7 +150,6 @@ $(document).ready(function () {
     let amount = parseInt($("#checkingAmount").val());
     atm.withdraw("checking",amount);
     updateDisplay();
-    changeBackground();
-    changeBackground();
+    // changeBackground();
   })
 });
