@@ -51,11 +51,19 @@ def plan_trip( start_line, start_station, end_line, end_station )
   puts
 end
 
+puts
+puts "# 2 line trip - (1) Start DOWN to Interchange (2) Interchange UP to End"
 puts "plan_trip( :lineN, 'Times Square', :lineL, '8th' )"
 plan_trip( :lineN, "Times Square", :lineL, "8th" )
 
+puts "# 2 line trip - (1) Start UP to Interchange (2) Interchange UP to End"
+puts "plan_trip( :lineN, '23rd', :line6, '33rd' )"
+plan_trip( :lineN, "23rd", :line6, "33rd" )
+
+puts "# Single line trip - (1) Start DOWN to End"
 puts "plan_trip( :lineN, '8th', :lineN, '34th' )"
 plan_trip( :lineN, "8th", :lineN, "34th" )
 
+puts "# Single line trip - (1) Start UP to End"
 puts "plan_trip( :lineN, '34th', :lineN, '8th' )"
 plan_trip( :lineN, "34th", :lineN, "8th" )
