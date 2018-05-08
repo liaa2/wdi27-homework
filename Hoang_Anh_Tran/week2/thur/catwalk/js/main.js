@@ -12,8 +12,8 @@ let direction = "forward"; //checking direction cat going
 //
 const catWalk = function () {
   // if src is not the walking cat, set it to walking cat
-  if ( img.src != "http://www.anniemation.com/clip_art/images/cat-walk.gif" ) {
-    img.src = "http://www.anniemation.com/clip_art/images/cat-walk.gif";
+  if ( img.src != "img/cat-walk.gif" ) {
+    img.src = "img/cat-walk.gif";
   }
 
   // if moving forward, make sure cat doesnt run away
@@ -32,7 +32,7 @@ const catWalk = function () {
 
   //if cat reaches half the screen, do a dance.
   if ( parseInt(img.style.left) == 440 ) {
-    img.src="file:///Users/anh/Downloads/Dancing-cat.gif";
+    img.src="img/Dancing-cat.gif";
   }
   //move cat backward or forward
   if (direction === "forward") {
@@ -61,10 +61,10 @@ dance.style.top = '70%';
 
 
 const flyingCat = function() {
-    hotCat.src="file:///Users/anh/Downloads/flying-cat.gif";
+    hotCat.src="img/flying-cat.gif";
 };
 const curiousCat = function() {
-    hotCat.src="file:///Users/anh/Downloads/giphy.gif";
+    hotCat.src="img/giphy.gif";
 };
 
 

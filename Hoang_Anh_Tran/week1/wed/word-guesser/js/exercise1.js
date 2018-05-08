@@ -118,8 +118,24 @@ console.log(checkVowel("o"));
 //For example, `sumArray([1,2,3,4])` should return 10, and `multiplyArray([1,2,3,4])` should return 24.
 //
 
+const sumArray = function(input) {
+  let total = 0;
+  for (let i = 0; i < input.length; i++) {
+    total += input[i];
+  }
+  return total;
+};
+console.log(sumArray([1, 3, 5, 10]));
 
 
+const multipleArray = function(input) {
+  let total = 1;
+  for (var i = 0; i < input.length; i++) {
+    total = total * input[i];
+  }
+  return total;
+}
+console.log(multipleArray([1, 2, 3, 5]));
 
 // ## Bonus
 //
@@ -138,12 +154,34 @@ console.log(reverseString("random people"));
 
 // 6. Write a function `findLongestWord` that takes an array of words and returns the length of the longest one.
 
+const findLongestWord = function(input) {
+  let longestWord = "";
+  for (var i = 0; i < input.length; i++) {
+    if (input[i].length > longestWord.length) {
+      longestWord = input[i];
+    }
+  }
+  return longestWord;
+};
 
 
-// 7. Write a function `filterLongWords` that takes an array of words and an number `i`
+console.log(findLongestWord(["hello", "space", "breathtaking", "presumption"]));
+
+// 7. Write a function `filterLongWords` that takes an array of words and a number `i`
 //and returns the array of words that are longer than i.
 
+const filterLongWords = function(input, num) {
+  let longWord = [];
+  for (var i = 0; i < input.length; i++) {
+    if (input[i].length > num) {
+      longWord.push(input[i]);
+    }
+  }
+  return longWord;
+};
 
+
+console.log(filterLongWords(["pig", "chicken", "cow", "camel", "elephant"], 4));
 
 
 
