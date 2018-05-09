@@ -1,0 +1,16 @@
+<h2>DETAILS:</h2>
+
+<h3>Title:</h3>
+  <p><%= @results["original_title"] %></p>
+
+<p><img src="<%= @img_base_url + @results["poster_path"] %>"></p>
+<div class="container">
+<div class="grid-item">Release date: </h3> <%= @results["release_date"] %></div>
+<div class="grid-item">Budget:</h3> $<%= @results["budget"] %></div>
+<div class="grid-item">Revenue:</h3> $<%= @results["revenue"] %></p></div>
+
+</div>
+<h3>Overview:</h3>
+  <p><%= @results["overview"] %></p>
+<h3>Tagline:</h3>
+  <p><%= @results["tagline"] %></p>
