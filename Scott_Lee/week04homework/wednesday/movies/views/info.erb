@@ -1,0 +1,27 @@
+<h2> Here's some more info for <%=  @movie["original_title"]  %> </h2>
+
+<ul>
+<% @credits["cast"].each do |cast_member| %>
+
+    <li style="display: block">
+        <img src="<%= @actor_base_img + cast_member["profile_path"] %>">
+        <%= "#{cast_member["name"]} played the character #{cast_member["character"]}" %>
+    </li>
+
+<% end %>
+</ul>
+
+<hr>
+
+<h3> Here is some crew information </h3>
+
+<ul>
+<% @credits["crew"].each do |crew_member| %>
+
+    <li style="display: block">
+        
+        <%= "#{crew_member["job"]} : #{crew_member["name"]}" %>
+    </li>
+
+<% end %>
+</ul>
