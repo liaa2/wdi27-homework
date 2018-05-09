@@ -1,4 +1,4 @@
-
+#!/usr/bin/env ruby
 # Trip Calculator
 # Calculate a trip time and cost given inputs for
 #
@@ -6,7 +6,7 @@
 # kilometers per litre - kmpl
 # price per litre - ppl
 # speed in kilometers per hour - speed
-require "pry"
+# require "pry"
 
 puts "distance travel:"
 distance = gets.to_f
