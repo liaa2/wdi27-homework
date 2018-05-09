@@ -75,7 +75,7 @@ const planTrip = function(firstLine, firstStop, lastLine, lastStop) {
   if (firstLine === lastLine) {
     console.log("single line trip");
     let journey = trainTravel(firstStop, lastStop, firstLine);
-    console.log(`You need to travel through the follwing stops: ${journey.join(', ')}`);
+    console.log(`You need to travel through the follwing stops: ${journey.join(", ")}`);
     console.log(`Total stops: ${journey.length}`);
   } else {
     // multi-line trip
@@ -97,62 +97,3 @@ console.log(planTrip("N", "34th", "L", "1st"));
 console.log(planTrip("N", "Times Square", "6", "33rd"));
 // console.log(planTrip("N", "8th", "L", "1st"));
 // console.log(planTrip("L", "1st", "N", "8th"));
-
-
-//Warmup
-
-
-// Badger's Revenge
-// The names of those who are witnessed clapping Badger more than twice in the first four days of any one week will go into a draw. On Friday morning, a random name will be drawn from that list and the 'winner' will be forced to deliver the solution to Friday's warmup.
-//
-// Create a program that Badger can use for this task - ideally, you should create an object (revengeOfBadger) to do this, but if you can get it working using standalone functions, that's cool.
-//
-// Your program should:
-//
-// Track how many times each student in the class has clapped this week (just make up the numbers);
-// Include a collection of candidates for the Friday draw (ie, a list of names of people who have clapped Badger more than twice that week);
-// Pick a random student to deliver the solution to Friday's warmup.
-// If no one has clapped enough that week, the program should indicate that Badger has to do his own damned warmup.
-
-// const revengeOfBadger = {
-//   studentList: {
-//     "Brendan" : 5,
-//     "Nathan" : 3,
-//     "Buggy" : 4,
-//     "Anastasia" : 5,
-//     "Linna" : 10,
-//     "Scott": 1,
-//     "Anna": 6
-//   },
-//
-//   shortList: [],
-//
-//   getStudentList: function() {
-//     this.shortList = [];
-//     for (let key in this.studentList) {
-//       console.log(this.studentList[key]) // -> 5, 3, 4, 5, 10, 12, 6
-//       if(this.studentList[key] >2 ) {
-//         this.shortList.push(key) // -> Anna, Linna, etc.,
-//       }// if
-//     } //for in
-//     return this.shortList.length;
-//
-//   },
-//
-//   draw: function() {
-//     let winner = "Badger"
-//     let numberOfCandidates = this.getStudentList();
-//
-//     if(numberOfCandidates >0){
-//       let random = Math.floor(Math.random() * numberOfCandidates);
-//
-//     winner = this.shortList[random]
-//     console.log(random);
-//   }
-//   console.log(`${winnder}`)
-//
-//   }
-//
-// };
-//
-// revengeOfBadger.draw();

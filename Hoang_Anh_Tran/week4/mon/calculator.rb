@@ -1,3 +1,5 @@
+#!/usr/bin/env ruby
+
 # Calculator
 # Explanation
 # You will be building a calculator which can perform multiple arithmetic operations. Your program should allow the user to choose which operation to perform, enter the values on which the operation is performed, and output the result.
@@ -11,7 +13,9 @@
 # Calculator functionality
 # Calculator should be able to do basic arithmetic (+,-, *, /)
 
-
+# Phase 2
+# Advanced Calculator functionality
+# Calculator should be able to do basic arithmetic (exponents - to the power of, root number, square root, cube root etc., - to the power of fraction)
 
 
 puts "choose the operators ( + | - | * | / | ** | 'root' ):"
@@ -22,10 +26,6 @@ puts "enter 2 numbers"
 num1 = gets.to_i
 num2 = gets.to_i
 
-
-# Phase 2
-# Advanced Calculator functionality
-# Calculator should be able to do basic arithmetic (exponents - to the power of, root number - to the power of fraction)
 
 def root_function(num1, num2)
   eval("#{num1} ** (1.0/#{num2})")
@@ -61,8 +61,8 @@ end
 # def divide_number(num1, num2)
 #   num1 / num2
 # end
-
-
+#
+#
 # if operator == "+"
 #   p add_number(num1, num2)
 # elsif operator == "-"
