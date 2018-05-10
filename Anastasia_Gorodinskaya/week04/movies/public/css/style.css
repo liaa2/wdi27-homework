@@ -1,0 +1,11 @@
+
+*{
+background-color: rgb(100,150,120);
+}
+
+ul{
+  list-style: none;
+}
+li{
+  display: inline;
+}
