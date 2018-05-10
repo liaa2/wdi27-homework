@@ -81,22 +81,24 @@ end
 
 # finds displacement on the same line
 def displacement(x,y)
-    @lines[@common[0]].find_index(y) - @lines[@common[0]].find_index(x)
+    @lines[@common[0]].index(y) - @lines[@common[0]].find_index(x)
 end
 
 
 # returns hash of junctions in common between origin and destination, and the sums of the distances between junctions to these stations
-def junction_connection_distances(x,y)
+def junction_connection_distances(first, second)
     junction_connections = {}
-    common_juncs = common_junction_finder(x,y)
+    common_juncs = common_junction_finder(first, second)
     common_juncs.each do |junc|
-        junction_connections[junc] = displacement(junc,x).abs + displacement(junc,y).abs
+        junction_connections[junc] = displacement(first, junc).abs + displacement(junc, second).abs
     end
     junction_connections
 end
+# testing
+p "------------------------"
 puts "sums of distances to juncs between 1st and GC are..."
 p junction_connection_distances("1st","Grand Central")
-
+p "------------------------"
 
 
 # sort, and take shortest path

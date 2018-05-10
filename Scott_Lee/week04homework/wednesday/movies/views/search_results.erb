@@ -1,0 +1,14 @@
+<h2> Search results for <%= @query %> </h2>
+
+
+<ul>
+<% @results["results"].each do |movie| %>
+
+    <li>
+        <a href="<%="localhost:4567/info/" + movie["id"].to_s%>"> 
+        <img src="<%= @img_base_url + movie["poster_path"] %>">
+        </a>
+    </li>
+
+<% end %>
+</ul>
