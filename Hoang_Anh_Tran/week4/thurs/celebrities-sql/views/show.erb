@@ -1,0 +1,17 @@
+
+<h2> <%= @celebrity["first_name"] %> <%= @celebrity["last_name"] %></h2>
+
+
+<p>Occupation: <%= @celebrity["occupation"] %><p>
+<p>Famous for: <%= @celebrity["famous_for"] %><p>
+<p>Alive: <%= @celebrity["alive"] == 1 ? "Yes" : "No" %><p>
+<p>Age: <%= @celebrity["age"] %><p>
+
+<img src="<%= @celebrity["image_url"] %>">
+<br>
+
+<a href="/celebrities/<%= @celebrity["id"]%>/edit">Edit</a>
+
+<a href="/celebrities/<%= @celebrity["id"]%>/delete">Delete</a>
+
+<a href="/celebrities">Back to Index</a>
