@@ -1,0 +1,14 @@
+<h2><%= @celebrity["first_name"]  %> <%= @celebrity["last_name"] %></h2>
+<form action="/celebrities/<%= @celebrity["id"] %>" method="post">
+
+
+First Name: <input type="text" name="first_name" value="<%= @celebrity["first_name"] %>"><br>
+Last Name: <input type="text" name="last_name" value="<%= @celebrity["last_name"] %>"><br>
+Occupation: <input type="text" name="occupation" value="<%= @celebrity["occupation"] %>"><br>
+Famous For: <input type="text" name="famous_for" value="<%= @celebrity["famous_for"] %>"><br>
+Alive: <input type="text" name="alive" placeholder="1 or 0" value="<%= @celebrity["alive"] %>"><br>
+Age: <input type="text" name="age" value="<%= @celebrity["age"] %>"><br>
+Image URL: <input type="text" name="image_url" value="<%= @celebrity["image_url"] %>"><br>
+
+<input type="submit" value="Update Celebrity">
+</form>
