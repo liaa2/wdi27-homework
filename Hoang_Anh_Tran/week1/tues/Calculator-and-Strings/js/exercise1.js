@@ -4,10 +4,11 @@
 //It should also log a string like "The result of squaring the number 3 is 9."
 const squareNumber = function(num) {
 
+
   let squareResult = num * num;
   console.log(`${squareResult}`)
-
   console.log(`The result of squaring the number ${num} is ${squareResult}`);
+  return squareResult;
 };
 
 
@@ -17,13 +18,13 @@ squareNumber(1203);
 
 
 
-
 // Write a function called halfNumber that will take one argument (a number), divide it by 2, and return the result.
 //It should also log a string like "Half of 5 is 2.5.".
 
 const halfNumber = function(num) {
   const halfResult = num / 2;
   console.log(`Half of ${num} is ${halfResult}`);
+  return halfResult;
 };
 
 halfNumber(12);
@@ -38,6 +39,7 @@ halfNumber(10245453);
 const percentOf = function(num1, num2) {
   const percentResult = (num1 / num2) * 100;
   console.log(`${num1} is ${percentResult}% of ${num2}`);
+  return percentResult;
 };
 
 percentOf(10, 30);
@@ -55,6 +57,7 @@ percentOf(1, 20);
 const areaOfCircle = function (radius) {
   const areaValue = Math.PI * radius**2;
   console.log(`The area for a circle with radius ${radius} is ${areaValue.toFixed(2)}`);
+  return areaValue;
 
 };
 
@@ -74,17 +77,19 @@ areaOfCircle(10);
 
 const calculator = function (number) {
   const half = halfNumber(number);
+  console.log('half: ', half);
   const squared = squareNumber(half);
-  console.log(`${squared}`)
+  console.log('squared:', squared);
+
   const circle = areaOfCircle(squared);
   console.log(`${circle}`)
   const percentage = percentOf(circle, squared);
   console.log(`${percentage}`)
 
-  return number;
+  return percentage;
 };
 
-console.log(calculator(12));
+console.log(`The return value is: `, calculator(12));
 
 
 
@@ -267,6 +272,7 @@ const randrops = function(number) {
   return string;
 
 }
+
 
 // Examples
 // 28 has 7 as a factor.

@@ -1,0 +1,18 @@
+body {
+background-image: url("file:///Users/anh/Downloads/animatedBG.gif");
+height: 100%;
+background-position: bottom;
+background-repeat: none;
+background-size: cover;
+
+}
+
+#dance {
+    position: absolute;
+    width: 240px;
+    height: 240px;
+    margin:-60px 0 0 -60px;
+    animation:spin 8s linear infinite;
+}
+
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }

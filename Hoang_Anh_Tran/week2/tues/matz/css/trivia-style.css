@@ -1,0 +1,36 @@
+
+@import url('https://fonts.googleapis.com/css?family=Black+Han+Sans');
+@import url('https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Indie+Flower|Lobster+Two|PT+Serif');
+
+
+a:visited {
+    color: white;
+}
+
+a:hover {
+    color: #F42A65;
+}
+
+body {
+background-image: url("file:///Users/anh/Downloads/whitebackground.jpg");
+background-repeat: title;
+
+}
+
+
+
+h1, h2, h3 {
+  font-family: 'Black Han Sans', sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+blockquote, li {
+  font-family: 'PT Serif', serif;
+}
+
+#cat {
+  float: right;
+}

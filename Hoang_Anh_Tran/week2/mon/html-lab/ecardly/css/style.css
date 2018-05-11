@@ -1,0 +1,40 @@
+body {
+background-image: url("file:///Users/anh/Downloads/html-labs/ecardly/images/background.jpg");
+background-repeat: repeat-x;
+background-color: gray;
+}
+
+
+div#logocell {
+  margin-top: 5%;
+  margin-left: 30%;
+  margin-right: 30%;
+}
+
+img#logocell {
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   width: 200px;
+}
+
+p {
+  overflow: auto;
+  padding: 10px;
+}
+
+div#contentcell {
+  margin-top: 5%;
+  margin-left: 15%;
+  margin-right: 15%;
+  background-color: white;
+}
+
+img#football {
+  float: left;
+}
+
+a#download {
+  font-weight: bold;
+  color: red;
+}

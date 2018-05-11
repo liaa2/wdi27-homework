@@ -42,7 +42,6 @@ const percentageOfCircleArea = function(numberInput){
 
 };
 
-
 const DrEvil = function(numberInput){
   let pinky = null;
   numberInput === 1000000 ? pinky="(pinky)" : pinky="";

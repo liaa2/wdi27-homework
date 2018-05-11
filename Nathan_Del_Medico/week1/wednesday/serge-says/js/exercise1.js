@@ -3,7 +3,8 @@ const sergeSays = function(string) {
   if (string[string.length-1] === "?") {
     console.log("Sure");
   }
-  else if (string === "") {
+
+  else if (!string) {
     console.log("Fine. Be that way!");
   }
   else if (string.toUpperCase() === string) {
@@ -12,4 +13,6 @@ const sergeSays = function(string) {
   else {
     console.log("Whatever.");
   }
-}
+
+};
+

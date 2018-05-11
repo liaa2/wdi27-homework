@@ -3,6 +3,7 @@
 // - If the number contains 7 as a factor, output 'Plong'.
 // - If the number does not contain 3, 5, or 7 as a factor, output the number as a string.
 
+
 const raindrops = function(number){
     let string = '';
   if( number % 3 === 0 ){
@@ -38,7 +39,7 @@ const raindrops = function(number){
     string += 'Plang'
   }
   if( string.length === 0 ){
-=======
+
 // version 1
 // const raindrops = function(number){
 //     let string = '';

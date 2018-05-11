@@ -1,0 +1,82 @@
+/*
+
+## Style Hints:
+
+Body Font Size = 12px
+	 Line Height = 17px
+	 Font Family = "Times New Roman", serif
+	 Font Color = #656565
+
+Link Hover Color = #20222a
+
+*/
+body {
+  font-family: "Times New Roman", serif;
+  color: #656565;
+  padding: 0 5%;
+}
+.a:hover {
+  color: #20222a;
+}
+#container {
+  width: 1000px;
+}
+#container h1 {
+  font-size: 40px;
+}
+#container img {
+  margin-top: -10px;
+  padding-bottom: 10px;
+}
+#container h2 {
+  margin-top: -1px;
+  font-size: 20px;
+}
+.blueText {
+  color: lightblue;
+}
+.mainP {
+  width: 950px;
+  display: inline-block;
+  margin-top: -2px;
+}
+#container a {
+  text-decoration: none;
+  color: lightblue;
+  display: inline-block;
+  margin-left: -250px;
+}
+.newYork {
+  width: 224px;
+  height: 143px;
+  background: #fffdd0;
+  border: 5px solid lightgrey;
+  display: inline-block;
+}
+.huffP {
+  width: 224px;
+  height: 143px;
+  background: #fffdd0;
+  border: 5px solid lightgrey;
+  display: inline-block;
+}
+.lucky {
+  width: 224px;
+  height: 143px;
+  background: #fffdd0;
+  border: 5px solid lightgrey;
+  display: inline-block;
+}
+.marie {
+  width: 224px;
+  height: 143px;
+  background: #fffdd0;
+  border: 5px solid lightgrey;
+  display: inline-block;
+}
+#container div img {
+  margin-top: 0px;
+}
+.copyRight {
+  margin-top: -3px;
+}
