@@ -154,6 +154,19 @@ console.log(mixUp("mix", "pod"));
 
 
 
+const fixStart = function(word) {
+  let firstLetter = word[0];
+  let wordArray = word.split('');
+  for (let i = 1; i <= word.length; i++) {
+    if (wordArray[i] === firstLetter) {
+      wordArray[i] = "*";
+    }
+  }
+  return wordArray.join('');
+};
+
+console.log(`My fixStart result is ${fixStart("bubble")}`);
+
 
 // Verbing
 // Create a function called verbing. It should take a single argument, a string. If its length is at least 3, it should add 'ing' to its end,
@@ -167,7 +180,7 @@ console.log(mixUp("mix", "pod"));
 const verbing = function(word) {
   if (word.length < 3) {
     console.log(word);
-  } else if (word[word.length - 1 ] === "g" && (word[word.length - 2] === "n") && word[word.length - 3] === "i") {
+  } else if (word.endsWith("ing")) {
     console.log(`${word}ly`);
   } else {
     console.log(`${word}ing`);
@@ -193,91 +206,3 @@ verbing("eating");
 //   notBad('This dinner is not that bad!'): 'This dinner is good!'
 //   notBad('This movie is not so bad!'): 'This movie is good!'
 //   notBad('This dinner is bad!'): 'This dinner is bad!'
-
-
-
-
-
-
-
-// Warmup - Raindrops
-// Write a Javascript program that will take a number (eg 28 or 1755 or 9, etc) and output the following:
-//
-// If the number contains 3 as a factor, output 'Pling'.
-// If the number contains 5 as a factor, output 'Plang'.
-// If the number contains 7 as a factor, output 'Plong'.
-// If the number does not contain 3, 5, or 7 as a factor, output the number as a string.
-
-
-
-
-// const factorNumber = function (num) {
-//   if (number.to(string)().indexOf('3') === true) {
-//     console.log("Pling");
-//   } else if (number.to(string)().indexOf('5') === true) {
-//     console.log("Plang");
-//     else if (number.to(string)().indexOf('7') === true) {
-//     console.log("Plong");
-//   } else {
-//     console.log(number.to(string));
-//   }
-// };
-
-
-//warmup:
-
-const rainDrops = function (number) {
-  let string = "";
-  // if (number % 3 === 0 && number % 5 === 0) {
-  //   console.log("PlingPlang");
-   if (number % 3 === 0) {
-    string += "Pling";
-
-  } else if (number % 5 === 0) {
-    sring += "Plang";
-
-  } else if (number % 7 === 0) {
-    string += ("Plong");
-
-  } else {
-    const result = number;
-    console.log(result);
-  }
-};
-rainDrops(34);
-rainDrops(10);
-rainDrops(150);
-
-
-
-const isAFactor = function (number, factor) {
-  return number % factor === 0;
-}
-
-const randrops = function(number) {
-  let string = "";
-
-  if (isAFactor(number, 3)) {
-    string += "Pling"
-
-  } else if (isAFactor(number, 5)) {
-      string += "Plong"
-
-  } else if (isAFactor(number, 7)) {
-      string += "Plang"
-
-    } if(string.length === 0) {
-      string += number;
-    }
-  return string;
-
-}
-
-
-// Examples
-// 28 has 7 as a factor.
-// In raindrop-speak, this would be a simple "Plong".
-// 1755 has 3 and 5 as factors.
-// In raindrop-speak, this would be a "PlingPlang".
-// 34 has neither 3, 5 nor 7 as a factor.
-// Raindrop-speak doesn't know what to make of that, so it just goes with the straightforward "34".

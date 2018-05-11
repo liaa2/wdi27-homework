@@ -56,6 +56,8 @@
 
 // JQUERY
 
+
+
 const updateDisplay = function () {
   $( "#balance1" ).text( bank.checking );
   $( "#balance2" ).text( bank.savings );
