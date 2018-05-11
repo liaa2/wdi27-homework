@@ -1,0 +1,15 @@
+<h2><%= @ocean["name"] %></h2>
+
+<img src="<%= @ocean["image_url"] %>">
+
+<p>location: <%= @ocean["location"] %></p>
+<p>Area: <%= @ocean["area"] %></p>
+<p>Volume: <%= @ocean["volume"] %></p>
+
+
+<br>
+<a href="/oceans/<%= @ocean["id"] %>/edit">Edit</a>
+|
+<a href="/oceans/<%= @ocean["id"] %>/delete">Delete</a>
+|
+<a href="/oceans">Back to Index</a>
