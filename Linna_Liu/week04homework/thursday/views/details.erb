@@ -1,0 +1,29 @@
+<h2><%= @men["name"] %></h2>
+
+<img src="<%= @men["image_url"] %>">
+<p>Country: <%= @men["country"] %></p>
+<p>Height: <%= @men["height_in_cm"] %> cm</p>
+<p>Age at death: <%= @men["age_at_death"] %></p>
+<p>Note: <%= @men["note"] %></p>
+
+<br>
+<a href="/men">Back to main page</a><br>
+
+<% if @men["id"] >1 %>
+<a href="/men/<%= @men["id"]-1 %>">
+<% else %>
+<a href="/men">
+<% end %>
+previous page</a><br>
+
+<%#if @men["id"] <5%>
+<% if @men["id"]< @men.length%>
+<a href="/men/<%= @men["id"]+1 %>">
+<% else %>
+<a href="/men">
+<% end %>
+next page</a><br>
+
+<a href="/men/<%= @men["id"] %>/edit">Edit</a><br>
+
+<a href="/men/<%= @men["id"] %>/delete">Delete</a>

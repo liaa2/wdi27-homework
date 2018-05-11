@@ -1,0 +1,11 @@
+<h2>Search Results for <%= @query %>:</h2>
+
+<ul>
+<% @results["results"].each do |movie| %>
+  <li>
+    <a href="<%= @id_base_url + movie["id"].to_s + @api %>">
+    <img src="<%= @img_base_url + movie["poster_path"] %>">
+    </a>
+  </li>
+<% end %>
+</ul>
