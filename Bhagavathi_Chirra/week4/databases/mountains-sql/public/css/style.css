@@ -1,0 +1,30 @@
+body{
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxanD7HQKyCx9Q9fhKn0AWN6XMkb9Oibg4am3ExLdfFnzXUgUj");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-size: 20px;
+  /* background-color: pink; */
+}
+h1{
+  text-align: center;
+}
+.mountains{
+  display: block;
+  height: 50px;
+  width: 30%;
+  padding-left: 50px;
+}
+.main{
+  flex-grow: 1;
+}
+.footer{
+  padding-left: 50px;
+  height: 100px;
+}
+#img_individual{
+  height: 300px;
+  width: 500px;
+}
