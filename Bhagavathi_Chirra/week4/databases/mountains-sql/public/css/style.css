@@ -6,6 +6,7 @@ body{
   flex-direction: column;
   min-height: 100vh;
   font-size: 20px;
+  padding-left: 50px;
   /* background-color: pink; */
 }
 h1{
@@ -15,16 +16,29 @@ h1{
   display: block;
   height: 50px;
   width: 30%;
-  padding-left: 50px;
 }
 .main{
   flex-grow: 1;
 }
 .footer{
-  padding-left: 50px;
   height: 100px;
 }
 #img_individual{
   height: 300px;
   width: 500px;
+}
+input{
+  padding: 10px;
+  margin: 5px;
+  width: 200px;
+  font-size: 16px;
+}
+.button{
+  padding:10px;
+  border:3px solid rgb(12, 67, 103);
+  -webkit-border-radius: 10px;
+  border-radius: 20px;
+  color: rgb(12, 67, 103);
+  font-size: 18px;
+  cursor: pointer;
 }
