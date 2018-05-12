@@ -1,0 +1,31 @@
+
+<h2> <%= @city["name"] %></h2>
+
+<img src="<%= @city["image_url"] %>">
+
+
+  <p>
+    Home of Celebs:
+   <ul>
+     <% @city.celebrities.each do |celebrity| %>
+     <li>
+       <a href="/celebrities/<%= celebrity.id %>">
+         <%= celebrity.first_name %> <%= celebrity.last_name %>
+         
+       </a>
+     </li>
+     <% end %>
+   </ul>
+  </p>
+
+
+</p>
+
+<br>
+
+
+<a href="/cities/<%= @city["id"]%>/edit">Edit</a>
+
+<a href="/cities/<%= @city["id"]%>/delete">Delete</a>
+
+<a href="/cities">Back to Index</a>

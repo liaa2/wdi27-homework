@@ -1,0 +1,9 @@
+<h2><%= @city["name"] %></h2>
+
+<form action="/cities/<%= @city["id"] %>" method="post">
+  Name: <input type="text" name="name" value="<%= @city["name"] %>"><br>
+  Image URL: <input type="text" name="image_url" value="<%= @city["image_url"] %>"><br>
+
+  <input type="submit" value="Update City">
+
+</form>
