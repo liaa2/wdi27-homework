@@ -1,0 +1,20 @@
+<!-- <h1>List of tallest people</h1> -->
+
+<a href="/men/new">Add more</a><br>
+
+<form action="/search" method="post">
+<input type="text" placeholder="Search.." name="search">
+<button type="submit"><i >Submit</i></button>
+</form>
+
+<ul>
+  <% @men.each do |i| %>
+  <li>
+    <p><strong><%= i["name"] %></strong></p>
+      <br>
+    <a href="/men/<%= i["id"] %>">
+      <img src="<%= i['image_url'] %>" alt="<%= i['name'] %>">
+    </a>
+  </li>
+  <% end %>
+</ul>

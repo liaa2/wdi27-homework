@@ -1,0 +1,14 @@
+<h2><%= @country["name"] %></h2>
+​
+<p>population: <%= @country["population"] %></p>
+<p>continent: <%= @country["continent"] %></p>
+<p>language: <%= @country["language"] %></p>
+<p>explored: <%= @country["explored"] == 1 ? "Yes" : "No" %></p>
+​
+<br>
+<a href="/countries/<%= @country["id"] %>/update">Update</a>
+<br>
+<a href="/countries/<%= @country["id"] %>/delete">Delete</a>
+<br>
+<a href="/countries">Back to Index</a>
+​

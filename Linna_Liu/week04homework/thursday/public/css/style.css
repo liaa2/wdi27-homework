@@ -1,0 +1,17 @@
+body {
+  font-family: "Helvetica";
+  background-color: rgba(100,100,100,0.5);
+}
+
+
+img {
+  max-width: 300px;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  display: inline;
+}

@@ -1,0 +1,14 @@
+<h2> Country list</h2>
+
+<p> Click to find out more about each country (but not that much more..) </p>
+
+<ul>
+<% @countries.each do |a| %>
+
+    <li>
+    <a href="/countries/<%=a["id"]%>">
+    <%= a["name"]%></a>
+    </li>
+
+<% end%>
+</ul>
