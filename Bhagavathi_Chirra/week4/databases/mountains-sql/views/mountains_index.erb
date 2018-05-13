@@ -1,0 +1,8 @@
+<code>
+    <h1>MOUNTAINS</h1>
+    <% @mountains.each do | mountain | %>
+    <div class="mountains">
+      <a href="/mountains/<%= mountain["id"]%>"><%= mountain["name"]%></a>
+    </div>
+    <% end %>
+</code>
