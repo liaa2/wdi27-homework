@@ -1,0 +1,9 @@
+<h2>All Cities</h2>
+
+<ul>
+  <% @cities.each do |c| %>
+  <li>
+    <a href="/cities/<%= c.id %>"><%= c.name %></a>
+  </li>
+  <% end %>
+</ul>
