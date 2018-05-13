@@ -78,9 +78,9 @@ get "/men/:id/delete" do
 end
 
 
-# post "/search" do
-#   @men = db_query("SELECT * FROM men;")
-#   @result = @men.select(|key| key[:name].match())
-#   @result = @result.first
-#   redirect "/men/<%= @result["id"] %>"
-# end
+post "/search" do
+  @men = db_query("SELECT * FROM men WHERE name = #{params[:name]} ;") 
+  @result = @men.select(|key| key[:name].match())
+  @result = @result.first
+  redirect "/men/<%= @result["id"] %>"
+end

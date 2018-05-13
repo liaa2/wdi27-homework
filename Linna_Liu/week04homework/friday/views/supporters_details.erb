@@ -1,0 +1,29 @@
+<h2><%= @supporter.name %></h2>
+
+<p>Location: <%= @supporter.location %></p>
+<p>Supporting: <a href="/men/<%= @supporter.man.id %>"><%= @supporter.man.name %></p></a>
+<br>
+<p>Supported Count: <%= @supporter.supported %></p>
+
+<img src="<%= @supporter.man.image_url %>">
+
+
+
+
+<br>
+<a href="/supporters">Back to main page</a><br>
+
+<% if @supporter.id >1 %>
+<a href="/supporters/<%= @supporter.id-1 %>">
+<% else %>
+<a href="/supporters">
+<% end %>
+previous page</a><br>
+
+<%# if @supporter.id <6 %>
+<% if @supporter.id < @supporters.length %>
+<a href="/supporters/<%= (@supporter.id) +1 %>">
+<% else %>
+<a href="/supporters">
+<% end %>
+next page</a><br>
