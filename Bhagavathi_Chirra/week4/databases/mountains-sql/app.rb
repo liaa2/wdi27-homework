@@ -15,6 +15,23 @@ get "/mountains" do
   erb :mountains_index
 end
 
+get "/mountains/new" do
+  erb :mountains_new
+end
+
+post "/mountains" do
+  mountain = Mountain.new
+  mountain.name = params[:name]
+  mountain.height = params[:height]
+  mountain.range = params[:range]
+  mountain.parent_mountain = params[:parent_mountain]
+  mountain.first_ascent = params[:first_ascent]
+  mountain.country = params[:country]
+  mountain.image_url = params[:image_url]
+  mountain.save
+  redirect "/mountains"
+end
+
 get "/mountains/:id" do
   @mountain = Mountain.find params[:id]
   erb :mountain_show
