@@ -19,12 +19,13 @@
   </p>
   <p>
     <strong>Alive:</strong>
-    <%= @climber["alive"] == 1 ? "yes" : "no"%>
+    <%= @climber["alive"] == true ? "yes" : "no"%>
   </p>
   <p>
     <strong>Nationality:</strong>
     <%= @climber["nationality"]%>
   </p>
+  <img src="<%= @climber["image_url"]%>" id="img_climbers">
   <div>
     <a href="/climbers/<%= @climber["id"]%>/edit">Edit</a>
     <a href="/climbers/<%= @climber["id"]%>/delete">Delete</a>
