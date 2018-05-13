@@ -1,0 +1,10 @@
+<h2> Update: <%= @country["name"] %></h2>
+
+<form action="/countries/<%= @country["id"] %>" method="post">
+    Name: <input type="text" name="name" value="<%= @country["name"] %>"><br><br>
+    Population: <input type="number" name="population" value="<%= @country["population"] %>"><br><br>
+    Continent: <input type="text" name="continent" value="<%= @country["continent"] %>"><br><br>
+    Language: <input type="text" name="language" value="<%= @country["language"] %>"><br><br>
+    Explored: <input type="number" name="explored" value="<%= @country["explored"] %>"><br><br>
+    <input type="submit" value="updateinfo">
+</form>

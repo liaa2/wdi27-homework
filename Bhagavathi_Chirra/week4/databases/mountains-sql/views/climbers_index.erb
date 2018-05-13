@@ -1,0 +1,8 @@
+<h1>Climbers</h1>
+<ul>
+  <% @climbers.each do |climber|%>
+    <li>
+      <a href="/climbers/<%= climber.id%>"><%= climber.first_name%><%= climber.second_name%></a>
+    </li>
+  <% end %>
+</ul>

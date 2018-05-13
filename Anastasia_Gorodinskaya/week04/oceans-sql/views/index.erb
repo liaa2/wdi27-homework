@@ -1,0 +1,17 @@
+<h2>Index</h2>
+
+<ul>
+<% @oceans.each do |a| %>
+  <li>
+    <a href="/oceans/<%= a["id"] %>">
+      <%= a["name"]%></a>
+    <em><%= a["location"] %></em>
+    <strong><%= a["area"] %></strong>
+    <strong><%= a["volume"] %></strong>
+  </li>
+<% end %>
+</ul>
+
+<br>
+|
+<a href="/oceans/new">Add new</a>

@@ -1,0 +1,11 @@
+<h2>INDEX</h2>
+<ul>
+  <% @celebrities.each do |a| %>
+    <li>
+      <a href="/celebrities/<%= a["id"] %>">
+    <%= a["first_name"] + " " + a["last_name"] %></a>
+    <em><%= a["occupation"] %></em>
+    (<%= a["famous_for"] %>)
+    </li>
+  <% end %>
+</ul>
