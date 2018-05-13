@@ -1,0 +1,35 @@
+%h2
+    Update deets here
+
+%form(action="/pets/#{@pet.id}" method="post")
+    First name: 
+    %input(type="text" name="first_name" value="#{@pet.first_name}")
+    %br
+    %br
+    Last name: 
+    %input(type="text" name="last_name" value="#{@pet.last_name}")
+    %br
+    %br
+    Species: 
+    %input(type="text" name="species" value="#{@pet.species}")
+    %br
+    %br 
+    Age: 
+    %input(type="number" name="age" value="#{@pet.age}")
+    %br
+    %br
+    Sex: 
+    %input(type="number" name="sex" value="#{@pet.sex}")
+    %br
+    %br
+    Picture (url): 
+    %input(type="text" name="picture" value="#{@pet.picture}")
+    %br
+    %br
+    Description: 
+    %input(type="text" name="description" value="#{@pet.description}")
+    %br
+    %br
+    %input(type="submit" value="save")
+
+        
