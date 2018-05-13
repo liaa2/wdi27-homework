@@ -8,6 +8,11 @@ ActiveRecord::Base.establish_connection(
 )
 
 class Mountain < ActiveRecord::Base
+  has_many :climbers
+end
+
+class Climber < ActiveRecord::Base
+  belongs_to :mountain
 end
 
 get "/mountains" do
@@ -53,4 +58,9 @@ post "/mountains/:id" do
   mountain.image_url = params[:image_url]
   mountain.save
   redirect "/mountains/#{params[:id]}"
+end
+
+get "/climbers" do
+  @climbers = Climber.all
+  erb :climbers_index
 end
