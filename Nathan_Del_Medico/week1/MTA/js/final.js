@@ -1,5 +1,5 @@
 const allLines = {
-  line1: ["Emu Plains", "Penrith", "Kingswood", "Werrington", "St Marys", "Mount Druitt", "Rooty Hill", "Doonside", "Blacktown", "Seven Hills", "Toongabbie", "Pendle Hill", "Wentworthville", "Westmead", "Parramatta", "Harris Park", "Clyde", "Lidcombe", "Strathfield", "Burwood", "Redfern", "Central", "Town Hall", "Wynyard", "Milsons Point", "North Sydney", "Waverton", "Wollstonecraft", "St Leonards", "Artarmon", "Chatswood", "Roseville", "Lindfield", "Killara", "Gordon", "Pymble", "Turramurra", "Warrawee", "Wahroonga", "Waitara", "Hornsby", "Asquith", "Mount Colah", "Mount Kuring-gai", "Berowra"],
+  line1: ["Emu Plains", "Penrith", "Kingswood", "Werrington", "St Marys", "Mount Druitt", "Rooty Hill", "Doonside", "Blacktown", "Seven Hills", "Toongabbie", "Pendle Hill", "Wentworthville", "Westmead", "Parramatta", "Harris Park", "Clyde", "Auburn", "Lidcombe", "Strathfield", "Burwood", "Redfern", "Central", "Town Hall", "Wynyard", "Milsons Point", "North Sydney", "Waverton", "Wollstonecraft", "St Leonards", "Artarmon", "Chatswood", "Roseville", "Lindfield", "Killara", "Gordon", "Pymble", "Turramurra", "Warrawee", "Wahroonga", "Waitara", "Hornsby", "Asquith", "Mount Colah", "Mount Kuring-gai", "Berowra"],
   line1a: ["Epping", "Eastwood", "Denistone", "West Ryde", "Meadowbank", "Rhodes", "Concord West", "North Strathfield", "Strathfield"],
   line1b: ["Hornsby", "Normanhurst", "Thornleigh", "Pennant Hills", "Beecroft", "Cheltenham", "Epping", "Macquarie University", "Macquarie Park", "North Ryde", "Chatswood"],
   line2: ["Leppington", "Edmondson Park", "Glenfield", "Casula", "Liverpool", "Warwick Farm", "Cabramatta", "Canley Vale", "Fairfield", "Yennora", "Guildford", "Merrylands", "Granvile", "Clyde", "Auburn", "Lidcombe", "Flemington", "Homebush", "Strathfield", "Burwood", "Croydon", "Ashfield", "Summer Hill", "Lewisham", "Petersham", "Stanmore", "Newtown", "MacdonaldTown", "Redfern", "Central", "Town Hall", "Wynyard", "Circular Quay", "St James", "Museum"],
@@ -62,10 +62,23 @@ const shortestLine = function(lineFrom, stopFrom, lineTo, stopTo) {
   for (let i = 0; i < allLines[lineFrom].length; i++) {
     for (let j = 0; j < allLines[lineTo].length; j++) {
       if (allLines[lineFrom][i] === allLines[lineTo][j] ) {
+        // console.log(allLines['line5']);
+        // console.log(allLines[lineFrom][i] === allLines[lineTo][j])
+        // console.log(allLines[lineFrom][i],    allLines[lineTo][j])
+        // console.log(lineFrom, lineTo)
+        // console.log(i, j);
         singleLine(lineFrom, stopFrom, allLines[lineFrom][i]);
         singleLine(lineTo, allLines[lineTo][j], stopTo);
+        // console.log(totalStops)
+        // console.log(shortLength);
+        // console.log("------------------");
         if (totalStops < shortLength) {
           shortLength = totalStops;
+          // console.log(lineFrom, i);
+          // console.log(allLines[lineFrom][0]);
+          // console.log(lineFrom);
+          // console.log(allLines['line5']);
+          // console.log(allLines['line5'][i]);
           transferStation = allLines[lineFrom][i];
         }
         totalStops = 0;
@@ -109,6 +122,7 @@ const singleLine = function(lineName, stopFrom, stopTo) {
   stopsToStopAt = "";
   if (line.indexOf(stopFrom) > line.indexOf(stopTo)) {
     allLines[lineName].reverse();
+    reversed = true;
   }
   let startStation = line.indexOf(stopFrom)+1;
   const endStation = line.indexOf(stopTo);
@@ -122,6 +136,10 @@ const singleLine = function(lineName, stopFrom, stopTo) {
   }
   if (finalStop === line[startStation-1] && !testing) {
     finish();
+  }
+  if (reversed) {
+    allLines[lineName].reverse();
+    reversed = false;
   }
 };
 const finish = function() {
