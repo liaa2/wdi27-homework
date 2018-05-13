@@ -1,0 +1,34 @@
+<code>
+<h1>Climber</h1>
+<div>
+  <p>
+    <strong>First Name:</strong>
+    <%= @climber["first_name"]%>
+  </p>
+  <p>
+    <strong>Last Name:</strong>
+    <%= @climber["second_name"]%>
+  </p>
+  <p>
+    <strong>Description:</strong>
+    <%= @climber["description"]%>
+  </p>
+  <p>
+    <strong>Age Climbed:</strong>
+    <%= @climber["age_climbed"]%>
+  </p>
+  <p>
+    <strong>Alive:</strong>
+    <%= @climber["alive"] == 1 ? "yes" : "no"%>
+  </p>
+  <p>
+    <strong>Nationality:</strong>
+    <%= @climber["nationality"]%>
+  </p>
+  <div>
+    <a href="/climbers/<%= @climber["id"]%>/edit">Edit</a>
+    <a href="/climbers/<%= @climber["id"]%>/delete">Delete</a>
+    <a href="/climbers">Back to Index</a>
+  </div>
+</div>
+</code>
