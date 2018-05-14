@@ -1,0 +1,38 @@
+%h2
+    ="Here is some information about #{@pet.first_name}!"
+
+%ul
+    %li
+        ="Full name is #{@pet.first_name} #{@pet.last_name}."
+        %br
+    %li
+        ="#{@pet.first_name} is #{@pet.age} "
+        -if @pet.age > 1
+            =p "years old."
+        -else
+            =p "year old."
+        %br
+    %li
+        -if @pet.sex == 1
+            =p "He is a male #{@pet.species}."
+        -else
+            =p "She is a female #{@pet.species}."
+    %li
+        %img(src="#{@pet.picture}")
+        %br
+    %li
+        %br
+    %li
+        ="A bit more about #{@pet.first_name}..."
+        %br
+        ="#{@pet.description}"
+
+%br
+%a(href="/pets")
+    Go back to index!
+%br
+%a(href="/pets/#{@pet.id}/edit")
+    Edit this pet's details
+%br
+%a(href="/pets/#{@pet.id}/delete")
+    Delete this pet from database!

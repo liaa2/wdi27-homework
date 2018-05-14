@@ -1,0 +1,15 @@
+%h2
+    Pet index
+
+%p
+    Click on a pet to find out more information!
+
+%ul
+    - @pets.each do |eachpet|
+        %a{ :href => "/pets/#{eachpet.id}" }
+            %li(display="inline")
+                %img(src="#{eachpet.picture}")
+                %br
+                = p eachpet.first_name
+                = p eachpet.last_name
+                %hr
