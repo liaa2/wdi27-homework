@@ -56,3 +56,8 @@ pauseCat = function () {
 };
 window.setInterval(catWalk, 1);
 window.setInterval(danceCat, 70);
+
+
+$(document).ready(function() {
+  
+});

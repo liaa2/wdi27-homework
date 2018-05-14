@@ -1,0 +1,26 @@
+body {
+  background-color: white;
+  font-family: 'Varela Round', sans-serif;
+  font-size: 26px;
+  width: 70%;
+  margin: 0 auto;
+  /* border: 2px solid red; */
+}
+h1 {
+  text-transform: uppercase;
+  text-align: center;
+}
+h2 {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 50px;
+  text-decoration: underline;
+}
+a {
+  text-decoration: none;
+  color: #222;
+}
+img {
+  max-width: 500px;
+  max-height: 400px;
+}

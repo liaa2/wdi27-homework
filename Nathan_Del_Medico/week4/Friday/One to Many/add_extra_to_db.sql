@@ -1,0 +1,3 @@
+
+ALTER TABLE teams ADD COLUMN image TEXT;
+ALTER TABLE countries ADD COLUMN image TEXT;
