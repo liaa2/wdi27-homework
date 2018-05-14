@@ -1,0 +1,32 @@
+%h2 Add your new pet!
+
+%form(action="/pets" method="post")
+    First name: 
+    %input(type="text" name="first_name")
+    %br
+    %br
+    Last name: 
+    %input(type="text" name="last_name")
+    %br
+    %br
+    Species: 
+    %input(type="text" name="species")
+    %br
+    %br
+    Age: 
+    %input(type="number" name="age")
+    %br
+    %br
+    Sex: 
+    %input(type="number" name="sex")
+    %br
+    %br
+    Picture (url): 
+    %input(type="text" name="picture")
+    %br
+    %br
+    Description: 
+    %input(type="text" name="description")
+    %br
+    %br
+    %input(type="submit" value="save")
