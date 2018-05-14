@@ -1,0 +1,14 @@
+<h2>Edit <%= @ocean["name"] %></h2>
+<form action="/oceans/<%= @ocean["id"] %>" method="post">
+
+  Name: <input type="text" name="name" value="<%= @ocean["name"] %>"><br>
+  Location: <input type="text" name="location" value="<%= @ocean["location"] %>"><br>
+  Area: <input type="text" name="area" value="<%= @ocean["area"] %>"><br>
+  Volume: <input type="text" name="volume" value="<%= @ocean["volume"] %>"><br>
+  Average depth: <input type="text" name="avg_depth" value="<%= @ocean["avg_depth"] %>"><br>
+  Coastline: <input type="text" name="coastline" value="<%= @ocean["coastline"] %>"><br>
+  Image URL: <input type="text" name="image_url" value="<%= @ocean["image_url"] %>"><br>
+
+
+  <input type="submit" value="Update Ocean">
+</form>

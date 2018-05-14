@@ -101,3 +101,18 @@ bank.totalAccounts();
 bank.addAccount('nina',97897);
 bank.deposits('hong',300);
 bank.withdraw('hong',100);
+
+
+console.log('********** Leap Year *********');
+
+//year=2004
+const leapYear = function (year){
+  if(year % 4 == 0 && year % 100 != 0 || year % 400 == 0){
+    return `${year} is a leap year`;
+  }
+  else return `${year} is not a leap year` ;
+};
+console.log(leapYear(1997));
+console.log(leapYear(1996));
+console.log(leapYear(1900));
+console.log(leapYear(2000));

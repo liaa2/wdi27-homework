@@ -85,3 +85,39 @@ console.log(guessLetter('O'));
 console.log(guessLetter('F'));
 console.log(guessLetter('X'));
 console.log(guessLetter('A'));
+
+
+console.log(Math.random());
+
+
+// Serge answers 'Sure.' if you ask him a question.
+//
+// He answers 'Woah, chill out!' if you yell at him (ALL CAPS).
+//
+// He says 'Fine. Be that way!' if you address him without actually saying anything.
+//
+// He answers 'Whatever.' to anything else.
+//
+// Create a function that takes an input and returns Serge's response.
+const answerQuest = function(questIn){
+  if(questIn === '' || questIn === null || questIn === undefined)
+  {
+    return "Fine. Be that way!";
+  }
+  else
+  {
+    if(questIn.endsWith('?')){
+      return "Sure.";
+    }
+    else if(questIn == questIn.toUpperCase()){
+       return "Woah, chill out!";
+     }
+    else return 'Whatever';
+
+  }
+}
+
+console.log(answerQuest('How are you?'));
+console.log(answerQuest('WHAT ARE YOU DOING'));
+console.log(answerQuest(''));
+console.log(answerQuest('How are you'));

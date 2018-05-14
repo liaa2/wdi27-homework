@@ -1,0 +1,14 @@
+%html
+    %head
+        %link{ :href => "/css/style.css", :rel => "stylesheet" }
+        %title
+            Pet database
+    %body
+        %h1
+            PETSSSSS
+
+        = yield
+
+%div
+    %a(href="/pets/new")
+        Add a new animal!
