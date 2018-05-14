@@ -1,0 +1,13 @@
+<h2>Rock Paper Scissors - Result</h2>
+
+<% if @throw == @randomPick %>
+<p>Your pick: <%= @throw %>, computer's pick: <%= @randomPick %>. It's a tie!</p>
+<% elsif @throw== "rock" && @randomPick=="scissors" %>
+<p>Your pick: <%= @throw %>, computer's pick: <%= @randomPick %>. Yay you won!</p>
+<% elsif @throw== "paper" && @randomPick=="rock" %>
+<p>Your pick: <%= @throw %>, computer's pick: <%= @randomPick %>. Yay you won!</p>
+<% elsif @throw== "scissors" && @randomPick=="paper"%>
+<p>Your pick: <%= @throw %>, computer's pick: <%= @randomPick %>. Yay you won!</p>
+<% else %>
+<p>Your pick: <%= @throw %>, computer's pick: <%= @randomPick %>. You lost!</p>
+<% end %>
