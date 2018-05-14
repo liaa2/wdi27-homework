@@ -40,11 +40,14 @@ get "/men" do
   # @men = db_query("SELECT * FROM men;")
   # require 'pry'; binding.pry
   @men = Man.all
-  puts "="*100
-  p @men
-  puts "="*100
+  # puts "="*100
+  # p @men
+  # puts "="*100
   erb :men_main
 end
+
+# require 'pry'; binding.pry
+
 
 get "/men/new" do
   erb :men_new
@@ -123,12 +126,25 @@ get "/men/:id/delete" do
 end
 
 
-# post "/search" do
-#   @men = db_query("SELECT * FROM men WHERE name = #{params[:name]} ;")
-#   @result = @men.select(|key| key[:name].match())
-#   @result = @result.first
-#   redirect "/men/<%= @result["id"] %>"
-# end
+post "/search" do
+  man = Man.find_by( name: params[:name] )
+  # man = Man.where("name ilike '%?%'", params[:name] )
+  # p man
+
+  # puts "="*100
+  # p "man: #{man}"
+  # # man.id = params[:id]
+  # puts "="*100
+  # p "id: #{man.id}"
+  # man.country = params[:country]
+  # man.height_in_cm = params[:height_in_cm]
+  # man.age_at_death = params[:age_at_death]
+  # man.note = man[:note]
+  # man.image_url = params[:image_url]
+  # man.save
+
+  redirect "/men/#{man.id}"
+end
 
 get "/supporters/new" do
   erb :supporters_new

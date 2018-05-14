@@ -8,14 +8,14 @@ img {
   max-width: 300px;
 }
 
-ul {
+/* ul {
   list-style: square;
-}
+} */
 
 ol {
   list-style: circle;
 }
 
-/* li {
+li {
   display: inline;
-} */
+}
