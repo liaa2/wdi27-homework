@@ -1,0 +1,19 @@
+CREATE TABLE men (
+id INTEGER PRIMARY KEY AUTOINCREMENT,
+name TEXT,
+country TEXT,
+height_in_cm INTEGER,
+age_at_death INTEGER,
+note TEXT,
+image_url TEXT
+);
+INSERT INTO men(name, country, height_in_cm, age_at_death, note, image_url)
+            VALUES("Robert Wadlow", "US", 272, 22, "Tallest human in recorded history confirmed by Guinness World Records. Wadlow reached 2.72 m in height and weighed 220 kg at his death at age 22. His great size and his continued growth in adulthood were due to hyperplasia of his pituitary gland, which results in an abnormally high level of human growth hormone. He showed no indication of an end to his growth even at the time of his death.", "https://upload.wikimedia.org/wikipedia/commons/8/88/Robert_Wadlow_and_his_father.jpg");
+INSERT INTO men(name, country, height_in_cm, age_at_death, note, image_url)
+            VALUES("John Rogan", "US", 267, 37, "He began to grow very rapidly at the age of 13,leading to ankylosis. The disease hindered, and by 1882, he could not stand or walk. He got around by using a goat cart like a wheelchair that was pulled by goats, and he was always the center of attention, often noted for his deep voice and playful attitude. Although unable to perform physical labor because of his ankylosis, he made a living by selling portraits and postcards at a train station and had a number of his drawings published. Despite his success in this regard, he declined all offers to join the carnival and side shows. Rogan's hands measured 29 cm in length and his feet measured 35 cm in length. He grew to 2.67 m tall but weighed only 93 kg.", "https://i.pinimg.com/originals/8c/0a/b3/8c0ab30f17f96cb9490f2dff5e4da361.jpg");
+INSERT INTO men(name, country, height_in_cm, age_at_death, note, image_url)
+            VALUES("John F. Carroll", "US", 264, 37, "John F. Carroll was born in Buffalo, New York and also known as the Buffalo Giant in medical literature. His extraordinary growth started at the age of sixteen and continued until his death, despite extensive treatments at Mercy Hospital. At one point he was said to grow seven inches in height in a matter of a few months.", "http://www.infyworld.com/wp-content/uploads/2017/02/10-Tallest-Men-Ever-See-In-This-World-John-F.-Carroll.png");
+INSERT INTO men(name, country, height_in_cm, age_at_death, note, image_url)
+            VALUES("Leonid Stadnyk", "Ukraine", 257, 44, "Stadnyk's excessive growth began after brain surgery at the age of 14, after which he developed a pituitary gland tumor that caused the gland to secrete large amounts of growth hormone. This resulted in what doctors describe as acromegalic gigantism. Twenty years after the surgery, the doctors discovered the tumour had mysteriously disappeared and he was currently healthy. He reportedly wore US size 24.5 shoes. Although he held the title for a month, Stadnyk having no interest in being in any record book and refused to be measured.", "https://vid.alarabiya.net/images/2014/08/25/0c8e0f30-b7c4-4000-8253-fc0081ce7d2c/0c8e0f30-b7c4-4000-8253-fc0081ce7d2c_16x9_788x442.jpg");
+INSERT INTO men(name, country, height_in_cm, age_at_death, note, image_url)
+            VALUES("Väinö Myllyrinne", "Finland", 252, 54, "Myllyrinne is considered the tallest soldier ever, having served in the Finnish Defence Forces. He underwent his conscript training in 1929 in the Viipuri Heavy Artillery Regiment, and was 220 cm tall and very strong. In the 1930s he travelled around Europe as a professional wrestler and circus performer. He returned to Finland in 1939 to serve in the Finnish Army during the Winter War. In 1946, he moved to Järvenpää and ran a chicken farm. He died in 1963 and is buried in Järvenpää.", "https://upload.wikimedia.org/wikipedia/commons/7/70/V%C3%A4in%C3%B6_Myllyrinne_k%C3%A4ttelem%C3%A4ss%C3%A4.jpg");
