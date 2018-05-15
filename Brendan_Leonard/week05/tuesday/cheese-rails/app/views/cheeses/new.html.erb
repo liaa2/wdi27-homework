@@ -1,0 +1,79 @@
+<h2 id="main-header">Add a New Cheese</h2>
+<div class="updated-column">
+</div>
+<div class="nav-links-column">
+  <%= link_to "Return to Cheese Listing", cheeses_path, :class => "nav-links" %>
+</div>
+
+<div class="cheese-form">
+  <form action="<%= cheeses_path %>" method="post">
+    <div class="form-row">
+      <div class="form-label"><label for="name">Name:</label></div>
+      <div class="input-field"><input type="text" name="name"></input></div>
+    </div>
+
+    <div class="form-row">
+      <div class="form-label"><label for="varietal">Varietal:</label></div>
+      <div class="input-field"><input type="text" name="varietal"></input></div>
+    </div>
+
+    <div class="form-row">
+      <div class="form-label"><label for="description">Description:</label></div>
+      <div class="input-field"><input type="textarea" rows="4" name="description"></input></div>
+    </div>
+
+    <div class="form-row">
+      <div class="form-label"><label for="firmness">Firmness:</label></div>
+      <div class="input-field">
+        <select name="firmness">
+          <option value="Fresh">Fresh</option>
+          <option value="Soft">Soft</option>
+          <option value="Semi-Firm">Semi-Firm</option>
+          <option value="Firm">Firm</option>
+          <option value="Blue">Blue</option>
+        </select>
+      </div>
+    </div>
+    
+    <div class="form-row">
+      <div class="form-label"><label for="region">Region:</label></div>
+      <div class="input-field"><input type="text" name="region"></input></div>
+    </div>
+
+    <div class="form-row">
+      <div class="form-label"><label for="milk">Milk Type:</label></div>
+      <div class="input-field">
+        <select name="milk">
+          <option value="Cows">Cows</option>
+          <option value="Goats">Goats</option>
+          <option value="Sheep">Sheep</option>
+          <option value="Buffalo">Buffalo</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="form-row">
+      <div class="form-label"><label for="size">Size:</label></div>
+      <div class="input-field"><input type="text" name="size"></input></div>
+    </div>
+
+    <div class="form-row">
+      <div class="form-label"><label for="unit_of_measure">Unit of Measure:</label></div>
+      <div class="input-field"><input type="text" name="unit_of_measure"></input></div>
+    </div>
+
+    <div class="form-row">
+      <div class="form-label"><label for="price">Price:</label></div>
+      <div class="input-field"><input type="text" name="price"></input></div>
+    </div>
+
+    <div class="form-row">
+      <div class="form-label"><label for="image">Image URL:</label></div>
+      <div class="input-field"><input type="text" name="image"></input></div>
+    </div>
+    <div class="form-row">
+      <div class="form-label"></div>
+      <div class="input-field"><input type="submit" value="Create Record"></div>
+    </div>
+  </form>
+</div>
