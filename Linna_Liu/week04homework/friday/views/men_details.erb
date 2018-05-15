@@ -17,10 +17,10 @@
 previous page</a><br>
 
 <%# if @man["id"] <5 %>
-<% if @man["id"]<@men.length %>
-<a href="/men/<%= @man["id"]+1 %>">
+<% if @next_man_id %>
+  <a href="/men/<%= @next_man_id %>">
 <% else %>
-<a href="/men">
+  <a href="/men">
 <% end %>
 next page</a><br>
 
