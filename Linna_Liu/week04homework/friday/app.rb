@@ -84,6 +84,19 @@ get "/men/:id" do
   # @men = @men.first
   @men = Man.all
   @man = Man.find params[:id]
+
+  require 'pry'; binding.pry
+
+
+  all_ids = @men.ids   # [1, 2, 3, 4, 5, 11]
+  next_man_index = all_ids.index( params[:id].to_i ) + 1   # get index of current man ID in array, add 1 to it
+  # params[:id] is string, use .to_i to turn it into INTEGER
+  # e.g.all_ids.index( params[:id].to_i ) is 5, then next_man_index is 6
+  # if the it is the end of array/all_ids, index 6 would return nil value, i.e. @next_man_id => nil
+  #if that's true, redirect the page to main page
+  @next_man_id = all_ids[ next_man_index ]  # use index to get ID of next man
+
+
   erb :men_details
 end
 
@@ -170,5 +183,8 @@ end
 get "/supporters/:id" do
   @supporters = Supporter.all
   @supporter = Supporter.find params[:id]
+  all_ids = @supporters.ids
+  next_supporter_index = all_ids.index(params[:id])+1
+  @next_supporter_id = all_ids[next_supporter_index]
   erb :supporters_details
 end
