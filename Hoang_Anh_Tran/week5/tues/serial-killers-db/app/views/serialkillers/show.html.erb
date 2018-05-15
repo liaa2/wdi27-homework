@@ -1,0 +1,18 @@
+<h2><%= @serialkiller.first_name %> <%= @serialkiller.last_name %></h2>
+<p> <strong>First Name</strong> <%= @serialkiller.first_name %></p>
+<p> <strong>Last Name:</strong> <%= @serialkiller.last_name %></p>
+<p> <strong>Alive:</strong> <%= @serialkiller.alive %></p>
+<p> <strong>Number of victims:</strong> <%= @serialkiller.victims %></p>
+
+<br>
+<% if @serialkiller.image.present? %>  <!--check if string is greater than 0, opposite of empty method-->
+<%= image_tag @serialkiller.image, alt: "Killer", class: "serialkiller" %>
+<% end  %>
+<br>
+
+<%= link_to "Edit", serialkiller_edit_path(@serialkiller.id) %>
+
+<%= link_to "Delete", serialkiller_destroy_path(@serialkiller.id) %>
+
+<br>
+(Last updated <%= @serialkiller.updated_at %>)
