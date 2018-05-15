@@ -1,5 +1,7 @@
 <h2>Rock Paper Scissors - Result</h2>
 
+<%= @throw %>
+
 <% if @throw == @randomPick %>
 <p>Your pick: <%= @throw %>, computer's pick: <%= @randomPick %>. It's a tie!</p>
 <% elsif @throw== "rock" && @randomPick=="scissors" %>

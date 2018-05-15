@@ -21,7 +21,7 @@
 previous page</a><br>
 
 <%# if @supporter.id <6 %>
-<% if @supporter.id < @supporters.length %>
+<% if @next_supporter_id  %>
 <a href="/supporters/<%= (@supporter.id) +1 %>">
 <% else %>
 <a href="/supporters">

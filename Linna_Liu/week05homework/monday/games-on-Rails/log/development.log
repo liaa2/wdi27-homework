@@ -2899,3 +2899,522 @@ Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
 RuntimeError (hell):
   
 app/controllers/games_controller.rb:8:in `rock_paper_scissors_play'
+Started GET "/games/rock_paper_scissors/:rock" for 127.0.0.1 at 2018-05-15 08:59:36 +1000
+Processing by GamesController#rock_paper_scissors_play as HTML
+  Parameters: {"throw"=>":rock"}
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.0ms)
+
+
+  
+RuntimeError (hell):
+  
+app/controllers/games_controller.rb:8:in `rock_paper_scissors_play'
+Started GET "/games/rock_paper_scissors/:rock" for 127.0.0.1 at 2018-05-15 08:59:38 +1000
+Processing by GamesController#rock_paper_scissors_play as HTML
+  Parameters: {"throw"=>":rock"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+RuntimeError (hell):
+  
+app/controllers/games_controller.rb:8:in `rock_paper_scissors_play'
+Started GET "/games/rock_paper_scissors" for 127.0.0.1 at 2018-05-15 08:59:45 +1000
+Processing by GamesController#rock_paper_scissors_pick as HTML
+  Rendering games/rock_paper_scissors_pick.erb within layouts/application
+  Rendered games/rock_paper_scissors_pick.erb within layouts/application (0.5ms)
+Completed 200 OK in 39ms (Views: 35.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/games/rock_paper_scissors/:throw?throw=rock" for 127.0.0.1 at 2018-05-15 08:59:56 +1000
+Processing by GamesController#rock_paper_scissors_play as HTML
+  Parameters: {"throw"=>":throw"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+RuntimeError (hell):
+  
+app/controllers/games_controller.rb:8:in `rock_paper_scissors_play'
+Started GET "/games/rock_paper_scissors" for 127.0.0.1 at 2018-05-15 09:01:28 +1000
+Processing by GamesController#rock_paper_scissors_pick as HTML
+  Rendering games/rock_paper_scissors_pick.erb within layouts/application
+  Rendered games/rock_paper_scissors_pick.erb within layouts/application (0.7ms)
+Completed 200 OK in 22ms (Views: 19.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/games/rock_paper_scissors/:throw?throw=rock" for 127.0.0.1 at 2018-05-15 09:01:31 +1000
+Processing by GamesController#rock_paper_scissors_play as HTML
+  Parameters: {"throw"=>":throw"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+RuntimeError (hell):
+  
+app/controllers/games_controller.rb:8:in `rock_paper_scissors_play'
+Started GET "/games/rock_paper_scissors/rock" for 127.0.0.1 at 2018-05-15 09:06:40 +1000
+Processing by GamesController#rock_paper_scissors_play as HTML
+  Parameters: {"throw"=>"rock"}
+Completed 500 Internal Server Error in 0ms (ActiveRecord: 0.0ms)
+
+
+  
+RuntimeError (hell):
+  
+app/controllers/games_controller.rb:8:in `rock_paper_scissors_play'
+Started GET "/games/rock_paper_scissors/rock" for 127.0.0.1 at 2018-05-15 09:06:51 +1000
+Processing by GamesController#rock_paper_scissors_play as HTML
+  Parameters: {"throw"=>"rock"}
+  Rendering games/rock_paper_scissors_play.erb within layouts/application
+  Rendered games/rock_paper_scissors_play.erb within layouts/application (1.1ms)
+Completed 200 OK in 38ms (Views: 32.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/games/rock_paper_scissors/paper" for 127.0.0.1 at 2018-05-15 09:07:53 +1000
+Processing by GamesController#rock_paper_scissors_play as HTML
+  Parameters: {"throw"=>"paper"}
+  Rendering games/rock_paper_scissors_play.erb within layouts/application
+  Rendered games/rock_paper_scissors_play.erb within layouts/application (0.6ms)
+Completed 200 OK in 25ms (Views: 22.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/games/rock_paper_scissors/rock" for 127.0.0.1 at 2018-05-15 09:07:59 +1000
+Processing by GamesController#rock_paper_scissors_play as HTML
+  Parameters: {"throw"=>"rock"}
+  Rendering games/rock_paper_scissors_play.erb within layouts/application
+  Rendered games/rock_paper_scissors_play.erb within layouts/application (2.7ms)
+Completed 200 OK in 42ms (Views: 39.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/games/rock_paper_scissors/scissors" for 127.0.0.1 at 2018-05-15 09:08:11 +1000
+Processing by GamesController#rock_paper_scissors_play as HTML
+  Parameters: {"throw"=>"scissors"}
+  Rendering games/rock_paper_scissors_play.erb within layouts/application
+  Rendered games/rock_paper_scissors_play.erb within layouts/application (1.7ms)
+Completed 200 OK in 34ms (Views: 30.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-15 10:31:02 +1000
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/linna/.rvm/gems/ruby-2.4.1/gems/railties-5.2.0/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/linna/.rvm/gems/ruby-2.4.1/gems/railties-5.2.0/lib/rails/templates/rails/welcome/index.html.erb (2.6ms)
+Completed 200 OK in 11ms (Views: 6.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/games/rock_paper_scissors" for 127.0.0.1 at 2018-05-15 10:36:13 +1000
+Processing by GamesController#rock_paper_scissors_pick as HTML
+  Rendering games/rock_paper_scissors_pick.erb within layouts/application
+  Rendered games/rock_paper_scissors_pick.erb within layouts/application (0.4ms)
+Completed 200 OK in 57ms (Views: 53.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/games/rock_paper_scissors/:throw?throw=rock" for 127.0.0.1 at 2018-05-15 10:36:18 +1000
+Processing by GamesController#rock_paper_scissors_play as HTML
+  Parameters: {"throw"=>":throw"}
+  Rendering games/rock_paper_scissors_play.erb within layouts/application
+  Rendered games/rock_paper_scissors_play.erb within layouts/application (0.9ms)
+Completed 200 OK in 27ms (Views: 24.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/games/rock_paper_scissors/:throw?throw=rock" for 127.0.0.1 at 2018-05-15 10:37:09 +1000
+Processing by GamesController#rock_paper_scissors_play as HTML
+  Parameters: {"throw"=>":throw"}
+  Rendering games/rock_paper_scissors_play.erb within layouts/application
+  Rendered games/rock_paper_scissors_play.erb within layouts/application (0.7ms)
+Completed 200 OK in 24ms (Views: 20.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/games/rock_paper_scissors/:throw?throw=rock" for 127.0.0.1 at 2018-05-15 10:37:12 +1000
+Processing by GamesController#rock_paper_scissors_play as HTML
+  Parameters: {"throw"=>":throw"}
+  Rendering games/rock_paper_scissors_play.erb within layouts/application
+  Rendered games/rock_paper_scissors_play.erb within layouts/application (0.7ms)
+Completed 200 OK in 23ms (Views: 20.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/games/rock_paper_scissors/:throw?throw=rock" for 127.0.0.1 at 2018-05-15 10:38:32 +1000
+Processing by GamesController#rock_paper_scissors_play as HTML
+  Parameters: {"throw"=>":throw"}
+  Rendering games/rock_paper_scissors_play.erb within layouts/application
+  Rendered games/rock_paper_scissors_play.erb within layouts/application (0.8ms)
+Completed 200 OK in 26ms (Views: 22.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/games/rock_paper_scissors" for 127.0.0.1 at 2018-05-15 10:39:14 +1000
+Processing by GamesController#rock_paper_scissors_pick as HTML
+  Rendering games/rock_paper_scissors_pick.erb within layouts/application
+  Rendered games/rock_paper_scissors_pick.erb within layouts/application (0.4ms)
+Completed 200 OK in 24ms (Views: 21.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/games/rock_paper_scissors/:throw?%3Athrow=rock" for 127.0.0.1 at 2018-05-15 10:39:18 +1000
+Processing by GamesController#rock_paper_scissors_play as HTML
+  Parameters: {":throw"=>"rock", "throw"=>":throw"}
+  Rendering games/rock_paper_scissors_play.erb within layouts/application
+  Rendered games/rock_paper_scissors_play.erb within layouts/application (0.7ms)
+Completed 200 OK in 25ms (Views: 21.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/games/rock_paper_scissors/:throw?%3Athrow=rock" for 127.0.0.1 at 2018-05-15 10:40:00 +1000
+Processing by GamesController#rock_paper_scissors_play as HTML
+  Parameters: {":throw"=>"rock", "throw"=>":throw"}
+  Rendering games/rock_paper_scissors_play.erb within layouts/application
+  Rendered games/rock_paper_scissors_play.erb within layouts/application (0.8ms)
+Completed 200 OK in 24ms (Views: 20.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-15 10:42:14 +1000
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/linna/.rvm/gems/ruby-2.4.1/gems/railties-5.2.0/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/linna/.rvm/gems/ruby-2.4.1/gems/railties-5.2.0/lib/rails/templates/rails/welcome/index.html.erb (3.4ms)
+Completed 200 OK in 12ms (Views: 7.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-15 10:42:50 +1000
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/linna/.rvm/gems/ruby-2.4.1/gems/railties-5.2.0/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/linna/.rvm/gems/ruby-2.4.1/gems/railties-5.2.0/lib/rails/templates/rails/welcome/index.html.erb (2.4ms)
+Completed 200 OK in 9ms (Views: 6.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-15 10:42:54 +1000
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/linna/.rvm/gems/ruby-2.4.1/gems/railties-5.2.0/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/linna/.rvm/gems/ruby-2.4.1/gems/railties-5.2.0/lib/rails/templates/rails/welcome/index.html.erb (3.5ms)
+Completed 200 OK in 20ms (Views: 11.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/movies" for 127.0.0.1 at 2018-05-15 10:43:10 +1000
+  
+ActionController::RoutingError (No route matches [GET] "/movies"):
+  
+actionpack (5.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.0) lib/rails/engine.rb:524:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/movies" for 127.0.0.1 at 2018-05-15 10:43:51 +1000
+  
+ActionController::RoutingError (No route matches [GET] "/movies"):
+  
+actionpack (5.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.0) lib/rails/engine.rb:524:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/games/rock_paper_scissors" for 127.0.0.1 at 2018-05-15 11:36:55 +1000
+Processing by GamesController#rock_paper_scissors_pick as HTML
+  Rendering games/rock_paper_scissors_pick.erb within layouts/application
+  Rendered games/rock_paper_scissors_pick.erb within layouts/application (1.2ms)
+Completed 200 OK in 236ms (Views: 223.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/games/rock_paper_scissors/:throw?throw=paper" for 127.0.0.1 at 2018-05-15 11:37:01 +1000
+Processing by GamesController#rock_paper_scissors_play as HTML
+  Parameters: {"throw"=>":throw"}
+  Rendering games/rock_paper_scissors_play.erb within layouts/application
+  Rendered games/rock_paper_scissors_play.erb within layouts/application (0.7ms)
+Completed 200 OK in 24ms (Views: 20.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/games/rock_paper_scissors/paper" for 127.0.0.1 at 2018-05-15 11:38:00 +1000
+Processing by GamesController#rock_paper_scissors_play as HTML
+  Parameters: {"throw"=>"paper"}
+  Rendering games/rock_paper_scissors_play.erb within layouts/application
+  Rendered games/rock_paper_scissors_play.erb within layouts/application (0.7ms)
+Completed 200 OK in 22ms (Views: 19.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/games/rock_paper_scissors/:throw?throw=paper" for 127.0.0.1 at 2018-05-15 11:38:43 +1000
+Processing by GamesController#rock_paper_scissors_play as HTML
+  Parameters: {"throw"=>":throw"}
+  Rendering games/rock_paper_scissors_play.erb within layouts/application
+  Rendered games/rock_paper_scissors_play.erb within layouts/application (0.7ms)
+Completed 200 OK in 40ms (Views: 37.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/games/rock_paper_scissors/:throw?throw=paper" for 127.0.0.1 at 2018-05-15 11:38:54 +1000
+Processing by GamesController#rock_paper_scissors_play as HTML
+  Parameters: {"throw"=>":throw"}
+  Rendering games/rock_paper_scissors_play.erb within layouts/application
+  Rendered games/rock_paper_scissors_play.erb within layouts/application (0.9ms)
+Completed 200 OK in 24ms (Views: 20.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/games/rock_paper_scissors" for 127.0.0.1 at 2018-05-15 11:39:28 +1000
+Started GET "/games/rock_paper_scissors/:throw?throw=paper" for 127.0.0.1 at 2018-05-15 11:39:38 +1000
+Processing by GamesController#rock_paper_scissors_pick as HTML
+  Rendering games/rock_paper_scissors_pick.erb within layouts/application
+  Rendered games/rock_paper_scissors_pick.erb within layouts/application (0.6ms)
+Completed 200 OK in 43ms (Views: 39.5ms | ActiveRecord: 0.0ms)
+
+
+Processing by GamesController#rock_paper_scissors_play as HTML
+Started GET "/games/rock_paper_scissors/:throw?throw=paper" for 127.0.0.1 at 2018-05-15 11:39:38 +1000
+  Parameters: {"throw"=>":throw"}
+Processing by GamesController#rock_paper_scissors_play as HTML
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+
+  Parameters: {"throw"=>":throw"}
+  
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+
+RuntimeError (hell):
+  
+  
+RuntimeError (hell):
+app/controllers/games_controller.rb:8:in `rock_paper_scissors_play'
+  
+app/controllers/games_controller.rb:8:in `rock_paper_scissors_play'
+Started PUT "/__web_console/repl_sessions/1c7d7e85cd0acacbe796eb27d8ff1c80" for 127.0.0.1 at 2018-05-15 11:39:45 +1000
+Started PUT "/__web_console/repl_sessions/1c7d7e85cd0acacbe796eb27d8ff1c80" for 127.0.0.1 at 2018-05-15 11:39:47 +1000
+Started GET "/games/rock_paper_scissors/:throw?throw=paper" for 127.0.0.1 at 2018-05-15 11:42:06 +1000
+Processing by GamesController#rock_paper_scissors_play as HTML
+  Parameters: {"throw"=>":throw"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+RuntimeError (hell):
+  
+app/controllers/games_controller.rb:8:in `rock_paper_scissors_play'
+Started GET "/games/rock_paper_scissors/:throw?throw=paper" for 127.0.0.1 at 2018-05-15 11:42:14 +1000
+Processing by GamesController#rock_paper_scissors_play as HTML
+  Parameters: {"throw"=>":throw"}
+  Rendering games/rock_paper_scissors_play.erb within layouts/application
+  Rendered games/rock_paper_scissors_play.erb within layouts/application (0.7ms)
+Completed 200 OK in 31ms (Views: 27.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/games/rock_paper_scissors" for 127.0.0.1 at 2018-05-15 11:42:18 +1000
+Processing by GamesController#rock_paper_scissors_pick as HTML
+  Rendering games/rock_paper_scissors_pick.erb within layouts/application
+  Rendered games/rock_paper_scissors_pick.erb within layouts/application (0.4ms)
+Completed 200 OK in 29ms (Views: 25.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/games/rock_paper_scissors/:throw" for 127.0.0.1 at 2018-05-15 11:42:21 +1000
+Processing by GamesController#rock_paper_scissors_play as HTML
+  Parameters: {"throw"=>":throw"}
+  Rendering games/rock_paper_scissors_play.erb within layouts/application
+  Rendered games/rock_paper_scissors_play.erb within layouts/application (0.6ms)
+Completed 200 OK in 24ms (Views: 21.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/games/rock_paper_scissors/:throw" for 127.0.0.1 at 2018-05-15 11:43:13 +1000
+Processing by GamesController#rock_paper_scissors_play as HTML
+  Parameters: {"throw"=>":throw"}
+  Rendering games/rock_paper_scissors_play.erb within layouts/application
+  Rendered games/rock_paper_scissors_play.erb within layouts/application (0.6ms)
+Completed 200 OK in 23ms (Views: 20.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/games/rock_paper_scissors/:throw" for 127.0.0.1 at 2018-05-15 11:43:14 +1000
+Processing by GamesController#rock_paper_scissors_play as HTML
+  Parameters: {"throw"=>":throw"}
+  Rendering games/rock_paper_scissors_play.erb within layouts/application
+  Rendered games/rock_paper_scissors_play.erb within layouts/application (0.6ms)
+Completed 200 OK in 21ms (Views: 18.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/games/rock_paper_scissors/:throw" for 127.0.0.1 at 2018-05-15 11:43:21 +1000
+Processing by GamesController#rock_paper_scissors_play as HTML
+  Parameters: {"throw"=>":throw"}
+  Rendering games/rock_paper_scissors_play.erb within layouts/application
+  Rendered games/rock_paper_scissors_play.erb within layouts/application (0.4ms)
+Completed 200 OK in 18ms (Views: 15.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/games/rock_paper_scissors/:throw" for 127.0.0.1 at 2018-05-15 11:44:09 +1000
+Processing by GamesController#rock_paper_scissors_play as HTML
+  Parameters: {"throw"=>":throw"}
+  Rendering games/rock_paper_scissors_play.erb within layouts/application
+  Rendered games/rock_paper_scissors_play.erb within layouts/application (0.5ms)
+Completed 200 OK in 21ms (Views: 18.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/games/rock_paper_scissors/:throw" for 127.0.0.1 at 2018-05-15 11:44:13 +1000
+Processing by GamesController#rock_paper_scissors_play as HTML
+  Parameters: {"throw"=>":throw"}
+  Rendering games/rock_paper_scissors_play.erb within layouts/application
+  Rendered games/rock_paper_scissors_play.erb within layouts/application (0.4ms)
+Completed 200 OK in 17ms (Views: 14.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/games/rock_paper_scissors/:throw" for 127.0.0.1 at 2018-05-15 11:45:03 +1000
+Processing by GamesController#rock_paper_scissors_play as HTML
+  Parameters: {"throw"=>":throw"}
+  Rendering games/rock_paper_scissors_play.erb within layouts/application
+  Rendered games/rock_paper_scissors_play.erb within layouts/application (0.6ms)
+Completed 200 OK in 22ms (Views: 18.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/games/rock_paper_scissors" for 127.0.0.1 at 2018-05-15 11:45:06 +1000
+Processing by GamesController#rock_paper_scissors_pick as HTML
+  Rendering games/rock_paper_scissors_pick.erb within layouts/application
+  Rendered games/rock_paper_scissors_pick.erb within layouts/application (0.3ms)
+Completed 200 OK in 21ms (Views: 18.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/games/rock_paper_scissors/:throw?throw=paper" for 127.0.0.1 at 2018-05-15 11:45:11 +1000
+Processing by GamesController#rock_paper_scissors_play as HTML
+  Parameters: {"throw"=>":throw"}
+  Rendering games/rock_paper_scissors_play.erb within layouts/application
+  Rendered games/rock_paper_scissors_play.erb within layouts/application (0.6ms)
+Completed 200 OK in 25ms (Views: 21.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/games/rock_paper_scissors/:throw?throw=paper" for 127.0.0.1 at 2018-05-15 16:01:54 +1000
+Processing by GamesController#rock_paper_scissors_play as HTML
+  Parameters: {"throw"=>":throw"}
+  Rendering games/rock_paper_scissors_play.erb within layouts/application
+  Rendered games/rock_paper_scissors_play.erb within layouts/application (1.8ms)
+Completed 200 OK in 240ms (Views: 226.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/games/rock_paper_scissors" for 127.0.0.1 at 2018-05-15 16:01:58 +1000
+Processing by GamesController#rock_paper_scissors_pick as HTML
+  Rendering games/rock_paper_scissors_pick.erb within layouts/application
+  Rendered games/rock_paper_scissors_pick.erb within layouts/application (0.3ms)
+Completed 200 OK in 22ms (Views: 18.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/games/rock_paper_scissors/:throw?throw=rock" for 127.0.0.1 at 2018-05-15 16:02:01 +1000
+Processing by GamesController#rock_paper_scissors_play as HTML
+  Parameters: {"throw"=>":throw"}
+  Rendering games/rock_paper_scissors_play.erb within layouts/application
+  Rendered games/rock_paper_scissors_play.erb within layouts/application (0.6ms)
+Completed 200 OK in 24ms (Views: 20.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/games/rock_paper_scissors" for 127.0.0.1 at 2018-05-15 16:03:57 +1000
+Processing by GamesController#rock_paper_scissors_pick as HTML
+  Rendering games/rock_paper_scissors_pick.erb within layouts/application
+  Rendered games/rock_paper_scissors_pick.erb within layouts/application (0.3ms)
+Completed 200 OK in 41ms (Views: 38.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/games/rock_paper_scissors" for 127.0.0.1 at 2018-05-15 16:03:58 +1000
+Processing by GamesController#rock_paper_scissors_pick as HTML
+  Rendering games/rock_paper_scissors_pick.erb within layouts/application
+  Rendered games/rock_paper_scissors_pick.erb within layouts/application (0.3ms)
+Completed 200 OK in 23ms (Views: 19.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/games/rock_paper_scissors/:throw?throw=rock" for 127.0.0.1 at 2018-05-15 16:04:02 +1000
+Processing by GamesController#rock_paper_scissors_play as HTML
+  Parameters: {"throw"=>":throw"}
+  Rendering games/rock_paper_scissors_play.erb within layouts/application
+  Rendered games/rock_paper_scissors_play.erb within layouts/application (0.7ms)
+Completed 200 OK in 26ms (Views: 22.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/games/rock_paper_scissors/rock" for 127.0.0.1 at 2018-05-15 16:05:12 +1000
+Processing by GamesController#rock_paper_scissors_play as HTML
+  Parameters: {"throw"=>"rock"}
+  Rendering games/rock_paper_scissors_play.erb within layouts/application
+  Rendered games/rock_paper_scissors_play.erb within layouts/application (1.2ms)
+Completed 200 OK in 34ms (Views: 30.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/games/rock_paper_scissors/" for 127.0.0.1 at 2018-05-15 16:05:46 +1000
+Processing by GamesController#rock_paper_scissors_pick as HTML
+  Rendering games/rock_paper_scissors_pick.erb within layouts/application
+  Rendered games/rock_paper_scissors_pick.erb within layouts/application (0.3ms)
+Completed 200 OK in 33ms (Views: 29.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/games/rock_paper_scissors/rock" for 127.0.0.1 at 2018-05-15 16:06:41 +1000
+Processing by GamesController#rock_paper_scissors_play as HTML
+  Parameters: {"throw"=>"rock"}
+  Rendering games/rock_paper_scissors_play.erb within layouts/application
+  Rendered games/rock_paper_scissors_play.erb within layouts/application (0.8ms)
+Completed 200 OK in 28ms (Views: 24.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/games/rock_paper_scissors/" for 127.0.0.1 at 2018-05-15 16:09:51 +1000
+Processing by GamesController#rock_paper_scissors_pick as HTML
+  Rendering games/rock_paper_scissors_pick.erb within layouts/application
+  Rendered games/rock_paper_scissors_pick.erb within layouts/application (0.3ms)
+Completed 200 OK in 27ms (Views: 23.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/games/rock_paper_scissors/play?throw=rock" for 127.0.0.1 at 2018-05-15 16:09:54 +1000
+Processing by GamesController#rock_paper_scissors_play as HTML
+  Parameters: {"throw"=>"rock"}
+  Rendering games/rock_paper_scissors_play.erb within layouts/application
+  Rendered games/rock_paper_scissors_play.erb within layouts/application (0.6ms)
+Completed 200 OK in 24ms (Views: 20.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/games/rock_paper_scissors/play?throw=paper" for 127.0.0.1 at 2018-05-15 16:10:14 +1000
+Processing by GamesController#rock_paper_scissors_play as HTML
+  Parameters: {"throw"=>"play"}
+  Rendering games/rock_paper_scissors_play.erb within layouts/application
+  Rendered games/rock_paper_scissors_play.erb within layouts/application (0.6ms)
+Completed 200 OK in 27ms (Views: 24.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/games/rock_paper_scissors/play?throw=paper" for 127.0.0.1 at 2018-05-15 16:11:07 +1000
+Processing by GamesController#rock_paper_scissors_play as HTML
+  Parameters: {"throw"=>"paper"}
+  Rendering games/rock_paper_scissors_play.erb within layouts/application
+  Rendered games/rock_paper_scissors_play.erb within layouts/application (0.7ms)
+Completed 200 OK in 26ms (Views: 22.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/games/rock_paper_scissors/play?throw=paper" for 127.0.0.1 at 2018-05-15 16:11:33 +1000
+Processing by GamesController#rock_paper_scissors_play as HTML
+  Parameters: {"throw"=>"paper"}
+  Rendering games/rock_paper_scissors_play.erb within layouts/application
+  Rendered games/rock_paper_scissors_play.erb within layouts/application (0.6ms)
+Completed 200 OK in 31ms (Views: 27.1ms | ActiveRecord: 0.0ms)
+
+
