@@ -1,0 +1,92 @@
+
+body {
+  font-family: "Helvetica";
+  background-color: rgb(172, 176, 195);
+  text-align: center;
+  background-image: url('../img/doge.gif');
+  background-position: right;
+  background-repeat:round;
+  color: #F4A2F6;
+
+}
+img {
+  max-width: 500px;
+  border-radius: 50%;
+}
+h1 {
+  color: #6BFAF4;
+  font-family: 'Do Hyeon', sans-serif;
+  text-transform: uppercase;
+  text-shadow: 0 5px 0 rgba(0, 0, 0, 0.2);
+  background-color: rgb(0,0,0, 0.4);
+
+}
+h2 {
+  font-weight: bold;
+  color: #2CC011;
+  background-color: rgb(0,0,0, 0.4);
+}
+ul {
+  padding-left: 0;
+  margin: 0 auto;
+}
+li {
+  list-style: none;
+  background-color: rgb(0,0,0, 0.4);
+
+  /* display: inline-block; */
+
+}
+
+
+.info {
+  background-color: rgb(0,0,0, 0.4);
+}
+a {
+/* text-decoration: none; */
+color: #60EE2B;
+background-color: rgb(0,0,0, 0.6);
+}
+
+body {
+  /* background-color: pink; */
+  font-size: 20px;
+  /* text-align: right; */
+  padding: 10px;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: 'PT Sans Caption', sans-serif;
+}
+
+
+.footer {
+background: red;
+color: pink;
+
+}
+
+.main {
+flex-grow: 1;
+}
+
+
+
+.box {
+    position: relative;
+    width: 150px;
+    height: 100px;
+    background: transparent;
+    -webkit-animation: slide 15s infinite ease-in-out;
+}
+
+@-webkit-keyframes slide {
+    0% { left: 0; }
+    50% { left: 30%; }
+    100% { left: 100%; }
+}
+
+iframe {
+  display: none;
+}

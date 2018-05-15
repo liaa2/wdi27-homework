@@ -1,0 +1,13 @@
+<h2><%= @country.country %> </h2>
+<img src="<%= @country.image%>">
+<p>Ranking: <%= @country.ranking%> </p>
+<p>World Cup Wins: <%= @country.wc_wins%> </p>
+<p>Teams:
+  <ul>
+    <% @country.teams.each do |team| %>
+    <li>
+      <a href="/teams/<%= team.id %>">
+        <%= team.name %>
+      </li>
+    <% end %>
+  </ul>

@@ -1,0 +1,6 @@
+<h2> <%= @team.official_name %> </h2>
+<img src="<%= @team.image%>">
+<p>World Ranking: <%= @team.ranking%> </p>
+<p>Founded: <%= @team.founded%> </p>
+<p>Country: <a href="/countries/<%= @team.country.id%>"><%=@team.country.country%></a></p>
+<p>Stadium: <%= @team.stadium %> </p>

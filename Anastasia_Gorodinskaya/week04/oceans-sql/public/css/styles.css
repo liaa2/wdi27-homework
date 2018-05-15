@@ -1,0 +1,10 @@
+body{
+  background-color: #e6f0ff;
+}
+ul{
+  list-style: none;
+}
+
+li{
+  display: block;
+}

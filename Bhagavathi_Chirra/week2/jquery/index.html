@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+   <title>Video Watcher</title>
+    <link rel="stylesheet" type="text/css" href="http://www.teaching-materials.org/common/bootstrap.css">
+  </head>
+  <body>
+
+    <div class="container">
+
+    <div class="row">
+      <div class="span12">
+        <h2 class="page-header">Best Videos Ever ❤</h2>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="span3">
+        <ul>
+          <li><a href="https://www.youtube.com/watch?v=TddFnTB_7IM" name="firstLi">Trip through the 80s</a></li>
+          <li><a href="https://www.youtube.com/watch?v=epUk3T2Kfno" name="secondLi">Otters Holding Hands</a></li>
+          <li><a href="https://www.youtube.com/watch?v=il2IrgFHfsg" name="thirdLi">The Ooooh Cat</a></li>
+        </ul>
+       </div>
+     </div>
+    </div>
+
+
+    <script type="text/javascript" src="http://www.teaching-materials.org/common/youtube.js"></script>
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+
+    <script>
+
+      // var links = document.querySelectorAll('a');
+      // for(let i =0; i<links.length; i++){
+      //   const link = links[i];
+      //   //console.log(link.href);
+      //   const thumbnailURL = youtube.generateThumbnailUrl(link.href);
+      //   // create img tag and set src attribute to be the thumbnail thumbnailURL
+      //   const imgTag = document.createElement('img');
+      //   imgTag.src = thumbnailURL;
+      //   link.appendChild(imgTag);
+      // }
+      // use $ like var $links = $('a');  to make it jquery object easy to use in future
+
+      var links = $('a');
+      for(let i=0; i<$(links).length; i++){
+        const link = links.eq(i);
+        const thumbnailURL = youtube.generateThumbnailUrl($(link).attr('href'));
+        // create img tag and set src attribute to be the thumbnail thumbnailURL
+        //console.log(thumbnailURL);
+        //const imgTag = document.createElement('img');
+        // imgTag.src = thumbnailURL;
+        // link.appendChild(imgTag);
+        // ******** for jquery ********** //
+
+        // const imgTag = $('<img />');
+        // $(imgTag).attr({'src': thumbnailURL});
+        // $(imgTag).appendTo(link);
+        const imgTag = $('<img />', {src:thumbnailURL});
+        //$(imgTag).attr({'src': thumbnailURL});
+        $(imgTag).appendTo(link);
+
+      }
+      $links = $('a');
+      $links.each(function)(){
+        //const thumbnailURL = youtube.generateThumbnailUrl($(link).attr('href'));
+        //do everything here
+      };
+
+
+    </script>
+  </body>
+</html>
