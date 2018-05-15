@@ -1,0 +1,8 @@
+%h1 Rock, Paper, Scissors!
+
+%h3 Click to play!
+
+%form{ :action => "/rps/:throw"}
+    %input.rps_game{ :type => "submit", :name => "play", :value => "rock"}
+    %input.rps_game{ :type => "submit", :name => "play", :value => "paper"}
+    %input.rps_game{ :type => "submit", :name => "play", :value => "scissors"}
