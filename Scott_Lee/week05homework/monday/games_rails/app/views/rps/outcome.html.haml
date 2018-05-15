@@ -1,0 +1,31 @@
+%h2 Rock, paper, scissors outcome!
+
+="Your move was #{@move}."
+%br
+%br
+-@computer_move = @computer[rand(0..@computer.length-1)]
+="The computer's move was #{@computer_move}."
+%br
+%br
+-if @move == @computer_move
+    ="The game was a tie."
+-elsif @move == "scissors"
+    -if @computer_move == "rock"
+        ="You lose!"
+    -else
+        ="You win!"
+-elsif @move == "rock"
+    -if @computer_move == "paper"
+        ="You lose!"
+    -else
+        ="You win!"
+-elsif @move == "paper"
+    -if @computer_move = "scissors"
+        ="You lose!"
+    -else
+        ="You win!"
+
+%hr
+
+%a{ :href => "/rps"} Play another round?
+%a{ :href => "/"} Go back to home!
