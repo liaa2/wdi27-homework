@@ -14,39 +14,37 @@
  *= require_self
  */
 
-* {
-  text-align: center;
-}
+
+ @import url('https://fonts.googleapis.com/css?family=Skranji');
 
 body {
-   background-color: black;
-   color: rgb(226, 216, 230);
-   font-family: Helvetica;
-   background-image: url('fog.gif');
-   background-repeat: repeat;
-   color: black;
- }
+  background-color: pink;
+  font-family: 'Skranji', cursive;
+  color: black;
+
+}
+
+#navbar li {
+  list-style: none;
+  display: inline-block;
+}
+
+img.countryPic {
+  max-height: 300px;
+}
+
+img.brandMainImage {
+  max-height: 500px;
+}
 
 h1, h2 {
-  color: red;
-  text-shadow: 2px 2px 5px grey;
-  font-size: 30px;
+  text-shadow: 2px 2px red;
 }
 
-img {
-   max-width: 500px;
- }
-
-iframe {
-  display: none;
+fieldset {
+  border: none;
 }
 
-li, ul {
- text-transform: uppercase;
- font-weight: bold;
-}
-
-
-ul {
-  list-style: none;
+div.error {
+  color: purple;
 }

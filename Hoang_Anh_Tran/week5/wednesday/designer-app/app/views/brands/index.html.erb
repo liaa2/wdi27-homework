@@ -1,0 +1,15 @@
+<h1>All Brands</h1>
+
+
+<ul class="index">
+<% @brands.each do |brand| %>
+<li>
+  <%= link_to brand.name, brand_path(brand) %>, <%= brand.founded %>
+</li>
+<% end %>
+</ul>
+
+
+<br>
+
+<%= link_to 'Add Brand', new_brand_path %>
