@@ -1,0 +1,78 @@
+<h2 id="main-header">Edit - <%= @cheese.name %></h2>
+<div class="updated-column">
+  <p id="updated">[ Last updated: <%= @cheese.updated_at.in_time_zone('Sydney').strftime("%A %-d %B %Y - %H:%M:%S") %> ]</p>
+</div>
+<div class="nav-links-column">
+  <%= link_to "Delete this Record", cheese_destroy_path( @cheese.id ), :class => "nav-links" %>&nbsp;&nbsp;
+  <%= link_to "Return to Cheese Listing", cheeses_path, :class => "nav-links" %>
+</div>
+
+<div class="cheese-form">
+  <form action="<%= cheese_path( @cheese.id ) %>" method="post">
+    <div class="form-row">
+      <div class="form-label"><label for="name">Name:</label></div>
+      <div class="input-field"><input type="text" name="name" value="<%= @cheese.name %>"></input></div>
+    </div>
+
+    <div class="form-row">
+      <div class="form-label"><label for="varietal">Varietal:</label></div>
+      <div class="input-field"><input type="text" name="varietal" value="<%= @cheese.varietal %>"></input></div>
+    </div>
+
+    <div class="form-row">
+      <div class="form-label"><label for="description">Description:</label></div>
+      <div class="input-field"><input type="textarea" rows="4" name="description" value="<%= @cheese.description %>"></input></div>
+    </div>
+
+    <div class="form-row">
+      <div class="form-label"><label for="firmness">Firmness:</label></div>
+      <div class="input-field">
+        <%= select_tag(:firmness, options_for_select( [["Fresh", "Fresh"], ["Soft", "Soft"], ["Semi-Firm", "Semi-Firm"], ["Firm", "Firm"], ["Blue", "Blue"]], @cheese.firmness.to_s )) %>
+        </select>
+      </div>
+    </div>
+    
+    <div class="form-row">
+      <div class="form-label"><label for="region">Region:</label></div>
+      <div class="input-field"><input type="text" name="region" value="<%= @cheese.region %>"></input></div>
+    </div>
+
+    <div class="form-row">
+      <div class="form-label"><label for="milk">Milk Type:</label></div>
+      <div class="input-field">
+        <%= select_tag(:milk, options_for_select( [["Cows", "Cows"], ["Goats", "Goats"], ["Sheeps", "Sheeps"], ["Buffalo", "Buffalo"]], @cheese.milk.to_s )) %>
+      </div>
+    </div>
+
+    <div class="form-row">
+      <div class="form-label"><label for="size">Size:</label></div>
+      <div class="input-field"><input type="text" name="size" value="<%= @cheese.size %>"></input></div>
+    </div>
+
+    <div class="form-row">
+      <div class="form-label"><label for="unit_of_measure">Unit of Measure:</label></div>
+      <div class="input-field"><input type="text" name="unit_of_measure" value="<%= @cheese.unit_of_measure %>"></input></div>
+    </div>
+
+    <div class="form-row">
+      <div class="form-label"><label for="price">Price:</label></div>
+      <div class="input-field"><input type="text" name="price" value="<%= sprintf( "%.2f", @cheese.price ) %>"></input></div>
+    </div>
+
+    <div class="form-row">
+      <div class="form-label"><label for="image">Image URL:</label></div>
+      <div class="input-field"><input type="text" name="image" value="<%= @cheese.image %>"></input></div>
+    </div>
+
+    <div class="form-row">
+      <div class="form-label">&nbsp;</div>
+      <div class="input-field">
+        <%= image_tag( @cheese.image , :class => "cheese-form-image" ) %>
+      </div>
+    </div>
+    <div class="form-row">
+      <div class="form-label"></div>
+      <div class="input-field"><input type="submit" value="Update Record"></div>
+    </div>
+  </form>
+</div>
