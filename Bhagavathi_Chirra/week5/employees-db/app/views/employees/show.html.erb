@@ -1,0 +1,24 @@
+<h1><%= @employee.first_name%></h1>
+
+<p>
+  <strong>Employee Number:</strong><%= @employee.number%>
+</p>
+<p>
+  <strong>Employee Name:</strong><%= @employee.first_name%> <%= @employee.last_name%>
+</p>
+<p>
+  <strong>Employee Job Title:</strong><%= @employee.job_title%>
+</p>
+<p>
+  <strong>Employee Date Of Birth:</strong><%= @employee.date_of_birth%>
+</p>
+<p>
+  <strong>Employee Salary:</strong><%= @employee.salary%>
+</p>
+<% if @employee.image.present?%>
+  <%= image_tag @employee.image, alt: "Emploee", class:"employee"%>
+<% end %>
+<br>
+<a href="<%= employee_edit_path%>">Edit</a>
+|
+<a href="<%= employee_delete_path%>">Delete</a>

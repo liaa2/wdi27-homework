@@ -1,0 +1,20 @@
+%h2 New murderer
+
+%form{ :action => "/murderers", :method => "post"}
+    %input{ :type => "text", :name => "first_name", :placeholder => "First name"}
+    %br
+    %input{ :type => "text", :name => "last_name", :placeholder => "Last name"}
+    %br
+    %input{ :type => "number", :name => "age", :placeholder => "Age"}
+    %br
+    %input{ :type => "text", :name => "location", :placeholder => "Location"}
+    %br
+    %input{ :type => "text", :name => "victim_type", :placeholder => "Victim profile"}
+    %br
+    %input{ :type => "text", :name => "kill_method", :placeholder => "Modus operandi"}
+    %br
+    %input{ :type => "number", :name => "kill_count", :placeholder => "Confirmed victims"}
+    %br
+    %input{ :type => "text", :name => "fate", :placeholder => "Fate"}
+    %br
+    %input{ :type => "submit", :value => "Create murderer"}

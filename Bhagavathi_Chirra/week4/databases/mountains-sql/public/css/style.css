@@ -27,6 +27,11 @@ h1{
   height: 200px;
   width: 500px;
 }
+#img_climbers{
+  max-height: 300px;
+  max-width: 300px;
+  border-radius: 20%;
+}
 input{
   padding: 10px;
   margin: 5px;

@@ -60,7 +60,59 @@ post "/mountains/:id" do
   redirect "/mountains/#{params[:id]}"
 end
 
+get "/mountains/:id/delete" do
+  mountain = Mountain.find params[:id]
+  mountain.destroy
+  redirect "/mountains"
+end
+
 get "/climbers" do
   @climbers = Climber.all
   erb :climbers_index
+end
+
+get "/climbers/new" do
+  erb :climber_new
+end
+
+get "/climbers/:id" do
+  @climber = Climber.find params[:id]
+  erb :climber_show
+end
+
+get "/climbers/:id/edit" do
+  @climber = Climber.find params[:id]
+  erb :climber_edit
+end
+
+post "/climbers" do
+  climber = Climber.new
+  climber.first_name = params[:first_name]
+  climber.second_name = params[:second_name]
+  climber.description = params[:description]
+  climber.age_climbed = params[:age_climbed]
+  climber.alive = params[:alive]
+  climber.nationality = params[:nationality]
+  climber.image_url = params[:image_url]
+  climber.save
+  redirect "/climbers"
+end
+
+post "/climbers/:id" do
+  climber = Climber.find params[:id]
+  climber.first_name = params[:first_name]
+  climber.second_name = params[:second_name]
+  climber.description = params[:description]
+  climber.age_climbed = params[:age_climbed]
+  climber.alive = params[:alive]
+  climber.nationality = params[:nationality]
+  climber.image_url = params[:image_url]
+  climber.save
+  redirect "/climbers/#{params[:id]}"
+end
+
+get "/climbers/:id/delete" do
+  climber = Climber.find params[:id]
+  climber.destroy
+  redirect "/climbers"
 end

@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  description: MyText
+  firmness: MyString
+  region: MyString
+  milk: MyString
+  size: 1
+  unit_of_measure: MyString
+  price: 1.5
+  image: MyText
+
+two:
+  name: MyString
+  description: MyText
+  firmness: MyString
+  region: MyString
+  milk: MyString
+  size: 1
+  unit_of_measure: MyString
+  price: 1.5
+  image: MyText

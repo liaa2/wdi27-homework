@@ -1,0 +1,20 @@
+%h2 Edit #{@murderer.first_name}
+
+%form{ :action => "/murderers/#{@murderer.id}", :method => "post" }
+    %input{ :type => "text", :name => "first_name", :value => "#{@murderer.first_name}"}
+    %br
+    %input{ :type => "text", :name => "last_name", :value => "#{@murderer.last_name}"}
+    %br
+    %input{ :type => "number", :name => "age", :value => "#{@murderer.age}"}
+    %br
+    %input{ :type => "text", :name => "location", :value => "#{@murderer.location}"}
+    %br
+    %input{ :type => "text", :name => "victim_type", :value => "#{@murderer.victim_type}"}
+    %br
+    %input{ :type => "text", :name => "kill_method", :value => "#{@murderer.kill_method}"}
+    %br
+    %input{ :type => "number", :name => "kill_count", :value => "#{@murderer.kill_count}"}
+    %br
+    %input{ :type => "text", :name => "fate", :value => "#{@murderer.fate}"}
+    %br
+    %input{ :type => "submit", :value => "Update murderer"}
