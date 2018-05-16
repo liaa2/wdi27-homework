@@ -1,0 +1,1885 @@
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ bin/rails:9
+  [1m[35m (4.4ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  ↳ bin/rails:9
+  [1m[35m (3.3ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to CreateSerialKillers (20180515102655)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE TABLE "serial_killers" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "image" text, "alive" boolean, "victims" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20180515102655_create_serial_killers.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20180515102655"]]
+  ↳ bin/rails:9
+  [1m[35m (2.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Create (0.7ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2018-05-15 10:32:49.185062"], ["updated_at", "2018-05-15 10:32:49.185062"]]
+  ↳ bin/rails:9
+  [1m[35m (3.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (2.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (3.0ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ bin/rails:9
+  [1m[35m (7.8ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  ↳ bin/rails:9
+  [1m[35m (3.7ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to CreateSerialKillers (20180515104931)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.7ms)[0m  [1m[35mCREATE TABLE "serial_killers" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "first_name" varchar, "last_name" varchar, "image" text, "alive" boolean, "victims" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20180515104931_create_serial_killers.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20180515104931"]]
+  ↳ bin/rails:9
+  [1m[35m (2.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (3.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Create (1.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2018-05-15 10:49:41.747535"], ["updated_at", "2018-05-15 10:49:41.747535"]]
+  ↳ bin/rails:9
+  [1m[35m (2.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (2.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mSerialKiller Load (2.3ms)[0m  [1m[34mSELECT "serial_killers".* FROM "serial_killers"[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[36mSerialKiller Create (4.3ms)[0m  [1m[32mINSERT INTO "serial_killers" ("first_name", "last_name", "alive", "victims", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["first_name", "Ted"], ["last_name", "Bundy"], ["alive", 0], ["victims", 36], ["created_at", "2018-05-15 10:56:15.579992"], ["updated_at", "2018-05-15 10:56:15.579992"]]
+  ↳ db/seeds.rb:13
+  [1m[35m (3.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:15
+  [1m[36mSerialKiller Create (0.8ms)[0m  [1m[32mINSERT INTO "serial_killers" ("first_name", "last_name", "alive", "victims", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["first_name", "Myra"], ["last_name", "Hindley"], ["alive", 0], ["victims", 5], ["created_at", "2018-05-15 10:56:15.591063"], ["updated_at", "2018-05-15 10:56:15.591063"]]
+  ↳ db/seeds.rb:15
+  [1m[35m (8.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:15
+  [1m[35m (2.5ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:17
+  [1m[36mSerialKiller Create (0.8ms)[0m  [1m[32mINSERT INTO "serial_killers" ("first_name", "last_name", "alive", "victims", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["first_name", "Jeffrey"], ["last_name", "Dahmer"], ["alive", 0], ["victims", 17], ["created_at", "2018-05-15 10:56:15.606017"], ["updated_at", "2018-05-15 10:56:15.606017"]]
+  ↳ db/seeds.rb:17
+  [1m[35m (12.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:19
+  [1m[36mSerialKiller Create (1.0ms)[0m  [1m[32mINSERT INTO "serial_killers" ("first_name", "last_name", "alive", "victims", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["first_name", "Jack"], ["last_name", "Unterweger"], ["alive", 0], ["victims", 12], ["created_at", "2018-05-15 10:56:15.626235"], ["updated_at", "2018-05-15 10:56:15.626235"]]
+  ↳ db/seeds.rb:19
+  [1m[35m (2.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:21
+  [1m[36mSerialKiller Create (1.9ms)[0m  [1m[32mINSERT INTO "serial_killers" ("first_name", "last_name", "alive", "victims", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["first_name", "Paul"], ["last_name", "Bernardo"], ["alive", 1], ["victims", 3], ["created_at", "2018-05-15 10:56:15.633558"], ["updated_at", "2018-05-15 10:56:15.633558"]]
+  ↳ db/seeds.rb:21
+  [1m[35m (3.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:21
+  [1m[36mSerialKiller Load (0.2ms)[0m  [1m[34mSELECT "serial_killers".* FROM "serial_killers"[0m
+  ↳ db/seeds.rb:25
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "serial_killers"."first_name", "serial_killers"."last_name" FROM "serial_killers"[0m
+  ↳ db/seeds.rb:26
+  [1m[36mSerialKiller Load (7.4ms)[0m  [1m[34mSELECT "serial_killers".* FROM "serial_killers"[0m
+Started GET "/planets" for 127.0.0.1 at 2018-05-15 21:19:44 +1000
+  [1m[35m (2.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/anh/.rvm/gems/ruby-2.4.1/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  
+ActionController::RoutingError (No route matches [GET] "/planets"):
+  
+actionpack (5.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.0) lib/rails/engine.rb:524:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/serialkillers" for 127.0.0.1 at 2018-05-15 21:19:48 +1000
+  
+ActionController::RoutingError (undefined local variable or method `t' for SerialKillersController:Class):
+  
+app/controllers/serialkillers_controller.rb:11:in `<class:SerialKillersController>'
+app/controllers/serialkillers_controller.rb:2:in `<main>'
+Started GET "/serialkillers" for 127.0.0.1 at 2018-05-15 21:29:07 +1000
+  
+ActionController::RoutingError (undefined local variable or method `t' for SerialKillersController:Class):
+  
+app/controllers/serialkillers_controller.rb:11:in `<class:SerialKillersController>'
+app/controllers/serialkillers_controller.rb:2:in `<main>'
+Started POST "/__web_console/repl_sessions/9100e9272c0aca85552e0b1c87ccafea/trace" for 127.0.0.1 at 2018-05-15 21:29:20 +1000
+Started GET "/serialkillers" for 127.0.0.1 at 2018-05-15 21:30:45 +1000
+  
+LoadError (Unable to autoload constant SerialkillersController, expected /Users/anh/wdi/homework/Hoang_Anh_Tran/week5/tues/serial-killers-db/app/controllers/serialkillers_controller.rb to define it):
+  
+activesupport (5.2.0) lib/active_support/dependencies.rb:503:in `load_missing_constant'
+bootsnap (1.3.0) lib/bootsnap/load_path_cache/core_ext/active_support.rb:43:in `load_missing_constant'
+activesupport (5.2.0) lib/active_support/dependencies.rb:193:in `const_missing'
+activesupport (5.2.0) lib/active_support/inflector/methods.rb:283:in `const_get'
+activesupport (5.2.0) lib/active_support/inflector/methods.rb:283:in `block in constantize'
+activesupport (5.2.0) lib/active_support/inflector/methods.rb:281:in `each'
+activesupport (5.2.0) lib/active_support/inflector/methods.rb:281:in `inject'
+activesupport (5.2.0) lib/active_support/inflector/methods.rb:281:in `constantize'
+activesupport (5.2.0) lib/active_support/dependencies.rb:574:in `get'
+activesupport (5.2.0) lib/active_support/dependencies.rb:605:in `constantize'
+actionpack (5.2.0) lib/action_dispatch/http/request.rb:88:in `controller_class_for'
+actionpack (5.2.0) lib/action_dispatch/http/parameters.rb:101:in `binary_params_for?'
+actionpack (5.2.0) lib/action_dispatch/http/parameters.rb:92:in `set_binary_encoding'
+actionpack (5.2.0) lib/action_dispatch/http/parameters.rb:69:in `path_parameters='
+actionpack (5.2.0) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.2.0) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.0) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.0) lib/action_dispatch/routing/route_set.rb:840:in `call'
+rack (2.0.5) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.5) lib/rack/etag.rb:25:in `call'
+rack (2.0.5) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.5) lib/rack/head.rb:12:in `call'
+actionpack (5.2.0) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.5) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.5) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.0) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.0) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.0) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.0) lib/rails/engine.rb:524:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/serialkillers" for 127.0.0.1 at 2018-05-15 21:33:12 +1000
+  [1m[35m (2.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/anh/.rvm/gems/ruby-2.4.1/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  
+LoadError (Unable to autoload constant SerialkillersController, expected /Users/anh/wdi/homework/Hoang_Anh_Tran/week5/tues/serial-killers-db/app/controllers/serialkillers_controller.rb to define it):
+  
+activesupport (5.2.0) lib/active_support/dependencies.rb:503:in `load_missing_constant'
+bootsnap (1.3.0) lib/bootsnap/load_path_cache/core_ext/active_support.rb:43:in `load_missing_constant'
+activesupport (5.2.0) lib/active_support/dependencies.rb:193:in `const_missing'
+activesupport (5.2.0) lib/active_support/inflector/methods.rb:283:in `const_get'
+activesupport (5.2.0) lib/active_support/inflector/methods.rb:283:in `block in constantize'
+activesupport (5.2.0) lib/active_support/inflector/methods.rb:281:in `each'
+activesupport (5.2.0) lib/active_support/inflector/methods.rb:281:in `inject'
+activesupport (5.2.0) lib/active_support/inflector/methods.rb:281:in `constantize'
+activesupport (5.2.0) lib/active_support/dependencies.rb:574:in `get'
+activesupport (5.2.0) lib/active_support/dependencies.rb:605:in `constantize'
+actionpack (5.2.0) lib/action_dispatch/http/request.rb:88:in `controller_class_for'
+actionpack (5.2.0) lib/action_dispatch/http/parameters.rb:101:in `binary_params_for?'
+actionpack (5.2.0) lib/action_dispatch/http/parameters.rb:92:in `set_binary_encoding'
+actionpack (5.2.0) lib/action_dispatch/http/parameters.rb:69:in `path_parameters='
+actionpack (5.2.0) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.2.0) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.0) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.0) lib/action_dispatch/routing/route_set.rb:840:in `call'
+rack (2.0.5) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.5) lib/rack/etag.rb:25:in `call'
+rack (2.0.5) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.5) lib/rack/head.rb:12:in `call'
+actionpack (5.2.0) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.5) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.5) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.0) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.0) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.0) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.0) lib/rails/engine.rb:524:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ bin/rails:9
+  [1m[35m (3.9ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  ↳ bin/rails:9
+  [1m[35m (3.9ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to CreateSerialkillers (20180515113531)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (1.0ms)[0m  [1m[35mCREATE TABLE "serialkillers" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "first_name" varchar, "last_name" varchar, "image" text, "alive" boolean, "victims" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20180515113531_create_serialkillers.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20180515113531"]]
+  ↳ bin/rails:9
+  [1m[35m (3.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.6ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Create (0.7ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2018-05-15 11:35:35.544772"], ["updated_at", "2018-05-15 11:35:35.544772"]]
+  ↳ bin/rails:9
+  [1m[35m (3.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (2.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mSerialkiller Load (5.0ms)[0m  [1m[34mSELECT "serialkillers".* FROM "serialkillers"[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[36mSerialkiller Create (2.7ms)[0m  [1m[32mINSERT INTO "serialkillers" ("first_name", "last_name", "alive", "victims", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["first_name", "Ted"], ["last_name", "Bundy"], ["alive", 0], ["victims", 36], ["created_at", "2018-05-15 11:38:26.790622"], ["updated_at", "2018-05-15 11:38:26.790622"]]
+  ↳ db/seeds.rb:13
+  [1m[35m (3.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:15
+  [1m[36mSerialkiller Create (0.8ms)[0m  [1m[32mINSERT INTO "serialkillers" ("first_name", "last_name", "alive", "victims", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["first_name", "Myra"], ["last_name", "Hindley"], ["alive", 0], ["victims", 5], ["created_at", "2018-05-15 11:38:26.800375"], ["updated_at", "2018-05-15 11:38:26.800375"]]
+  ↳ db/seeds.rb:15
+  [1m[35m (8.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:15
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:17
+  [1m[36mSerialkiller Create (0.8ms)[0m  [1m[32mINSERT INTO "serialkillers" ("first_name", "last_name", "alive", "victims", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["first_name", "Jeffrey"], ["last_name", "Dahmer"], ["alive", 0], ["victims", 17], ["created_at", "2018-05-15 11:38:26.813211"], ["updated_at", "2018-05-15 11:38:26.813211"]]
+  ↳ db/seeds.rb:17
+  [1m[35m (9.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:19
+  [1m[36mSerialkiller Create (1.3ms)[0m  [1m[32mINSERT INTO "serialkillers" ("first_name", "last_name", "alive", "victims", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["first_name", "Jack"], ["last_name", "Unterweger"], ["alive", 0], ["victims", 12], ["created_at", "2018-05-15 11:38:26.830664"], ["updated_at", "2018-05-15 11:38:26.830664"]]
+  ↳ db/seeds.rb:19
+  [1m[35m (6.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:21
+  [1m[36mSerialkiller Create (1.3ms)[0m  [1m[32mINSERT INTO "serialkillers" ("first_name", "last_name", "alive", "victims", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["first_name", "Paul"], ["last_name", "Bernardo"], ["alive", 1], ["victims", 3], ["created_at", "2018-05-15 11:38:26.842154"], ["updated_at", "2018-05-15 11:38:26.842154"]]
+  ↳ db/seeds.rb:21
+  [1m[35m (6.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:21
+  [1m[36mSerialkiller Load (0.3ms)[0m  [1m[34mSELECT "serialkillers".* FROM "serialkillers"[0m
+  ↳ db/seeds.rb:25
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "serialkillers"."first_name" FROM "serialkillers"[0m
+  ↳ db/seeds.rb:26
+Started GET "/serialkillers" for 127.0.0.1 at 2018-05-15 21:38:44 +1000
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/anh/.rvm/gems/ruby-2.4.1/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  
+LoadError (Unable to autoload constant SerialkillersController, expected /Users/anh/wdi/homework/Hoang_Anh_Tran/week5/tues/serial-killers-db/app/controllers/serialkillers_controller.rb to define it):
+  
+activesupport (5.2.0) lib/active_support/dependencies.rb:503:in `load_missing_constant'
+bootsnap (1.3.0) lib/bootsnap/load_path_cache/core_ext/active_support.rb:43:in `load_missing_constant'
+activesupport (5.2.0) lib/active_support/dependencies.rb:193:in `const_missing'
+activesupport (5.2.0) lib/active_support/inflector/methods.rb:283:in `const_get'
+activesupport (5.2.0) lib/active_support/inflector/methods.rb:283:in `block in constantize'
+activesupport (5.2.0) lib/active_support/inflector/methods.rb:281:in `each'
+activesupport (5.2.0) lib/active_support/inflector/methods.rb:281:in `inject'
+activesupport (5.2.0) lib/active_support/inflector/methods.rb:281:in `constantize'
+activesupport (5.2.0) lib/active_support/dependencies.rb:574:in `get'
+activesupport (5.2.0) lib/active_support/dependencies.rb:605:in `constantize'
+actionpack (5.2.0) lib/action_dispatch/http/request.rb:88:in `controller_class_for'
+actionpack (5.2.0) lib/action_dispatch/http/parameters.rb:101:in `binary_params_for?'
+actionpack (5.2.0) lib/action_dispatch/http/parameters.rb:92:in `set_binary_encoding'
+actionpack (5.2.0) lib/action_dispatch/http/parameters.rb:69:in `path_parameters='
+actionpack (5.2.0) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.2.0) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.0) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.0) lib/action_dispatch/routing/route_set.rb:840:in `call'
+rack (2.0.5) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.5) lib/rack/etag.rb:25:in `call'
+rack (2.0.5) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.5) lib/rack/head.rb:12:in `call'
+actionpack (5.2.0) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.5) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.5) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.0) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.0) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.0) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.0) lib/rails/engine.rb:524:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/planets" for 127.0.0.1 at 2018-05-15 21:38:51 +1000
+  
+ActionController::RoutingError (No route matches [GET] "/planets"):
+  
+actionpack (5.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.0) lib/rails/engine.rb:524:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/serialkillers" for 127.0.0.1 at 2018-05-15 21:38:56 +1000
+  
+LoadError (Unable to autoload constant SerialkillersController, expected /Users/anh/wdi/homework/Hoang_Anh_Tran/week5/tues/serial-killers-db/app/controllers/serialkillers_controller.rb to define it):
+  
+activesupport (5.2.0) lib/active_support/dependencies.rb:503:in `load_missing_constant'
+bootsnap (1.3.0) lib/bootsnap/load_path_cache/core_ext/active_support.rb:43:in `load_missing_constant'
+activesupport (5.2.0) lib/active_support/dependencies.rb:193:in `const_missing'
+activesupport (5.2.0) lib/active_support/inflector/methods.rb:283:in `const_get'
+activesupport (5.2.0) lib/active_support/inflector/methods.rb:283:in `block in constantize'
+activesupport (5.2.0) lib/active_support/inflector/methods.rb:281:in `each'
+activesupport (5.2.0) lib/active_support/inflector/methods.rb:281:in `inject'
+activesupport (5.2.0) lib/active_support/inflector/methods.rb:281:in `constantize'
+activesupport (5.2.0) lib/active_support/dependencies.rb:574:in `get'
+activesupport (5.2.0) lib/active_support/dependencies.rb:605:in `constantize'
+actionpack (5.2.0) lib/action_dispatch/http/request.rb:88:in `controller_class_for'
+actionpack (5.2.0) lib/action_dispatch/http/parameters.rb:101:in `binary_params_for?'
+actionpack (5.2.0) lib/action_dispatch/http/parameters.rb:92:in `set_binary_encoding'
+actionpack (5.2.0) lib/action_dispatch/http/parameters.rb:69:in `path_parameters='
+actionpack (5.2.0) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.2.0) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.0) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.0) lib/action_dispatch/routing/route_set.rb:840:in `call'
+rack (2.0.5) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.5) lib/rack/etag.rb:25:in `call'
+rack (2.0.5) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.5) lib/rack/head.rb:12:in `call'
+actionpack (5.2.0) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.5) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.5) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.0) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.0) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.0) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.0) lib/rails/engine.rb:524:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/serialkillers" for 127.0.0.1 at 2018-05-15 21:41:26 +1000
+  [1m[35m (2.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/anh/.rvm/gems/ruby-2.4.1/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  
+SyntaxError (/Users/anh/wdi/homework/Hoang_Anh_Tran/week5/tues/serial-killers-db/app/controllers/serialkillers_controller.rb:40: dynamic constant assignment
+    Serialkiller = Serialkillers.find params[:id
+                  ^
+/Users/anh/wdi/homework/Hoang_Anh_Tran/week5/tues/serial-killers-db/app/controllers/serialkillers_controller.rb:55: dynamic constant assignment
+    Serialkiller = Serialkiller.find params[:id]
+                  ^):
+  
+app/controllers/serialkillers_controller.rb:40: dynamic constant assignment
+app/controllers/serialkillers_controller.rb:55: dynamic constant assignment
+Started GET "/serialkillers" for 127.0.0.1 at 2018-05-15 21:42:29 +1000
+  
+SyntaxError (/Users/anh/wdi/homework/Hoang_Anh_Tran/week5/tues/serial-killers-db/app/controllers/serialkillers_controller.rb:40: dynamic constant assignment
+    Serialkiller = Serialkiller.find params[:id]
+                  ^
+/Users/anh/wdi/homework/Hoang_Anh_Tran/week5/tues/serial-killers-db/app/controllers/serialkillers_controller.rb:55: dynamic constant assignment
+    Serialkiller = Serialkiller.find params[:id]
+                  ^):
+  
+app/controllers/serialkillers_controller.rb:40: dynamic constant assignment
+app/controllers/serialkillers_controller.rb:55: dynamic constant assignment
+Started GET "/serialkillers" for 127.0.0.1 at 2018-05-15 21:42:47 +1000
+  
+SyntaxError (/Users/anh/wdi/homework/Hoang_Anh_Tran/week5/tues/serial-killers-db/app/controllers/serialkillers_controller.rb:40: dynamic constant assignment
+    Serialkiller = Serialkiller.find params[:id]
+                  ^
+/Users/anh/wdi/homework/Hoang_Anh_Tran/week5/tues/serial-killers-db/app/controllers/serialkillers_controller.rb:55: dynamic constant assignment
+    Serialkiller = Serialkiller.find params[:id]
+                  ^):
+  
+app/controllers/serialkillers_controller.rb:40: dynamic constant assignment
+app/controllers/serialkillers_controller.rb:55: dynamic constant assignment
+Started GET "/serialkillers" for 127.0.0.1 at 2018-05-15 21:44:34 +1000
+Started GET "/serialkillers" for 127.0.0.1 at 2018-05-15 21:44:35 +1000
+  [1m[35m (2.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/anh/.rvm/gems/ruby-2.4.1/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  
+SyntaxError (/Users/anh/wdi/homework/Hoang_Anh_Tran/week5/tues/serial-killers-db/app/controllers/serialkillers_controller.rb:55: dynamic constant assignment
+    Serialkiller = Serialkiller.find params[:id]
+                  ^):
+  
+app/controllers/serialkillers_controller.rb:55: dynamic constant assignment
+  
+SyntaxError (/Users/anh/wdi/homework/Hoang_Anh_Tran/week5/tues/serial-killers-db/app/controllers/serialkillers_controller.rb:55: dynamic constant assignment
+    Serialkiller = Serialkiller.find params[:id]
+                  ^):
+  
+app/controllers/serialkillers_controller.rb:55: dynamic constant assignment
+Started GET "/serialkillers" for 127.0.0.1 at 2018-05-15 21:44:52 +1000
+Processing by SerialkillersController#index as HTML
+  Rendering serialkillers/index.html.erb within layouts/application
+  Rendered serialkillers/index.html.erb within layouts/application (7.6ms)
+Completed 500 Internal Server Error in 46ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    2: 
+    3: <ul>
+    4: 
+    5: <% @serialkillers.each do |p| %>
+    6: <li>
+    7:   <a href="<%= serialkiller_path(p.id) %>"><%= p.first_name %><%= p.last_name %></a>
+    8: 
+  
+app/views/serialkillers/index.html.erb:5:in `_app_views_serialkillers_index_html_erb___1156340165414692452_70276261013900'
+Started GET "/serialkillers" for 127.0.0.1 at 2018-05-15 21:46:45 +1000
+Processing by SerialkillersController#index as HTML
+  Rendering serialkillers/index.html.erb within layouts/application
+  [1m[36mSerialkiller Load (5.0ms)[0m  [1m[34mSELECT "serialkillers".* FROM "serialkillers"[0m
+  ↳ app/views/serialkillers/index.html.erb:5
+  Rendered serialkillers/index.html.erb within layouts/application (24.0ms)
+Completed 200 OK in 469ms (Views: 448.1ms | ActiveRecord: 5.9ms)
+
+
+Started GET "/serialkillers/1" for 127.0.0.1 at 2018-05-15 21:46:48 +1000
+Processing by SerialkillersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSerialkiller Load (0.3ms)[0m  [1m[34mSELECT  "serialkillers".* FROM "serialkillers" WHERE "serialkillers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/serialkillers_controller.rb:30
+  Rendering serialkillers/show.html.erb within layouts/application
+  Rendered serialkillers/show.html.erb within layouts/application (10.5ms)
+Completed 500 Internal Server Error in 41ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (undefined method `name' for nil:NilClass):
+    1: <h2><%= @serialkiller.name %></h2>
+    2: <p> <strong>First Name</strong> <%= @serialkiller.first_name %></p>
+    3: <p> <strong>Last Name:</strong> <%= @serialkiller.last_name %></p>
+    4: <p> <strong>Alive:</strong> <%= @serialkiller.alive %></p>
+  
+app/views/serialkillers/show.html.erb:1:in `_app_views_serialkillers_show_html_erb___808177005868357035_70276275388860'
+Started GET "/serialkillers/1" for 127.0.0.1 at 2018-05-15 21:48:18 +1000
+Processing by SerialkillersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSerialkiller Load (2.2ms)[0m  [1m[34mSELECT  "serialkillers".* FROM "serialkillers" WHERE "serialkillers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/serialkillers_controller.rb:30
+  Rendering serialkillers/show.html.erb within layouts/application
+  Rendered serialkillers/show.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 99ms (Views: 71.4ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/serialkillers/1/edit" for 127.0.0.1 at 2018-05-15 21:48:21 +1000
+Processing by SerialkillersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSerialkiller Load (0.2ms)[0m  [1m[34mSELECT  "serialkillers".* FROM "serialkillers" WHERE "serialkillers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/serialkillers_controller.rb:35
+  Rendering serialkillers/edit.html.erb within layouts/application
+  Rendered serialkillers/edit.html.erb within layouts/application (13.0ms)
+Completed 500 Internal Server Error in 30ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (undefined method `name' for #<Serialkiller:0x007fd4f08bfbb0>):
+    1: <h1>Edit serialkiller: <%= @serialkiller.name %></h1>
+    2: 
+    3: <form action="<%= serialkiller_path( @serialkiller.id ) %>" method="post">
+    4:  First Name: <input type="text" name="first_name" value="<%= @serialkiller.first_name %>"><br>
+  
+app/views/serialkillers/edit.html.erb:1:in `_app_views_serialkillers_edit_html_erb___2757126738589748194_70276272744140'
+Started GET "/serialkillers/1/edit" for 127.0.0.1 at 2018-05-15 21:48:54 +1000
+Processing by SerialkillersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSerialkiller Load (0.2ms)[0m  [1m[34mSELECT  "serialkillers".* FROM "serialkillers" WHERE "serialkillers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/serialkillers_controller.rb:35
+  Rendering serialkillers/edit.html.erb within layouts/application
+  Rendered serialkillers/edit.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 32ms (Views: 28.0ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/serialkillers/1" for 127.0.0.1 at 2018-05-15 21:49:00 +1000
+Processing by SerialkillersController#update as HTML
+  Parameters: {"first_name"=>"Ted", "last_name"=>"Bundy", "image"=>"", "alive"=>"false", "victims"=>"37", "id"=>"1"}
+  [1m[36mSerialkiller Load (0.2ms)[0m  [1m[34mSELECT  "serialkillers".* FROM "serialkillers" WHERE "serialkillers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/serialkillers_controller.rb:40
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/serialkillers_controller.rb:41
+  [1m[36mSerialkiller Update (0.6ms)[0m  [1m[33mUPDATE "serialkillers" SET "image" = ?, "victims" = ?, "updated_at" = ? WHERE "serialkillers"."id" = ?[0m  [["image", ""], ["victims", 37], ["updated_at", "2018-05-15 11:49:00.575097"], ["id", 1]]
+  ↳ app/controllers/serialkillers_controller.rb:41
+  [1m[35m (2.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/serialkillers_controller.rb:41
+Redirected to http://localhost:3000/serialkillers/1
+Completed 302 Found in 10ms (ActiveRecord: 3.7ms)
+
+
+Started GET "/serialkillers/1" for 127.0.0.1 at 2018-05-15 21:49:00 +1000
+Processing by SerialkillersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSerialkiller Load (0.3ms)[0m  [1m[34mSELECT  "serialkillers".* FROM "serialkillers" WHERE "serialkillers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/serialkillers_controller.rb:30
+  Rendering serialkillers/show.html.erb within layouts/application
+  Rendered serialkillers/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 42ms (Views: 35.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/serialkillers" for 127.0.0.1 at 2018-05-15 21:49:13 +1000
+Processing by SerialkillersController#index as HTML
+  Rendering serialkillers/index.html.erb within layouts/application
+  [1m[36mSerialkiller Load (0.3ms)[0m  [1m[34mSELECT "serialkillers".* FROM "serialkillers"[0m
+  ↳ app/views/serialkillers/index.html.erb:5
+  Rendered serialkillers/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 35ms (Views: 24.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/serialkillers/1" for 127.0.0.1 at 2018-05-15 21:49:14 +1000
+Processing by SerialkillersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSerialkiller Load (0.1ms)[0m  [1m[34mSELECT  "serialkillers".* FROM "serialkillers" WHERE "serialkillers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/serialkillers_controller.rb:30
+  Rendering serialkillers/show.html.erb within layouts/application
+  Rendered serialkillers/show.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 39ms (Views: 34.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/serialkillers" for 127.0.0.1 at 2018-05-15 21:49:19 +1000
+Processing by SerialkillersController#index as HTML
+  Rendering serialkillers/index.html.erb within layouts/application
+  [1m[36mSerialkiller Load (0.2ms)[0m  [1m[34mSELECT "serialkillers".* FROM "serialkillers"[0m
+  ↳ app/views/serialkillers/index.html.erb:5
+  Rendered serialkillers/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 35ms (Views: 31.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/serialkillers/1" for 127.0.0.1 at 2018-05-15 21:50:13 +1000
+Processing by SerialkillersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSerialkiller Load (0.1ms)[0m  [1m[34mSELECT  "serialkillers".* FROM "serialkillers" WHERE "serialkillers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/serialkillers_controller.rb:30
+  Rendering serialkillers/show.html.erb within layouts/application
+  Rendered serialkillers/show.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 43ms (Views: 38.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/serialkillers" for 127.0.0.1 at 2018-05-15 21:51:43 +1000
+Processing by SerialkillersController#index as HTML
+  Rendering serialkillers/index.html.erb within layouts/application
+  [1m[36mSerialkiller Load (2.2ms)[0m  [1m[34mSELECT "serialkillers".* FROM "serialkillers"[0m
+  ↳ app/views/serialkillers/index.html.erb:5
+  Rendered serialkillers/index.html.erb within layouts/application (15.5ms)
+Completed 200 OK in 103ms (Views: 82.8ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/serialkillers/new" for 127.0.0.1 at 2018-05-15 21:51:44 +1000
+Processing by SerialkillersController#new as HTML
+  Rendering serialkillers/new.html.erb within layouts/application
+  Rendered serialkillers/new.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 61ms (Views: 54.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/serialkillers" for 127.0.0.1 at 2018-05-15 21:52:05 +1000
+Processing by SerialkillersController#create as HTML
+  Parameters: {"name"=>"teddy", "last_name"=>"dauto", "image"=>"", "alive"=>"", "victims"=>""}
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/serialkillers_controller.rb:14
+  [1m[36mSerialkiller Create (3.4ms)[0m  [1m[32mINSERT INTO "serialkillers" ("last_name", "image", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["last_name", "dauto"], ["image", ""], ["created_at", "2018-05-15 11:52:05.550935"], ["updated_at", "2018-05-15 11:52:05.550935"]]
+  ↳ app/controllers/serialkillers_controller.rb:14
+  [1m[35m (2.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/serialkillers_controller.rb:14
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 6.4ms)
+
+
+  
+NameError (uninitialized constant SerialkillersController::Serialkillers_path):
+  
+app/controllers/serialkillers_controller.rb:21:in `create'
+Started POST "/serialkillers" for 127.0.0.1 at 2018-05-15 21:53:59 +1000
+Processing by SerialkillersController#create as HTML
+  Parameters: {"name"=>"teddy", "last_name"=>"dauto", "image"=>"", "alive"=>"", "victims"=>""}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/serialkillers_controller.rb:14
+  [1m[36mSerialkiller Create (0.5ms)[0m  [1m[32mINSERT INTO "serialkillers" ("last_name", "image", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["last_name", "dauto"], ["image", ""], ["created_at", "2018-05-15 11:53:59.597216"], ["updated_at", "2018-05-15 11:53:59.597216"]]
+  ↳ app/controllers/serialkillers_controller.rb:14
+  [1m[35m (2.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/serialkillers_controller.rb:14
+Completed 500 Internal Server Error in 26ms (ActiveRecord: 4.4ms)
+
+
+  
+ActionController::UrlGenerationError (No route matches {:action=>"show", :controller=>"serialkillers"}, missing required keys: [:id]):
+  
+app/controllers/serialkillers_controller.rb:21:in `create'
+Started GET "/serialkillers" for 127.0.0.1 at 2018-05-15 21:56:30 +1000
+  [1m[35m (2.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/anh/.rvm/gems/ruby-2.4.1/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by SerialkillersController#index as HTML
+  Rendering serialkillers/index.html.erb within layouts/application
+  [1m[36mSerialkiller Load (0.6ms)[0m  [1m[34mSELECT "serialkillers".* FROM "serialkillers"[0m
+  ↳ app/views/serialkillers/index.html.erb:5
+  Rendered serialkillers/index.html.erb within layouts/application (31.8ms)
+Completed 200 OK in 395ms (Views: 365.9ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/serialkillers/6" for 127.0.0.1 at 2018-05-15 21:56:33 +1000
+Processing by SerialkillersController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mSerialkiller Load (0.4ms)[0m  [1m[34mSELECT  "serialkillers".* FROM "serialkillers" WHERE "serialkillers"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/serialkillers_controller.rb:30
+  Rendering serialkillers/show.html.erb within layouts/application
+  Rendered serialkillers/show.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 71ms (Views: 58.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/serialkillers/6/delete" for 127.0.0.1 at 2018-05-15 21:56:36 +1000
+Processing by SerialkillersController#destroy as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mSerialkiller Load (0.3ms)[0m  [1m[34mSELECT  "serialkillers".* FROM "serialkillers" WHERE "serialkillers"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/serialkillers_controller.rb:55
+Completed 500 Internal Server Error in 20ms (ActiveRecord: 0.3ms)
+
+
+  
+NoMethodError (undefined method `destroy_all' for #<Serialkiller:0x007fe14e350700>
+Did you mean?  destroy):
+  
+app/controllers/serialkillers_controller.rb:56:in `destroy'
+Started GET "/serialkillers/6/delete" for 127.0.0.1 at 2018-05-15 21:57:19 +1000
+Processing by SerialkillersController#destroy as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mSerialkiller Load (0.3ms)[0m  [1m[34mSELECT  "serialkillers".* FROM "serialkillers" WHERE "serialkillers"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/serialkillers_controller.rb:55
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/serialkillers_controller.rb:56
+  [1m[36mSerialkiller Destroy (1.0ms)[0m  [1m[31mDELETE FROM "serialkillers" WHERE "serialkillers"."id" = ?[0m  [["id", 6]]
+  ↳ app/controllers/serialkillers_controller.rb:56
+  [1m[35m (6.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/serialkillers_controller.rb:56
+Redirected to http://localhost:3000/serialkillers/6
+Completed 302 Found in 49ms (ActiveRecord: 9.6ms)
+
+
+Started GET "/serialkillers/6" for 127.0.0.1 at 2018-05-15 21:57:29 +1000
+Processing by SerialkillersController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mSerialkiller Load (0.2ms)[0m  [1m[34mSELECT  "serialkillers".* FROM "serialkillers" WHERE "serialkillers"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/serialkillers_controller.rb:30
+Completed 404 Not Found in 3ms (ActiveRecord: 0.2ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Serialkiller with 'id'=6):
+  
+app/controllers/serialkillers_controller.rb:30:in `show'
+Started GET "/serialkillers" for 127.0.0.1 at 2018-05-15 21:57:36 +1000
+Processing by SerialkillersController#index as HTML
+  Rendering serialkillers/index.html.erb within layouts/application
+  [1m[36mSerialkiller Load (0.3ms)[0m  [1m[34mSELECT "serialkillers".* FROM "serialkillers"[0m
+  ↳ app/views/serialkillers/index.html.erb:5
+  Rendered serialkillers/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 55ms (Views: 49.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/serialkillers/7" for 127.0.0.1 at 2018-05-15 21:57:37 +1000
+Processing by SerialkillersController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mSerialkiller Load (0.2ms)[0m  [1m[34mSELECT  "serialkillers".* FROM "serialkillers" WHERE "serialkillers"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/serialkillers_controller.rb:30
+  Rendering serialkillers/show.html.erb within layouts/application
+  Rendered serialkillers/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 35ms (Views: 29.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/serialkillers/7/delete" for 127.0.0.1 at 2018-05-15 21:57:39 +1000
+Processing by SerialkillersController#destroy as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mSerialkiller Load (0.2ms)[0m  [1m[34mSELECT  "serialkillers".* FROM "serialkillers" WHERE "serialkillers"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/serialkillers_controller.rb:55
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/serialkillers_controller.rb:56
+  [1m[36mSerialkiller Destroy (0.4ms)[0m  [1m[31mDELETE FROM "serialkillers" WHERE "serialkillers"."id" = ?[0m  [["id", 7]]
+  ↳ app/controllers/serialkillers_controller.rb:56
+  [1m[35m (2.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/serialkillers_controller.rb:56
+Redirected to http://localhost:3000/serialkillers/7
+Completed 302 Found in 7ms (ActiveRecord: 3.3ms)
+
+
+Started GET "/serialkillers/7" for 127.0.0.1 at 2018-05-15 21:57:39 +1000
+Processing by SerialkillersController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mSerialkiller Load (0.2ms)[0m  [1m[34mSELECT  "serialkillers".* FROM "serialkillers" WHERE "serialkillers"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/serialkillers_controller.rb:30
+Completed 404 Not Found in 2ms (ActiveRecord: 0.2ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Serialkiller with 'id'=7):
+  
+app/controllers/serialkillers_controller.rb:30:in `show'
+Started GET "/serialkillers/7" for 127.0.0.1 at 2018-05-15 21:57:45 +1000
+Processing by SerialkillersController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mSerialkiller Load (0.2ms)[0m  [1m[34mSELECT  "serialkillers".* FROM "serialkillers" WHERE "serialkillers"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/serialkillers_controller.rb:30
+Completed 404 Not Found in 3ms (ActiveRecord: 0.2ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Serialkiller with 'id'=7):
+  
+app/controllers/serialkillers_controller.rb:30:in `show'
+Started GET "/serialkillers" for 127.0.0.1 at 2018-05-15 21:57:48 +1000
+Processing by SerialkillersController#index as HTML
+  Rendering serialkillers/index.html.erb within layouts/application
+  [1m[36mSerialkiller Load (0.3ms)[0m  [1m[34mSELECT "serialkillers".* FROM "serialkillers"[0m
+  ↳ app/views/serialkillers/index.html.erb:5
+  Rendered serialkillers/index.html.erb within layouts/application (20.1ms)
+Completed 200 OK in 90ms (Views: 86.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/serialkillers/new" for 127.0.0.1 at 2018-05-15 21:57:54 +1000
+Processing by SerialkillersController#new as HTML
+  Rendering serialkillers/new.html.erb within layouts/application
+  Rendered serialkillers/new.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 45ms (Views: 39.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/serialkillers" for 127.0.0.1 at 2018-05-15 21:57:58 +1000
+Processing by SerialkillersController#create as HTML
+  Parameters: {"name"=>"teddydayto", "last_name"=>"", "image"=>"", "alive"=>"", "victims"=>""}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/serialkillers_controller.rb:14
+  [1m[36mSerialkiller Create (0.5ms)[0m  [1m[32mINSERT INTO "serialkillers" ("last_name", "image", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["last_name", ""], ["image", ""], ["created_at", "2018-05-15 11:57:58.960490"], ["updated_at", "2018-05-15 11:57:58.960490"]]
+  ↳ app/controllers/serialkillers_controller.rb:14
+  [1m[35m (2.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/serialkillers_controller.rb:14
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 3.2ms)
+
+
+  
+ActionController::UrlGenerationError (No route matches {:action=>"show", :controller=>"serialkillers"}, missing required keys: [:id]):
+  
+app/controllers/serialkillers_controller.rb:21:in `create'
+Started GET "/serialkillers" for 127.0.0.1 at 2018-05-15 21:58:29 +1000
+Processing by SerialkillersController#index as HTML
+  Rendering serialkillers/index.html.erb within layouts/application
+  [1m[36mSerialkiller Load (0.3ms)[0m  [1m[34mSELECT "serialkillers".* FROM "serialkillers"[0m
+  ↳ app/views/serialkillers/index.html.erb:5
+  Rendered serialkillers/index.html.erb within layouts/application (21.4ms)
+Completed 200 OK in 164ms (Views: 141.7ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/serialkillers/new" for 127.0.0.1 at 2018-05-15 21:58:32 +1000
+Processing by SerialkillersController#new as HTML
+  Rendering serialkillers/new.html.erb within layouts/application
+  Rendered serialkillers/new.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 33ms (Views: 28.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/serialkillers" for 127.0.0.1 at 2018-05-15 21:58:36 +1000
+Processing by SerialkillersController#create as HTML
+  Parameters: {"name"=>"evilman", "last_name"=>"", "image"=>"", "alive"=>"", "victims"=>""}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/serialkillers_controller.rb:14
+  [1m[36mSerialkiller Create (0.9ms)[0m  [1m[32mINSERT INTO "serialkillers" ("last_name", "image", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["last_name", ""], ["image", ""], ["created_at", "2018-05-15 11:58:36.661843"], ["updated_at", "2018-05-15 11:58:36.661843"]]
+  ↳ app/controllers/serialkillers_controller.rb:14
+  [1m[35m (6.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/serialkillers_controller.rb:14
+Redirected to http://localhost:3000/serialkillers
+Completed 302 Found in 12ms (ActiveRecord: 7.1ms)
+
+
+Started GET "/serialkillers" for 127.0.0.1 at 2018-05-15 21:58:36 +1000
+Processing by SerialkillersController#index as HTML
+  Rendering serialkillers/index.html.erb within layouts/application
+  [1m[36mSerialkiller Load (0.5ms)[0m  [1m[34mSELECT "serialkillers".* FROM "serialkillers"[0m
+  ↳ app/views/serialkillers/index.html.erb:5
+  Rendered serialkillers/index.html.erb within layouts/application (10.3ms)
+Completed 200 OK in 80ms (Views: 73.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/serialkillers/new" for 127.0.0.1 at 2018-05-15 21:58:40 +1000
+Processing by SerialkillersController#new as HTML
+  Rendering serialkillers/new.html.erb within layouts/application
+  Rendered serialkillers/new.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 35ms (Views: 29.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/serialkillers" for 127.0.0.1 at 2018-05-15 21:58:42 +1000
+Processing by SerialkillersController#create as HTML
+  Parameters: {"name"=>"asdads", "last_name"=>"adsasd", "image"=>"", "alive"=>"", "victims"=>""}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/serialkillers_controller.rb:14
+  [1m[36mSerialkiller Create (0.5ms)[0m  [1m[32mINSERT INTO "serialkillers" ("last_name", "image", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["last_name", "adsasd"], ["image", ""], ["created_at", "2018-05-15 11:58:42.895108"], ["updated_at", "2018-05-15 11:58:42.895108"]]
+  ↳ app/controllers/serialkillers_controller.rb:14
+  [1m[35m (3.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/serialkillers_controller.rb:14
+Redirected to http://localhost:3000/serialkillers
+Completed 302 Found in 10ms (ActiveRecord: 4.3ms)
+
+
+Started GET "/serialkillers" for 127.0.0.1 at 2018-05-15 21:58:42 +1000
+Processing by SerialkillersController#index as HTML
+  Rendering serialkillers/index.html.erb within layouts/application
+  [1m[36mSerialkiller Load (0.2ms)[0m  [1m[34mSELECT "serialkillers".* FROM "serialkillers"[0m
+  ↳ app/views/serialkillers/index.html.erb:5
+  Rendered serialkillers/index.html.erb within layouts/application (11.2ms)
+Completed 200 OK in 69ms (Views: 61.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/serialkillers/10" for 127.0.0.1 at 2018-05-15 21:58:44 +1000
+Processing by SerialkillersController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mSerialkiller Load (0.3ms)[0m  [1m[34mSELECT  "serialkillers".* FROM "serialkillers" WHERE "serialkillers"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/serialkillers_controller.rb:30
+  Rendering serialkillers/show.html.erb within layouts/application
+  Rendered serialkillers/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 37ms (Views: 31.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/serialkillers/10/delete" for 127.0.0.1 at 2018-05-15 21:58:46 +1000
+Processing by SerialkillersController#destroy as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mSerialkiller Load (0.2ms)[0m  [1m[34mSELECT  "serialkillers".* FROM "serialkillers" WHERE "serialkillers"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/serialkillers_controller.rb:55
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/serialkillers_controller.rb:56
+  [1m[36mSerialkiller Destroy (0.7ms)[0m  [1m[31mDELETE FROM "serialkillers" WHERE "serialkillers"."id" = ?[0m  [["id", 10]]
+  ↳ app/controllers/serialkillers_controller.rb:56
+  [1m[35m (2.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/serialkillers_controller.rb:56
+Redirected to http://localhost:3000/serialkillers/10
+Completed 302 Found in 8ms (ActiveRecord: 3.6ms)
+
+
+Started GET "/serialkillers/10" for 127.0.0.1 at 2018-05-15 21:58:46 +1000
+Processing by SerialkillersController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mSerialkiller Load (0.2ms)[0m  [1m[34mSELECT  "serialkillers".* FROM "serialkillers" WHERE "serialkillers"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/serialkillers_controller.rb:30
+Completed 404 Not Found in 2ms (ActiveRecord: 0.2ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Serialkiller with 'id'=10):
+  
+app/controllers/serialkillers_controller.rb:30:in `show'
+Started GET "/serialkillers" for 127.0.0.1 at 2018-05-15 22:00:02 +1000
+Processing by SerialkillersController#index as HTML
+  Rendering serialkillers/index.html.erb within layouts/application
+  [1m[36mSerialkiller Load (0.3ms)[0m  [1m[34mSELECT "serialkillers".* FROM "serialkillers"[0m
+  ↳ app/views/serialkillers/index.html.erb:5
+  Rendered serialkillers/index.html.erb within layouts/application (19.1ms)
+Completed 200 OK in 99ms (Views: 81.9ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/serialkillers/new" for 127.0.0.1 at 2018-05-15 22:00:04 +1000
+Processing by SerialkillersController#new as HTML
+  Rendering serialkillers/new.html.erb within layouts/application
+  Rendered serialkillers/new.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 34ms (Views: 29.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/serialkillers" for 127.0.0.1 at 2018-05-15 22:00:11 +1000
+Processing by SerialkillersController#create as HTML
+  Parameters: {"name"=>"SPACE", "last_name"=>"TEDDY", "image"=>"", "alive"=>"", "victims"=>""}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/serialkillers_controller.rb:14
+  [1m[36mSerialkiller Create (0.6ms)[0m  [1m[32mINSERT INTO "serialkillers" ("last_name", "image", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["last_name", "TEDDY"], ["image", ""], ["created_at", "2018-05-15 12:00:11.125938"], ["updated_at", "2018-05-15 12:00:11.125938"]]
+  ↳ app/controllers/serialkillers_controller.rb:14
+  [1m[35m (3.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/serialkillers_controller.rb:14
+Redirected to http://localhost:3000/serialkillers
+Completed 302 Found in 8ms (ActiveRecord: 3.6ms)
+
+
+Started GET "/serialkillers" for 127.0.0.1 at 2018-05-15 22:00:11 +1000
+Processing by SerialkillersController#index as HTML
+  Rendering serialkillers/index.html.erb within layouts/application
+  [1m[36mSerialkiller Load (0.2ms)[0m  [1m[34mSELECT "serialkillers".* FROM "serialkillers"[0m
+  ↳ app/views/serialkillers/index.html.erb:5
+  Rendered serialkillers/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 29ms (Views: 24.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/serialkillers/11" for 127.0.0.1 at 2018-05-15 22:00:12 +1000
+Processing by SerialkillersController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mSerialkiller Load (0.3ms)[0m  [1m[34mSELECT  "serialkillers".* FROM "serialkillers" WHERE "serialkillers"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/serialkillers_controller.rb:30
+  Rendering serialkillers/show.html.erb within layouts/application
+  Rendered serialkillers/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 38ms (Views: 31.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/serialkillers/11/delete" for 127.0.0.1 at 2018-05-15 22:00:13 +1000
+Processing by SerialkillersController#destroy as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mSerialkiller Load (0.3ms)[0m  [1m[34mSELECT  "serialkillers".* FROM "serialkillers" WHERE "serialkillers"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/serialkillers_controller.rb:55
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/serialkillers_controller.rb:56
+  [1m[36mSerialkiller Destroy (0.4ms)[0m  [1m[31mDELETE FROM "serialkillers" WHERE "serialkillers"."id" = ?[0m  [["id", 11]]
+  ↳ app/controllers/serialkillers_controller.rb:56
+  [1m[35m (2.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/serialkillers_controller.rb:56
+Redirected to http://localhost:3000/serialkillers
+Completed 302 Found in 8ms (ActiveRecord: 3.6ms)
+
+
+Started GET "/serialkillers" for 127.0.0.1 at 2018-05-15 22:00:13 +1000
+Processing by SerialkillersController#index as HTML
+  Rendering serialkillers/index.html.erb within layouts/application
+  [1m[36mSerialkiller Load (0.3ms)[0m  [1m[34mSELECT "serialkillers".* FROM "serialkillers"[0m
+  ↳ app/views/serialkillers/index.html.erb:5
+  Rendered serialkillers/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 43ms (Views: 38.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/serialkillers/new" for 127.0.0.1 at 2018-05-15 22:00:17 +1000
+Processing by SerialkillersController#new as HTML
+  Rendering serialkillers/new.html.erb within layouts/application
+  Rendered serialkillers/new.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 35ms (Views: 29.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/serialkillers" for 127.0.0.1 at 2018-05-15 22:00:23 +1000
+Processing by SerialkillersController#create as HTML
+  Parameters: {"name"=>"SPACE ", "last_name"=>"TEDDY", "image"=>"", "alive"=>"", "victims"=>""}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/serialkillers_controller.rb:14
+  [1m[36mSerialkiller Create (0.8ms)[0m  [1m[32mINSERT INTO "serialkillers" ("last_name", "image", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["last_name", "TEDDY"], ["image", ""], ["created_at", "2018-05-15 12:00:23.471347"], ["updated_at", "2018-05-15 12:00:23.471347"]]
+  ↳ app/controllers/serialkillers_controller.rb:14
+  [1m[35m (4.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/serialkillers_controller.rb:14
+Redirected to http://localhost:3000/serialkillers
+Completed 302 Found in 11ms (ActiveRecord: 4.9ms)
+
+
+Started GET "/serialkillers" for 127.0.0.1 at 2018-05-15 22:00:23 +1000
+Processing by SerialkillersController#index as HTML
+  Rendering serialkillers/index.html.erb within layouts/application
+  [1m[36mSerialkiller Load (0.2ms)[0m  [1m[34mSELECT "serialkillers".* FROM "serialkillers"[0m
+  ↳ app/views/serialkillers/index.html.erb:5
+  Rendered serialkillers/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 32ms (Views: 28.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/serialkillers/12" for 127.0.0.1 at 2018-05-15 22:00:24 +1000
+Processing by SerialkillersController#show as HTML
+  Parameters: {"id"=>"12"}
+  [1m[36mSerialkiller Load (0.2ms)[0m  [1m[34mSELECT  "serialkillers".* FROM "serialkillers" WHERE "serialkillers"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/serialkillers_controller.rb:30
+  Rendering serialkillers/show.html.erb within layouts/application
+  Rendered serialkillers/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 36ms (Views: 30.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/serialkillers/12/edit" for 127.0.0.1 at 2018-05-15 22:00:25 +1000
+Processing by SerialkillersController#edit as HTML
+  Parameters: {"id"=>"12"}
+  [1m[36mSerialkiller Load (0.1ms)[0m  [1m[34mSELECT  "serialkillers".* FROM "serialkillers" WHERE "serialkillers"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/serialkillers_controller.rb:35
+  Rendering serialkillers/edit.html.erb within layouts/application
+  Rendered serialkillers/edit.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 38ms (Views: 31.5ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/serialkillers/12" for 127.0.0.1 at 2018-05-15 22:00:32 +1000
+Processing by SerialkillersController#update as HTML
+  Parameters: {"first_name"=>"SPACE", "last_name"=>"TEDDY2", "image"=>"", "alive"=>"", "victims"=>"", "id"=>"12"}
+  [1m[36mSerialkiller Load (0.2ms)[0m  [1m[34mSELECT  "serialkillers".* FROM "serialkillers" WHERE "serialkillers"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/serialkillers_controller.rb:40
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/serialkillers_controller.rb:41
+  [1m[36mSerialkiller Update (0.7ms)[0m  [1m[33mUPDATE "serialkillers" SET "first_name" = ?, "last_name" = ?, "updated_at" = ? WHERE "serialkillers"."id" = ?[0m  [["first_name", "SPACE"], ["last_name", "TEDDY2"], ["updated_at", "2018-05-15 12:00:32.837426"], ["id", 12]]
+  ↳ app/controllers/serialkillers_controller.rb:41
+  [1m[35m (2.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/serialkillers_controller.rb:41
+Redirected to http://localhost:3000/serialkillers/12
+Completed 302 Found in 10ms (ActiveRecord: 3.9ms)
+
+
+Started GET "/serialkillers/12" for 127.0.0.1 at 2018-05-15 22:00:32 +1000
+Processing by SerialkillersController#show as HTML
+  Parameters: {"id"=>"12"}
+  [1m[36mSerialkiller Load (0.1ms)[0m  [1m[34mSELECT  "serialkillers".* FROM "serialkillers" WHERE "serialkillers"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/serialkillers_controller.rb:30
+  Rendering serialkillers/show.html.erb within layouts/application
+  Rendered serialkillers/show.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 46ms (Views: 40.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/serialkillers" for 127.0.0.1 at 2018-05-15 22:00:36 +1000
+Processing by SerialkillersController#index as HTML
+  Rendering serialkillers/index.html.erb within layouts/application
+  [1m[36mSerialkiller Load (0.3ms)[0m  [1m[34mSELECT "serialkillers".* FROM "serialkillers"[0m
+  ↳ app/views/serialkillers/index.html.erb:5
+  Rendered serialkillers/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 47ms (Views: 42.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/serialkillers/12" for 127.0.0.1 at 2018-05-15 22:00:38 +1000
+Processing by SerialkillersController#show as HTML
+  Parameters: {"id"=>"12"}
+  [1m[36mSerialkiller Load (0.3ms)[0m  [1m[34mSELECT  "serialkillers".* FROM "serialkillers" WHERE "serialkillers"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/serialkillers_controller.rb:30
+  Rendering serialkillers/show.html.erb within layouts/application
+  Rendered serialkillers/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 36ms (Views: 29.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/serialkillers/12/edit" for 127.0.0.1 at 2018-05-15 22:00:41 +1000
+Processing by SerialkillersController#edit as HTML
+  Parameters: {"id"=>"12"}
+  [1m[36mSerialkiller Load (0.2ms)[0m  [1m[34mSELECT  "serialkillers".* FROM "serialkillers" WHERE "serialkillers"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/serialkillers_controller.rb:35
+  Rendering serialkillers/edit.html.erb within layouts/application
+  Rendered serialkillers/edit.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 44ms (Views: 37.8ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/serialkillers/12" for 127.0.0.1 at 2018-05-15 22:00:42 +1000
+Processing by SerialkillersController#update as HTML
+  Parameters: {"first_name"=>"SPACE1", "last_name"=>"TEDDY2", "image"=>"", "alive"=>"", "victims"=>"", "id"=>"12"}
+  [1m[36mSerialkiller Load (0.3ms)[0m  [1m[34mSELECT  "serialkillers".* FROM "serialkillers" WHERE "serialkillers"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/serialkillers_controller.rb:40
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/serialkillers_controller.rb:41
+  [1m[36mSerialkiller Update (0.7ms)[0m  [1m[33mUPDATE "serialkillers" SET "first_name" = ?, "updated_at" = ? WHERE "serialkillers"."id" = ?[0m  [["first_name", "SPACE1"], ["updated_at", "2018-05-15 12:00:42.856820"], ["id", 12]]
+  ↳ app/controllers/serialkillers_controller.rb:41
+  [1m[35m (3.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/serialkillers_controller.rb:41
+Redirected to http://localhost:3000/serialkillers/12
+Completed 302 Found in 10ms (ActiveRecord: 4.0ms)
+
+
+Started GET "/serialkillers/12" for 127.0.0.1 at 2018-05-15 22:00:42 +1000
+Processing by SerialkillersController#show as HTML
+  Parameters: {"id"=>"12"}
+  [1m[36mSerialkiller Load (0.1ms)[0m  [1m[34mSELECT  "serialkillers".* FROM "serialkillers" WHERE "serialkillers"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/serialkillers_controller.rb:30
+  Rendering serialkillers/show.html.erb within layouts/application
+  Rendered serialkillers/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 27ms (Views: 23.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/serialkillers/12/delete" for 127.0.0.1 at 2018-05-15 22:00:44 +1000
+Processing by SerialkillersController#destroy as HTML
+  Parameters: {"id"=>"12"}
+  [1m[36mSerialkiller Load (0.2ms)[0m  [1m[34mSELECT  "serialkillers".* FROM "serialkillers" WHERE "serialkillers"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/serialkillers_controller.rb:55
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/serialkillers_controller.rb:56
+  [1m[36mSerialkiller Destroy (0.5ms)[0m  [1m[31mDELETE FROM "serialkillers" WHERE "serialkillers"."id" = ?[0m  [["id", 12]]
+  ↳ app/controllers/serialkillers_controller.rb:56
+  [1m[35m (2.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/serialkillers_controller.rb:56
+Redirected to http://localhost:3000/serialkillers
+Completed 302 Found in 8ms (ActiveRecord: 3.6ms)
+
+
+Started GET "/serialkillers" for 127.0.0.1 at 2018-05-15 22:00:44 +1000
+Processing by SerialkillersController#index as HTML
+  Rendering serialkillers/index.html.erb within layouts/application
+  [1m[36mSerialkiller Load (0.3ms)[0m  [1m[34mSELECT "serialkillers".* FROM "serialkillers"[0m
+  ↳ app/views/serialkillers/index.html.erb:5
+  Rendered serialkillers/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 43ms (Views: 38.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/serialkillers/new" for 127.0.0.1 at 2018-05-15 22:00:47 +1000
+Processing by SerialkillersController#new as HTML
+  Rendering serialkillers/new.html.erb within layouts/application
+  Rendered serialkillers/new.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 33ms (Views: 27.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/serialkillers" for 127.0.0.1 at 2018-05-15 22:00:53 +1000
+Processing by SerialkillersController#create as HTML
+  Parameters: {"name"=>"SPACE", "last_name"=>"TESDDASDT", "image"=>"", "alive"=>"", "victims"=>""}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/serialkillers_controller.rb:14
+  [1m[36mSerialkiller Create (0.8ms)[0m  [1m[32mINSERT INTO "serialkillers" ("last_name", "image", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["last_name", "TESDDASDT"], ["image", ""], ["created_at", "2018-05-15 12:00:53.030937"], ["updated_at", "2018-05-15 12:00:53.030937"]]
+  ↳ app/controllers/serialkillers_controller.rb:14
+  [1m[35m (5.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/serialkillers_controller.rb:14
+Redirected to http://localhost:3000/serialkillers
+Completed 302 Found in 11ms (ActiveRecord: 6.4ms)
+
+
+Started GET "/serialkillers" for 127.0.0.1 at 2018-05-15 22:00:53 +1000
+Processing by SerialkillersController#index as HTML
+  Rendering serialkillers/index.html.erb within layouts/application
+  [1m[36mSerialkiller Load (0.2ms)[0m  [1m[34mSELECT "serialkillers".* FROM "serialkillers"[0m
+  ↳ app/views/serialkillers/index.html.erb:5
+  Rendered serialkillers/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 32ms (Views: 29.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/serialkillers/new" for 127.0.0.1 at 2018-05-15 22:01:15 +1000
+Processing by SerialkillersController#new as HTML
+  Rendering serialkillers/new.html.erb within layouts/application
+  Rendered serialkillers/new.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 63ms (Views: 59.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/serialkillers" for 127.0.0.1 at 2018-05-15 22:01:21 +1000
+Processing by SerialkillersController#create as HTML
+  Parameters: {"first_name"=>"coding", "last_name"=>"totoro", "image"=>"", "alive"=>"", "victims"=>""}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/serialkillers_controller.rb:14
+  [1m[36mSerialkiller Create (0.8ms)[0m  [1m[32mINSERT INTO "serialkillers" ("first_name", "last_name", "image", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["first_name", "coding"], ["last_name", "totoro"], ["image", ""], ["created_at", "2018-05-15 12:01:21.371416"], ["updated_at", "2018-05-15 12:01:21.371416"]]
+  ↳ app/controllers/serialkillers_controller.rb:14
+  [1m[35m (3.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/serialkillers_controller.rb:14
+Redirected to http://localhost:3000/serialkillers
+Completed 302 Found in 10ms (ActiveRecord: 4.1ms)
+
+
+Started GET "/serialkillers" for 127.0.0.1 at 2018-05-15 22:01:21 +1000
+Processing by SerialkillersController#index as HTML
+  Rendering serialkillers/index.html.erb within layouts/application
+  [1m[36mSerialkiller Load (0.3ms)[0m  [1m[34mSELECT "serialkillers".* FROM "serialkillers"[0m
+  ↳ app/views/serialkillers/index.html.erb:5
+  Rendered serialkillers/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 70ms (Views: 60.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/serialkillers/14" for 127.0.0.1 at 2018-05-15 22:01:25 +1000
+Processing by SerialkillersController#show as HTML
+  Parameters: {"id"=>"14"}
+  [1m[36mSerialkiller Load (0.2ms)[0m  [1m[34mSELECT  "serialkillers".* FROM "serialkillers" WHERE "serialkillers"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/serialkillers_controller.rb:30
+  Rendering serialkillers/show.html.erb within layouts/application
+  Rendered serialkillers/show.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 40ms (Views: 33.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/serialkillers/14/delete" for 127.0.0.1 at 2018-05-15 22:01:26 +1000
+Processing by SerialkillersController#destroy as HTML
+  Parameters: {"id"=>"14"}
+  [1m[36mSerialkiller Load (0.2ms)[0m  [1m[34mSELECT  "serialkillers".* FROM "serialkillers" WHERE "serialkillers"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/serialkillers_controller.rb:55
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/serialkillers_controller.rb:56
+  [1m[36mSerialkiller Destroy (0.4ms)[0m  [1m[31mDELETE FROM "serialkillers" WHERE "serialkillers"."id" = ?[0m  [["id", 14]]
+  ↳ app/controllers/serialkillers_controller.rb:56
+  [1m[35m (2.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/serialkillers_controller.rb:56
+Redirected to http://localhost:3000/serialkillers
+Completed 302 Found in 9ms (ActiveRecord: 3.5ms)
+
+
+Started GET "/serialkillers" for 127.0.0.1 at 2018-05-15 22:01:26 +1000
+Processing by SerialkillersController#index as HTML
+  Rendering serialkillers/index.html.erb within layouts/application
+  [1m[36mSerialkiller Load (0.6ms)[0m  [1m[34mSELECT "serialkillers".* FROM "serialkillers"[0m
+  ↳ app/views/serialkillers/index.html.erb:5
+  Rendered serialkillers/index.html.erb within layouts/application (8.2ms)
+Completed 200 OK in 100ms (Views: 93.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/serialkillers/13" for 127.0.0.1 at 2018-05-15 22:01:27 +1000
+Processing by SerialkillersController#show as HTML
+  Parameters: {"id"=>"13"}
+  [1m[36mSerialkiller Load (0.2ms)[0m  [1m[34mSELECT  "serialkillers".* FROM "serialkillers" WHERE "serialkillers"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/serialkillers_controller.rb:30
+  Rendering serialkillers/show.html.erb within layouts/application
+  Rendered serialkillers/show.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 77ms (Views: 70.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/serialkillers/13/delete" for 127.0.0.1 at 2018-05-15 22:01:28 +1000
+Processing by SerialkillersController#destroy as HTML
+  Parameters: {"id"=>"13"}
+  [1m[36mSerialkiller Load (0.2ms)[0m  [1m[34mSELECT  "serialkillers".* FROM "serialkillers" WHERE "serialkillers"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/serialkillers_controller.rb:55
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/serialkillers_controller.rb:56
+  [1m[36mSerialkiller Destroy (0.5ms)[0m  [1m[31mDELETE FROM "serialkillers" WHERE "serialkillers"."id" = ?[0m  [["id", 13]]
+  ↳ app/controllers/serialkillers_controller.rb:56
+  [1m[35m (2.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/serialkillers_controller.rb:56
+Redirected to http://localhost:3000/serialkillers
+Completed 302 Found in 8ms (ActiveRecord: 3.6ms)
+
+
+Started GET "/serialkillers" for 127.0.0.1 at 2018-05-15 22:01:28 +1000
+Processing by SerialkillersController#index as HTML
+  Rendering serialkillers/index.html.erb within layouts/application
+  [1m[36mSerialkiller Load (0.3ms)[0m  [1m[34mSELECT "serialkillers".* FROM "serialkillers"[0m
+  ↳ app/views/serialkillers/index.html.erb:5
+  Rendered serialkillers/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 100ms (Views: 70.9ms | ActiveRecord: 0.3ms)
+
+
+  [1m[35m (2.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (3.4ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ bin/rails:9
+  [1m[35m (6.6ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  ↳ bin/rails:9
+  [1m[35m (3.1ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to CreateSerialkillers (20180515120750)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.6ms)[0m  [1m[35mCREATE TABLE "serialkillers" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "first_name" varchar, "last_name" varchar, "image" text, "alive" boolean, "victims" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20180515120750_create_serialkillers.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20180515120750"]]
+  ↳ bin/rails:9
+  [1m[35m (3.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Create (0.7ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2018-05-15 12:07:53.916770"], ["updated_at", "2018-05-15 12:07:53.916770"]]
+  ↳ bin/rails:9
+  [1m[35m (3.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mSerialkiller Load (0.3ms)[0m  [1m[34mSELECT "serialkillers".* FROM "serialkillers"[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[36mSerialkiller Create (1.3ms)[0m  [1m[32mINSERT INTO "serialkillers" ("first_name", "last_name", "alive", "victims", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["first_name", "Ted"], ["last_name", "Bundy"], ["alive", 0], ["victims", 36], ["created_at", "2018-05-15 12:07:55.699807"], ["updated_at", "2018-05-15 12:07:55.699807"]]
+  ↳ db/seeds.rb:13
+  [1m[35m (2.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:15
+  [1m[36mSerialkiller Create (0.6ms)[0m  [1m[32mINSERT INTO "serialkillers" ("first_name", "last_name", "alive", "victims", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["first_name", "Myra"], ["last_name", "Hindley"], ["alive", 0], ["victims", 5], ["created_at", "2018-05-15 12:07:55.707258"], ["updated_at", "2018-05-15 12:07:55.707258"]]
+  ↳ db/seeds.rb:15
+  [1m[35m (3.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:15
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:17
+  [1m[36mSerialkiller Create (1.1ms)[0m  [1m[32mINSERT INTO "serialkillers" ("first_name", "last_name", "alive", "victims", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["first_name", "Jeffrey"], ["last_name", "Dahmer"], ["alive", 0], ["victims", 17], ["created_at", "2018-05-15 12:07:55.714061"], ["updated_at", "2018-05-15 12:07:55.714061"]]
+  ↳ db/seeds.rb:17
+  [1m[35m (11.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:19
+  [1m[36mSerialkiller Create (0.6ms)[0m  [1m[32mINSERT INTO "serialkillers" ("first_name", "last_name", "alive", "victims", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["first_name", "Jack"], ["last_name", "Unterweger"], ["alive", 0], ["victims", 12], ["created_at", "2018-05-15 12:07:55.729164"], ["updated_at", "2018-05-15 12:07:55.729164"]]
+  ↳ db/seeds.rb:19
+  [1m[35m (4.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:21
+  [1m[36mSerialkiller Create (0.6ms)[0m  [1m[32mINSERT INTO "serialkillers" ("first_name", "last_name", "alive", "victims", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["first_name", "Paul"], ["last_name", "Bernardo"], ["alive", 1], ["victims", 3], ["created_at", "2018-05-15 12:07:55.736916"], ["updated_at", "2018-05-15 12:07:55.736916"]]
+  ↳ db/seeds.rb:21
+  [1m[35m (33.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:21
+  [1m[36mSerialkiller Load (0.9ms)[0m  [1m[34mSELECT "serialkillers".* FROM "serialkillers"[0m
+  ↳ db/seeds.rb:25
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "serialkillers"."first_name" FROM "serialkillers"[0m
+  ↳ db/seeds.rb:26
+Started GET "/serialkillers" for 127.0.0.1 at 2018-05-15 22:08:03 +1000
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/anh/.rvm/gems/ruby-2.4.1/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by SerialkillersController#index as HTML
+  Rendering serialkillers/index.html.erb within layouts/application
+  [1m[36mSerialkiller Load (0.4ms)[0m  [1m[34mSELECT "serialkillers".* FROM "serialkillers"[0m
+  ↳ app/views/serialkillers/index.html.erb:5
+  Rendered serialkillers/index.html.erb within layouts/application (25.5ms)
+Completed 200 OK in 362ms (Views: 345.8ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/serialkillers/1" for 127.0.0.1 at 2018-05-15 22:08:05 +1000
+Processing by SerialkillersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSerialkiller Load (0.3ms)[0m  [1m[34mSELECT  "serialkillers".* FROM "serialkillers" WHERE "serialkillers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/serialkillers_controller.rb:30
+  Rendering serialkillers/show.html.erb within layouts/application
+  Rendered serialkillers/show.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 48ms (Views: 41.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/serialkillers/new" for 127.0.0.1 at 2018-05-15 22:08:12 +1000
+Processing by SerialkillersController#new as HTML
+  Rendering serialkillers/new.html.erb within layouts/application
+  Rendered serialkillers/new.html.erb within layouts/application (33.9ms)
+Completed 200 OK in 82ms (Views: 74.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/serialkillers/2" for 127.0.0.1 at 2018-05-15 22:08:21 +1000
+Processing by SerialkillersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mSerialkiller Load (0.2ms)[0m  [1m[34mSELECT  "serialkillers".* FROM "serialkillers" WHERE "serialkillers"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/serialkillers_controller.rb:30
+  Rendering serialkillers/show.html.erb within layouts/application
+  Rendered serialkillers/show.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 40ms (Views: 35.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/serialkillers/2/edit" for 127.0.0.1 at 2018-05-15 22:08:23 +1000
+Processing by SerialkillersController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mSerialkiller Load (0.3ms)[0m  [1m[34mSELECT  "serialkillers".* FROM "serialkillers" WHERE "serialkillers"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/serialkillers_controller.rb:35
+  Rendering serialkillers/edit.html.erb within layouts/application
+  Rendered serialkillers/edit.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 47ms (Views: 40.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/serialkillers/1" for 127.0.0.1 at 2018-05-15 22:11:26 +1000
+Processing by SerialkillersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSerialkiller Load (0.3ms)[0m  [1m[34mSELECT  "serialkillers".* FROM "serialkillers" WHERE "serialkillers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/serialkillers_controller.rb:30
+  Rendering serialkillers/show.html.erb within layouts/application
+  Rendered serialkillers/show.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 85ms (Views: 77.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/serialkillers/1" for 127.0.0.1 at 2018-05-15 22:11:59 +1000
+Processing by SerialkillersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSerialkiller Load (0.2ms)[0m  [1m[34mSELECT  "serialkillers".* FROM "serialkillers" WHERE "serialkillers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/serialkillers_controller.rb:30
+  Rendering serialkillers/show.html.erb within layouts/application
+  Rendered serialkillers/show.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 125ms (Views: 115.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/serialkillers/1/edit" for 127.0.0.1 at 2018-05-15 22:12:11 +1000
+Processing by SerialkillersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSerialkiller Load (0.2ms)[0m  [1m[34mSELECT  "serialkillers".* FROM "serialkillers" WHERE "serialkillers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/serialkillers_controller.rb:35
+  Rendering serialkillers/edit.html.erb within layouts/application
+  Rendered serialkillers/edit.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 82ms (Views: 75.9ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/serialkillers/1" for 127.0.0.1 at 2018-05-15 22:22:30 +1000
+Processing by SerialkillersController#update as HTML
+  Parameters: {"first_name"=>"Ted", "last_name"=>"Bundy", "image"=>"https://www.biography.com/.image/t_share/MTQ1NDY3ODU4MjI5NDA1MjM5/ted-bundy---to-sleep-with-danger.jpg", "alive"=>"false", "victims"=>"36", "id"=>"1"}
+  [1m[36mSerialkiller Load (2.1ms)[0m  [1m[34mSELECT  "serialkillers".* FROM "serialkillers" WHERE "serialkillers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/serialkillers_controller.rb:40
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/serialkillers_controller.rb:41
+  [1m[36mSerialkiller Update (1.0ms)[0m  [1m[33mUPDATE "serialkillers" SET "image" = ?, "updated_at" = ? WHERE "serialkillers"."id" = ?[0m  [["image", "https://www.biography.com/.image/t_share/MTQ1NDY3ODU4MjI5NDA1MjM5/ted-bundy---to-sleep-with-danger.jpg"], ["updated_at", "2018-05-15 12:22:30.274202"], ["id", 1]]
+  ↳ app/controllers/serialkillers_controller.rb:41
+  [1m[35m (5.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/serialkillers_controller.rb:41
+Redirected to http://localhost:3000/serialkillers/1
+Completed 302 Found in 37ms (ActiveRecord: 8.7ms)
+
+
+Started GET "/serialkillers/1" for 127.0.0.1 at 2018-05-15 22:22:30 +1000
+Processing by SerialkillersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSerialkiller Load (0.6ms)[0m  [1m[34mSELECT  "serialkillers".* FROM "serialkillers" WHERE "serialkillers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/serialkillers_controller.rb:30
+  Rendering serialkillers/show.html.erb within layouts/application
+  Rendered serialkillers/show.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 84ms (Views: 69.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/serialkillers" for 127.0.0.1 at 2018-05-15 22:22:56 +1000
+Processing by SerialkillersController#index as HTML
+  Rendering serialkillers/index.html.erb within layouts/application
+  [1m[36mSerialkiller Load (0.2ms)[0m  [1m[34mSELECT "serialkillers".* FROM "serialkillers"[0m
+  ↳ app/views/serialkillers/index.html.erb:5
+  Rendered serialkillers/index.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 67ms (Views: 61.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/serialkillers/3" for 127.0.0.1 at 2018-05-15 22:23:01 +1000
+Processing by SerialkillersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mSerialkiller Load (0.2ms)[0m  [1m[34mSELECT  "serialkillers".* FROM "serialkillers" WHERE "serialkillers"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/serialkillers_controller.rb:30
+  Rendering serialkillers/show.html.erb within layouts/application
+  Rendered serialkillers/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 36ms (Views: 30.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/serialkillers/3/edit" for 127.0.0.1 at 2018-05-15 22:23:03 +1000
+Processing by SerialkillersController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mSerialkiller Load (0.2ms)[0m  [1m[34mSELECT  "serialkillers".* FROM "serialkillers" WHERE "serialkillers"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/serialkillers_controller.rb:35
+  Rendering serialkillers/edit.html.erb within layouts/application
+  Rendered serialkillers/edit.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 36ms (Views: 30.6ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/serialkillers/3" for 127.0.0.1 at 2018-05-15 22:23:31 +1000
+Processing by SerialkillersController#update as HTML
+  Parameters: {"first_name"=>"Jeffrey", "last_name"=>"Dahmer", "image"=>"https://a.wattpad.com/cover/71095684-352-k469653.jpg", "alive"=>"false", "victims"=>"17", "id"=>"3"}
+  [1m[36mSerialkiller Load (0.2ms)[0m  [1m[34mSELECT  "serialkillers".* FROM "serialkillers" WHERE "serialkillers"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/serialkillers_controller.rb:40
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/serialkillers_controller.rb:41
+  [1m[36mSerialkiller Update (0.7ms)[0m  [1m[33mUPDATE "serialkillers" SET "image" = ?, "updated_at" = ? WHERE "serialkillers"."id" = ?[0m  [["image", "https://a.wattpad.com/cover/71095684-352-k469653.jpg"], ["updated_at", "2018-05-15 12:23:31.957981"], ["id", 3]]
+  ↳ app/controllers/serialkillers_controller.rb:41
+  [1m[35m (6.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/serialkillers_controller.rb:41
+Redirected to http://localhost:3000/serialkillers/3
+Completed 302 Found in 13ms (ActiveRecord: 7.2ms)
+
+
+Started GET "/serialkillers/3" for 127.0.0.1 at 2018-05-15 22:23:31 +1000
+Processing by SerialkillersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mSerialkiller Load (0.3ms)[0m  [1m[34mSELECT  "serialkillers".* FROM "serialkillers" WHERE "serialkillers"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/serialkillers_controller.rb:30
+  Rendering serialkillers/show.html.erb within layouts/application
+  Rendered serialkillers/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 63ms (Views: 56.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/serialkillers" for 127.0.0.1 at 2018-05-15 22:23:48 +1000
+Processing by SerialkillersController#index as HTML
+  Rendering serialkillers/index.html.erb within layouts/application
+  [1m[36mSerialkiller Load (0.4ms)[0m  [1m[34mSELECT "serialkillers".* FROM "serialkillers"[0m
+  ↳ app/views/serialkillers/index.html.erb:5
+  Rendered serialkillers/index.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 87ms (Views: 81.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/serialkillers/5" for 127.0.0.1 at 2018-05-15 22:23:50 +1000
+Processing by SerialkillersController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mSerialkiller Load (0.2ms)[0m  [1m[34mSELECT  "serialkillers".* FROM "serialkillers" WHERE "serialkillers"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/serialkillers_controller.rb:30
+  Rendering serialkillers/show.html.erb within layouts/application
+  Rendered serialkillers/show.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 43ms (Views: 36.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/serialkillers/5/edit" for 127.0.0.1 at 2018-05-15 22:23:52 +1000
+Processing by SerialkillersController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mSerialkiller Load (0.2ms)[0m  [1m[34mSELECT  "serialkillers".* FROM "serialkillers" WHERE "serialkillers"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/serialkillers_controller.rb:35
+  Rendering serialkillers/edit.html.erb within layouts/application
+  Rendered serialkillers/edit.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 46ms (Views: 41.6ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/serialkillers/5" for 127.0.0.1 at 2018-05-15 22:23:55 +1000
+Processing by SerialkillersController#update as HTML
+  Parameters: {"first_name"=>"Paul", "last_name"=>"Bernardo", "image"=>"https://cdn.narcity.com/u/2018/04/13/72a22597944fee142b38cea1012c6340f36befb3.jpg_1200x630.jpg", "alive"=>"true", "victims"=>"3", "id"=>"5"}
+  [1m[36mSerialkiller Load (0.2ms)[0m  [1m[34mSELECT  "serialkillers".* FROM "serialkillers" WHERE "serialkillers"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/serialkillers_controller.rb:40
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/serialkillers_controller.rb:41
+  [1m[36mSerialkiller Update (0.6ms)[0m  [1m[33mUPDATE "serialkillers" SET "image" = ?, "updated_at" = ? WHERE "serialkillers"."id" = ?[0m  [["image", "https://cdn.narcity.com/u/2018/04/13/72a22597944fee142b38cea1012c6340f36befb3.jpg_1200x630.jpg"], ["updated_at", "2018-05-15 12:23:55.354198"], ["id", 5]]
+  ↳ app/controllers/serialkillers_controller.rb:41
+  [1m[35m (3.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/serialkillers_controller.rb:41
+Redirected to http://localhost:3000/serialkillers/5
+Completed 302 Found in 10ms (ActiveRecord: 4.0ms)
+
+
+Started GET "/serialkillers/5" for 127.0.0.1 at 2018-05-15 22:23:55 +1000
+Processing by SerialkillersController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mSerialkiller Load (0.3ms)[0m  [1m[34mSELECT  "serialkillers".* FROM "serialkillers" WHERE "serialkillers"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/serialkillers_controller.rb:30
+  Rendering serialkillers/show.html.erb within layouts/application
+  Rendered serialkillers/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 33ms (Views: 27.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/serialkillers/5" for 127.0.0.1 at 2018-05-15 22:24:14 +1000
+Processing by SerialkillersController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mSerialkiller Load (0.1ms)[0m  [1m[34mSELECT  "serialkillers".* FROM "serialkillers" WHERE "serialkillers"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/serialkillers_controller.rb:30
+  Rendering serialkillers/show.html.erb within layouts/application
+  Rendered serialkillers/show.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 55ms (Views: 50.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/serialkillers" for 127.0.0.1 at 2018-05-15 22:24:18 +1000
+Processing by SerialkillersController#index as HTML
+  Rendering serialkillers/index.html.erb within layouts/application
+  [1m[36mSerialkiller Load (0.4ms)[0m  [1m[34mSELECT "serialkillers".* FROM "serialkillers"[0m
+  ↳ app/views/serialkillers/index.html.erb:5
+  Rendered serialkillers/index.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 36ms (Views: 31.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/serialkiller" for 127.0.0.1 at 2018-05-15 22:24:19 +1000
+  
+ActionController::RoutingError (No route matches [GET] "/serialkiller"):
+  
+actionpack (5.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.0) lib/rails/engine.rb:524:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/serialkiller" for 127.0.0.1 at 2018-05-15 22:24:24 +1000
+  
+ActionController::RoutingError (No route matches [GET] "/serialkiller"):
+  
+actionpack (5.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.0) lib/rails/engine.rb:524:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/serialkillers/2" for 127.0.0.1 at 2018-05-15 22:24:29 +1000
+Processing by SerialkillersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mSerialkiller Load (0.2ms)[0m  [1m[34mSELECT  "serialkillers".* FROM "serialkillers" WHERE "serialkillers"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/serialkillers_controller.rb:30
+  Rendering serialkillers/show.html.erb within layouts/application
+  Rendered serialkillers/show.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 40ms (Views: 33.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/serialkillers/2/edit" for 127.0.0.1 at 2018-05-15 22:24:30 +1000
+Processing by SerialkillersController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mSerialkiller Load (1.0ms)[0m  [1m[34mSELECT  "serialkillers".* FROM "serialkillers" WHERE "serialkillers"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/serialkillers_controller.rb:35
+  Rendering serialkillers/edit.html.erb within layouts/application
+  Rendered serialkillers/edit.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 45ms (Views: 32.1ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/serialkillers/2" for 127.0.0.1 at 2018-05-15 22:24:33 +1000
+Processing by SerialkillersController#update as HTML
+  Parameters: {"first_name"=>"Myra", "last_name"=>"Hindley", "image"=>"https://i2-prod.examiner.co.uk/incoming/article12764919.ece/ALTERNATES/s615/WA1921987.jpg", "alive"=>"false", "victims"=>"5", "id"=>"2"}
+  [1m[36mSerialkiller Load (0.2ms)[0m  [1m[34mSELECT  "serialkillers".* FROM "serialkillers" WHERE "serialkillers"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/serialkillers_controller.rb:40
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/serialkillers_controller.rb:41
+  [1m[36mSerialkiller Update (0.6ms)[0m  [1m[33mUPDATE "serialkillers" SET "image" = ?, "updated_at" = ? WHERE "serialkillers"."id" = ?[0m  [["image", "https://i2-prod.examiner.co.uk/incoming/article12764919.ece/ALTERNATES/s615/WA1921987.jpg"], ["updated_at", "2018-05-15 12:24:33.550492"], ["id", 2]]
+  ↳ app/controllers/serialkillers_controller.rb:41
+  [1m[35m (3.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/serialkillers_controller.rb:41
+Redirected to http://localhost:3000/serialkillers/2
+Completed 302 Found in 10ms (ActiveRecord: 3.8ms)
+
+
+Started GET "/serialkillers/2" for 127.0.0.1 at 2018-05-15 22:24:33 +1000
+Processing by SerialkillersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mSerialkiller Load (0.1ms)[0m  [1m[34mSELECT  "serialkillers".* FROM "serialkillers" WHERE "serialkillers"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/serialkillers_controller.rb:30
+  Rendering serialkillers/show.html.erb within layouts/application
+  Rendered serialkillers/show.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 39ms (Views: 34.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/serialkillers" for 127.0.0.1 at 2018-05-15 22:24:38 +1000
+Processing by SerialkillersController#index as HTML
+  Rendering serialkillers/index.html.erb within layouts/application
+  [1m[36mSerialkiller Load (0.2ms)[0m  [1m[34mSELECT "serialkillers".* FROM "serialkillers"[0m
+  ↳ app/views/serialkillers/index.html.erb:5
+  Rendered serialkillers/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 41ms (Views: 36.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/serialkillers/4" for 127.0.0.1 at 2018-05-15 22:24:58 +1000
+Processing by SerialkillersController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mSerialkiller Load (0.2ms)[0m  [1m[34mSELECT  "serialkillers".* FROM "serialkillers" WHERE "serialkillers"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/serialkillers_controller.rb:30
+  Rendering serialkillers/show.html.erb within layouts/application
+  Rendered serialkillers/show.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 53ms (Views: 48.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/serialkillers/4/edit" for 127.0.0.1 at 2018-05-15 22:24:59 +1000
+Processing by SerialkillersController#edit as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mSerialkiller Load (0.1ms)[0m  [1m[34mSELECT  "serialkillers".* FROM "serialkillers" WHERE "serialkillers"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/serialkillers_controller.rb:35
+  Rendering serialkillers/edit.html.erb within layouts/application
+  Rendered serialkillers/edit.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 34ms (Views: 28.9ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/serialkillers/4" for 127.0.0.1 at 2018-05-15 22:25:02 +1000
+Processing by SerialkillersController#update as HTML
+  Parameters: {"first_name"=>"Jack", "last_name"=>"Unterweger", "image"=>"https://www.biography.com/.image/t_share/MTIwNjA4NjM0MDc3MTUyNzgw/jack-unterweger-12103266-1-402.jpg", "alive"=>"false", "victims"=>"12", "id"=>"4"}
+  [1m[36mSerialkiller Load (0.2ms)[0m  [1m[34mSELECT  "serialkillers".* FROM "serialkillers" WHERE "serialkillers"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/serialkillers_controller.rb:40
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/serialkillers_controller.rb:41
+  [1m[36mSerialkiller Update (0.7ms)[0m  [1m[33mUPDATE "serialkillers" SET "image" = ?, "updated_at" = ? WHERE "serialkillers"."id" = ?[0m  [["image", "https://www.biography.com/.image/t_share/MTIwNjA4NjM0MDc3MTUyNzgw/jack-unterweger-12103266-1-402.jpg"], ["updated_at", "2018-05-15 12:25:02.190887"], ["id", 4]]
+  ↳ app/controllers/serialkillers_controller.rb:41
+  [1m[35m (3.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/serialkillers_controller.rb:41
+Redirected to http://localhost:3000/serialkillers/4
+Completed 302 Found in 10ms (ActiveRecord: 4.4ms)
+
+
+Started GET "/serialkillers/4" for 127.0.0.1 at 2018-05-15 22:25:02 +1000
+Processing by SerialkillersController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mSerialkiller Load (0.2ms)[0m  [1m[34mSELECT  "serialkillers".* FROM "serialkillers" WHERE "serialkillers"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/serialkillers_controller.rb:30
+  Rendering serialkillers/show.html.erb within layouts/application
+  Rendered serialkillers/show.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 49ms (Views: 42.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/serialkillers/4" for 127.0.0.1 at 2018-05-15 22:25:28 +1000
+Processing by SerialkillersController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mSerialkiller Load (0.1ms)[0m  [1m[34mSELECT  "serialkillers".* FROM "serialkillers" WHERE "serialkillers"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/serialkillers_controller.rb:30
+  Rendering serialkillers/show.html.erb within layouts/application
+  Rendered serialkillers/show.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 69ms (Views: 63.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/serialkillers/1" for 127.0.0.1 at 2018-05-15 22:25:34 +1000
+Processing by SerialkillersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSerialkiller Load (0.1ms)[0m  [1m[34mSELECT  "serialkillers".* FROM "serialkillers" WHERE "serialkillers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/serialkillers_controller.rb:30
+  Rendering serialkillers/show.html.erb within layouts/application
+  Rendered serialkillers/show.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 31ms (Views: 26.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/serialkillers/2" for 127.0.0.1 at 2018-05-15 22:25:37 +1000
+Processing by SerialkillersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mSerialkiller Load (0.1ms)[0m  [1m[34mSELECT  "serialkillers".* FROM "serialkillers" WHERE "serialkillers"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/serialkillers_controller.rb:30
+  Rendering serialkillers/show.html.erb within layouts/application
+  Rendered serialkillers/show.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 30ms (Views: 26.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/serialkillers/4" for 127.0.0.1 at 2018-05-15 22:25:40 +1000
+Processing by SerialkillersController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mSerialkiller Load (0.1ms)[0m  [1m[34mSELECT  "serialkillers".* FROM "serialkillers" WHERE "serialkillers"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/serialkillers_controller.rb:30
+  Rendering serialkillers/show.html.erb within layouts/application
+  Rendered serialkillers/show.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 35ms (Views: 31.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/serialkillers/5" for 127.0.0.1 at 2018-05-15 22:25:42 +1000
+Processing by SerialkillersController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mSerialkiller Load (0.1ms)[0m  [1m[34mSELECT  "serialkillers".* FROM "serialkillers" WHERE "serialkillers"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/serialkillers_controller.rb:30
+  Rendering serialkillers/show.html.erb within layouts/application
+  Rendered serialkillers/show.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 34ms (Views: 29.6ms | ActiveRecord: 0.1ms)
+
+

@@ -1,0 +1,122 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+body {
+  font-family: 'Helvetica';
+}
+
+.cheese-form {
+  max-width: 80%;
+  display: inline-block;
+}
+
+.cheese-form-buttons {
+  display: inline-block;
+}
+
+.form-row {
+  margin-top: 5px;
+}
+
+.form-label {
+  display: inline-block;
+  width: 20%;
+  text-align: right;
+  font-size: 14px;
+}
+
+.input-field {
+  display: inline-block;
+  width: 60%;
+}
+
+.input-field > input[type="text"] {
+  width: 350px;
+}
+
+.input-field > input[type="textarea"] {
+  width: 350px;
+  height: 100px;
+  white-space: pre-wrap !important; word-wrap: break-word !important;
+}
+
+.cheese-form-image {
+  width: 355px;
+  padding-top: 5px;
+}
+
+.show-field {
+  font-size: 14px;
+  display: inline-block;
+  width: 75%;
+  margin: 2px;
+  border: 1px solid rgb(192, 195, 198, 1);
+  background-color: rgb(184, 221, 33, 1);
+}
+
+.show-field-noborder {
+  font-size: 14px;
+  display: inline-block;
+  width: 75%;
+  margin: 2px;
+}
+
+.show-field-image {
+  width: 355px;
+  padding-top: 5px;
+}
+
+.show-field > p {
+  margin: 0;
+  font-size: 12px;
+}
+
+#updated {
+  font-size: 12px;
+  font-style: italic;
+  color: rgb(132, 133, 135)
+}
+
+#main-header {
+  margin-bottom: 5px;
+  width: 70%;
+}
+
+.updated-column {
+  margin: 0 0 15px 0;
+  width: 25%;
+  display: inline-block;
+}
+
+.updated-column p {
+  margin: 0;
+}
+
+.nav-links-column {
+  width: 35%;
+  display: inline-block;
+  text-align: right;
+}
+
+a {
+  font-size: 12px;
+  color: rgb(54, 54, 52);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}

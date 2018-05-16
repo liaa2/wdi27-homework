@@ -1,0 +1,19 @@
+%h2 Some more details about good ol' #{@murderer.first_name}
+
+%p First name: #{@murderer.first_name}
+%p Last name: #{@murderer.last_name}
+%p Current or latest age: #{@murderer.age}
+%p Primary location: #{@murderer.location}
+%p Targeted: #{@murderer.victim_type}
+%p Usual method of killing: #{@murderer.kill_method}
+%p Lower bound on number of known victims: #{@murderer.kill_count}
+%p Current or latest fate: #{@murderer.fate}
+
+%br
+%p This entry was created on: #{@murderer.created_at}
+%p This entry was last edited on: #{@murderer.updated_at}
+
+%hr
+%a{ :href => "/murderers/#{params[:id]}/edit"} Update this entry
+%br
+%a{ :href => "/murderers/#{params[:id]}/delete"} Delete this entry

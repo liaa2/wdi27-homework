@@ -10,9 +10,9 @@ class SecretnumController < ApplicationController
     @random_answer = Random.rand(1..10)
     # compare guess and answer.
     if @guess == @random_answer
-      render "win"
+      render :win
     else
-      render "lose"
+      render :lose
     end
   end
 

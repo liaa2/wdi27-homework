@@ -1,0 +1,26 @@
+
+<h1>Edit <%= @employee.first_name%></h1>
+<form action="<%= employee_path(@employee.id)%>" method="post">
+  <p>
+    <strong>Employee Number:</strong> <input type="text" name="number" value="<%= @employee.number%>">
+  </p>
+  <p>
+    <strong>Employee First Name:</strong> <input type="text" name="first_name" value="<%= @employee.first_name%>">
+  </p>
+  <p>
+    <strong>Employee Last Name:</strong> <input type="text" name="last_name" value="<%= @employee.last_name%>">
+  </p>
+  <p>
+    <strong>Employee Job Title:</strong> <input type="text" name="job_title" value="<%= @employee.job_title%>">
+  </p>
+  <p>
+    <strong>Employee Date Of Birth:</strong><input type="text" name="date_of_birth" value="<%= @employee.date_of_birth%>">
+  </p>
+  <p>
+    <strong>Employee Salary:</strong><input type="text" name="salary" value="<%= @employee.salary%>">
+  </p>
+  <p>
+    <strong>Employee Image Url:</strong><input type="text" name="image" value="<%= @employee.image%>">
+  </p>
+  <input type="submit" value="Update Employee">
+</form>
