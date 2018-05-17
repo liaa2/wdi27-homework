@@ -1,0 +1,14 @@
+<h1>Edit serialkiller: <%= @serialkiller.first_name %> 
+                       <%= @serialkiller.last_name %></h1>
+
+<form action="<%= serialkiller_path( @serialkiller.id ) %>" method="post">
+ First Name: <input type="text" name="first_name" value="<%= @serialkiller.first_name %>"><br>
+ Last name: <input type="text" name="last_name" value="<%= @serialkiller.last_name %>"><br>
+ Image: <input type="text" name="image" value="<%= @serialkiller.image %>"><br>
+ Alive: <input type="text" name="alive" value="<%= @serialkiller.alive %>"><br>
+ Victims: <input type="text" name="victims" value="<%= @serialkiller.victims %>"><br>
+
+
+ <button>Save</button>
+
+</form>

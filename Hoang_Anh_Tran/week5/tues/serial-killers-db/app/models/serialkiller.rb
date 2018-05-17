@@ -1,0 +1,2 @@
+class Serialkiller < ApplicationRecord
+end
