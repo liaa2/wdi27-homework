@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  image: MyText
+  box_volume: 1
+  cat_size: 1
+  cat_origin: MyText
+
+two:
+  name: MyString
+  image: MyText
+  box_volume: 1
+  cat_size: 1
+  cat_origin: MyText

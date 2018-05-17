@@ -1,0 +1,72 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+@import url('https://fonts.googleapis.com/css?family=Anton');
+
+body{
+  background-image: url("http://gifimage.net/wp-content/uploads/2017/08/sparkles-gif-19.gif");
+  font-family: 'Anton', sans-serif;
+  font-size: 15px;
+}
+
+.index{
+  font-family: 'Anton', sans-serif;
+  color: rgb(250, 50, 50);
+  font-size: 34px;
+  list-style:none;
+
+}
+.indexmain{
+  font-family: 'Anton', sans-serif;
+  color: hotpink;
+  font-size: 60px;
+  list-style:none;
+
+}
+
+.index1{
+  font-family: 'Anton', sans-serif;
+  color: orange;
+  font-size: 34px;
+  list-style:none;
+}
+.index3{
+font-family: 'Anton', sans-serif;
+color: green;
+font-size: 34px;
+list-style:none;
+}
+
+.index2{
+  font-family: 'Anton', sans-serif;
+  color: blue;
+  font-size: 34px;
+  list-style:none;
+}
+
+.catwalk{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    animation: slide 10s infinite alternate ease-in-out;
+
+}
+@keyframes slide {
+    0% { left: 0; }
+    35%{ left:35%; }
+    50% { left: 50%; transform:rotate(360deg)}
+    85%{left:85%;}
+    100% { left: 100%; transform:rotate(360deg)}
+}
