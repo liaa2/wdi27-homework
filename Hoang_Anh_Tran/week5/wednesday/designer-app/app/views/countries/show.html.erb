@@ -1,0 +1,28 @@
+<h2><%= @country.name %></h2>
+
+<hr>
+
+<p> Brands</p>
+
+<ul>
+  <% @country.brands.each do |brand| %>
+  <li>
+    <%= link_to brand.name, brand_path(brand)  %>
+  </li>
+  <% end %>
+</ul>
+
+<p>
+
+  <strong>Image:</strong>
+  <br>
+  <% if @country.image.present? %>
+  <%= image_tag @country.image, class: 'countryPic' %>
+  <% end  %>
+</p>
+
+
+
+<br>
+<%= link_to 'Edit', country_edit_path( @country ) %>
+<%= link_to 'Delete', country_path( @country ), method: 'delete' %>

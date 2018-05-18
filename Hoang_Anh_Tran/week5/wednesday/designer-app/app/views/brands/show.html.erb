@@ -1,0 +1,24 @@
+<h2>
+  <em><%= @brand.name %></em>,
+  <%= link_to @brand.country.name, country_path(@brand.country) %>
+  <%= @brand.founded %></h2>
+<p>
+  <strong>Name:</strong> <%= @brand.name %>
+</p>
+
+<p>
+  <strong>Origin:</strong> <%= @brand.origin%>
+</p>
+
+<p>
+  <strong>Founded</strong> <%= @brand.founded%>
+</p>
+
+<% if @brand.image.present? %>
+<%= image_tag @brand.image, alt: @brand.name, class: 'brandMainImage' %>
+<% end %>
+
+<br>
+<%= link_to 'Edit', edit_brand_path(@brand)  %>
+
+<%= link_to 'Delete', brand_path(@brand), method: 'delete' %>
