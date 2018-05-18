@@ -1,0 +1,50 @@
+<h2 id="main-header"><%= @beer.name %></h2>
+<div class="updated-column">
+  <p id="updated">[ Last updated: <%= @beer.updated_at.in_time_zone('Sydney').strftime("%A %-d %B %Y - %H:%M:%S") %> ]</p>
+</div>
+<div class="nav-links-column">
+  <%= link_to "Back to All Beers", beers_path, :class => "nav-links" %>&nbsp;&nbsp;
+  <%= link_to "Delete this Beer", beer_path( @beer.id ), method: "delete", :class => "nav-links" %>&nbsp;&nbsp;
+  <%= link_to "Edit this Beer", edit_beer_path( @beer ), :class => "nav-links" %>&nbsp;&nbsp;
+</div>
+
+<div class="beer-form">
+  <div class="form-row">
+    <div class="form-label"><label for="name">Name:</label></div>
+    <div class="show-field"><p><%= @beer.name %></p></div>
+  </div>
+  <div class="form-row">
+    <div class="form-label"><label for="style">Style:</label></div>
+    <div class="show-field"><p><%= @beer.style %></p></div>
+  </div>
+  <div class="form-row">
+    <div class="form-label"><label for="name">Brewery:</label></div>
+    <div class="show-field"><p><%= link_to @beer.brewery.name, brewery_path( @beer.brewery )  %>, <%= @beer.brewery.region %></p></div>
+  </div>
+  <div class="form-row">
+    <div class="form-label"><label for="description">Description:</label></div>
+    <div class="show-field"><p><%= @beer.description %></p></div>
+  </div>
+  <div class="form-row">
+    <div class="form-label"><label for="size">Size:</label></div>
+    <div class="show-field"><p><%= @beer.size %></p></div>
+  </div>
+  <div class="form-row">
+    <div class="form-label"><label for="abv">ABV:</label></div>
+    <div class="show-field"><p><%= @beer.abv %>%</p></div>
+  </div>
+  <div class="form-row">
+    <div class="form-label"><label for="std_drinks"># of Std Drinks:</label></div>
+    <div class="show-field"><p><%= @beer.std_drinks %></p></div>
+  </div>
+  <div class="form-row">
+    <div class="form-label">&nbsp;</div>
+    <div class="show-field-noborder">
+      <%= image_tag( @beer.image , :class => "show-field-image" ) %>
+    </div>
+    <div class="form-row">
+      <div class="form-label"></div>
+      <div class="show-field-noborder"><p><%= @beer.image %></p></div>
+    </div>
+  </div>
+<div>
