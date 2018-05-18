@@ -1,0 +1,19 @@
+<h2><marquee class = "index" behavior="alternate" direction="left" loop = 5>Welcome to this page</marquee></h2>
+<h2><marquee class = "index1" behavior="alternate" direction="right" loop = 5>Cats and Unicrns are friends</marquee></h2>
+<h2><marquee class = "index2" behavior="alternate" direction="left" loop = 5>Marquee Forever!</marquee></h2>
+<h2><marquee class = "index3" behavior="alternate" direction="right" loop = 5>Ruby the train!</marquee></h2>
+
+<ul>
+  <% @boxcats.each do |b| %>
+  <li class = "index">
+    <a href="<%= boxcat_path( b.id ) %>"><%= b.name %></a>
+  </li>
+  <% end %>
+  <img src="" alt="">
+  <div >
+    <img class = "catwalk" src="http://www.anniemation.com/clip_art/images/cat-walk.gif">
+
+  </div>
+</ul>
+
+<br>
