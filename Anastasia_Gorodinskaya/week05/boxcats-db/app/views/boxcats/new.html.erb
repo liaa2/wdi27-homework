@@ -1,0 +1,20 @@
+<h2 class = "indexnew"><marquee behavior="alternate" direction="right" loop = 3>Add Cat</marquee></h2>
+<style>
+body{
+background-image: url("https://data.whicdn.com/images/171565785/original.gif");
+background-size: cover;
+}
+</style>
+<form action="/boxcats" method= "post"><br>
+Name: <input type= "text" name ="name"><br>
+Image URL: <input type= "text" name="image"><br>
+Volume: <input type= "text" name="box_volume"><br>
+Cat's Size: <input type= "text" name="cat_size"><br>
+Place of birth: <input type= "text" name="cat_origin"><br>
+
+<input type = "submit" name = "add">
+
+
+</form>
+<br>
+<%= link_to "Index", boxcat_index_path %> <br>

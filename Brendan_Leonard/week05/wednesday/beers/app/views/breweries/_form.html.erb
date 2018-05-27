@@ -1,0 +1,45 @@
+<% if flash[:errors].present? %>
+  <div class="errors">
+    <ul>
+    <% flash[:errors].each do |key, val| %>
+      <li>
+      <%= key.capitalize %>: <%= val.first %>
+      </li>
+    <% end %>
+    </ul>    
+  </div>
+<% end %>
+
+<div class="beer-form">
+<%= form_for @brewery do |f| %>
+  <fieldset class="form-row">
+    <div class="form-label"><%= f.label :name %></div>
+    <div class="input-field"><%= f.text_field :name %></div>
+  </fieldset>
+
+  <fieldset class="form-row">
+    <div class="form-label"><%= f.label :country %></div>
+    <div class="input-field"><%= f.text_field :country %></div>
+  </fieldset>
+
+  <fieldset class="form-row">
+    <div class="form-label"><%= f.label :region %></div>
+    <div class="input-field"><%= f.text_field :region %></div>
+  </fieldset>
+  
+  <fieldset class="form-row">
+    <div class="form-label"><%= f.label :founded %></div>
+    <div class="input-field"><%= f.text_field :founded %></div>
+  </fieldset>
+
+  <fieldset class="form-row">
+    <div class="form-label"><%= f.label :logo_image %></div>
+    <div class="input-field"><%= f.text_field :logo_image %></div>
+  </fieldset>
+
+  <fieldset class="form-row">
+    <div class="form-label"></div>
+    <div class="input-field"><%= f.submit %></div>
+  </fieldset>
+<% end %>
+</div>
