@@ -1,0 +1,2 @@
+class Boxcat < ApplicationRecord
+end

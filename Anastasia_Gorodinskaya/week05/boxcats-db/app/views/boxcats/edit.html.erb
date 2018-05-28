@@ -1,0 +1,21 @@
+<h2>Edit a cat <%= @boxcat.name %></h2>
+<style>
+body{
+background-image: url("https://static.tumblr.com/9decc96e43fed923ad1bcc279a1f012a/3xt4jjd/5Gen5vceq/tumblr_static_sparkles-pink-glitter-x-650713.jpg");
+background-size: cover;
+}
+</style>
+<form action="<%= boxcat_path(@boxcat.id)%>" method= "post"><br>
+Name: <input type= "text" name ="name"  value= "<%= @boxcat[:name] %>"><br>
+Image URL: <input type= "text" name="image"  value= "<%= @boxcat[:image] %>"><br>
+Volume:: <input type= "text" name="box_volume"  value= "<%= @boxcat[:box_volume] %>"><br>
+Cat's Size: <input type= "text" name="cat_size"  value= "<%= @boxcat[:cat_size ]%>"><br>
+Place of birth: <input type= "text" name="cat_origin"  value= "<%= @boxcat[:cat_origin] %>"><br>
+
+<input button="add" type = "submit" >
+
+</form>
+<br>
+<%= link_to "Index", boxcat_index_path %><br>
+<br>
+<%= link_to "Delete", boxcat_destroy_path( @boxcat.id ) %><br>

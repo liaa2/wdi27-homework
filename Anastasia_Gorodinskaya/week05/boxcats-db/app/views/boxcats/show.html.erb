@@ -1,0 +1,23 @@
+<h2 class = "indexshow">hello I am <%= @boxcat.name %></h2>
+
+<style>
+body{
+background-image: url("https://media.giphy.com/media/Hjxx0NTpvD20w/giphy.gif");
+}
+</style>
+<p>I love my box of <%= @boxcat.box_volume %></p>
+
+<marquee behavior="alternate" direction="right" loop = 3>
+<% if @boxcat.image.present? %>
+
+  <%=image_tag @boxcat.image %>
+
+<% end %>
+</marquee>
+<br>
+
+<p>I have been created on <%= @boxcat.created_at %></p>
+
+<%= link_to "Index", boxcat_index_path %><br>
+<%= link_to "Edit", boxcat_edit_path( @boxcat.id ) %><br>
+<%= link_to "Delete", boxcat_destroy_path( @boxcat.id ) %>

@@ -1,0 +1,14 @@
+<h2 id="main-header">Edit <%= @brewery.name  %></h2>
+
+<div class="beer-form">
+<div class="updated-column">
+  <p id="updated">[ Last updated: <%= @brewery.updated_at.in_time_zone('Sydney').strftime("%A %-d %B %Y - %H:%M:%S") %> ]</p>
+</div>
+<div class="nav-links-column">
+  <%= link_to "Back to All Breweries", breweries_path, :class => "nav-links" %>&nbsp;&nbsp;
+  <%= link_to "Delete this Brewery", brewery_path( @brewery.id ), method: "delete", :class => "nav-links" %>&nbsp;&nbsp;
+</div>
+
+<%= render partial: "form" %> 
+</div>
+
