@@ -1,0 +1,470 @@
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ bin/rails:4
+  [1m[35m (1.1ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  ↳ bin/rails:4
+  [1m[35m (1.2ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ bin/rails:4
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:4
+Migrating to CreateRoyals (20180516142437)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:4
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "royals" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" text, "dob" date, "spouse" text, "title" text, "image" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20180516142437_create_royals.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20180516142437"]]
+  ↳ bin/rails:4
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:4
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:4
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:4
+  [1m[36mActiveRecord::InternalMetadata Create (0.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2018-05-16 14:28:39.588357"], ["updated_at", "2018-05-16 14:28:39.588357"]]
+  ↳ bin/rails:4
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:4
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:4
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:4
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:4
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:4
+  [1m[36mRoyal Load (0.5ms)[0m  [1m[34mSELECT "royals".* FROM "royals"[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:14
+  [1m[36mRoyal Create (0.7ms)[0m  [1m[32mINSERT INTO "royals" ("name", "dob", "spouse", "title", "image", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Charles Philip Arthur George"], ["dob", "1948-11-14"], ["spouse", "Camilla Parker Bowles"], ["title", "His Royal Highness Prince Charles Philip Arthur George, Prince of Wales, KG, KT, GCB, OM, AK, QSO, PC, ADC, Earl of Chester, Duke of Cornwall, Duke of Rothesay, Earl of Carrick, Baron of Renfrew, Lord of the Isles and Prince and Great Steward of Scotland"], ["image", "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/HRH_Prince_Charles_43_Allan_Warren.jpg/1280px-HRH_Prince_Charles_43_Allan_Warren.jpg"], ["created_at", "2018-05-16 14:55:05.956526"], ["updated_at", "2018-05-16 14:55:05.956526"]]
+  ↳ db/seeds.rb:14
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:14
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:15
+  [1m[36mRoyal Create (0.3ms)[0m  [1m[32mINSERT INTO "royals" ("name", "dob", "spouse", "title", "image", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "William Arthur Philip Louis"], ["dob", "1982-06-21"], ["spouse", "\tCatherine Middleton"], ["title", "His Royal Highness The Duke of Cambridge"], ["image", "https://www.maxim.com/.image/t_share/MTUyOTI0OTgyNTgwNzUwMDY1/prince-william-bald-3.jpg"], ["created_at", "2018-05-16 14:55:05.960014"], ["updated_at", "2018-05-16 14:55:05.960014"]]
+  ↳ db/seeds.rb:15
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:15
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:16
+  [1m[36mRoyal Create (0.3ms)[0m  [1m[32mINSERT INTO "royals" ("name", "dob", "spouse", "title", "image", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Henry Charles Albert David"], ["dob", "1984-09-15"], ["spouse", "Coming soon in 2 days"], ["title", "His Royal Highness Prince Henry of Wales"], ["image", "https://thenypost.files.wordpress.com/2017/06/prince-harry-feature.jpg?quality=90&strip=all"], ["created_at", "2018-05-16 14:55:05.962664"], ["updated_at", "2018-05-16 14:55:05.962664"]]
+  ↳ db/seeds.rb:16
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:16
+  [1m[36mRoyal Load (0.1ms)[0m  [1m[34mSELECT "royals".* FROM "royals"[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "royals"."name" FROM "royals"[0m
+  ↳ db/seeds.rb:20
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:4
+  [1m[36mRoyal Load (0.1ms)[0m  [1m[34mSELECT "royals".* FROM "royals"[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[36mRoyal Destroy (0.5ms)[0m  [1m[31mDELETE FROM "royals" WHERE "royals"."id" = ?[0m  [["id", 1]]
+  ↳ db/seeds.rb:9
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[36mRoyal Destroy (0.3ms)[0m  [1m[31mDELETE FROM "royals" WHERE "royals"."id" = ?[0m  [["id", 2]]
+  ↳ db/seeds.rb:9
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[36mRoyal Destroy (0.3ms)[0m  [1m[31mDELETE FROM "royals" WHERE "royals"."id" = ?[0m  [["id", 3]]
+  ↳ db/seeds.rb:9
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:14
+  [1m[36mRoyal Create (0.4ms)[0m  [1m[32mINSERT INTO "royals" ("name", "dob", "spouse", "title", "image", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Charles Philip Arthur George"], ["dob", "1948-11-14"], ["spouse", "Camilla Parker Bowles"], ["title", "His Royal Highness Prince Charles Philip Arthur George, Prince of Wales, KG, KT, GCB, OM, AK, QSO, PC, ADC, Earl of Chester, Duke of Cornwall, Duke of Rothesay, Earl of Carrick, Baron of Renfrew, Lord of the Isles and Prince and Great Steward of Scotland"], ["image", "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/HRH_Prince_Charles_43_Allan_Warren.jpg/1280px-HRH_Prince_Charles_43_Allan_Warren.jpg"], ["created_at", "2018-05-16 14:55:30.967086"], ["updated_at", "2018-05-16 14:55:30.967086"]]
+  ↳ db/seeds.rb:14
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:14
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:15
+  [1m[36mRoyal Create (0.3ms)[0m  [1m[32mINSERT INTO "royals" ("name", "dob", "spouse", "title", "image", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "William Arthur Philip Louis"], ["dob", "1982-06-21"], ["spouse", "\tCatherine Middleton"], ["title", "His Royal Highness The Duke of Cambridge"], ["image", "https://www.maxim.com/.image/t_share/MTUyOTI0OTgyNTgwNzUwMDY1/prince-william-bald-3.jpg"], ["created_at", "2018-05-16 14:55:30.970046"], ["updated_at", "2018-05-16 14:55:30.970046"]]
+  ↳ db/seeds.rb:15
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:15
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:16
+  [1m[36mRoyal Create (0.3ms)[0m  [1m[32mINSERT INTO "royals" ("name", "dob", "spouse", "title", "image", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Henry Charles Albert David"], ["dob", "1984-09-15"], ["spouse", "Coming soon in 2 days"], ["title", "His Royal Highness Prince Henry of Wales"], ["image", "https://thenypost.files.wordpress.com/2017/06/prince-harry-feature.jpg?quality=90&strip=all"], ["created_at", "2018-05-16 14:55:30.972426"], ["updated_at", "2018-05-16 14:55:30.972426"]]
+  ↳ db/seeds.rb:16
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:16
+  [1m[36mRoyal Load (0.1ms)[0m  [1m[34mSELECT "royals".* FROM "royals"[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "royals"."name" FROM "royals"[0m
+  ↳ db/seeds.rb:20
+Started GET "/rails/info/routes" for 127.0.0.1 at 2018-05-17 00:57:57 +1000
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/linna/.rvm/gems/ruby-2.4.1/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by Rails::InfoController#routes as HTML
+  Rendering /Users/linna/.rvm/gems/ruby-2.4.1/gems/railties-5.2.0/lib/rails/templates/rails/info/routes.html.erb within layouts/application
+  Rendered collection of /Users/linna/.rvm/gems/ruby-2.4.1/gems/actionpack-5.2.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb [13 times] (11.5ms)
+  Rendered /Users/linna/.rvm/gems/ruby-2.4.1/gems/actionpack-5.2.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (10.2ms)
+  Rendered /Users/linna/.rvm/gems/ruby-2.4.1/gems/railties-5.2.0/lib/rails/templates/rails/info/routes.html.erb within layouts/application (30.2ms)
+Completed 200 OK in 50ms (Views: 44.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-17 00:58:51 +1000
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/linna/.rvm/gems/ruby-2.4.1/gems/railties-5.2.0/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/linna/.rvm/gems/ruby-2.4.1/gems/railties-5.2.0/lib/rails/templates/rails/welcome/index.html.erb (2.2ms)
+Completed 200 OK in 8ms (Views: 5.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/royals" for 127.0.0.1 at 2018-05-17 00:59:00 +1000
+Processing by RoyalsController#index as HTML
+  Rendering royals/index.html.erb within layouts/application
+  Rendered royals/index.html.erb within layouts/application (0.3ms)
+Completed 500 Internal Server Error in 139ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (couldn't find file 'turbolinks' with type 'application/javascript'
+Checked in these paths: 
+  /Users/linna/wdi/homework/Linna_Liu/week05homework/wednesday/royal-residences/app/assets/config
+  /Users/linna/wdi/homework/Linna_Liu/week05homework/wednesday/royal-residences/app/assets/images
+  /Users/linna/wdi/homework/Linna_Liu/week05homework/wednesday/royal-residences/app/assets/javascripts
+  /Users/linna/wdi/homework/Linna_Liu/week05homework/wednesday/royal-residences/app/assets/stylesheets
+  /Users/linna/.rvm/gems/ruby-2.4.1/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /Users/linna/.rvm/gems/ruby-2.4.1/gems/actioncable-5.2.0/lib/assets/compiled
+  /Users/linna/.rvm/gems/ruby-2.4.1/gems/activestorage-5.2.0/app/assets/javascripts
+  /Users/linna/.rvm/gems/ruby-2.4.1/gems/actionview-5.2.0/lib/assets/compiled
+  /Users/linna/wdi/homework/Linna_Liu/week05homework/wednesday/royal-residences/node_modules):
+     5:     <%= csrf_meta_tags %>
+     6:     <%= csp_meta_tag %>
+     7: 
+     8:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+     9:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    10:   </head>
+    11: 
+  
+app/assets/javascripts/application.js:15
+app/views/layouts/application.html.erb:8:in `_app_views_layouts_application_html_erb__4340426067479466793_70220391229060'
+Started GET "/royals" for 127.0.0.1 at 2018-05-17 00:59:42 +1000
+Processing by RoyalsController#index as HTML
+  Rendering royals/index.html.erb within layouts/application
+  Rendered royals/index.html.erb within layouts/application (0.4ms)
+Completed 500 Internal Server Error in 22ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (couldn't find file 'turbolinks' with type 'application/javascript'
+Checked in these paths: 
+  /Users/linna/wdi/homework/Linna_Liu/week05homework/wednesday/royal-residences/app/assets/config
+  /Users/linna/wdi/homework/Linna_Liu/week05homework/wednesday/royal-residences/app/assets/images
+  /Users/linna/wdi/homework/Linna_Liu/week05homework/wednesday/royal-residences/app/assets/javascripts
+  /Users/linna/wdi/homework/Linna_Liu/week05homework/wednesday/royal-residences/app/assets/stylesheets
+  /Users/linna/.rvm/gems/ruby-2.4.1/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /Users/linna/.rvm/gems/ruby-2.4.1/gems/actioncable-5.2.0/lib/assets/compiled
+  /Users/linna/.rvm/gems/ruby-2.4.1/gems/activestorage-5.2.0/app/assets/javascripts
+  /Users/linna/.rvm/gems/ruby-2.4.1/gems/actionview-5.2.0/lib/assets/compiled
+  /Users/linna/wdi/homework/Linna_Liu/week05homework/wednesday/royal-residences/node_modules):
+     5:     <%= csrf_meta_tags %>
+     6:     <%= csp_meta_tag %>
+     7: 
+     8:     <%= stylesheet_link_tag    'application', media: 'all'%>
+     9:     <%= javascript_include_tag 'application' %>
+    10:   </head>
+    11: 
+  
+app/assets/javascripts/application.js:15
+app/views/layouts/application.html.erb:8:in `_app_views_layouts_application_html_erb__4340426067479466793_70220347840040'
+Started GET "/royals" for 127.0.0.1 at 2018-05-17 01:00:15 +1000
+Processing by RoyalsController#index as HTML
+  Rendering royals/index.html.erb within layouts/application
+  Rendered royals/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 179ms (Views: 175.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/royals" for 127.0.0.1 at 2018-05-17 01:04:24 +1000
+Processing by RoyalsController#index as HTML
+  Rendering royals/index.html.erb within layouts/application
+  Rendered royals/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 31ms (Views: 25.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/royals" for 127.0.0.1 at 2018-05-17 01:04:30 +1000
+Processing by RoyalsController#index as HTML
+  Rendering royals/index.html.erb within layouts/application
+  Rendered royals/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 36ms (Views: 33.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/royals" for 127.0.0.1 at 2018-05-17 01:04:31 +1000
+Processing by RoyalsController#index as HTML
+  Rendering royals/index.html.erb within layouts/application
+  Rendered royals/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 22ms (Views: 19.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/royals" for 127.0.0.1 at 2018-05-17 01:04:54 +1000
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/linna/.rvm/gems/ruby-2.4.1/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by RoyalsController#index as HTML
+  Rendering royals/index.html.erb within layouts/application
+  Rendered royals/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 183ms (Views: 179.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/royals" for 127.0.0.1 at 2018-05-17 01:04:57 +1000
+Processing by RoyalsController#index as HTML
+  Rendering royals/index.html.erb within layouts/application
+  Rendered royals/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 40ms (Views: 37.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/royals" for 127.0.0.1 at 2018-05-17 01:05:43 +1000
+Processing by RoyalsController#index as HTML
+  Rendering royals/index.html.erb within layouts/application
+  [1m[36mRoyal Load (0.8ms)[0m  [1m[34mSELECT "royals".* FROM "royals"[0m
+  ↳ app/views/royals/index.html.erb:5
+  Rendered royals/index.html.erb within layouts/application (23.4ms)
+Completed 200 OK in 46ms (Views: 41.3ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/royals" for 127.0.0.1 at 2018-05-17 01:07:32 +1000
+Processing by RoyalsController#index as HTML
+  Rendering royals/index.html.erb within layouts/application
+  [1m[36mRoyal Load (0.2ms)[0m  [1m[34mSELECT "royals".* FROM "royals"[0m
+  ↳ app/views/royals/index.html.erb:5
+  Rendered royals/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 25ms (Views: 22.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/royals" for 127.0.0.1 at 2018-05-17 01:08:03 +1000
+Processing by RoyalsController#index as HTML
+  Rendering royals/index.html.erb within layouts/application
+  [1m[36mRoyal Load (0.2ms)[0m  [1m[34mSELECT "royals".* FROM "royals"[0m
+  ↳ app/views/royals/index.html.erb:5
+  Rendered royals/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 32ms (Views: 28.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/royals" for 127.0.0.1 at 2018-05-17 01:08:10 +1000
+Processing by RoyalsController#index as HTML
+  Rendering royals/index.html.erb within layouts/application
+  [1m[36mRoyal Load (0.2ms)[0m  [1m[34mSELECT "royals".* FROM "royals"[0m
+  ↳ app/views/royals/index.html.erb:5
+  Rendered royals/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 33ms (Views: 30.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/royals" for 127.0.0.1 at 2018-05-17 01:08:25 +1000
+Processing by RoyalsController#index as HTML
+  Rendering royals/index.html.erb within layouts/application
+  [1m[36mRoyal Load (0.2ms)[0m  [1m[34mSELECT "royals".* FROM "royals"[0m
+  ↳ app/views/royals/index.html.erb:5
+  Rendered royals/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 28ms (Views: 25.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/royals" for 127.0.0.1 at 2018-05-17 01:08:53 +1000
+Processing by RoyalsController#index as HTML
+  Rendering royals/index.html.erb within layouts/application
+  [1m[36mRoyal Load (0.1ms)[0m  [1m[34mSELECT "royals".* FROM "royals"[0m
+  ↳ app/views/royals/index.html.erb:5
+  Rendered royals/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 25ms (Views: 22.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/royals" for 127.0.0.1 at 2018-05-17 01:09:11 +1000
+Processing by RoyalsController#index as HTML
+  Rendering royals/index.html.erb within layouts/application
+  [1m[36mRoyal Load (0.3ms)[0m  [1m[34mSELECT "royals".* FROM "royals"[0m
+  ↳ app/views/royals/index.html.erb:5
+  Rendered royals/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 32ms (Views: 28.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/royals" for 127.0.0.1 at 2018-05-17 01:09:49 +1000
+Processing by RoyalsController#index as HTML
+  Rendering royals/index.html.erb within layouts/application
+  [1m[36mRoyal Load (0.1ms)[0m  [1m[34mSELECT "royals".* FROM "royals"[0m
+  ↳ app/views/royals/index.html.erb:5
+  Rendered royals/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 27ms (Views: 24.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/royals" for 127.0.0.1 at 2018-05-17 01:10:00 +1000
+Processing by RoyalsController#index as HTML
+  Rendering royals/index.html.erb within layouts/application
+  [1m[36mRoyal Load (0.2ms)[0m  [1m[34mSELECT "royals".* FROM "royals"[0m
+  ↳ app/views/royals/index.html.erb:5
+  Rendered royals/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 36ms (Views: 33.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/royals" for 127.0.0.1 at 2018-05-17 01:10:45 +1000
+Processing by RoyalsController#index as HTML
+  Rendering royals/index.html.erb within layouts/application
+  [1m[36mRoyal Load (0.2ms)[0m  [1m[34mSELECT "royals".* FROM "royals"[0m
+  ↳ app/views/royals/index.html.erb:5
+  Rendered royals/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 25ms (Views: 22.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/royals" for 127.0.0.1 at 2018-05-17 01:12:27 +1000
+Processing by RoyalsController#index as HTML
+  Rendering royals/index.html.erb within layouts/application
+  [1m[36mRoyal Load (0.2ms)[0m  [1m[34mSELECT "royals".* FROM "royals"[0m
+  ↳ app/views/royals/index.html.erb:5
+  Rendered royals/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 23ms (Views: 20.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/royals" for 127.0.0.1 at 2018-05-17 01:12:40 +1000
+Processing by RoyalsController#index as HTML
+  Rendering royals/index.html.erb within layouts/application
+  [1m[36mRoyal Load (0.1ms)[0m  [1m[34mSELECT "royals".* FROM "royals"[0m
+  ↳ app/views/royals/index.html.erb:5
+  Rendered royals/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 32ms (Views: 29.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/royals" for 127.0.0.1 at 2018-05-17 01:12:52 +1000
+Processing by RoyalsController#index as HTML
+  Rendering royals/index.html.erb within layouts/application
+  [1m[36mRoyal Load (0.2ms)[0m  [1m[34mSELECT "royals".* FROM "royals"[0m
+  ↳ app/views/royals/index.html.erb:5
+  Rendered royals/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 31ms (Views: 28.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/royals" for 127.0.0.1 at 2018-05-17 01:13:14 +1000
+Processing by RoyalsController#index as HTML
+  Rendering royals/index.html.erb within layouts/application
+  [1m[36mRoyal Load (0.2ms)[0m  [1m[34mSELECT "royals".* FROM "royals"[0m
+  ↳ app/views/royals/index.html.erb:5
+  Rendered royals/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 22ms (Views: 19.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/royals" for 127.0.0.1 at 2018-05-17 01:23:27 +1000
+Processing by RoyalsController#index as HTML
+  Rendering royals/index.html.erb within layouts/application
+  [1m[36mRoyal Load (0.5ms)[0m  [1m[34mSELECT "royals".* FROM "royals"[0m
+  ↳ app/views/royals/index.html.erb:5
+  Rendered royals/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 36ms (Views: 32.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/royals" for 127.0.0.1 at 2018-05-17 01:25:03 +1000
+Processing by RoyalsController#index as HTML
+  Rendering royals/index.html.erb within layouts/application
+  [1m[36mRoyal Load (0.2ms)[0m  [1m[34mSELECT "royals".* FROM "royals"[0m
+  ↳ app/views/royals/index.html.erb:5
+  Rendered royals/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 30ms (Views: 27.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/royals" for 127.0.0.1 at 2018-05-17 01:25:15 +1000
+Processing by RoyalsController#index as HTML
+  Rendering royals/index.html.erb within layouts/application
+  [1m[36mRoyal Load (0.2ms)[0m  [1m[34mSELECT "royals".* FROM "royals"[0m
+  ↳ app/views/royals/index.html.erb:5
+  Rendered royals/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 31ms (Views: 27.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/royals" for 127.0.0.1 at 2018-05-17 01:25:54 +1000
+Processing by RoyalsController#index as HTML
+  Rendering royals/index.html.erb within layouts/application
+  [1m[36mRoyal Load (0.2ms)[0m  [1m[34mSELECT "royals".* FROM "royals"[0m
+  ↳ app/views/royals/index.html.erb:5
+  Rendered royals/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 32ms (Views: 29.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/royals" for 127.0.0.1 at 2018-05-17 01:26:52 +1000
+Processing by RoyalsController#index as HTML
+  Rendering royals/index.html.erb within layouts/application
+  [1m[36mRoyal Load (0.2ms)[0m  [1m[34mSELECT "royals".* FROM "royals"[0m
+  ↳ app/views/royals/index.html.erb:5
+  Rendered royals/index.html.erb within layouts/application (8.2ms)
+Completed 200 OK in 31ms (Views: 25.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/royals/new" for 127.0.0.1 at 2018-05-17 01:26:54 +1000
+Processing by RoyalsController#new as HTML
+  Rendering royals/new.html.erb within layouts/application
+  Rendered royals/new.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 29ms (Views: 24.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/royals" for 127.0.0.1 at 2018-05-17 01:27:35 +1000
+Processing by RoyalsController#index as HTML
+  Rendering royals/index.html.erb within layouts/application
+  [1m[36mRoyal Load (0.2ms)[0m  [1m[34mSELECT "royals".* FROM "royals"[0m
+  ↳ app/views/royals/index.html.erb:5
+  Rendered royals/index.html.erb within layouts/application (219.5ms)
+Completed 500 Internal Server Error in 231ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `royal' for #<#<Class:0x007fd092064428>:0x007fd08fd7c870>
+Did you mean?  @royals):
+    12: 
+    13: 
+    14: <hr>
+    15: <%= link_to "Add More Royal", royal_path(royal) %>
+  
+app/views/royals/index.html.erb:15:in `_app_views_royals_index_html_erb___3052369060011006179_70266871605740'
+Started GET "/royals" for 127.0.0.1 at 2018-05-17 01:27:56 +1000
+Processing by RoyalsController#index as HTML
+  Rendering royals/index.html.erb within layouts/application
+  [1m[36mRoyal Load (0.2ms)[0m  [1m[34mSELECT "royals".* FROM "royals"[0m
+  ↳ app/views/royals/index.html.erb:5
+  Rendered royals/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 29ms (Views: 25.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/royals" for 127.0.0.1 at 2018-05-17 01:27:59 +1000
+Processing by RoyalsController#index as HTML
+  Rendering royals/index.html.erb within layouts/application
+  [1m[36mRoyal Load (0.2ms)[0m  [1m[34mSELECT "royals".* FROM "royals"[0m
+  ↳ app/views/royals/index.html.erb:5
+  Rendered royals/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 35ms (Views: 31.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/royals" for 127.0.0.1 at 2018-05-17 01:28:02 +1000
+Processing by RoyalsController#index as HTML
+  Rendering royals/index.html.erb within layouts/application
+  [1m[36mRoyal Load (0.3ms)[0m  [1m[34mSELECT "royals".* FROM "royals"[0m
+  ↳ app/views/royals/index.html.erb:5
+  Rendered royals/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 40ms (Views: 37.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/royals" for 127.0.0.1 at 2018-05-17 01:28:26 +1000
+Processing by RoyalsController#index as HTML
+  Rendering royals/index.html.erb within layouts/application
+  [1m[36mRoyal Load (0.2ms)[0m  [1m[34mSELECT "royals".* FROM "royals"[0m
+  ↳ app/views/royals/index.html.erb:5
+  Rendered royals/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 33ms (Views: 29.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/royals" for 127.0.0.1 at 2018-05-17 01:28:50 +1000
+Processing by RoyalsController#index as HTML
+  Rendering royals/index.html.erb within layouts/application
+  [1m[36mRoyal Load (0.3ms)[0m  [1m[34mSELECT "royals".* FROM "royals"[0m
+  ↳ app/views/royals/index.html.erb:5
+  Rendered royals/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 34ms (Views: 30.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/royals/4" for 127.0.0.1 at 2018-05-17 01:28:52 +1000
+Processing by RoyalsController#show as HTML
+  Parameters: {"id"=>"4"}
+  Rendering royals/show.html.erb within layouts/application
+  Rendered royals/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 66ms (Views: 56.5ms | ActiveRecord: 0.0ms)
+
+
