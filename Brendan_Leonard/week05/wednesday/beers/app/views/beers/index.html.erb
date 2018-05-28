@@ -1,0 +1,18 @@
+<h2>Beers Index</h2>
+
+<ul>
+
+
+<% @breweries.each do |brewery| %>
+  <h3><%= link_to brewery.name, brewery_path( brewery ) %>, <%= brewery.region %></h3>
+    <% brewery.beers.each do |beer| %>
+      <li class="index">
+        <%= link_to beer.name, beer_path( beer ) %>, <%= beer.style %> (<%= beer.abv %>% abv)
+      </li>
+    <% end %>
+    <br>
+<% end %>
+
+<br>
+<%= link_to "Add a New Beer", new_beer_path, :class => "nav-links" %>
+</ul>

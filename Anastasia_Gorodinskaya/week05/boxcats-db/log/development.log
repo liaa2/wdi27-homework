@@ -1,0 +1,3066 @@
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ bin/rails:4
+  [1m[35m (1.6ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  ↳ bin/rails:4
+  [1m[35m (1.2ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ bin/rails:4
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:4
+Migrating to CreateBoxcats (20180515070245)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:4
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "boxcats" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "image" text, "box_volume" integer, "cat_size" integer, "cat_origin" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20180515070245_create_boxcats.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20180515070245"]]
+  ↳ bin/rails:4
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:4
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:4
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:4
+  [1m[36mActiveRecord::InternalMetadata Create (0.2ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2018-05-15 07:03:16.091901"], ["updated_at", "2018-05-15 07:03:16.091901"]]
+  ↳ bin/rails:4
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:4
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:4
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:4
+  [1m[36mBoxcat Load (0.1ms)[0m  [1m[34mSELECT "boxcats".* FROM "boxcats"[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[36mBoxcat Create (0.5ms)[0m  [1m[32mINSERT INTO "boxcats" ("name", "image", "box_volume", "cat_size", "cat_origin", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Leo"], ["image", "https://whyevolutionistrue.files.wordpress.com/2013/03/cat-in-box.jpeg"], ["box_volume", 20], ["cat_size", 40], ["cat_origin", "Zoo"], ["created_at", "2018-05-15 07:14:04.920848"], ["updated_at", "2018-05-15 07:14:04.920848"]]
+  ↳ db/seeds.rb:13
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:14
+  [1m[36mBoxcat Create (0.4ms)[0m  [1m[32mINSERT INTO "boxcats" ("name", "box_volume", "cat_size", "cat_origin", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Supercat"], ["box_volume", 40], ["cat_size", 10], ["cat_origin", "Mars"], ["created_at", "2018-05-15 07:14:04.924835"], ["updated_at", "2018-05-15 07:14:04.924835"]]
+  ↳ db/seeds.rb:14
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:14
+  [1m[36mBoxcat Load (0.5ms)[0m  [1m[34mSELECT "boxcats".* FROM "boxcats"[0m
+  [1m[36mBoxcat Load (0.3ms)[0m  [1m[34mSELECT  "boxcats".* FROM "boxcats" ORDER BY "boxcats"."id" ASC LIMIT ? OFFSET ?[0m  [["LIMIT", 1], ["OFFSET", 1]]
+  [1m[36mBoxcat Load (0.2ms)[0m  [1m[34mSELECT  "boxcats".* FROM "boxcats" ORDER BY "boxcats"."id" ASC LIMIT ? OFFSET ?[0m  [["LIMIT", 1], ["OFFSET", 1]]
+  [1m[36mBoxcat Load (0.2ms)[0m  [1m[34mSELECT  "boxcats".* FROM "boxcats" ORDER BY "boxcats"."id" ASC LIMIT ? OFFSET ?[0m  [["LIMIT", 1], ["OFFSET", 1]]
+  [1m[36mBoxcat Load (0.2ms)[0m  [1m[34mSELECT  "boxcats".* FROM "boxcats" ORDER BY "boxcats"."id" ASC LIMIT ? OFFSET ?[0m  [["LIMIT", 1], ["OFFSET", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBoxcat Update (0.4ms)[0m  [1m[33mUPDATE "boxcats" SET "image" = ?, "updated_at" = ? WHERE "boxcats"."id" = ?[0m  [["image", "http://www.laughspark.info/thumbfiles/705x705//cute-cat-image-with-dressed-as-superhero-635727834332032888-2289.jpg"], ["updated_at", "2018-05-15 08:17:05.436533"], ["id", 2]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBoxcat Create (0.7ms)[0m  [1m[32mINSERT INTO "boxcats" ("name", "image", "box_volume", "cat_size", "cat_origin", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Batcat"], ["image", "https://s-media-cache-ak0.pinimg.com/originals/d3/f8/e0/d3f8e014b5699aac49fc33a02c4517b0.jpg"], ["box_volume", 40], ["cat_size", 10], ["cat_origin", "Catham city"], ["created_at", "2018-05-15 08:21:09.357417"], ["updated_at", "2018-05-15 08:21:09.357417"]]
+  [1m[35m (6.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mBoxcat Load (0.4ms)[0m  [1m[34mSELECT "boxcats".* FROM "boxcats"[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBoxcat Create (0.6ms)[0m  [1m[32mINSERT INTO "boxcats" ("name", "image", "box_volume", "cat_size", "cat_origin", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Chuck"], ["image", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjNsmKftQ1i9hS1auhoS6jqf_W1ApvKXMMkF5v3kLhaJvVAg1UqA"], ["box_volume", 40], ["cat_size", 10], ["cat_origin", "Google"], ["created_at", "2018-05-15 08:25:42.315852"], ["updated_at", "2018-05-15 08:25:42.315852"]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBoxcat Create (0.5ms)[0m  [1m[32mINSERT INTO "boxcats" ("name", "image", "box_volume", "cat_size", "cat_origin", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Nemocat"], ["image", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ29Gmkq4tafHNL7VSsRFDPa0u7XAQ3BM4lTJyuezOjVPEPEfhg"], ["box_volume", 40], ["cat_size", 10], ["cat_origin", "Google"], ["created_at", "2018-05-15 08:28:01.767451"], ["updated_at", "2018-05-15 08:28:01.767451"]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBoxcat Create (0.4ms)[0m  [1m[32mINSERT INTO "boxcats" ("name", "image", "box_volume", "cat_size", "cat_origin", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Misterio"], ["image", "http://www.reactiongifs.com/wp-content/uploads/2011/05/cat_in_a_box.gif"], ["box_volume", 40], ["cat_size", 10], ["cat_origin", "Google"], ["created_at", "2018-05-15 08:30:49.732879"], ["updated_at", "2018-05-15 08:30:49.732879"]]
+  [1m[35m (5.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mBoxcat Load (0.2ms)[0m  [1m[34mSELECT  "boxcats".* FROM "boxcats" WHERE "boxcats"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mBoxcat Load (0.2ms)[0m  [1m[34mSELECT  "boxcats".* FROM "boxcats" WHERE "boxcats"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBoxcat Update (0.4ms)[0m  [1m[33mUPDATE "boxcats" SET "image" = ?, "updated_at" = ? WHERE "boxcats"."id" = ?[0m  [["image", "https://i.pinimg.com/originals/4c/9b/0f/4c9b0fae1a2ee0771bec23054218b341.jpg"], ["updated_at", "2018-05-15 08:33:36.505319"], ["id", 6]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBoxcat Create (0.4ms)[0m  [1m[32mINSERT INTO "boxcats" ("name", "image", "box_volume", "cat_size", "cat_origin", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Robocat"], ["image", "http://geekologie.com/2017/08/17/cardboard-cat-mecha-4.jpg"], ["box_volume", 40], ["cat_size", 10], ["cat_origin", "Google"], ["created_at", "2018-05-15 08:35:33.348665"], ["updated_at", "2018-05-15 08:35:33.348665"]]
+  [1m[35m (6.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mBoxcat Load (1.2ms)[0m  [1m[34mSELECT "boxcats".* FROM "boxcats"[0m
+Started GET "/boxcats" for 127.0.0.1 at 2018-05-15 23:19:59 +1000
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/agorodinskaya/.rvm/gems/ruby-2.4.1/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  
+ActionController::RoutingError (No route matches [GET] "/boxcats"):
+  
+actionpack (5.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.0) lib/rails/engine.rb:524:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/boxcat" for 127.0.0.1 at 2018-05-15 23:20:08 +1000
+  
+ActionController::RoutingError (No route matches [GET] "/boxcat"):
+  
+actionpack (5.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.0) lib/rails/engine.rb:524:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/boxcat" for 127.0.0.1 at 2018-05-15 23:22:28 +1000
+Started GET "/boxcats" for 127.0.0.1 at 2018-05-15 23:22:38 +1000
+  
+ActionController::RoutingError (No route matches [GET] "/boxcat"):
+  
+actionpack (5.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.0) lib/rails/engine.rb:524:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  
+LoadError (Unable to autoload constant BoxcatsController, expected /Users/agorodinskaya/Documents/GA/WDI/week5/boxcats-db/app/controllers/boxcats_controller.rb to define it):
+  
+activesupport (5.2.0) lib/active_support/dependencies.rb:503:in `load_missing_constant'
+bootsnap (1.3.0) lib/bootsnap/load_path_cache/core_ext/active_support.rb:43:in `load_missing_constant'
+activesupport (5.2.0) lib/active_support/dependencies.rb:193:in `const_missing'
+activesupport (5.2.0) lib/active_support/inflector/methods.rb:283:in `const_get'
+activesupport (5.2.0) lib/active_support/inflector/methods.rb:283:in `block in constantize'
+activesupport (5.2.0) lib/active_support/inflector/methods.rb:281:in `each'
+activesupport (5.2.0) lib/active_support/inflector/methods.rb:281:in `inject'
+activesupport (5.2.0) lib/active_support/inflector/methods.rb:281:in `constantize'
+activesupport (5.2.0) lib/active_support/dependencies.rb:574:in `get'
+activesupport (5.2.0) lib/active_support/dependencies.rb:605:in `constantize'
+actionpack (5.2.0) lib/action_dispatch/http/request.rb:88:in `controller_class_for'
+actionpack (5.2.0) lib/action_dispatch/http/parameters.rb:101:in `binary_params_for?'
+actionpack (5.2.0) lib/action_dispatch/http/parameters.rb:92:in `set_binary_encoding'
+actionpack (5.2.0) lib/action_dispatch/http/parameters.rb:69:in `path_parameters='
+actionpack (5.2.0) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.2.0) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.0) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.0) lib/action_dispatch/routing/route_set.rb:840:in `call'
+rack (2.0.5) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.5) lib/rack/etag.rb:25:in `call'
+rack (2.0.5) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.5) lib/rack/head.rb:12:in `call'
+actionpack (5.2.0) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.5) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.5) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.0) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.0) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.0) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.0) lib/rails/engine.rb:524:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/boxcats" for 127.0.0.1 at 2018-05-15 23:23:55 +1000
+Processing by BoxcatsController#index as HTML
+  Rendering boxcats/index.html.erb within layouts/application
+  [1m[36mBoxcat Load (0.2ms)[0m  [1m[34mSELECT "boxcats".* FROM "boxcats"[0m
+  ↳ app/views/boxcats/index.html.erb:4
+  Rendered boxcats/index.html.erb within layouts/application (9.4ms)
+Completed 500 Internal Server Error in 509ms (ActiveRecord: 0.7ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `boxcats_new_path' for #<#<Class:0x007ff9b4843040>:0x007ff9b4841330>
+Did you mean?  boxcats_path):
+    13:     <h1 class = "heading"><marquee>If it fits, I sits</marquee></h1>
+    14:     <%= yield %>
+    15:     <footer>
+    16:       <a href="<%=boxcats_new_path %>">Add new cat</a><br>
+    17:       &copy; 😡😝🌎⭐️🐱📦🌈🤩
+    18:     </footer>
+    19:   </body>
+  
+app/views/layouts/application.html.erb:16:in `_app_views_layouts_application_html_erb__37693146224910645_70355180907720'
+Started GET "/boxcats" for 127.0.0.1 at 2018-05-15 23:25:42 +1000
+Processing by BoxcatsController#index as HTML
+  Rendering boxcats/index.html.erb within layouts/application
+  [1m[36mBoxcat Load (0.2ms)[0m  [1m[34mSELECT "boxcats".* FROM "boxcats"[0m
+  ↳ app/views/boxcats/index.html.erb:4
+  Rendered boxcats/index.html.erb within layouts/application (7.5ms)
+Completed 200 OK in 27ms (Views: 22.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/boxcats" for 127.0.0.1 at 2018-05-15 23:26:48 +1000
+Processing by BoxcatsController#index as HTML
+  Rendering boxcats/index.html.erb within layouts/application
+  [1m[36mBoxcat Load (0.2ms)[0m  [1m[34mSELECT "boxcats".* FROM "boxcats"[0m
+  ↳ app/views/boxcats/index.html.erb:4
+  Rendered boxcats/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 20ms (Views: 17.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/boxcats" for 127.0.0.1 at 2018-05-15 23:27:17 +1000
+Processing by BoxcatsController#index as HTML
+  Rendering boxcats/index.html.erb within layouts/application
+  [1m[36mBoxcat Load (0.2ms)[0m  [1m[34mSELECT "boxcats".* FROM "boxcats"[0m
+  ↳ app/views/boxcats/index.html.erb:4
+  Rendered boxcats/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 19ms (Views: 16.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/boxcats/7" for 127.0.0.1 at 2018-05-15 23:27:23 +1000
+Processing by BoxcatsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mBoxcat Load (0.2ms)[0m  [1m[34mSELECT  "boxcats".* FROM "boxcats" WHERE "boxcats"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/boxcats_controller.rb:9
+Completed 406 Not Acceptable in 147ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionController::UnknownFormat (BoxcatsController#show is missing a template for this request format and variant.
+
+request.formats: ["text/html"]
+request.variant: []
+
+NOTE! For XHR/Ajax or API requests, this action would normally respond with 204 No Content: an empty white screen. Since you're loading it in a web browser, we assume that you expected to actually render a template, not nothing, so we're showing an error to be extra-clear. If you expect 204 No Content, carry on. That's what you'll get from an XHR or API request. Give it a shot.):
+  
+actionpack (5.2.0) lib/action_controller/metal/implicit_render.rb:55:in `default_render'
+actionpack (5.2.0) lib/action_controller/metal/basic_implicit_render.rb:6:in `block in send_action'
+actionpack (5.2.0) lib/action_controller/metal/basic_implicit_render.rb:6:in `tap'
+actionpack (5.2.0) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (5.2.0) lib/abstract_controller/base.rb:194:in `process_action'
+actionpack (5.2.0) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (5.2.0) lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+activesupport (5.2.0) lib/active_support/callbacks.rb:132:in `run_callbacks'
+actionpack (5.2.0) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (5.2.0) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (5.2.0) lib/action_controller/metal/instrumentation.rb:34:in `block in process_action'
+activesupport (5.2.0) lib/active_support/notifications.rb:168:in `block in instrument'
+activesupport (5.2.0) lib/active_support/notifications/instrumenter.rb:23:in `instrument'
+activesupport (5.2.0) lib/active_support/notifications.rb:168:in `instrument'
+actionpack (5.2.0) lib/action_controller/metal/instrumentation.rb:32:in `process_action'
+actionpack (5.2.0) lib/action_controller/metal/params_wrapper.rb:256:in `process_action'
+activerecord (5.2.0) lib/active_record/railties/controller_runtime.rb:24:in `process_action'
+actionpack (5.2.0) lib/abstract_controller/base.rb:134:in `process'
+actionview (5.2.0) lib/action_view/rendering.rb:32:in `process'
+actionpack (5.2.0) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.0) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.0) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.0) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.0) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.0) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.0) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.0) lib/action_dispatch/routing/route_set.rb:840:in `call'
+rack (2.0.5) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.5) lib/rack/etag.rb:25:in `call'
+rack (2.0.5) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.5) lib/rack/head.rb:12:in `call'
+actionpack (5.2.0) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.5) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.5) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.0) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.0) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.0) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.0) lib/rails/engine.rb:524:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/boxcats/7" for 127.0.0.1 at 2018-05-15 23:31:30 +1000
+Processing by BoxcatsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mBoxcat Load (0.1ms)[0m  [1m[34mSELECT  "boxcats".* FROM "boxcats" WHERE "boxcats"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/boxcats_controller.rb:9
+  Rendering boxcats/show.html.erb within layouts/application
+  Rendered boxcats/show.html.erb within layouts/application (10.6ms)
+Completed 500 Internal Server Error in 24ms (ActiveRecord: 0.1ms)
+
+
+  
+ActionView::Template::Error (undefined method `moons' for #<Boxcat:0x007ff9ad300008>):
+    1: <h2>hello I am <%= @boxcat.name %></h2>
+    2: 
+    3: 
+    4: <p>I have <%= pluralize @boxcat.moons + 100, 'moon' %></p>
+    5: <p>I love my box of <%= @boxcat.box_volume %></p>
+    6: 
+    7: 
+  
+app/views/boxcats/show.html.erb:4:in `_app_views_boxcats_show_html_erb__436005297806819434_70355168929860'
+Started GET "/boxcats/7" for 127.0.0.1 at 2018-05-15 23:31:39 +1000
+Processing by BoxcatsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mBoxcat Load (0.1ms)[0m  [1m[34mSELECT  "boxcats".* FROM "boxcats" WHERE "boxcats"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/boxcats_controller.rb:9
+  Rendering boxcats/show.html.erb within layouts/application
+  Rendered boxcats/show.html.erb within layouts/application (184.8ms)
+Completed 500 Internal Server Error in 193ms (ActiveRecord: 0.1ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `create_at' for #<#<Class:0x007ff9af2de820>:0x007ff9b59c0db8>):
+    12: <% end %>
+    13: <br>
+    14: 
+    15: <p>I have been cretaed on <%= create_at %></p>
+  
+app/views/boxcats/show.html.erb:15:in `_app_views_boxcats_show_html_erb__436005297806819434_70355235245020'
+Started GET "/boxcats/7" for 127.0.0.1 at 2018-05-15 23:31:47 +1000
+Processing by BoxcatsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mBoxcat Load (0.1ms)[0m  [1m[34mSELECT  "boxcats".* FROM "boxcats" WHERE "boxcats"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/boxcats_controller.rb:9
+  Rendering boxcats/show.html.erb within layouts/application
+  Rendered boxcats/show.html.erb within layouts/application (194.2ms)
+Completed 500 Internal Server Error in 202ms (ActiveRecord: 0.1ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `created_at' for #<#<Class:0x007ff9af2de820>:0x007ff9aef0f3e8>):
+    12: <% end %>
+    13: <br>
+    14: 
+    15: <p>I have been cretaed on <%= created_at %></p>
+  
+app/views/boxcats/show.html.erb:15:in `_app_views_boxcats_show_html_erb__436005297806819434_70355179306800'
+Started GET "/boxcats/7" for 127.0.0.1 at 2018-05-15 23:32:15 +1000
+Processing by BoxcatsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mBoxcat Load (0.1ms)[0m  [1m[34mSELECT  "boxcats".* FROM "boxcats" WHERE "boxcats"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/boxcats_controller.rb:9
+  Rendering boxcats/show.html.erb within layouts/application
+  Rendered boxcats/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 23ms (Views: 19.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/boxcats/2" for 127.0.0.1 at 2018-05-15 23:32:38 +1000
+Processing by BoxcatsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mBoxcat Load (0.1ms)[0m  [1m[34mSELECT  "boxcats".* FROM "boxcats" WHERE "boxcats"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/boxcats_controller.rb:9
+  Rendering boxcats/show.html.erb within layouts/application
+  Rendered boxcats/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 20ms (Views: 16.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/boxcats/3" for 127.0.0.1 at 2018-05-15 23:32:43 +1000
+Processing by BoxcatsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mBoxcat Load (0.1ms)[0m  [1m[34mSELECT  "boxcats".* FROM "boxcats" WHERE "boxcats"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/boxcats_controller.rb:9
+  Rendering boxcats/show.html.erb within layouts/application
+  Rendered boxcats/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 24ms (Views: 20.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/boxcats/4" for 127.0.0.1 at 2018-05-15 23:32:48 +1000
+Processing by BoxcatsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mBoxcat Load (0.1ms)[0m  [1m[34mSELECT  "boxcats".* FROM "boxcats" WHERE "boxcats"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/boxcats_controller.rb:9
+  Rendering boxcats/show.html.erb within layouts/application
+  Rendered boxcats/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 21ms (Views: 18.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/boxcats/5" for 127.0.0.1 at 2018-05-15 23:32:54 +1000
+Processing by BoxcatsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mBoxcat Load (0.1ms)[0m  [1m[34mSELECT  "boxcats".* FROM "boxcats" WHERE "boxcats"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/boxcats_controller.rb:9
+  Rendering boxcats/show.html.erb within layouts/application
+  Rendered boxcats/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 23ms (Views: 19.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/boxcats/6" for 127.0.0.1 at 2018-05-15 23:32:58 +1000
+Processing by BoxcatsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mBoxcat Load (0.1ms)[0m  [1m[34mSELECT  "boxcats".* FROM "boxcats" WHERE "boxcats"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/boxcats_controller.rb:9
+  Rendering boxcats/show.html.erb within layouts/application
+  Rendered boxcats/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 22ms (Views: 18.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/boxcats/7" for 127.0.0.1 at 2018-05-15 23:33:03 +1000
+Processing by BoxcatsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mBoxcat Load (0.1ms)[0m  [1m[34mSELECT  "boxcats".* FROM "boxcats" WHERE "boxcats"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/boxcats_controller.rb:9
+  Rendering boxcats/show.html.erb within layouts/application
+  Rendered boxcats/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 34ms (Views: 30.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/boxcats/1" for 127.0.0.1 at 2018-05-15 23:33:06 +1000
+Processing by BoxcatsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBoxcat Load (0.1ms)[0m  [1m[34mSELECT  "boxcats".* FROM "boxcats" WHERE "boxcats"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/boxcats_controller.rb:9
+  Rendering boxcats/show.html.erb within layouts/application
+  Rendered boxcats/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 20ms (Views: 16.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/boxcats/2" for 127.0.0.1 at 2018-05-15 23:33:29 +1000
+Processing by BoxcatsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mBoxcat Load (0.1ms)[0m  [1m[34mSELECT  "boxcats".* FROM "boxcats" WHERE "boxcats"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/boxcats_controller.rb:9
+  Rendering boxcats/show.html.erb within layouts/application
+  Rendered boxcats/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 20ms (Views: 16.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/boxcats/3" for 127.0.0.1 at 2018-05-15 23:33:34 +1000
+Processing by BoxcatsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mBoxcat Load (0.1ms)[0m  [1m[34mSELECT  "boxcats".* FROM "boxcats" WHERE "boxcats"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/boxcats_controller.rb:9
+  Rendering boxcats/show.html.erb within layouts/application
+  Rendered boxcats/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 21ms (Views: 17.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/boxcats/6" for 127.0.0.1 at 2018-05-15 23:33:39 +1000
+Processing by BoxcatsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mBoxcat Load (0.1ms)[0m  [1m[34mSELECT  "boxcats".* FROM "boxcats" WHERE "boxcats"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/boxcats_controller.rb:9
+  Rendering boxcats/show.html.erb within layouts/application
+  Rendered boxcats/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 19ms (Views: 15.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/boxcats/7" for 127.0.0.1 at 2018-05-15 23:33:46 +1000
+Processing by BoxcatsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mBoxcat Load (0.2ms)[0m  [1m[34mSELECT  "boxcats".* FROM "boxcats" WHERE "boxcats"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/boxcats_controller.rb:9
+  Rendering boxcats/show.html.erb within layouts/application
+  Rendered boxcats/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 20ms (Views: 16.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/boxcats/new" for 127.0.0.1 at 2018-05-15 23:34:02 +1000
+Processing by BoxcatsController#show as HTML
+  Parameters: {"id"=>"new"}
+  [1m[36mBoxcat Load (0.1ms)[0m  [1m[34mSELECT  "boxcats".* FROM "boxcats" WHERE "boxcats"."id" = ? LIMIT ?[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/boxcats_controller.rb:9
+Completed 404 Not Found in 1ms (ActiveRecord: 0.1ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Boxcat with 'id'=new):
+  
+app/controllers/boxcats_controller.rb:9:in `show'
+Started GET "/boxcats" for 127.0.0.1 at 2018-05-15 23:35:46 +1000
+Processing by BoxcatsController#index as HTML
+  Rendering boxcats/index.html.erb within layouts/application
+  [1m[36mBoxcat Load (0.2ms)[0m  [1m[34mSELECT "boxcats".* FROM "boxcats"[0m
+  ↳ app/views/boxcats/index.html.erb:4
+  Rendered boxcats/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 22ms (Views: 19.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/boxcats" for 127.0.0.1 at 2018-05-15 23:38:17 +1000
+Processing by BoxcatsController#index as HTML
+  Rendering boxcats/index.html.erb within layouts/application
+  [1m[36mBoxcat Load (0.3ms)[0m  [1m[34mSELECT "boxcats".* FROM "boxcats"[0m
+  ↳ app/views/boxcats/index.html.erb:4
+  Rendered boxcats/index.html.erb within layouts/application (11.2ms)
+Completed 200 OK in 38ms (Views: 35.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/boxcats" for 127.0.0.1 at 2018-05-15 23:38:34 +1000
+Processing by BoxcatsController#index as HTML
+  Rendering boxcats/index.html.erb within layouts/application
+  [1m[36mBoxcat Load (0.4ms)[0m  [1m[34mSELECT "boxcats".* FROM "boxcats"[0m
+  ↳ app/views/boxcats/index.html.erb:4
+  Rendered boxcats/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 27ms (Views: 24.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/boxcats" for 127.0.0.1 at 2018-05-15 23:38:39 +1000
+Processing by BoxcatsController#index as HTML
+  Rendering boxcats/index.html.erb within layouts/application
+  [1m[36mBoxcat Load (0.2ms)[0m  [1m[34mSELECT "boxcats".* FROM "boxcats"[0m
+  ↳ app/views/boxcats/index.html.erb:4
+  Rendered boxcats/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 27ms (Views: 24.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/boxcats" for 127.0.0.1 at 2018-05-15 23:39:22 +1000
+Processing by BoxcatsController#index as HTML
+  Rendering boxcats/index.html.erb within layouts/application
+  [1m[36mBoxcat Load (0.2ms)[0m  [1m[34mSELECT "boxcats".* FROM "boxcats"[0m
+  ↳ app/views/boxcats/index.html.erb:4
+  Rendered boxcats/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 24ms (Views: 21.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/boxcats" for 127.0.0.1 at 2018-05-15 23:39:32 +1000
+Processing by BoxcatsController#index as HTML
+  Rendering boxcats/index.html.erb within layouts/application
+  [1m[36mBoxcat Load (0.3ms)[0m  [1m[34mSELECT "boxcats".* FROM "boxcats"[0m
+  ↳ app/views/boxcats/index.html.erb:4
+  Rendered boxcats/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 28ms (Views: 25.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/boxcats" for 127.0.0.1 at 2018-05-15 23:39:51 +1000
+Processing by BoxcatsController#index as HTML
+  Rendering boxcats/index.html.erb within layouts/application
+  [1m[36mBoxcat Load (0.2ms)[0m  [1m[34mSELECT "boxcats".* FROM "boxcats"[0m
+  ↳ app/views/boxcats/index.html.erb:4
+  Rendered boxcats/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 22ms (Views: 19.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/boxcats" for 127.0.0.1 at 2018-05-15 23:40:00 +1000
+Processing by BoxcatsController#index as HTML
+  Rendering boxcats/index.html.erb within layouts/application
+  [1m[36mBoxcat Load (0.2ms)[0m  [1m[34mSELECT "boxcats".* FROM "boxcats"[0m
+  ↳ app/views/boxcats/index.html.erb:4
+  Rendered boxcats/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 23ms (Views: 21.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/boxcats" for 127.0.0.1 at 2018-05-15 23:40:04 +1000
+Processing by BoxcatsController#index as HTML
+  Rendering boxcats/index.html.erb within layouts/application
+  [1m[36mBoxcat Load (0.2ms)[0m  [1m[34mSELECT "boxcats".* FROM "boxcats"[0m
+  ↳ app/views/boxcats/index.html.erb:4
+  Rendered boxcats/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 23ms (Views: 21.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/boxcats" for 127.0.0.1 at 2018-05-15 23:40:15 +1000
+Processing by BoxcatsController#index as HTML
+  Rendering boxcats/index.html.erb within layouts/application
+  [1m[36mBoxcat Load (0.2ms)[0m  [1m[34mSELECT "boxcats".* FROM "boxcats"[0m
+  ↳ app/views/boxcats/index.html.erb:4
+  Rendered boxcats/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 22ms (Views: 19.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/boxcats" for 127.0.0.1 at 2018-05-15 23:40:23 +1000
+Processing by BoxcatsController#index as HTML
+  Rendering boxcats/index.html.erb within layouts/application
+  [1m[36mBoxcat Load (0.2ms)[0m  [1m[34mSELECT "boxcats".* FROM "boxcats"[0m
+  ↳ app/views/boxcats/index.html.erb:4
+  Rendered boxcats/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 39ms (Views: 36.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/boxcats" for 127.0.0.1 at 2018-05-15 23:40:26 +1000
+Processing by BoxcatsController#index as HTML
+  Rendering boxcats/index.html.erb within layouts/application
+  [1m[36mBoxcat Load (0.2ms)[0m  [1m[34mSELECT "boxcats".* FROM "boxcats"[0m
+  ↳ app/views/boxcats/index.html.erb:4
+  Rendered boxcats/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 21ms (Views: 18.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/boxcats/2" for 127.0.0.1 at 2018-05-15 23:40:32 +1000
+Processing by BoxcatsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mBoxcat Load (0.2ms)[0m  [1m[34mSELECT  "boxcats".* FROM "boxcats" WHERE "boxcats"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/boxcats_controller.rb:9
+  Rendering boxcats/show.html.erb within layouts/application
+  Rendered boxcats/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 20ms (Views: 16.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/boxcats/2" for 127.0.0.1 at 2018-05-15 23:40:41 +1000
+Processing by BoxcatsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mBoxcat Load (0.1ms)[0m  [1m[34mSELECT  "boxcats".* FROM "boxcats" WHERE "boxcats"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/boxcats_controller.rb:9
+  Rendering boxcats/show.html.erb within layouts/application
+  Rendered boxcats/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 21ms (Views: 17.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/boxcats/3" for 127.0.0.1 at 2018-05-15 23:40:44 +1000
+Processing by BoxcatsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mBoxcat Load (0.1ms)[0m  [1m[34mSELECT  "boxcats".* FROM "boxcats" WHERE "boxcats"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/boxcats_controller.rb:9
+  Rendering boxcats/show.html.erb within layouts/application
+  Rendered boxcats/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 21ms (Views: 17.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/boxcats/4" for 127.0.0.1 at 2018-05-15 23:40:49 +1000
+Processing by BoxcatsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mBoxcat Load (0.1ms)[0m  [1m[34mSELECT  "boxcats".* FROM "boxcats" WHERE "boxcats"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/boxcats_controller.rb:9
+  Rendering boxcats/show.html.erb within layouts/application
+  Rendered boxcats/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 21ms (Views: 17.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/boxcats/new" for 127.0.0.1 at 2018-05-15 23:40:53 +1000
+Processing by BoxcatsController#show as HTML
+  Parameters: {"id"=>"new"}
+  [1m[36mBoxcat Load (0.1ms)[0m  [1m[34mSELECT  "boxcats".* FROM "boxcats" WHERE "boxcats"."id" = ? LIMIT ?[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/boxcats_controller.rb:9
+Completed 404 Not Found in 1ms (ActiveRecord: 0.1ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Boxcat with 'id'=new):
+  
+app/controllers/boxcats_controller.rb:9:in `show'
+Started GET "/boxcats" for 127.0.0.1 at 2018-05-15 23:41:57 +1000
+Processing by BoxcatsController#index as HTML
+  Rendering boxcats/index.html.erb within layouts/application
+  [1m[36mBoxcat Load (0.2ms)[0m  [1m[34mSELECT "boxcats".* FROM "boxcats"[0m
+  ↳ app/views/boxcats/index.html.erb:4
+  Rendered boxcats/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 18ms (Views: 16.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/boxcats/1" for 127.0.0.1 at 2018-05-15 23:42:00 +1000
+Processing by BoxcatsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBoxcat Load (0.2ms)[0m  [1m[34mSELECT  "boxcats".* FROM "boxcats" WHERE "boxcats"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/boxcats_controller.rb:9
+  Rendering boxcats/show.html.erb within layouts/application
+  Rendered boxcats/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 18ms (Views: 14.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/boxcats/1" for 127.0.0.1 at 2018-05-15 23:42:10 +1000
+Processing by BoxcatsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBoxcat Load (0.1ms)[0m  [1m[34mSELECT  "boxcats".* FROM "boxcats" WHERE "boxcats"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/boxcats_controller.rb:9
+  Rendering boxcats/show.html.erb within layouts/application
+  Rendered boxcats/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 18ms (Views: 15.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/boxcats" for 127.0.0.1 at 2018-05-15 23:42:12 +1000
+Processing by BoxcatsController#index as HTML
+  Rendering boxcats/index.html.erb within layouts/application
+  [1m[36mBoxcat Load (0.2ms)[0m  [1m[34mSELECT "boxcats".* FROM "boxcats"[0m
+  ↳ app/views/boxcats/index.html.erb:4
+  Rendered boxcats/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 21ms (Views: 17.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/boxcats/2" for 127.0.0.1 at 2018-05-15 23:42:14 +1000
+Processing by BoxcatsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mBoxcat Load (0.1ms)[0m  [1m[34mSELECT  "boxcats".* FROM "boxcats" WHERE "boxcats"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/boxcats_controller.rb:9
+  Rendering boxcats/show.html.erb within layouts/application
+  Rendered boxcats/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 18ms (Views: 15.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/boxcats" for 127.0.0.1 at 2018-05-15 23:42:17 +1000
+Processing by BoxcatsController#index as HTML
+  Rendering boxcats/index.html.erb within layouts/application
+  [1m[36mBoxcat Load (0.1ms)[0m  [1m[34mSELECT "boxcats".* FROM "boxcats"[0m
+  ↳ app/views/boxcats/index.html.erb:4
+  Rendered boxcats/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 20ms (Views: 16.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/boxcats" for 127.0.0.1 at 2018-05-15 23:42:38 +1000
+Processing by BoxcatsController#index as HTML
+  Rendering boxcats/index.html.erb within layouts/application
+  [1m[36mBoxcat Load (0.2ms)[0m  [1m[34mSELECT "boxcats".* FROM "boxcats"[0m
+  ↳ app/views/boxcats/index.html.erb:4
+  Rendered boxcats/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 18ms (Views: 15.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/boxcats/1" for 127.0.0.1 at 2018-05-15 23:42:39 +1000
+Processing by BoxcatsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBoxcat Load (0.1ms)[0m  [1m[34mSELECT  "boxcats".* FROM "boxcats" WHERE "boxcats"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/boxcats_controller.rb:9
+  Rendering boxcats/show.html.erb within layouts/application
+  Rendered boxcats/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 24ms (Views: 19.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/boxcats/1" for 127.0.0.1 at 2018-05-15 23:43:22 +1000
+Processing by BoxcatsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBoxcat Load (0.1ms)[0m  [1m[34mSELECT  "boxcats".* FROM "boxcats" WHERE "boxcats"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/boxcats_controller.rb:9
+  Rendering boxcats/show.html.erb within layouts/application
+  Rendered boxcats/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 19ms (Views: 16.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/boxcats" for 127.0.0.1 at 2018-05-15 23:43:29 +1000
+Processing by BoxcatsController#index as HTML
+  Rendering boxcats/index.html.erb within layouts/application
+  [1m[36mBoxcat Load (0.2ms)[0m  [1m[34mSELECT "boxcats".* FROM "boxcats"[0m
+  ↳ app/views/boxcats/index.html.erb:4
+  Rendered boxcats/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 20ms (Views: 16.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/boxcats/2" for 127.0.0.1 at 2018-05-15 23:43:33 +1000
+Processing by BoxcatsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mBoxcat Load (0.1ms)[0m  [1m[34mSELECT  "boxcats".* FROM "boxcats" WHERE "boxcats"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/boxcats_controller.rb:9
+  Rendering boxcats/show.html.erb within layouts/application
+  Rendered boxcats/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 21ms (Views: 17.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/boxcats" for 127.0.0.1 at 2018-05-15 23:43:36 +1000
+Processing by BoxcatsController#index as HTML
+  Rendering boxcats/index.html.erb within layouts/application
+  [1m[36mBoxcat Load (0.2ms)[0m  [1m[34mSELECT "boxcats".* FROM "boxcats"[0m
+  ↳ app/views/boxcats/index.html.erb:4
+  Rendered boxcats/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 20ms (Views: 16.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/boxcats" for 127.0.0.1 at 2018-05-15 23:48:04 +1000
+Processing by BoxcatsController#index as HTML
+  Rendering boxcats/index.html.erb within layouts/application
+  [1m[36mBoxcat Load (0.2ms)[0m  [1m[34mSELECT "boxcats".* FROM "boxcats"[0m
+  ↳ app/views/boxcats/index.html.erb:4
+  Rendered boxcats/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 20ms (Views: 17.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/boxcats/1" for 127.0.0.1 at 2018-05-15 23:48:06 +1000
+Processing by BoxcatsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBoxcat Load (0.2ms)[0m  [1m[34mSELECT  "boxcats".* FROM "boxcats" WHERE "boxcats"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/boxcats_controller.rb:9
+  Rendering boxcats/show.html.erb within layouts/application
+  Rendered boxcats/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 19ms (Views: 15.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/boxcats/1" for 127.0.0.1 at 2018-05-15 23:48:23 +1000
+Processing by BoxcatsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBoxcat Load (0.1ms)[0m  [1m[34mSELECT  "boxcats".* FROM "boxcats" WHERE "boxcats"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/boxcats_controller.rb:9
+  Rendering boxcats/show.html.erb within layouts/application
+  Rendered boxcats/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 23ms (Views: 20.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/boxcats/1" for 127.0.0.1 at 2018-05-15 23:48:38 +1000
+Processing by BoxcatsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBoxcat Load (0.1ms)[0m  [1m[34mSELECT  "boxcats".* FROM "boxcats" WHERE "boxcats"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/boxcats_controller.rb:9
+  Rendering boxcats/show.html.erb within layouts/application
+  Rendered boxcats/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 21ms (Views: 18.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/boxcats/2" for 127.0.0.1 at 2018-05-15 23:48:48 +1000
+Processing by BoxcatsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mBoxcat Load (0.1ms)[0m  [1m[34mSELECT  "boxcats".* FROM "boxcats" WHERE "boxcats"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/boxcats_controller.rb:9
+  Rendering boxcats/show.html.erb within layouts/application
+  Rendered boxcats/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 22ms (Views: 18.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/boxcats/2" for 127.0.0.1 at 2018-05-15 23:49:06 +1000
+Processing by BoxcatsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mBoxcat Load (0.1ms)[0m  [1m[34mSELECT  "boxcats".* FROM "boxcats" WHERE "boxcats"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/boxcats_controller.rb:9
+  Rendering boxcats/show.html.erb within layouts/application
+  Rendered boxcats/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 32ms (Views: 28.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/boxcats/2" for 127.0.0.1 at 2018-05-15 23:49:18 +1000
+Processing by BoxcatsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mBoxcat Load (0.1ms)[0m  [1m[34mSELECT  "boxcats".* FROM "boxcats" WHERE "boxcats"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/boxcats_controller.rb:9
+  Rendering boxcats/show.html.erb within layouts/application
+  Rendered boxcats/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 23ms (Views: 19.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/boxcats/2" for 127.0.0.1 at 2018-05-15 23:49:27 +1000
+Processing by BoxcatsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mBoxcat Load (0.1ms)[0m  [1m[34mSELECT  "boxcats".* FROM "boxcats" WHERE "boxcats"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/boxcats_controller.rb:9
+  Rendering boxcats/show.html.erb within layouts/application
+  Rendered boxcats/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 22ms (Views: 18.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/boxcats" for 127.0.0.1 at 2018-05-15 23:49:39 +1000
+Processing by BoxcatsController#index as HTML
+  Rendering boxcats/index.html.erb within layouts/application
+  [1m[36mBoxcat Load (0.2ms)[0m  [1m[34mSELECT "boxcats".* FROM "boxcats"[0m
+  ↳ app/views/boxcats/index.html.erb:4
+  Rendered boxcats/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 21ms (Views: 18.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/boxcats/7" for 127.0.0.1 at 2018-05-15 23:50:22 +1000
+Processing by BoxcatsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mBoxcat Load (0.1ms)[0m  [1m[34mSELECT  "boxcats".* FROM "boxcats" WHERE "boxcats"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/boxcats_controller.rb:9
+  Rendering boxcats/show.html.erb within layouts/application
+  Rendered boxcats/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 22ms (Views: 17.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/boxcats/7" for 127.0.0.1 at 2018-05-15 23:55:10 +1000
+Processing by BoxcatsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mBoxcat Load (0.1ms)[0m  [1m[34mSELECT  "boxcats".* FROM "boxcats" WHERE "boxcats"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/boxcats_controller.rb:9
+  Rendering boxcats/show.html.erb within layouts/application
+  Rendered boxcats/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 19ms (Views: 15.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/boxcats/7" for 127.0.0.1 at 2018-05-15 23:59:08 +1000
+Processing by BoxcatsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mBoxcat Load (0.1ms)[0m  [1m[34mSELECT  "boxcats".* FROM "boxcats" WHERE "boxcats"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/boxcats_controller.rb:9
+  Rendering boxcats/show.html.erb within layouts/application
+  Rendered boxcats/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 25ms (Views: 14.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/boxcats/new" for 127.0.0.1 at 2018-05-15 23:59:10 +1000
+Processing by BoxcatsController#show as HTML
+  Parameters: {"id"=>"new"}
+  [1m[36mBoxcat Load (0.1ms)[0m  [1m[34mSELECT  "boxcats".* FROM "boxcats" WHERE "boxcats"."id" = ? LIMIT ?[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/boxcats_controller.rb:9
+Completed 404 Not Found in 1ms (ActiveRecord: 0.1ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Boxcat with 'id'=new):
+  
+app/controllers/boxcats_controller.rb:9:in `show'
+Started GET "/boxcats/new" for 127.0.0.1 at 2018-05-16 00:06:08 +1000
+Processing by BoxcatsController#new as HTML
+  Rendering boxcats/new.html.erb within layouts/application
+  Rendered boxcats/new.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 17ms (Views: 14.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/boxcats/new" for 127.0.0.1 at 2018-05-16 00:07:01 +1000
+Processing by BoxcatsController#new as HTML
+  Rendering boxcats/new.html.erb within layouts/application
+  Rendered boxcats/new.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 24ms (Views: 21.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/boxcats/new" for 127.0.0.1 at 2018-05-16 00:07:18 +1000
+Processing by BoxcatsController#new as HTML
+  Rendering boxcats/new.html.erb within layouts/application
+  Rendered boxcats/new.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 16ms (Views: 14.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/boxcats/new" for 127.0.0.1 at 2018-05-16 00:07:23 +1000
+Processing by BoxcatsController#new as HTML
+  Rendering boxcats/new.html.erb within layouts/application
+  Rendered boxcats/new.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 19ms (Views: 16.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/boxcats/new" for 127.0.0.1 at 2018-05-16 00:07:37 +1000
+Processing by BoxcatsController#new as HTML
+  Rendering boxcats/new.html.erb within layouts/application
+  Rendered boxcats/new.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 18ms (Views: 16.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/boxcats/new" for 127.0.0.1 at 2018-05-16 00:08:14 +1000
+Processing by BoxcatsController#new as HTML
+  Rendering boxcats/new.html.erb within layouts/application
+  Rendered boxcats/new.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 19ms (Views: 17.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/boxcats" for 127.0.0.1 at 2018-05-16 00:09:23 +1000
+Processing by BoxcatsController#create as HTML
+  Parameters: {"name"=>"Observer", "image"=>"https://i.imgur.com/ikK4Rg1.gif", "box_volume"=>"5", "cat_size"=>"15", "cat_origin"=>"Russia", "add"=>"Submit"}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/boxcats_controller.rb:9
+  [1m[36mBoxcat Create (0.5ms)[0m  [1m[32mINSERT INTO "boxcats" ("name", "image", "box_volume", "cat_size", "cat_origin", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Observer"], ["image", "https://i.imgur.com/ikK4Rg1.gif"], ["box_volume", 5], ["cat_size", 15], ["cat_origin", "Russia"], ["created_at", "2018-05-15 14:09:24.004725"], ["updated_at", "2018-05-15 14:09:24.004725"]]
+  ↳ app/controllers/boxcats_controller.rb:9
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/boxcats_controller.rb:9
+Redirected to http://localhost:3000/boxcats
+Completed 302 Found in 11ms (ActiveRecord: 1.7ms)
+
+
+Started GET "/boxcats" for 127.0.0.1 at 2018-05-16 00:09:24 +1000
+Processing by BoxcatsController#index as HTML
+  Rendering boxcats/index.html.erb within layouts/application
+  [1m[36mBoxcat Load (0.2ms)[0m  [1m[34mSELECT "boxcats".* FROM "boxcats"[0m
+  ↳ app/views/boxcats/index.html.erb:4
+  Rendered boxcats/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 18ms (Views: 15.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/boxcats/8" for 127.0.0.1 at 2018-05-16 00:09:26 +1000
+Processing by BoxcatsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mBoxcat Load (0.2ms)[0m  [1m[34mSELECT  "boxcats".* FROM "boxcats" WHERE "boxcats"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/boxcats_controller.rb:26
+  Rendering boxcats/show.html.erb within layouts/application
+  Rendered boxcats/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 20ms (Views: 16.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/boxcats/8" for 127.0.0.1 at 2018-05-16 00:14:06 +1000
+Processing by BoxcatsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mBoxcat Load (0.1ms)[0m  [1m[34mSELECT  "boxcats".* FROM "boxcats" WHERE "boxcats"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/boxcats_controller.rb:26
+  Rendering boxcats/show.html.erb within layouts/application
+  Rendered boxcats/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 29ms (Views: 17.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/boxcats/8" for 127.0.0.1 at 2018-05-16 00:14:12 +1000
+Processing by BoxcatsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mBoxcat Load (0.1ms)[0m  [1m[34mSELECT  "boxcats".* FROM "boxcats" WHERE "boxcats"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/boxcats_controller.rb:26
+  Rendering boxcats/show.html.erb within layouts/application
+  Rendered boxcats/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 20ms (Views: 16.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/boxcats" for 127.0.0.1 at 2018-05-16 00:14:26 +1000
+Processing by BoxcatsController#index as HTML
+  Rendering boxcats/index.html.erb within layouts/application
+  [1m[36mBoxcat Load (0.2ms)[0m  [1m[34mSELECT "boxcats".* FROM "boxcats"[0m
+  ↳ app/views/boxcats/index.html.erb:4
+  Rendered boxcats/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 22ms (Views: 18.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/boxcats" for 127.0.0.1 at 2018-05-16 00:14:38 +1000
+Processing by BoxcatsController#index as HTML
+  Rendering boxcats/index.html.erb within layouts/application
+  [1m[36mBoxcat Load (0.2ms)[0m  [1m[34mSELECT "boxcats".* FROM "boxcats"[0m
+  ↳ app/views/boxcats/index.html.erb:4
+  Rendered boxcats/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 21ms (Views: 18.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/boxcats/2" for 127.0.0.1 at 2018-05-16 00:14:40 +1000
+Processing by BoxcatsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mBoxcat Load (0.1ms)[0m  [1m[34mSELECT  "boxcats".* FROM "boxcats" WHERE "boxcats"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/boxcats_controller.rb:26
+  Rendering boxcats/show.html.erb within layouts/application
+  Rendered boxcats/show.html.erb within layouts/application (179.1ms)
+Completed 500 Internal Server Error in 189ms (ActiveRecord: 0.1ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `boxcats' for #<#<Class:0x007ff9af445a38>:0x007ff9b4f4b450>
+Did you mean?  @boxcat):
+    19: 
+    20: <a href="<%= "/boxcats" %>">Back to index</a>
+    21: 
+    22: <%= link_to "Index", boxcats %>
+    23: <%= link_to "Edit", boxcat_edit_path( @boxcat.id ) %>
+    24: <%= link_to "Delete", boxcat_destroy_path( @boxcat.id ) %>
+  
+app/views/boxcats/show.html.erb:22:in `_app_views_boxcats_show_html_erb__436005297806819434_70355229772080'
+Started GET "/boxcats/2" for 127.0.0.1 at 2018-05-16 00:16:28 +1000
+Processing by BoxcatsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mBoxcat Load (0.1ms)[0m  [1m[34mSELECT  "boxcats".* FROM "boxcats" WHERE "boxcats"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/boxcats_controller.rb:26
+  Rendering boxcats/show.html.erb within layouts/application
+  Rendered boxcats/show.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 67ms (Views: 53.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/boxcats" for 127.0.0.1 at 2018-05-16 00:16:30 +1000
+Processing by BoxcatsController#index as HTML
+  Rendering boxcats/index.html.erb within layouts/application
+  [1m[36mBoxcat Load (0.2ms)[0m  [1m[34mSELECT "boxcats".* FROM "boxcats"[0m
+  ↳ app/views/boxcats/index.html.erb:4
+  Rendered boxcats/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 20ms (Views: 17.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/boxcats" for 127.0.0.1 at 2018-05-16 00:16:43 +1000
+Processing by BoxcatsController#index as HTML
+  Rendering boxcats/index.html.erb within layouts/application
+  [1m[36mBoxcat Load (0.2ms)[0m  [1m[34mSELECT "boxcats".* FROM "boxcats"[0m
+  ↳ app/views/boxcats/index.html.erb:4
+  Rendered boxcats/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 20ms (Views: 17.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/boxcats/2" for 127.0.0.1 at 2018-05-16 00:16:45 +1000
+Processing by BoxcatsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mBoxcat Load (0.1ms)[0m  [1m[34mSELECT  "boxcats".* FROM "boxcats" WHERE "boxcats"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/boxcats_controller.rb:26
+  Rendering boxcats/show.html.erb within layouts/application
+  Rendered boxcats/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 21ms (Views: 17.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/boxcats" for 127.0.0.1 at 2018-05-16 00:16:49 +1000
+Processing by BoxcatsController#index as HTML
+  Rendering boxcats/index.html.erb within layouts/application
+  [1m[36mBoxcat Load (0.2ms)[0m  [1m[34mSELECT "boxcats".* FROM "boxcats"[0m
+  ↳ app/views/boxcats/index.html.erb:4
+  Rendered boxcats/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 38ms (Views: 34.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/boxcats" for 127.0.0.1 at 2018-05-16 00:17:55 +1000
+Processing by BoxcatsController#index as HTML
+  Rendering boxcats/index.html.erb within layouts/application
+  [1m[36mBoxcat Load (0.2ms)[0m  [1m[34mSELECT "boxcats".* FROM "boxcats"[0m
+  ↳ app/views/boxcats/index.html.erb:4
+  Rendered boxcats/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 23ms (Views: 20.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/boxcats/6" for 127.0.0.1 at 2018-05-16 00:18:04 +1000
+Processing by BoxcatsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mBoxcat Load (0.1ms)[0m  [1m[34mSELECT  "boxcats".* FROM "boxcats" WHERE "boxcats"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/boxcats_controller.rb:26
+  Rendering boxcats/show.html.erb within layouts/application
+  Rendered boxcats/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 22ms (Views: 18.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/boxcats" for 127.0.0.1 at 2018-05-16 00:18:16 +1000
+Processing by BoxcatsController#index as HTML
+  Rendering boxcats/index.html.erb within layouts/application
+  [1m[36mBoxcat Load (0.2ms)[0m  [1m[34mSELECT "boxcats".* FROM "boxcats"[0m
+  ↳ app/views/boxcats/index.html.erb:4
+  Rendered boxcats/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 21ms (Views: 18.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/boxcats/5" for 127.0.0.1 at 2018-05-16 00:18:19 +1000
+Processing by BoxcatsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mBoxcat Load (0.1ms)[0m  [1m[34mSELECT  "boxcats".* FROM "boxcats" WHERE "boxcats"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/boxcats_controller.rb:26
+  Rendering boxcats/show.html.erb within layouts/application
+  Rendered boxcats/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 22ms (Views: 18.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/boxcats" for 127.0.0.1 at 2018-05-16 00:18:24 +1000
+Processing by BoxcatsController#index as HTML
+  Rendering boxcats/index.html.erb within layouts/application
+  [1m[36mBoxcat Load (0.2ms)[0m  [1m[34mSELECT "boxcats".* FROM "boxcats"[0m
+  ↳ app/views/boxcats/index.html.erb:4
+  Rendered boxcats/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 21ms (Views: 18.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/boxcats/3" for 127.0.0.1 at 2018-05-16 00:18:25 +1000
+Processing by BoxcatsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mBoxcat Load (0.1ms)[0m  [1m[34mSELECT  "boxcats".* FROM "boxcats" WHERE "boxcats"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/boxcats_controller.rb:26
+  Rendering boxcats/show.html.erb within layouts/application
+  Rendered boxcats/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 21ms (Views: 17.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/boxcats" for 127.0.0.1 at 2018-05-16 00:18:29 +1000
+Processing by BoxcatsController#index as HTML
+  Rendering boxcats/index.html.erb within layouts/application
+  [1m[36mBoxcat Load (0.2ms)[0m  [1m[34mSELECT "boxcats".* FROM "boxcats"[0m
+  ↳ app/views/boxcats/index.html.erb:4
+  Rendered boxcats/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 20ms (Views: 17.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/boxcats/1" for 127.0.0.1 at 2018-05-16 00:18:30 +1000
+Processing by BoxcatsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBoxcat Load (0.1ms)[0m  [1m[34mSELECT  "boxcats".* FROM "boxcats" WHERE "boxcats"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/boxcats_controller.rb:26
+  Rendering boxcats/show.html.erb within layouts/application
+  Rendered boxcats/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 21ms (Views: 17.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/boxcats" for 127.0.0.1 at 2018-05-16 00:18:34 +1000
+Processing by BoxcatsController#index as HTML
+  Rendering boxcats/index.html.erb within layouts/application
+  [1m[36mBoxcat Load (0.2ms)[0m  [1m[34mSELECT "boxcats".* FROM "boxcats"[0m
+  ↳ app/views/boxcats/index.html.erb:4
+  Rendered boxcats/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 21ms (Views: 18.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/boxcats" for 127.0.0.1 at 2018-05-16 00:21:56 +1000
+Processing by BoxcatsController#index as HTML
+  Rendering boxcats/index.html.erb within layouts/application
+  [1m[36mBoxcat Load (0.2ms)[0m  [1m[34mSELECT "boxcats".* FROM "boxcats"[0m
+  ↳ app/views/boxcats/index.html.erb:4
+  Rendered boxcats/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 20ms (Views: 17.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/boxcats/1" for 127.0.0.1 at 2018-05-16 00:21:58 +1000
+Processing by BoxcatsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBoxcat Load (0.1ms)[0m  [1m[34mSELECT  "boxcats".* FROM "boxcats" WHERE "boxcats"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/boxcats_controller.rb:26
+  Rendering boxcats/show.html.erb within layouts/application
+  Rendered boxcats/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 21ms (Views: 17.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/boxcats/new" for 127.0.0.1 at 2018-05-16 00:22:01 +1000
+Processing by BoxcatsController#new as HTML
+  Rendering boxcats/new.html.erb within layouts/application
+  Rendered boxcats/new.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 22ms (Views: 18.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/boxcats" for 127.0.0.1 at 2018-05-16 00:22:04 +1000
+Processing by BoxcatsController#index as HTML
+  Rendering boxcats/index.html.erb within layouts/application
+  [1m[36mBoxcat Load (0.2ms)[0m  [1m[34mSELECT "boxcats".* FROM "boxcats"[0m
+  ↳ app/views/boxcats/index.html.erb:4
+  Rendered boxcats/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 22ms (Views: 18.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/boxcats/6" for 127.0.0.1 at 2018-05-16 00:22:05 +1000
+Processing by BoxcatsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mBoxcat Load (0.1ms)[0m  [1m[34mSELECT  "boxcats".* FROM "boxcats" WHERE "boxcats"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/boxcats_controller.rb:26
+  Rendering boxcats/show.html.erb within layouts/application
+  Rendered boxcats/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 23ms (Views: 19.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/boxcats/6/edit" for 127.0.0.1 at 2018-05-16 00:22:08 +1000
+Processing by BoxcatsController#edit as HTML
+  Parameters: {"id"=>"6"}
+  Rendering boxcats/edit.html.erb within layouts/application
+  Rendered boxcats/edit.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 16ms (Views: 13.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/boxcats/6/edit" for 127.0.0.1 at 2018-05-16 00:23:59 +1000
+Processing by BoxcatsController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mBoxcat Load (0.1ms)[0m  [1m[34mSELECT  "boxcats".* FROM "boxcats" WHERE "boxcats"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/boxcats_controller.rb:30
+  Rendering boxcats/edit.html.erb within layouts/application
+  Rendered boxcats/edit.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 36ms (Views: 22.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/boxcats/new" for 127.0.0.1 at 2018-05-16 00:24:02 +1000
+Processing by BoxcatsController#new as HTML
+  Rendering boxcats/new.html.erb within layouts/application
+  Rendered boxcats/new.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 18ms (Views: 14.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/boxcats" for 127.0.0.1 at 2018-05-16 00:24:05 +1000
+Processing by BoxcatsController#index as HTML
+  Rendering boxcats/index.html.erb within layouts/application
+  [1m[36mBoxcat Load (0.2ms)[0m  [1m[34mSELECT "boxcats".* FROM "boxcats"[0m
+  ↳ app/views/boxcats/index.html.erb:4
+  Rendered boxcats/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 20ms (Views: 16.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/boxcats/3" for 127.0.0.1 at 2018-05-16 00:24:06 +1000
+Processing by BoxcatsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mBoxcat Load (0.1ms)[0m  [1m[34mSELECT  "boxcats".* FROM "boxcats" WHERE "boxcats"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/boxcats_controller.rb:26
+  Rendering boxcats/show.html.erb within layouts/application
+  Rendered boxcats/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 20ms (Views: 16.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/boxcats/3/edit" for 127.0.0.1 at 2018-05-16 00:24:08 +1000
+Processing by BoxcatsController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mBoxcat Load (0.1ms)[0m  [1m[34mSELECT  "boxcats".* FROM "boxcats" WHERE "boxcats"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/boxcats_controller.rb:30
+  Rendering boxcats/edit.html.erb within layouts/application
+  Rendered boxcats/edit.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 20ms (Views: 16.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/boxcats/3" for 127.0.0.1 at 2018-05-16 00:27:14 +1000
+Processing by BoxcatsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mBoxcat Load (0.1ms)[0m  [1m[34mSELECT  "boxcats".* FROM "boxcats" WHERE "boxcats"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/boxcats_controller.rb:26
+  Rendering boxcats/show.html.erb within layouts/application
+  Rendered boxcats/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 25ms (Views: 14.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/boxcats/3/edit" for 127.0.0.1 at 2018-05-16 00:27:15 +1000
+Processing by BoxcatsController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mBoxcat Load (0.1ms)[0m  [1m[34mSELECT  "boxcats".* FROM "boxcats" WHERE "boxcats"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/boxcats_controller.rb:30
+  Rendering boxcats/edit.html.erb within layouts/application
+  Rendered boxcats/edit.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 22ms (Views: 18.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/boxcats/3/edit" for 127.0.0.1 at 2018-05-16 00:28:42 +1000
+Processing by BoxcatsController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mBoxcat Load (0.1ms)[0m  [1m[34mSELECT  "boxcats".* FROM "boxcats" WHERE "boxcats"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/boxcats_controller.rb:30
+  Rendering boxcats/edit.html.erb within layouts/application
+  Rendered boxcats/edit.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 20ms (Views: 17.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/boxcats" for 127.0.0.1 at 2018-05-16 06:36:55 +1000
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/agorodinskaya/.rvm/gems/ruby-2.4.1/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by BoxcatsController#index as HTML
+  Rendering boxcats/index.html.erb within layouts/application
+  [1m[36mBoxcat Load (0.5ms)[0m  [1m[34mSELECT "boxcats".* FROM "boxcats"[0m
+  ↳ app/views/boxcats/index.html.erb:4
+  Rendered boxcats/index.html.erb within layouts/application (9.6ms)
+Completed 200 OK in 191ms (Views: 185.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/boxcats/1" for 127.0.0.1 at 2018-05-16 06:37:06 +1000
+Processing by BoxcatsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBoxcat Load (0.3ms)[0m  [1m[34mSELECT  "boxcats".* FROM "boxcats" WHERE "boxcats"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/boxcats_controller.rb:26
+  Rendering boxcats/show.html.erb within layouts/application
+  Rendered boxcats/show.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 35ms (Views: 27.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/boxcats" for 127.0.0.1 at 2018-05-16 06:37:10 +1000
+Processing by BoxcatsController#index as HTML
+  Rendering boxcats/index.html.erb within layouts/application
+  [1m[36mBoxcat Load (0.3ms)[0m  [1m[34mSELECT "boxcats".* FROM "boxcats"[0m
+  ↳ app/views/boxcats/index.html.erb:4
+  Rendered boxcats/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 29ms (Views: 24.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/boxcats/2" for 127.0.0.1 at 2018-05-16 06:37:12 +1000
+Processing by BoxcatsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mBoxcat Load (0.2ms)[0m  [1m[34mSELECT  "boxcats".* FROM "boxcats" WHERE "boxcats"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/boxcats_controller.rb:26
+  Rendering boxcats/show.html.erb within layouts/application
+  Rendered boxcats/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 24ms (Views: 19.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/boxcats" for 127.0.0.1 at 2018-05-16 06:37:20 +1000
+Processing by BoxcatsController#index as HTML
+  Rendering boxcats/index.html.erb within layouts/application
+  [1m[36mBoxcat Load (0.2ms)[0m  [1m[34mSELECT "boxcats".* FROM "boxcats"[0m
+  ↳ app/views/boxcats/index.html.erb:4
+  Rendered boxcats/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 18ms (Views: 15.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/boxcats/3" for 127.0.0.1 at 2018-05-16 06:37:23 +1000
+Processing by BoxcatsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mBoxcat Load (0.2ms)[0m  [1m[34mSELECT  "boxcats".* FROM "boxcats" WHERE "boxcats"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/boxcats_controller.rb:26
+  Rendering boxcats/show.html.erb within layouts/application
+  Rendered boxcats/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 19ms (Views: 16.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/boxcats" for 127.0.0.1 at 2018-05-16 06:37:30 +1000
+Processing by BoxcatsController#index as HTML
+  Rendering boxcats/index.html.erb within layouts/application
+  [1m[36mBoxcat Load (0.2ms)[0m  [1m[34mSELECT "boxcats".* FROM "boxcats"[0m
+  ↳ app/views/boxcats/index.html.erb:4
+  Rendered boxcats/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 21ms (Views: 18.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/boxcats/4" for 127.0.0.1 at 2018-05-16 06:37:32 +1000
+Processing by BoxcatsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mBoxcat Load (0.1ms)[0m  [1m[34mSELECT  "boxcats".* FROM "boxcats" WHERE "boxcats"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/boxcats_controller.rb:26
+  Rendering boxcats/show.html.erb within layouts/application
+  Rendered boxcats/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 20ms (Views: 16.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/boxcats" for 127.0.0.1 at 2018-05-16 06:37:36 +1000
+Processing by BoxcatsController#index as HTML
+  Rendering boxcats/index.html.erb within layouts/application
+  [1m[36mBoxcat Load (0.2ms)[0m  [1m[34mSELECT "boxcats".* FROM "boxcats"[0m
+  ↳ app/views/boxcats/index.html.erb:4
+  Rendered boxcats/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 19ms (Views: 16.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/boxcats/5" for 127.0.0.1 at 2018-05-16 06:37:37 +1000
+Processing by BoxcatsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mBoxcat Load (0.1ms)[0m  [1m[34mSELECT  "boxcats".* FROM "boxcats" WHERE "boxcats"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/boxcats_controller.rb:26
+  Rendering boxcats/show.html.erb within layouts/application
+  Rendered boxcats/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 18ms (Views: 15.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/boxcats" for 127.0.0.1 at 2018-05-16 06:37:43 +1000
+Processing by BoxcatsController#index as HTML
+  Rendering boxcats/index.html.erb within layouts/application
+  [1m[36mBoxcat Load (0.2ms)[0m  [1m[34mSELECT "boxcats".* FROM "boxcats"[0m
+  ↳ app/views/boxcats/index.html.erb:4
+  Rendered boxcats/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 19ms (Views: 16.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/boxcats/6" for 127.0.0.1 at 2018-05-16 06:37:44 +1000
+Processing by BoxcatsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mBoxcat Load (0.1ms)[0m  [1m[34mSELECT  "boxcats".* FROM "boxcats" WHERE "boxcats"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/boxcats_controller.rb:26
+  Rendering boxcats/show.html.erb within layouts/application
+  Rendered boxcats/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 18ms (Views: 14.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/boxcats" for 127.0.0.1 at 2018-05-16 06:37:47 +1000
+Processing by BoxcatsController#index as HTML
+  Rendering boxcats/index.html.erb within layouts/application
+  [1m[36mBoxcat Load (0.2ms)[0m  [1m[34mSELECT "boxcats".* FROM "boxcats"[0m
+  ↳ app/views/boxcats/index.html.erb:4
+  Rendered boxcats/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 18ms (Views: 15.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/boxcats/7" for 127.0.0.1 at 2018-05-16 06:37:48 +1000
+Processing by BoxcatsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mBoxcat Load (0.1ms)[0m  [1m[34mSELECT  "boxcats".* FROM "boxcats" WHERE "boxcats"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/boxcats_controller.rb:26
+  Rendering boxcats/show.html.erb within layouts/application
+  Rendered boxcats/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 19ms (Views: 15.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/boxcats" for 127.0.0.1 at 2018-05-16 06:37:53 +1000
+Processing by BoxcatsController#index as HTML
+  Rendering boxcats/index.html.erb within layouts/application
+  [1m[36mBoxcat Load (0.2ms)[0m  [1m[34mSELECT "boxcats".* FROM "boxcats"[0m
+  ↳ app/views/boxcats/index.html.erb:4
+  Rendered boxcats/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 17ms (Views: 14.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/boxcats/8" for 127.0.0.1 at 2018-05-16 06:37:55 +1000
+Processing by BoxcatsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mBoxcat Load (0.1ms)[0m  [1m[34mSELECT  "boxcats".* FROM "boxcats" WHERE "boxcats"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/boxcats_controller.rb:26
+  Rendering boxcats/show.html.erb within layouts/application
+  Rendered boxcats/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 21ms (Views: 17.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/boxcats" for 127.0.0.1 at 2018-05-16 06:38:05 +1000
+Processing by BoxcatsController#index as HTML
+  Rendering boxcats/index.html.erb within layouts/application
+  [1m[36mBoxcat Load (0.2ms)[0m  [1m[34mSELECT "boxcats".* FROM "boxcats"[0m
+  ↳ app/views/boxcats/index.html.erb:4
+  Rendered boxcats/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 20ms (Views: 17.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/boxcats/8" for 127.0.0.1 at 2018-05-16 06:38:39 +1000
+Processing by BoxcatsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mBoxcat Load (0.1ms)[0m  [1m[34mSELECT  "boxcats".* FROM "boxcats" WHERE "boxcats"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/boxcats_controller.rb:26
+  Rendering boxcats/show.html.erb within layouts/application
+  Rendered boxcats/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 21ms (Views: 16.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/boxcats/8/edit" for 127.0.0.1 at 2018-05-16 06:38:42 +1000
+Processing by BoxcatsController#edit as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mBoxcat Load (0.1ms)[0m  [1m[34mSELECT  "boxcats".* FROM "boxcats" WHERE "boxcats"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/boxcats_controller.rb:30
+  Rendering boxcats/edit.html.erb within layouts/application
+  Rendered boxcats/edit.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 19ms (Views: 15.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/boxcats/8/edit" for 127.0.0.1 at 2018-05-16 06:43:35 +1000
+Processing by BoxcatsController#edit as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mBoxcat Load (0.2ms)[0m  [1m[34mSELECT  "boxcats".* FROM "boxcats" WHERE "boxcats"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/boxcats_controller.rb:30
+  Rendering boxcats/edit.html.erb within layouts/application
+  Rendered boxcats/edit.html.erb within layouts/application (0.8ms)
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.2ms)
+
+
+  
+SyntaxError (/Users/agorodinskaya/Documents/GA/WDI/week5/boxcats-db/app/views/boxcats/edit.html.erb:7: syntax error, unexpected ')', expecting ']'
+r.append=( @boxcat[:cat_size );@output_buffer.safe_append='"
+                              ^
+/Users/agorodinskaya/Documents/GA/WDI/week5/boxcats-db/app/views/boxcats/edit.html.erb:17: syntax error, unexpected keyword_ensure, expecting ')'
+          ensure
+                ^
+/Users/agorodinskaya/Documents/GA/WDI/week5/boxcats-db/app/views/boxcats/edit.html.erb:19: syntax error, unexpected keyword_end, expecting ')'
+          end
+             ^):
+  
+app/views/boxcats/edit.html.erb:7: syntax error, unexpected ')', expecting ']'
+app/views/boxcats/edit.html.erb:17: syntax error, unexpected keyword_ensure, expecting ')'
+app/views/boxcats/edit.html.erb:19: syntax error, unexpected keyword_end, expecting ')'
+Started GET "/boxcats/8/edit" for 127.0.0.1 at 2018-05-16 06:44:08 +1000
+Processing by BoxcatsController#edit as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mBoxcat Load (0.1ms)[0m  [1m[34mSELECT  "boxcats".* FROM "boxcats" WHERE "boxcats"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/boxcats_controller.rb:30
+  Rendering boxcats/edit.html.erb within layouts/application
+  Rendered boxcats/edit.html.erb within layouts/application (1.4ms)
+Completed 500 Internal Server Error in 21ms (ActiveRecord: 0.1ms)
+
+
+  
+SyntaxError (/Users/agorodinskaya/Documents/GA/WDI/week5/boxcats-db/app/views/boxcats/edit.html.erb:7: syntax error, unexpected ')', expecting ']'
+r.append=( @boxcat[:cat_size );@output_buffer.safe_append='"
+                              ^
+/Users/agorodinskaya/Documents/GA/WDI/week5/boxcats-db/app/views/boxcats/edit.html.erb:17: syntax error, unexpected keyword_ensure, expecting ')'
+          ensure
+                ^
+/Users/agorodinskaya/Documents/GA/WDI/week5/boxcats-db/app/views/boxcats/edit.html.erb:19: syntax error, unexpected keyword_end, expecting ')'
+          end
+             ^):
+  
+app/views/boxcats/edit.html.erb:7: syntax error, unexpected ')', expecting ']'
+app/views/boxcats/edit.html.erb:17: syntax error, unexpected keyword_ensure, expecting ')'
+app/views/boxcats/edit.html.erb:19: syntax error, unexpected keyword_end, expecting ')'
+Started GET "/boxcats/8/edit" for 127.0.0.1 at 2018-05-16 06:45:31 +1000
+Processing by BoxcatsController#edit as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mBoxcat Load (0.1ms)[0m  [1m[34mSELECT  "boxcats".* FROM "boxcats" WHERE "boxcats"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/boxcats_controller.rb:30
+  Rendering boxcats/edit.html.erb within layouts/application
+  Rendered boxcats/edit.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 18ms (Views: 15.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/boxcats/8/edit" for 127.0.0.1 at 2018-05-16 06:46:26 +1000
+Processing by BoxcatsController#edit as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mBoxcat Load (0.1ms)[0m  [1m[34mSELECT  "boxcats".* FROM "boxcats" WHERE "boxcats"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/boxcats_controller.rb:30
+  Rendering boxcats/edit.html.erb within layouts/application
+  Rendered boxcats/edit.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 18ms (Views: 15.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/boxcats/8/edit" for 127.0.0.1 at 2018-05-16 06:46:37 +1000
+Processing by BoxcatsController#edit as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mBoxcat Load (0.1ms)[0m  [1m[34mSELECT  "boxcats".* FROM "boxcats" WHERE "boxcats"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/boxcats_controller.rb:30
+  Rendering boxcats/edit.html.erb within layouts/application
+  Rendered boxcats/edit.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 20ms (Views: 16.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/boxcats/8/edit" for 127.0.0.1 at 2018-05-16 06:46:46 +1000
+Processing by BoxcatsController#edit as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mBoxcat Load (0.1ms)[0m  [1m[34mSELECT  "boxcats".* FROM "boxcats" WHERE "boxcats"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/boxcats_controller.rb:30
+  Rendering boxcats/edit.html.erb within layouts/application
+  Rendered boxcats/edit.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 18ms (Views: 15.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/boxcats/8/edit" for 127.0.0.1 at 2018-05-16 06:46:55 +1000
+Processing by BoxcatsController#edit as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mBoxcat Load (0.1ms)[0m  [1m[34mSELECT  "boxcats".* FROM "boxcats" WHERE "boxcats"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/boxcats_controller.rb:30
+  Rendering boxcats/edit.html.erb within layouts/application
+  Rendered boxcats/edit.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 17ms (Views: 14.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/boxcats/8/edit" for 127.0.0.1 at 2018-05-16 06:47:05 +1000
+Processing by BoxcatsController#edit as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mBoxcat Load (0.1ms)[0m  [1m[34mSELECT  "boxcats".* FROM "boxcats" WHERE "boxcats"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/boxcats_controller.rb:30
+  Rendering boxcats/edit.html.erb within layouts/application
+  Rendered boxcats/edit.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 17ms (Views: 14.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/boxcats" for 127.0.0.1 at 2018-05-16 06:49:22 +1000
+Processing by BoxcatsController#index as HTML
+  Rendering boxcats/index.html.erb within layouts/application
+  [1m[36mBoxcat Load (0.3ms)[0m  [1m[34mSELECT "boxcats".* FROM "boxcats"[0m
+  ↳ app/views/boxcats/index.html.erb:4
+  Rendered boxcats/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 24ms (Views: 20.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/boxcats" for 127.0.0.1 at 2018-05-16 06:55:05 +1000
+Processing by BoxcatsController#index as HTML
+  Rendering boxcats/index.html.erb within layouts/application
+  [1m[36mBoxcat Load (0.2ms)[0m  [1m[34mSELECT "boxcats".* FROM "boxcats"[0m
+  ↳ app/views/boxcats/index.html.erb:4
+  Rendered boxcats/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 21ms (Views: 17.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/boxcats/1" for 127.0.0.1 at 2018-05-16 06:55:07 +1000
+Processing by BoxcatsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBoxcat Load (0.2ms)[0m  [1m[34mSELECT  "boxcats".* FROM "boxcats" WHERE "boxcats"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/boxcats_controller.rb:26
+  Rendering boxcats/show.html.erb within layouts/application
+  Rendered boxcats/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 21ms (Views: 17.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/boxcats/1/edit" for 127.0.0.1 at 2018-05-16 06:55:10 +1000
+Processing by BoxcatsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBoxcat Load (0.1ms)[0m  [1m[34mSELECT  "boxcats".* FROM "boxcats" WHERE "boxcats"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/boxcats_controller.rb:30
+  Rendering boxcats/edit.html.erb within layouts/application
+  Rendered boxcats/edit.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 19ms (Views: 15.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/boxcats/1/edit" for 127.0.0.1 at 2018-05-16 06:55:43 +1000
+Processing by BoxcatsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBoxcat Load (0.1ms)[0m  [1m[34mSELECT  "boxcats".* FROM "boxcats" WHERE "boxcats"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/boxcats_controller.rb:30
+  Rendering boxcats/edit.html.erb within layouts/application
+  Rendered boxcats/edit.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 20ms (Views: 17.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/boxcats" for 127.0.0.1 at 2018-05-16 06:55:56 +1000
+Processing by BoxcatsController#index as HTML
+  Rendering boxcats/index.html.erb within layouts/application
+  [1m[36mBoxcat Load (0.2ms)[0m  [1m[34mSELECT "boxcats".* FROM "boxcats"[0m
+  ↳ app/views/boxcats/index.html.erb:4
+  Rendered boxcats/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 21ms (Views: 18.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/boxcats" for 127.0.0.1 at 2018-05-16 06:56:07 +1000
+Processing by BoxcatsController#index as HTML
+  Rendering boxcats/index.html.erb within layouts/application
+  [1m[36mBoxcat Load (0.2ms)[0m  [1m[34mSELECT "boxcats".* FROM "boxcats"[0m
+  ↳ app/views/boxcats/index.html.erb:4
+  Rendered boxcats/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 24ms (Views: 20.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/boxcats/2" for 127.0.0.1 at 2018-05-16 06:56:08 +1000
+Processing by BoxcatsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mBoxcat Load (0.1ms)[0m  [1m[34mSELECT  "boxcats".* FROM "boxcats" WHERE "boxcats"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/boxcats_controller.rb:26
+  Rendering boxcats/show.html.erb within layouts/application
+  Rendered boxcats/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 25ms (Views: 21.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/boxcats/2/edit" for 127.0.0.1 at 2018-05-16 06:56:11 +1000
+Processing by BoxcatsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mBoxcat Load (0.1ms)[0m  [1m[34mSELECT  "boxcats".* FROM "boxcats" WHERE "boxcats"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/boxcats_controller.rb:30
+  Rendering boxcats/edit.html.erb within layouts/application
+  Rendered boxcats/edit.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 20ms (Views: 17.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/boxcats" for 127.0.0.1 at 2018-05-16 07:28:56 +1000
+Processing by BoxcatsController#index as HTML
+  Rendering boxcats/index.html.erb within layouts/application
+  [1m[36mBoxcat Load (0.2ms)[0m  [1m[34mSELECT "boxcats".* FROM "boxcats"[0m
+  ↳ app/views/boxcats/index.html.erb:4
+  Rendered boxcats/index.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 25ms (Views: 21.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/boxcats" for 127.0.0.1 at 2018-05-16 07:28:57 +1000
+Processing by BoxcatsController#index as HTML
+  Rendering boxcats/index.html.erb within layouts/application
+  [1m[36mBoxcat Load (0.2ms)[0m  [1m[34mSELECT "boxcats".* FROM "boxcats"[0m
+  ↳ app/views/boxcats/index.html.erb:4
+  Rendered boxcats/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 22ms (Views: 18.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/boxcats/new" for 127.0.0.1 at 2018-05-16 07:29:03 +1000
+Processing by BoxcatsController#new as HTML
+  Rendering boxcats/new.html.erb within layouts/application
+  Rendered boxcats/new.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 23ms (Views: 18.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/boxcats" for 127.0.0.1 at 2018-05-16 07:29:59 +1000
+Processing by BoxcatsController#create as HTML
+  Parameters: {"name"=>"Question cat", "image"=>"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUHCvuTJJez1EQD0fGy2gdzOffAUbPraMMcpLgMQg6Zdfv8ZyQ", "box_volume"=>"14", "cat_size"=>"14", "cat_origin"=>"Ukraine", "add"=>"Submit"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/boxcats_controller.rb:9
+  [1m[36mBoxcat Create (0.4ms)[0m  [1m[32mINSERT INTO "boxcats" ("name", "image", "box_volume", "cat_size", "cat_origin", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Question cat"], ["image", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUHCvuTJJez1EQD0fGy2gdzOffAUbPraMMcpLgMQg6Zdfv8ZyQ"], ["box_volume", 14], ["cat_size", 14], ["cat_origin", "Ukraine"], ["created_at", "2018-05-15 21:29:59.903197"], ["updated_at", "2018-05-15 21:29:59.903197"]]
+  ↳ app/controllers/boxcats_controller.rb:9
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/boxcats_controller.rb:9
+Redirected to http://localhost:3000/boxcats
+Completed 302 Found in 4ms (ActiveRecord: 1.3ms)
+
+
+Started GET "/boxcats" for 127.0.0.1 at 2018-05-16 07:29:59 +1000
+Processing by BoxcatsController#index as HTML
+  Rendering boxcats/index.html.erb within layouts/application
+  [1m[36mBoxcat Load (0.2ms)[0m  [1m[34mSELECT "boxcats".* FROM "boxcats"[0m
+  ↳ app/views/boxcats/index.html.erb:4
+  Rendered boxcats/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 19ms (Views: 17.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/boxcats/9" for 127.0.0.1 at 2018-05-16 07:30:02 +1000
+Processing by BoxcatsController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mBoxcat Load (0.2ms)[0m  [1m[34mSELECT  "boxcats".* FROM "boxcats" WHERE "boxcats"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/boxcats_controller.rb:26
+  Rendering boxcats/show.html.erb within layouts/application
+  Rendered boxcats/show.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 25ms (Views: 20.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/boxcats/9/delete" for 127.0.0.1 at 2018-05-16 07:30:04 +1000
+Processing by BoxcatsController#destroy as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mBoxcat Load (0.1ms)[0m  [1m[34mSELECT  "boxcats".* FROM "boxcats" WHERE "boxcats"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/boxcats_controller.rb:47
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/boxcats_controller.rb:48
+  [1m[36mBoxcat Destroy (0.3ms)[0m  [1m[31mDELETE FROM "boxcats" WHERE "boxcats"."id" = ?[0m  [["id", 9]]
+  ↳ app/controllers/boxcats_controller.rb:48
+  [1m[35m (6.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/boxcats_controller.rb:48
+Redirected to https://i.pinimg.com/originals/1b/b9/45/1bb9450f9d998bc6c2bbbb737052e029.jpg
+Redirected to 
+Completed 500 Internal Server Error in 2010ms (ActiveRecord: 6.9ms)
+
+
+  
+AbstractController::DoubleRenderError (Render and/or redirect were called multiple times in this action. Please note that you may only call render OR redirect, and at most once per action. Also note that neither redirect nor render terminate execution of the action, so if you want to exit an action after redirecting, you need to do something like "redirect_to(...) and return".):
+  
+app/controllers/boxcats_controller.rb:52:in `destroy'
+Started GET "/boxcats/9/delete" for 127.0.0.1 at 2018-05-16 07:30:28 +1000
+Processing by BoxcatsController#destroy as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mBoxcat Load (0.3ms)[0m  [1m[34mSELECT  "boxcats".* FROM "boxcats" WHERE "boxcats"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/boxcats_controller.rb:47
+Completed 404 Not Found in 6ms (ActiveRecord: 1.0ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Boxcat with 'id'=9):
+  
+app/controllers/boxcats_controller.rb:47:in `destroy'
+Started GET "/boxcats/9" for 127.0.0.1 at 2018-05-16 07:30:43 +1000
+Processing by BoxcatsController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mBoxcat Load (0.1ms)[0m  [1m[34mSELECT  "boxcats".* FROM "boxcats" WHERE "boxcats"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/boxcats_controller.rb:26
+Completed 404 Not Found in 1ms (ActiveRecord: 0.1ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Boxcat with 'id'=9):
+  
+app/controllers/boxcats_controller.rb:26:in `show'
+Started GET "/boxcats/9" for 127.0.0.1 at 2018-05-16 07:30:54 +1000
+Processing by BoxcatsController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mBoxcat Load (0.1ms)[0m  [1m[34mSELECT  "boxcats".* FROM "boxcats" WHERE "boxcats"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/boxcats_controller.rb:26
+Completed 404 Not Found in 1ms (ActiveRecord: 0.1ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Boxcat with 'id'=9):
+  
+app/controllers/boxcats_controller.rb:26:in `show'
+Started GET "/boxcats/9" for 127.0.0.1 at 2018-05-16 07:32:01 +1000
+Processing by BoxcatsController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mBoxcat Load (0.1ms)[0m  [1m[34mSELECT  "boxcats".* FROM "boxcats" WHERE "boxcats"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/boxcats_controller.rb:26
+Completed 404 Not Found in 3ms (ActiveRecord: 0.6ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Boxcat with 'id'=9):
+  
+app/controllers/boxcats_controller.rb:26:in `show'
+Started GET "/boxcats/9" for 127.0.0.1 at 2018-05-16 07:32:21 +1000
+Processing by BoxcatsController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mBoxcat Load (0.1ms)[0m  [1m[34mSELECT  "boxcats".* FROM "boxcats" WHERE "boxcats"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/boxcats_controller.rb:26
+Completed 404 Not Found in 5ms (ActiveRecord: 0.7ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Boxcat with 'id'=9):
+  
+app/controllers/boxcats_controller.rb:26:in `show'
+Started GET "/boxcats" for 127.0.0.1 at 2018-05-16 07:32:30 +1000
+Processing by BoxcatsController#index as HTML
+  Rendering boxcats/index.html.erb within layouts/application
+  [1m[36mBoxcat Load (0.2ms)[0m  [1m[34mSELECT "boxcats".* FROM "boxcats"[0m
+  ↳ app/views/boxcats/index.html.erb:4
+  Rendered boxcats/index.html.erb within layouts/application (7.3ms)
+Completed 200 OK in 30ms (Views: 26.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/boxcats/new" for 127.0.0.1 at 2018-05-16 07:32:35 +1000
+Processing by BoxcatsController#new as HTML
+  Rendering boxcats/new.html.erb within layouts/application
+  Rendered boxcats/new.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 25ms (Views: 21.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/boxcats" for 127.0.0.1 at 2018-05-16 07:32:51 +1000
+Processing by BoxcatsController#create as HTML
+  Parameters: {"name"=>"North Ocean", "image"=>"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUHCvuTJJez1EQD0fGy2gdzOffAUbPraMMcpLgMQg6Zdfv8ZyQ", "box_volume"=>"5", "cat_size"=>"15", "cat_origin"=>"Ukraine", "add"=>"Submit"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/boxcats_controller.rb:9
+  [1m[36mBoxcat Create (0.4ms)[0m  [1m[32mINSERT INTO "boxcats" ("name", "image", "box_volume", "cat_size", "cat_origin", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "North Ocean"], ["image", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUHCvuTJJez1EQD0fGy2gdzOffAUbPraMMcpLgMQg6Zdfv8ZyQ"], ["box_volume", 5], ["cat_size", 15], ["cat_origin", "Ukraine"], ["created_at", "2018-05-15 21:32:51.273388"], ["updated_at", "2018-05-15 21:32:51.273388"]]
+  ↳ app/controllers/boxcats_controller.rb:9
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/boxcats_controller.rb:9
+Redirected to http://localhost:3000/boxcats
+Completed 302 Found in 4ms (ActiveRecord: 1.4ms)
+
+
+Started GET "/boxcats" for 127.0.0.1 at 2018-05-16 07:32:51 +1000
+Processing by BoxcatsController#index as HTML
+  Rendering boxcats/index.html.erb within layouts/application
+  [1m[36mBoxcat Load (0.2ms)[0m  [1m[34mSELECT "boxcats".* FROM "boxcats"[0m
+  ↳ app/views/boxcats/index.html.erb:4
+  Rendered boxcats/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 18ms (Views: 15.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/boxcats/10" for 127.0.0.1 at 2018-05-16 07:32:53 +1000
+Processing by BoxcatsController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mBoxcat Load (0.1ms)[0m  [1m[34mSELECT  "boxcats".* FROM "boxcats" WHERE "boxcats"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/boxcats_controller.rb:26
+  Rendering boxcats/show.html.erb within layouts/application
+  Rendered boxcats/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 22ms (Views: 19.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/boxcats/10/delete" for 127.0.0.1 at 2018-05-16 07:32:58 +1000
+Processing by BoxcatsController#destroy as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mBoxcat Load (0.1ms)[0m  [1m[34mSELECT  "boxcats".* FROM "boxcats" WHERE "boxcats"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/boxcats_controller.rb:47
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/boxcats_controller.rb:48
+  [1m[36mBoxcat Destroy (0.3ms)[0m  [1m[31mDELETE FROM "boxcats" WHERE "boxcats"."id" = ?[0m  [["id", 10]]
+  ↳ app/controllers/boxcats_controller.rb:48
+  [1m[35m (5.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/boxcats_controller.rb:48
+Redirected to http://localhost:3000/boxcats
+Completed 302 Found in 9ms (ActiveRecord: 6.4ms)
+
+
+Started GET "/boxcats" for 127.0.0.1 at 2018-05-16 07:32:58 +1000
+Processing by BoxcatsController#index as HTML
+  Rendering boxcats/index.html.erb within layouts/application
+  [1m[36mBoxcat Load (0.2ms)[0m  [1m[34mSELECT "boxcats".* FROM "boxcats"[0m
+  ↳ app/views/boxcats/index.html.erb:4
+  Rendered boxcats/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 18ms (Views: 15.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/boxcats" for 127.0.0.1 at 2018-05-16 07:36:51 +1000
+  
+ArgumentError (Invalid route name, already in use: 'boxcat_index' 
+You may have defined two routes with the same name using the `:as` option, or you may be overriding a route already defined by a resource with the same naming. For the latter, you can restrict the routes created with `resources` as explained here: 
+http://guides.rubyonrails.org/routing.html#restricting-the-routes-created):
+  
+config/routes.rb:24:in `block in <main>'
+config/routes.rb:1:in `<main>'
+Started GET "/boxcats" for 127.0.0.1 at 2018-05-16 07:37:21 +1000
+  
+ArgumentError (Invalid route name, already in use: 'boxcat_index' 
+You may have defined two routes with the same name using the `:as` option, or you may be overriding a route already defined by a resource with the same naming. For the latter, you can restrict the routes created with `resources` as explained here: 
+http://guides.rubyonrails.org/routing.html#restricting-the-routes-created):
+  
+config/routes.rb:24:in `block in <main>'
+config/routes.rb:1:in `<main>'
+Started GET "/boxcats" for 127.0.0.1 at 2018-05-16 07:38:37 +1000
+  
+SyntaxError (/Users/agorodinskaya/Documents/GA/WDI/week5/boxcats-db/app/controllers/boxcats_controller.rb:59: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/controllers/boxcats_controller.rb:59: syntax error, unexpected end-of-input, expecting keyword_end
+Started GET "/boxcats" for 127.0.0.1 at 2018-05-16 07:38:50 +1000
+Processing by BoxcatsController#index as HTML
+  Rendering boxcats/index.html.erb within layouts/application
+  [1m[36mBoxcat Load (0.2ms)[0m  [1m[34mSELECT "boxcats".* FROM "boxcats"[0m
+  ↳ app/views/boxcats/index.html.erb:4
+  Rendered boxcats/index.html.erb within layouts/application (9.4ms)
+Completed 200 OK in 30ms (Views: 24.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/boxcats" for 127.0.0.1 at 2018-05-16 07:40:10 +1000
+Processing by BoxcatsController#index as HTML
+  Rendering boxcats/index.html.erb within layouts/application
+  [1m[36mBoxcat Load (0.2ms)[0m  [1m[34mSELECT "boxcats".* FROM "boxcats"[0m
+  ↳ app/views/boxcats/index.html.erb:4
+  Rendered boxcats/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 26ms (Views: 22.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/boxcats" for 127.0.0.1 at 2018-05-16 07:43:04 +1000
+Processing by BoxcatsController#index as HTML
+  Rendering boxcats/index.html.erb within layouts/application
+  [1m[36mBoxcat Load (0.2ms)[0m  [1m[34mSELECT "boxcats".* FROM "boxcats"[0m
+  ↳ app/views/boxcats/index.html.erb:4
+  Rendered boxcats/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 18ms (Views: 15.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/boxcats" for 127.0.0.1 at 2018-05-16 07:43:21 +1000
+Processing by BoxcatsController#index as HTML
+  Rendering boxcats/index.html.erb within layouts/application
+  [1m[36mBoxcat Load (0.2ms)[0m  [1m[34mSELECT "boxcats".* FROM "boxcats"[0m
+  ↳ app/views/boxcats/index.html.erb:4
+  Rendered boxcats/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 20ms (Views: 17.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/boxcats" for 127.0.0.1 at 2018-05-16 07:47:14 +1000
+Processing by BoxcatsController#index as HTML
+  Rendering boxcats/index.html.erb within layouts/application
+  [1m[36mBoxcat Load (0.2ms)[0m  [1m[34mSELECT "boxcats".* FROM "boxcats"[0m
+  ↳ app/views/boxcats/index.html.erb:4
+  Rendered boxcats/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 22ms (Views: 19.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/boxcats" for 127.0.0.1 at 2018-05-16 07:47:34 +1000
+Processing by BoxcatsController#index as HTML
+  Rendering boxcats/index.html.erb within layouts/application
+  [1m[36mBoxcat Load (0.2ms)[0m  [1m[34mSELECT "boxcats".* FROM "boxcats"[0m
+  ↳ app/views/boxcats/index.html.erb:4
+  Rendered boxcats/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 25ms (Views: 22.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/boxcats" for 127.0.0.1 at 2018-05-16 07:48:15 +1000
+Processing by BoxcatsController#index as HTML
+  Rendering boxcats/index.html.erb within layouts/application
+  [1m[36mBoxcat Load (0.2ms)[0m  [1m[34mSELECT "boxcats".* FROM "boxcats"[0m
+  ↳ app/views/boxcats/index.html.erb:4
+  Rendered boxcats/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 26ms (Views: 23.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/boxcats" for 127.0.0.1 at 2018-05-16 07:48:27 +1000
+Processing by BoxcatsController#index as HTML
+  Rendering boxcats/index.html.erb within layouts/application
+  [1m[36mBoxcat Load (0.2ms)[0m  [1m[34mSELECT "boxcats".* FROM "boxcats"[0m
+  ↳ app/views/boxcats/index.html.erb:4
+  Rendered boxcats/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 25ms (Views: 21.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/boxcats" for 127.0.0.1 at 2018-05-16 07:48:32 +1000
+Processing by BoxcatsController#index as HTML
+  Rendering boxcats/index.html.erb within layouts/application
+  [1m[36mBoxcat Load (0.2ms)[0m  [1m[34mSELECT "boxcats".* FROM "boxcats"[0m
+  ↳ app/views/boxcats/index.html.erb:4
+  Rendered boxcats/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 25ms (Views: 22.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/boxcats" for 127.0.0.1 at 2018-05-16 07:49:02 +1000
+Processing by BoxcatsController#index as HTML
+  Rendering boxcats/index.html.erb within layouts/application
+  [1m[36mBoxcat Load (0.2ms)[0m  [1m[34mSELECT "boxcats".* FROM "boxcats"[0m
+  ↳ app/views/boxcats/index.html.erb:4
+  Rendered boxcats/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 25ms (Views: 22.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/boxcats" for 127.0.0.1 at 2018-05-16 07:49:20 +1000
+Processing by BoxcatsController#index as HTML
+  Rendering boxcats/index.html.erb within layouts/application
+  [1m[36mBoxcat Load (0.3ms)[0m  [1m[34mSELECT "boxcats".* FROM "boxcats"[0m
+  ↳ app/views/boxcats/index.html.erb:4
+  Rendered boxcats/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 25ms (Views: 22.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/boxcats" for 127.0.0.1 at 2018-05-16 07:53:31 +1000
+Processing by BoxcatsController#index as HTML
+  Rendering boxcats/index.html.erb within layouts/application
+  [1m[36mBoxcat Load (0.3ms)[0m  [1m[34mSELECT "boxcats".* FROM "boxcats"[0m
+  ↳ app/views/boxcats/index.html.erb:4
+  Rendered boxcats/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 31ms (Views: 27.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/boxcats" for 127.0.0.1 at 2018-05-16 07:54:01 +1000
+Processing by BoxcatsController#index as HTML
+  Rendering boxcats/index.html.erb within layouts/application
+  [1m[36mBoxcat Load (0.2ms)[0m  [1m[34mSELECT "boxcats".* FROM "boxcats"[0m
+  ↳ app/views/boxcats/index.html.erb:4
+  Rendered boxcats/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 27ms (Views: 23.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/boxcats" for 127.0.0.1 at 2018-05-16 07:54:15 +1000
+Processing by BoxcatsController#index as HTML
+  Rendering boxcats/index.html.erb within layouts/application
+  [1m[36mBoxcat Load (0.3ms)[0m  [1m[34mSELECT "boxcats".* FROM "boxcats"[0m
+  ↳ app/views/boxcats/index.html.erb:4
+  Rendered boxcats/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 32ms (Views: 29.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/boxcats" for 127.0.0.1 at 2018-05-16 07:54:33 +1000
+Processing by BoxcatsController#index as HTML
+  Rendering boxcats/index.html.erb within layouts/application
+  [1m[36mBoxcat Load (0.2ms)[0m  [1m[34mSELECT "boxcats".* FROM "boxcats"[0m
+  ↳ app/views/boxcats/index.html.erb:4
+  Rendered boxcats/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 20ms (Views: 17.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/boxcats" for 127.0.0.1 at 2018-05-16 07:56:22 +1000
+Processing by BoxcatsController#index as HTML
+  Rendering boxcats/index.html.erb within layouts/application
+  [1m[36mBoxcat Load (0.2ms)[0m  [1m[34mSELECT "boxcats".* FROM "boxcats"[0m
+  ↳ app/views/boxcats/index.html.erb:4
+  Rendered boxcats/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 24ms (Views: 20.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/boxcats" for 127.0.0.1 at 2018-05-16 07:57:18 +1000
+Processing by BoxcatsController#index as HTML
+  Rendering boxcats/index.html.erb within layouts/application
+  [1m[36mBoxcat Load (0.2ms)[0m  [1m[34mSELECT "boxcats".* FROM "boxcats"[0m
+  ↳ app/views/boxcats/index.html.erb:4
+  Rendered boxcats/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 24ms (Views: 21.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/boxcats" for 127.0.0.1 at 2018-05-16 07:57:43 +1000
+Processing by BoxcatsController#index as HTML
+  Rendering boxcats/index.html.erb within layouts/application
+  [1m[36mBoxcat Load (0.2ms)[0m  [1m[34mSELECT "boxcats".* FROM "boxcats"[0m
+  ↳ app/views/boxcats/index.html.erb:4
+  Rendered boxcats/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 24ms (Views: 21.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/boxcats" for 127.0.0.1 at 2018-05-16 08:00:20 +1000
+Processing by BoxcatsController#index as HTML
+  Rendering boxcats/index.html.erb within layouts/application
+  [1m[36mBoxcat Load (0.2ms)[0m  [1m[34mSELECT "boxcats".* FROM "boxcats"[0m
+  ↳ app/views/boxcats/index.html.erb:4
+  Rendered boxcats/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 25ms (Views: 23.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/boxcats" for 127.0.0.1 at 2018-05-16 08:00:51 +1000
+Processing by BoxcatsController#index as HTML
+  Rendering boxcats/index.html.erb within layouts/application
+  [1m[36mBoxcat Load (0.2ms)[0m  [1m[34mSELECT "boxcats".* FROM "boxcats"[0m
+  ↳ app/views/boxcats/index.html.erb:4
+  Rendered boxcats/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 30ms (Views: 26.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/boxcats" for 127.0.0.1 at 2018-05-16 08:01:20 +1000
+Processing by BoxcatsController#index as HTML
+  Rendering boxcats/index.html.erb within layouts/application
+  [1m[36mBoxcat Load (0.2ms)[0m  [1m[34mSELECT "boxcats".* FROM "boxcats"[0m
+  ↳ app/views/boxcats/index.html.erb:4
+  Rendered boxcats/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 28ms (Views: 26.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/boxcats" for 127.0.0.1 at 2018-05-16 08:02:11 +1000
+Processing by BoxcatsController#index as HTML
+  Rendering boxcats/index.html.erb within layouts/application
+  [1m[36mBoxcat Load (0.2ms)[0m  [1m[34mSELECT "boxcats".* FROM "boxcats"[0m
+  ↳ app/views/boxcats/index.html.erb:4
+  Rendered boxcats/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 29ms (Views: 25.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/boxcats" for 127.0.0.1 at 2018-05-16 08:02:20 +1000
+Processing by BoxcatsController#index as HTML
+  Rendering boxcats/index.html.erb within layouts/application
+  [1m[36mBoxcat Load (0.2ms)[0m  [1m[34mSELECT "boxcats".* FROM "boxcats"[0m
+  ↳ app/views/boxcats/index.html.erb:4
+  Rendered boxcats/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 30ms (Views: 26.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/boxcats/1" for 127.0.0.1 at 2018-05-16 08:02:23 +1000
+Processing by BoxcatsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBoxcat Load (0.2ms)[0m  [1m[34mSELECT  "boxcats".* FROM "boxcats" WHERE "boxcats"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/boxcats_controller.rb:26
+  Rendering boxcats/show.html.erb within layouts/application
+  Rendered boxcats/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 20ms (Views: 15.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/boxcats/new" for 127.0.0.1 at 2018-05-16 08:02:28 +1000
+Processing by BoxcatsController#new as HTML
+  Rendering boxcats/new.html.erb within layouts/application
+  Rendered boxcats/new.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 20ms (Views: 17.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/boxcats/new" for 127.0.0.1 at 2018-05-16 08:03:03 +1000
+Processing by BoxcatsController#new as HTML
+  Rendering boxcats/new.html.erb within layouts/application
+  Rendered boxcats/new.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 16ms (Views: 13.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/boxcats/new" for 127.0.0.1 at 2018-05-16 08:03:15 +1000
+Processing by BoxcatsController#new as HTML
+  Rendering boxcats/new.html.erb within layouts/application
+  Rendered boxcats/new.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 17ms (Views: 15.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/boxcats/new" for 127.0.0.1 at 2018-05-16 08:03:26 +1000
+Processing by BoxcatsController#new as HTML
+  Rendering boxcats/new.html.erb within layouts/application
+  Rendered boxcats/new.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 16ms (Views: 13.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/boxcats" for 127.0.0.1 at 2018-05-16 08:03:28 +1000
+Processing by BoxcatsController#index as HTML
+  Rendering boxcats/index.html.erb within layouts/application
+  [1m[36mBoxcat Load (0.2ms)[0m  [1m[34mSELECT "boxcats".* FROM "boxcats"[0m
+  ↳ app/views/boxcats/index.html.erb:4
+  Rendered boxcats/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 18ms (Views: 15.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/boxcats" for 127.0.0.1 at 2018-05-16 08:04:40 +1000
+Processing by BoxcatsController#index as HTML
+  Rendering boxcats/index.html.erb within layouts/application
+  [1m[36mBoxcat Load (0.2ms)[0m  [1m[34mSELECT "boxcats".* FROM "boxcats"[0m
+  ↳ app/views/boxcats/index.html.erb:4
+  Rendered boxcats/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 36ms (Views: 34.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/boxcats" for 127.0.0.1 at 2018-05-16 08:05:24 +1000
+Processing by BoxcatsController#index as HTML
+  Rendering boxcats/index.html.erb within layouts/application
+  [1m[36mBoxcat Load (0.2ms)[0m  [1m[34mSELECT "boxcats".* FROM "boxcats"[0m
+  ↳ app/views/boxcats/index.html.erb:4
+  Rendered boxcats/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 25ms (Views: 22.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/boxcats" for 127.0.0.1 at 2018-05-16 09:27:57 +1000
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/agorodinskaya/.rvm/gems/ruby-2.4.1/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by BoxcatsController#index as HTML
+  Rendering boxcats/index.html.erb within layouts/application
+  [1m[36mBoxcat Load (0.8ms)[0m  [1m[34mSELECT "boxcats".* FROM "boxcats"[0m
+  ↳ app/views/boxcats/index.html.erb:4
+  Rendered boxcats/index.html.erb within layouts/application (14.8ms)
+Completed 200 OK in 172ms (Views: 166.4ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/boxcats/1" for 127.0.0.1 at 2018-05-16 09:28:00 +1000
+Processing by BoxcatsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBoxcat Load (0.2ms)[0m  [1m[34mSELECT  "boxcats".* FROM "boxcats" WHERE "boxcats"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/boxcats_controller.rb:26
+  Rendering boxcats/show.html.erb within layouts/application
+  Rendered boxcats/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 22ms (Views: 17.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/boxcats" for 127.0.0.1 at 2018-05-16 09:30:49 +1000
+Processing by BoxcatsController#index as HTML
+  Rendering boxcats/index.html.erb within layouts/application
+  [1m[36mBoxcat Load (0.2ms)[0m  [1m[34mSELECT "boxcats".* FROM "boxcats"[0m
+  ↳ app/views/boxcats/index.html.erb:7
+  Rendered boxcats/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 27ms (Views: 24.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/boxcats" for 127.0.0.1 at 2018-05-16 09:31:06 +1000
+Processing by BoxcatsController#index as HTML
+  Rendering boxcats/index.html.erb within layouts/application
+  [1m[36mBoxcat Load (0.2ms)[0m  [1m[34mSELECT "boxcats".* FROM "boxcats"[0m
+  ↳ app/views/boxcats/index.html.erb:7
+  Rendered boxcats/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 22ms (Views: 19.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/boxcats" for 127.0.0.1 at 2018-05-16 09:31:52 +1000
+Processing by BoxcatsController#index as HTML
+  Rendering boxcats/index.html.erb within layouts/application
+  [1m[36mBoxcat Load (0.2ms)[0m  [1m[34mSELECT "boxcats".* FROM "boxcats"[0m
+  ↳ app/views/boxcats/index.html.erb:7
+  Rendered boxcats/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 22ms (Views: 19.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/boxcats" for 127.0.0.1 at 2018-05-16 09:32:01 +1000
+Processing by BoxcatsController#index as HTML
+  Rendering boxcats/index.html.erb within layouts/application
+  [1m[36mBoxcat Load (0.2ms)[0m  [1m[34mSELECT "boxcats".* FROM "boxcats"[0m
+  ↳ app/views/boxcats/index.html.erb:7
+  Rendered boxcats/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 23ms (Views: 20.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/boxcats/2" for 127.0.0.1 at 2018-05-16 09:32:06 +1000
+Processing by BoxcatsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mBoxcat Load (0.1ms)[0m  [1m[34mSELECT  "boxcats".* FROM "boxcats" WHERE "boxcats"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/boxcats_controller.rb:26
+  Rendering boxcats/show.html.erb within layouts/application
+  Rendered boxcats/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 18ms (Views: 15.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/boxcats" for 127.0.0.1 at 2018-05-16 09:57:13 +1000
+Processing by BoxcatsController#index as HTML
+  Rendering boxcats/index.html.erb within layouts/application
+  [1m[36mBoxcat Load (0.2ms)[0m  [1m[34mSELECT "boxcats".* FROM "boxcats"[0m
+  ↳ app/views/boxcats/index.html.erb:7
+  Rendered boxcats/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 21ms (Views: 18.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/boxcats/2" for 127.0.0.1 at 2018-05-16 10:01:57 +1000
+Processing by BoxcatsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mBoxcat Load (0.2ms)[0m  [1m[34mSELECT  "boxcats".* FROM "boxcats" WHERE "boxcats"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/boxcats_controller.rb:26
+  Rendering boxcats/show.html.erb within layouts/application
+  Rendered boxcats/show.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 21ms (Views: 17.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/boxcats" for 127.0.0.1 at 2018-05-16 10:02:00 +1000
+Processing by BoxcatsController#index as HTML
+  Rendering boxcats/index.html.erb within layouts/application
+  [1m[36mBoxcat Load (0.2ms)[0m  [1m[34mSELECT "boxcats".* FROM "boxcats"[0m
+  ↳ app/views/boxcats/index.html.erb:7
+  Rendered boxcats/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 20ms (Views: 17.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/boxcats/new" for 127.0.0.1 at 2018-05-16 10:02:11 +1000
+Processing by BoxcatsController#new as HTML
+  Rendering boxcats/new.html.erb within layouts/application
+  Rendered boxcats/new.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 21ms (Views: 18.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/boxcats" for 127.0.0.1 at 2018-05-16 10:02:15 +1000
+Processing by BoxcatsController#index as HTML
+  Rendering boxcats/index.html.erb within layouts/application
+  [1m[36mBoxcat Load (0.2ms)[0m  [1m[34mSELECT "boxcats".* FROM "boxcats"[0m
+  ↳ app/views/boxcats/index.html.erb:7
+  Rendered boxcats/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 20ms (Views: 17.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/boxcats" for 127.0.0.1 at 2018-05-16 10:07:14 +1000
+Processing by BoxcatsController#index as HTML
+  Rendering boxcats/index.html.erb within layouts/application
+  [1m[36mBoxcat Load (0.2ms)[0m  [1m[34mSELECT "boxcats".* FROM "boxcats"[0m
+  ↳ app/views/boxcats/index.html.erb:7
+  Rendered boxcats/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 19ms (Views: 16.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/boxcats/1" for 127.0.0.1 at 2018-05-16 10:08:19 +1000
+Processing by BoxcatsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBoxcat Load (0.2ms)[0m  [1m[34mSELECT  "boxcats".* FROM "boxcats" WHERE "boxcats"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/boxcats_controller.rb:26
+  Rendering boxcats/show.html.erb within layouts/application
+  Rendered boxcats/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 19ms (Views: 16.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/boxcats" for 127.0.0.1 at 2018-05-16 10:08:32 +1000
+Processing by BoxcatsController#index as HTML
+  Rendering boxcats/index.html.erb within layouts/application
+  [1m[36mBoxcat Load (0.2ms)[0m  [1m[34mSELECT "boxcats".* FROM "boxcats"[0m
+  ↳ app/views/boxcats/index.html.erb:7
+  Rendered boxcats/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 20ms (Views: 16.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/boxcats/2" for 127.0.0.1 at 2018-05-16 10:08:34 +1000
+Processing by BoxcatsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mBoxcat Load (0.1ms)[0m  [1m[34mSELECT  "boxcats".* FROM "boxcats" WHERE "boxcats"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/boxcats_controller.rb:26
+  Rendering boxcats/show.html.erb within layouts/application
+  Rendered boxcats/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 20ms (Views: 16.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/boxcats" for 127.0.0.1 at 2018-05-16 10:08:41 +1000
+Processing by BoxcatsController#index as HTML
+  Rendering boxcats/index.html.erb within layouts/application
+  [1m[36mBoxcat Load (0.2ms)[0m  [1m[34mSELECT "boxcats".* FROM "boxcats"[0m
+  ↳ app/views/boxcats/index.html.erb:7
+  Rendered boxcats/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 20ms (Views: 16.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/boxcats/2" for 127.0.0.1 at 2018-05-16 10:09:15 +1000
+Processing by BoxcatsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mBoxcat Load (0.1ms)[0m  [1m[34mSELECT  "boxcats".* FROM "boxcats" WHERE "boxcats"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/boxcats_controller.rb:26
+  Rendering boxcats/show.html.erb within layouts/application
+  Rendered boxcats/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 21ms (Views: 17.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/boxcats" for 127.0.0.1 at 2018-05-16 10:09:22 +1000
+Processing by BoxcatsController#index as HTML
+  Rendering boxcats/index.html.erb within layouts/application
+  [1m[36mBoxcat Load (0.2ms)[0m  [1m[34mSELECT "boxcats".* FROM "boxcats"[0m
+  ↳ app/views/boxcats/index.html.erb:7
+  Rendered boxcats/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 27ms (Views: 23.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/boxcats/3" for 127.0.0.1 at 2018-05-16 10:09:24 +1000
+Processing by BoxcatsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mBoxcat Load (0.2ms)[0m  [1m[34mSELECT  "boxcats".* FROM "boxcats" WHERE "boxcats"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/boxcats_controller.rb:26
+  Rendering boxcats/show.html.erb within layouts/application
+  Rendered boxcats/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 20ms (Views: 15.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/boxcats" for 127.0.0.1 at 2018-05-16 10:09:27 +1000
+Processing by BoxcatsController#index as HTML
+  Rendering boxcats/index.html.erb within layouts/application
+  [1m[36mBoxcat Load (0.2ms)[0m  [1m[34mSELECT "boxcats".* FROM "boxcats"[0m
+  ↳ app/views/boxcats/index.html.erb:7
+  Rendered boxcats/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 20ms (Views: 17.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/boxcats/4" for 127.0.0.1 at 2018-05-16 10:09:28 +1000
+Processing by BoxcatsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mBoxcat Load (0.1ms)[0m  [1m[34mSELECT  "boxcats".* FROM "boxcats" WHERE "boxcats"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/boxcats_controller.rb:26
+  Rendering boxcats/show.html.erb within layouts/application
+  Rendered boxcats/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 19ms (Views: 15.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/boxcats" for 127.0.0.1 at 2018-05-16 10:09:32 +1000
+Processing by BoxcatsController#index as HTML
+  Rendering boxcats/index.html.erb within layouts/application
+  [1m[36mBoxcat Load (0.2ms)[0m  [1m[34mSELECT "boxcats".* FROM "boxcats"[0m
+  ↳ app/views/boxcats/index.html.erb:7
+  Rendered boxcats/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 20ms (Views: 17.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/boxcats/5" for 127.0.0.1 at 2018-05-16 10:09:33 +1000
+Processing by BoxcatsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mBoxcat Load (0.1ms)[0m  [1m[34mSELECT  "boxcats".* FROM "boxcats" WHERE "boxcats"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/boxcats_controller.rb:26
+  Rendering boxcats/show.html.erb within layouts/application
+  Rendered boxcats/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 20ms (Views: 16.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/boxcats" for 127.0.0.1 at 2018-05-16 10:09:35 +1000
+Processing by BoxcatsController#index as HTML
+  Rendering boxcats/index.html.erb within layouts/application
+  [1m[36mBoxcat Load (0.2ms)[0m  [1m[34mSELECT "boxcats".* FROM "boxcats"[0m
+  ↳ app/views/boxcats/index.html.erb:7
+  Rendered boxcats/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 20ms (Views: 17.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/boxcats/6" for 127.0.0.1 at 2018-05-16 10:09:36 +1000
+Processing by BoxcatsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mBoxcat Load (0.2ms)[0m  [1m[34mSELECT  "boxcats".* FROM "boxcats" WHERE "boxcats"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/boxcats_controller.rb:26
+  Rendering boxcats/show.html.erb within layouts/application
+  Rendered boxcats/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 20ms (Views: 16.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/boxcats" for 127.0.0.1 at 2018-05-16 10:09:40 +1000
+Processing by BoxcatsController#index as HTML
+  Rendering boxcats/index.html.erb within layouts/application
+  [1m[36mBoxcat Load (0.2ms)[0m  [1m[34mSELECT "boxcats".* FROM "boxcats"[0m
+  ↳ app/views/boxcats/index.html.erb:7
+  Rendered boxcats/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 20ms (Views: 17.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/boxcats/7" for 127.0.0.1 at 2018-05-16 10:09:41 +1000
+Processing by BoxcatsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mBoxcat Load (0.2ms)[0m  [1m[34mSELECT  "boxcats".* FROM "boxcats" WHERE "boxcats"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/boxcats_controller.rb:26
+  Rendering boxcats/show.html.erb within layouts/application
+  Rendered boxcats/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 18ms (Views: 15.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/boxcats" for 127.0.0.1 at 2018-05-16 10:09:45 +1000
+Processing by BoxcatsController#index as HTML
+  Rendering boxcats/index.html.erb within layouts/application
+  [1m[36mBoxcat Load (0.2ms)[0m  [1m[34mSELECT "boxcats".* FROM "boxcats"[0m
+  ↳ app/views/boxcats/index.html.erb:7
+  Rendered boxcats/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 20ms (Views: 16.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/boxcats/8" for 127.0.0.1 at 2018-05-16 10:09:46 +1000
+Processing by BoxcatsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mBoxcat Load (0.1ms)[0m  [1m[34mSELECT  "boxcats".* FROM "boxcats" WHERE "boxcats"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/boxcats_controller.rb:26
+  Rendering boxcats/show.html.erb within layouts/application
+  Rendered boxcats/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 19ms (Views: 15.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/boxcats/8/edit" for 127.0.0.1 at 2018-05-16 10:10:05 +1000
+Processing by BoxcatsController#edit as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mBoxcat Load (0.1ms)[0m  [1m[34mSELECT  "boxcats".* FROM "boxcats" WHERE "boxcats"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/boxcats_controller.rb:30
+  Rendering boxcats/edit.html.erb within layouts/application
+  Rendered boxcats/edit.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 19ms (Views: 15.6ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/boxcats.8" for 127.0.0.1 at 2018-05-16 10:10:14 +1000
+Processing by BoxcatsController#create as 
+  Parameters: {"name"=>"Observer new", "image"=>"https://i.imgur.com/ikK4Rg1.gif", "box_volume"=>"5", "cat_size"=>"15", "cat_origin"=>"Russia"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/boxcats_controller.rb:9
+  [1m[36mBoxcat Create (0.7ms)[0m  [1m[32mINSERT INTO "boxcats" ("name", "image", "box_volume", "cat_size", "cat_origin", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Observer new"], ["image", "https://i.imgur.com/ikK4Rg1.gif"], ["box_volume", 5], ["cat_size", 15], ["cat_origin", "Russia"], ["created_at", "2018-05-16 00:10:14.199653"], ["updated_at", "2018-05-16 00:10:14.199653"]]
+  ↳ app/controllers/boxcats_controller.rb:9
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/boxcats_controller.rb:9
+Redirected to http://localhost:3000/boxcats
+Completed 302 Found in 5ms (ActiveRecord: 2.3ms)
+
+
+Started GET "/boxcats" for 127.0.0.1 at 2018-05-16 10:10:14 +1000
+Processing by BoxcatsController#index as HTML
+  Rendering boxcats/index.html.erb within layouts/application
+  [1m[36mBoxcat Load (0.2ms)[0m  [1m[34mSELECT "boxcats".* FROM "boxcats"[0m
+  ↳ app/views/boxcats/index.html.erb:7
+  Rendered boxcats/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 19ms (Views: 16.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/boxcats/11" for 127.0.0.1 at 2018-05-16 10:10:16 +1000
+Processing by BoxcatsController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mBoxcat Load (0.1ms)[0m  [1m[34mSELECT  "boxcats".* FROM "boxcats" WHERE "boxcats"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/boxcats_controller.rb:26
+  Rendering boxcats/show.html.erb within layouts/application
+  Rendered boxcats/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 19ms (Views: 16.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/boxcats/11/delete" for 127.0.0.1 at 2018-05-16 10:10:19 +1000
+Processing by BoxcatsController#destroy as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mBoxcat Load (0.1ms)[0m  [1m[34mSELECT  "boxcats".* FROM "boxcats" WHERE "boxcats"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/boxcats_controller.rb:47
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/boxcats_controller.rb:48
+  [1m[36mBoxcat Destroy (0.4ms)[0m  [1m[31mDELETE FROM "boxcats" WHERE "boxcats"."id" = ?[0m  [["id", 11]]
+  ↳ app/controllers/boxcats_controller.rb:48
+  [1m[35m (6.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/boxcats_controller.rb:48
+Redirected to http://localhost:3000/boxcats
+Completed 302 Found in 9ms (ActiveRecord: 6.6ms)
+
+
+Started GET "/boxcats" for 127.0.0.1 at 2018-05-16 10:10:19 +1000
+Processing by BoxcatsController#index as HTML
+  Rendering boxcats/index.html.erb within layouts/application
+  [1m[36mBoxcat Load (0.2ms)[0m  [1m[34mSELECT "boxcats".* FROM "boxcats"[0m
+  ↳ app/views/boxcats/index.html.erb:7
+  Rendered boxcats/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 21ms (Views: 17.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/boxcats/8" for 127.0.0.1 at 2018-05-16 10:10:25 +1000
+Processing by BoxcatsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mBoxcat Load (0.1ms)[0m  [1m[34mSELECT  "boxcats".* FROM "boxcats" WHERE "boxcats"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/boxcats_controller.rb:26
+  Rendering boxcats/show.html.erb within layouts/application
+  Rendered boxcats/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 19ms (Views: 15.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/boxcats/new" for 127.0.0.1 at 2018-05-16 10:10:27 +1000
+Processing by BoxcatsController#new as HTML
+  Rendering boxcats/new.html.erb within layouts/application
+  Rendered boxcats/new.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 19ms (Views: 16.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/boxcats" for 127.0.0.1 at 2018-05-16 10:10:52 +1000
+Processing by BoxcatsController#create as HTML
+  Parameters: {"name"=>"North Ocean", "image"=>"https://i.imgur.com/ikK4Rg1.gif", "box_volume"=>"5", "cat_size"=>"15", "cat_origin"=>"Ukraine", "add"=>"Submit"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/boxcats_controller.rb:9
+  [1m[36mBoxcat Create (0.4ms)[0m  [1m[32mINSERT INTO "boxcats" ("name", "image", "box_volume", "cat_size", "cat_origin", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "North Ocean"], ["image", "https://i.imgur.com/ikK4Rg1.gif"], ["box_volume", 5], ["cat_size", 15], ["cat_origin", "Ukraine"], ["created_at", "2018-05-16 00:10:52.494169"], ["updated_at", "2018-05-16 00:10:52.494169"]]
+  ↳ app/controllers/boxcats_controller.rb:9
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/boxcats_controller.rb:9
+Redirected to http://localhost:3000/boxcats
+Completed 302 Found in 4ms (ActiveRecord: 1.4ms)
+
+
+Started GET "/boxcats" for 127.0.0.1 at 2018-05-16 10:10:52 +1000
+Processing by BoxcatsController#index as HTML
+  Rendering boxcats/index.html.erb within layouts/application
+  [1m[36mBoxcat Load (0.2ms)[0m  [1m[34mSELECT "boxcats".* FROM "boxcats"[0m
+  ↳ app/views/boxcats/index.html.erb:7
+  Rendered boxcats/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 30ms (Views: 27.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/rails/info/routes" for 127.0.0.1 at 2018-05-16 10:12:10 +1000
+Processing by Rails::InfoController#routes as HTML
+  Rendering /Users/agorodinskaya/.rvm/gems/ruby-2.4.1/gems/railties-5.2.0/lib/rails/templates/rails/info/routes.html.erb within layouts/application
+  Rendered collection of /Users/agorodinskaya/.rvm/gems/ruby-2.4.1/gems/actionpack-5.2.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb [12 times] (7.3ms)
+  Rendered /Users/agorodinskaya/.rvm/gems/ruby-2.4.1/gems/actionpack-5.2.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (6.3ms)
+  Rendered /Users/agorodinskaya/.rvm/gems/ruby-2.4.1/gems/railties-5.2.0/lib/rails/templates/rails/info/routes.html.erb within layouts/application (20.4ms)
+Completed 200 OK in 37ms (Views: 30.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/boxcats" for 127.0.0.1 at 2018-05-16 10:13:50 +1000
+Processing by BoxcatsController#index as HTML
+  Rendering boxcats/index.html.erb within layouts/application
+  [1m[36mBoxcat Load (0.2ms)[0m  [1m[34mSELECT "boxcats".* FROM "boxcats"[0m
+  ↳ app/views/boxcats/index.html.erb:7
+  Rendered boxcats/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 20ms (Views: 17.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/boxcats/12" for 127.0.0.1 at 2018-05-16 10:13:59 +1000
+Processing by BoxcatsController#show as HTML
+  Parameters: {"id"=>"12"}
+  [1m[36mBoxcat Load (0.1ms)[0m  [1m[34mSELECT  "boxcats".* FROM "boxcats" WHERE "boxcats"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/boxcats_controller.rb:26
+  Rendering boxcats/show.html.erb within layouts/application
+  Rendered boxcats/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 19ms (Views: 16.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/boxcats/12/edit" for 127.0.0.1 at 2018-05-16 10:14:01 +1000
+Processing by BoxcatsController#edit as HTML
+  Parameters: {"id"=>"12"}
+  [1m[36mBoxcat Load (0.1ms)[0m  [1m[34mSELECT  "boxcats".* FROM "boxcats" WHERE "boxcats"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/boxcats_controller.rb:30
+  Rendering boxcats/edit.html.erb within layouts/application
+  Rendered boxcats/edit.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 19ms (Views: 15.9ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/boxcats/12" for 127.0.0.1 at 2018-05-16 10:14:12 +1000
+Processing by BoxcatsController#update as HTML
+  Parameters: {"name"=>"Cat", "image"=>"https://i.imgur.com/ikK4Rg1.gif", "box_volume"=>"5", "cat_size"=>"15", "cat_origin"=>"Ukraine", "id"=>"12"}
+  [1m[36mBoxcat Load (0.1ms)[0m  [1m[34mSELECT  "boxcats".* FROM "boxcats" WHERE "boxcats"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/boxcats_controller.rb:34
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/boxcats_controller.rb:35
+  [1m[36mBoxcat Update (0.4ms)[0m  [1m[33mUPDATE "boxcats" SET "name" = ?, "updated_at" = ? WHERE "boxcats"."id" = ?[0m  [["name", "Cat"], ["updated_at", "2018-05-16 00:14:12.714507"], ["id", 12]]
+  ↳ app/controllers/boxcats_controller.rb:35
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/boxcats_controller.rb:35
+Redirected to http://localhost:3000/boxcats/12
+Completed 302 Found in 5ms (ActiveRecord: 1.5ms)
+
+
+Started GET "/boxcats/12" for 127.0.0.1 at 2018-05-16 10:14:12 +1000
+Processing by BoxcatsController#show as HTML
+  Parameters: {"id"=>"12"}
+  [1m[36mBoxcat Load (0.2ms)[0m  [1m[34mSELECT  "boxcats".* FROM "boxcats" WHERE "boxcats"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/boxcats_controller.rb:26
+  Rendering boxcats/show.html.erb within layouts/application
+  Rendered boxcats/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 19ms (Views: 15.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/boxcats" for 127.0.0.1 at 2018-05-16 22:52:57 +1000
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/agorodinskaya/.rvm/gems/ruby-2.4.1/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by BoxcatsController#index as HTML
+  Rendering boxcats/index.html.erb within layouts/application
+  [1m[36mBoxcat Load (0.4ms)[0m  [1m[34mSELECT "boxcats".* FROM "boxcats"[0m
+  ↳ app/views/boxcats/index.html.erb:7
+  Rendered boxcats/index.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 188ms (Views: 182.4ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/boxcats/1" for 127.0.0.1 at 2018-05-16 22:53:34 +1000
+Processing by BoxcatsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBoxcat Load (0.2ms)[0m  [1m[34mSELECT  "boxcats".* FROM "boxcats" WHERE "boxcats"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/boxcats_controller.rb:26
+  Rendering boxcats/show.html.erb within layouts/application
+  Rendered boxcats/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 36ms (Views: 18.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/boxcats" for 127.0.0.1 at 2018-05-16 22:53:56 +1000
+Processing by BoxcatsController#index as HTML
+  Rendering boxcats/index.html.erb within layouts/application
+  [1m[36mBoxcat Load (0.2ms)[0m  [1m[34mSELECT "boxcats".* FROM "boxcats"[0m
+  ↳ app/views/boxcats/index.html.erb:7
+  Rendered boxcats/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 18ms (Views: 14.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/boxcats/2" for 127.0.0.1 at 2018-05-16 22:53:59 +1000
+Processing by BoxcatsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mBoxcat Load (0.1ms)[0m  [1m[34mSELECT  "boxcats".* FROM "boxcats" WHERE "boxcats"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/boxcats_controller.rb:26
+  Rendering boxcats/show.html.erb within layouts/application
+  Rendered boxcats/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 22ms (Views: 18.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/boxcats" for 127.0.0.1 at 2018-05-16 22:54:27 +1000
+Processing by BoxcatsController#index as HTML
+  Rendering boxcats/index.html.erb within layouts/application
+  [1m[36mBoxcat Load (0.2ms)[0m  [1m[34mSELECT "boxcats".* FROM "boxcats"[0m
+  ↳ app/views/boxcats/index.html.erb:7
+  Rendered boxcats/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 21ms (Views: 18.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/boxcats/3" for 127.0.0.1 at 2018-05-16 22:54:29 +1000
+Processing by BoxcatsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mBoxcat Load (0.2ms)[0m  [1m[34mSELECT  "boxcats".* FROM "boxcats" WHERE "boxcats"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/boxcats_controller.rb:26
+  Rendering boxcats/show.html.erb within layouts/application
+  Rendered boxcats/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 21ms (Views: 17.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/boxcats" for 127.0.0.1 at 2018-05-16 22:54:39 +1000
+Processing by BoxcatsController#index as HTML
+  Rendering boxcats/index.html.erb within layouts/application
+  [1m[36mBoxcat Load (0.2ms)[0m  [1m[34mSELECT "boxcats".* FROM "boxcats"[0m
+  ↳ app/views/boxcats/index.html.erb:7
+  Rendered boxcats/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 21ms (Views: 18.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/boxcats/4" for 127.0.0.1 at 2018-05-16 22:54:41 +1000
+Processing by BoxcatsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mBoxcat Load (0.1ms)[0m  [1m[34mSELECT  "boxcats".* FROM "boxcats" WHERE "boxcats"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/boxcats_controller.rb:26
+  Rendering boxcats/show.html.erb within layouts/application
+  Rendered boxcats/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 23ms (Views: 20.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/boxcats" for 127.0.0.1 at 2018-05-16 22:54:47 +1000
+Processing by BoxcatsController#index as HTML
+  Rendering boxcats/index.html.erb within layouts/application
+  [1m[36mBoxcat Load (0.2ms)[0m  [1m[34mSELECT "boxcats".* FROM "boxcats"[0m
+  ↳ app/views/boxcats/index.html.erb:7
+  Rendered boxcats/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 20ms (Views: 16.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/boxcats/5" for 127.0.0.1 at 2018-05-16 22:54:49 +1000
+Processing by BoxcatsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mBoxcat Load (0.1ms)[0m  [1m[34mSELECT  "boxcats".* FROM "boxcats" WHERE "boxcats"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/boxcats_controller.rb:26
+  Rendering boxcats/show.html.erb within layouts/application
+  Rendered boxcats/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 21ms (Views: 16.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/boxcats" for 127.0.0.1 at 2018-05-16 22:54:51 +1000
+Processing by BoxcatsController#index as HTML
+  Rendering boxcats/index.html.erb within layouts/application
+  [1m[36mBoxcat Load (0.2ms)[0m  [1m[34mSELECT "boxcats".* FROM "boxcats"[0m
+  ↳ app/views/boxcats/index.html.erb:7
+  Rendered boxcats/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 22ms (Views: 19.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/boxcats/6" for 127.0.0.1 at 2018-05-16 22:54:52 +1000
+Processing by BoxcatsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mBoxcat Load (0.1ms)[0m  [1m[34mSELECT  "boxcats".* FROM "boxcats" WHERE "boxcats"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/boxcats_controller.rb:26
+  Rendering boxcats/show.html.erb within layouts/application
+  Rendered boxcats/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 22ms (Views: 18.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/boxcats" for 127.0.0.1 at 2018-05-16 22:54:55 +1000
+Processing by BoxcatsController#index as HTML
+  Rendering boxcats/index.html.erb within layouts/application
+  [1m[36mBoxcat Load (0.2ms)[0m  [1m[34mSELECT "boxcats".* FROM "boxcats"[0m
+  ↳ app/views/boxcats/index.html.erb:7
+  Rendered boxcats/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 20ms (Views: 17.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/boxcats/7" for 127.0.0.1 at 2018-05-16 22:54:57 +1000
+Processing by BoxcatsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mBoxcat Load (0.1ms)[0m  [1m[34mSELECT  "boxcats".* FROM "boxcats" WHERE "boxcats"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/boxcats_controller.rb:26
+  Rendering boxcats/show.html.erb within layouts/application
+  Rendered boxcats/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 25ms (Views: 21.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/boxcats" for 127.0.0.1 at 2018-05-16 22:55:05 +1000
+Processing by BoxcatsController#index as HTML
+  Rendering boxcats/index.html.erb within layouts/application
+  [1m[36mBoxcat Load (0.2ms)[0m  [1m[34mSELECT "boxcats".* FROM "boxcats"[0m
+  ↳ app/views/boxcats/index.html.erb:7
+  Rendered boxcats/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 22ms (Views: 18.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/boxcats/8" for 127.0.0.1 at 2018-05-16 22:55:06 +1000
+Processing by BoxcatsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mBoxcat Load (0.1ms)[0m  [1m[34mSELECT  "boxcats".* FROM "boxcats" WHERE "boxcats"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/boxcats_controller.rb:26
+  Rendering boxcats/show.html.erb within layouts/application
+  Rendered boxcats/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 22ms (Views: 18.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/boxcats" for 127.0.0.1 at 2018-05-16 22:55:41 +1000
+Processing by BoxcatsController#index as HTML
+  Rendering boxcats/index.html.erb within layouts/application
+  [1m[36mBoxcat Load (0.2ms)[0m  [1m[34mSELECT "boxcats".* FROM "boxcats"[0m
+  ↳ app/views/boxcats/index.html.erb:7
+  Rendered boxcats/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 24ms (Views: 20.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/boxcats/5" for 127.0.0.1 at 2018-05-16 22:56:53 +1000
+Processing by BoxcatsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mBoxcat Load (0.1ms)[0m  [1m[34mSELECT  "boxcats".* FROM "boxcats" WHERE "boxcats"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/boxcats_controller.rb:26
+  Rendering boxcats/show.html.erb within layouts/application
+  Rendered boxcats/show.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 22ms (Views: 18.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/boxcats" for 127.0.0.1 at 2018-05-16 22:57:03 +1000
+Processing by BoxcatsController#index as HTML
+  Rendering boxcats/index.html.erb within layouts/application
+  [1m[36mBoxcat Load (0.2ms)[0m  [1m[34mSELECT "boxcats".* FROM "boxcats"[0m
+  ↳ app/views/boxcats/index.html.erb:7
+  Rendered boxcats/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 21ms (Views: 18.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/boxcats/1" for 127.0.0.1 at 2018-05-16 23:00:58 +1000
+Processing by BoxcatsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBoxcat Load (0.1ms)[0m  [1m[34mSELECT  "boxcats".* FROM "boxcats" WHERE "boxcats"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/boxcats_controller.rb:26
+  Rendering boxcats/show.html.erb within layouts/application
+  Rendered boxcats/show.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 23ms (Views: 20.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/boxcats" for 127.0.0.1 at 2018-05-16 23:01:02 +1000
+Processing by BoxcatsController#index as HTML
+  Rendering boxcats/index.html.erb within layouts/application
+  [1m[36mBoxcat Load (0.2ms)[0m  [1m[34mSELECT "boxcats".* FROM "boxcats"[0m
+  ↳ app/views/boxcats/index.html.erb:7
+  Rendered boxcats/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 19ms (Views: 15.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/boxcats/2" for 127.0.0.1 at 2018-05-16 23:01:04 +1000
+Processing by BoxcatsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mBoxcat Load (0.1ms)[0m  [1m[34mSELECT  "boxcats".* FROM "boxcats" WHERE "boxcats"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/boxcats_controller.rb:26
+  Rendering boxcats/show.html.erb within layouts/application
+  Rendered boxcats/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 20ms (Views: 17.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/boxcats" for 127.0.0.1 at 2018-05-16 23:01:15 +1000
+Processing by BoxcatsController#index as HTML
+  Rendering boxcats/index.html.erb within layouts/application
+  [1m[36mBoxcat Load (0.2ms)[0m  [1m[34mSELECT "boxcats".* FROM "boxcats"[0m
+  ↳ app/views/boxcats/index.html.erb:7
+  Rendered boxcats/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 21ms (Views: 18.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/boxcats/3" for 127.0.0.1 at 2018-05-16 23:01:17 +1000
+Processing by BoxcatsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mBoxcat Load (0.1ms)[0m  [1m[34mSELECT  "boxcats".* FROM "boxcats" WHERE "boxcats"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/boxcats_controller.rb:26
+  Rendering boxcats/show.html.erb within layouts/application
+  Rendered boxcats/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 20ms (Views: 16.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/boxcats" for 127.0.0.1 at 2018-05-16 23:01:28 +1000
+Processing by BoxcatsController#index as HTML
+  Rendering boxcats/index.html.erb within layouts/application
+  [1m[36mBoxcat Load (0.2ms)[0m  [1m[34mSELECT "boxcats".* FROM "boxcats"[0m
+  ↳ app/views/boxcats/index.html.erb:7
+  Rendered boxcats/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 19ms (Views: 16.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/boxcats/4" for 127.0.0.1 at 2018-05-16 23:01:30 +1000
+Processing by BoxcatsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mBoxcat Load (0.1ms)[0m  [1m[34mSELECT  "boxcats".* FROM "boxcats" WHERE "boxcats"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/boxcats_controller.rb:26
+  Rendering boxcats/show.html.erb within layouts/application
+  Rendered boxcats/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 20ms (Views: 16.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/boxcats" for 127.0.0.1 at 2018-05-16 23:01:34 +1000
+Processing by BoxcatsController#index as HTML
+  Rendering boxcats/index.html.erb within layouts/application
+  [1m[36mBoxcat Load (0.2ms)[0m  [1m[34mSELECT "boxcats".* FROM "boxcats"[0m
+  ↳ app/views/boxcats/index.html.erb:7
+  Rendered boxcats/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 20ms (Views: 17.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/boxcats/5" for 127.0.0.1 at 2018-05-16 23:01:36 +1000
+Processing by BoxcatsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mBoxcat Load (0.1ms)[0m  [1m[34mSELECT  "boxcats".* FROM "boxcats" WHERE "boxcats"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/boxcats_controller.rb:26
+  Rendering boxcats/show.html.erb within layouts/application
+  Rendered boxcats/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 20ms (Views: 16.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/boxcats" for 127.0.0.1 at 2018-05-16 23:01:45 +1000
+Processing by BoxcatsController#index as HTML
+  Rendering boxcats/index.html.erb within layouts/application
+  [1m[36mBoxcat Load (0.2ms)[0m  [1m[34mSELECT "boxcats".* FROM "boxcats"[0m
+  ↳ app/views/boxcats/index.html.erb:7
+  Rendered boxcats/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 19ms (Views: 15.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/boxcats/6" for 127.0.0.1 at 2018-05-16 23:01:47 +1000
+Processing by BoxcatsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mBoxcat Load (0.1ms)[0m  [1m[34mSELECT  "boxcats".* FROM "boxcats" WHERE "boxcats"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/boxcats_controller.rb:26
+  Rendering boxcats/show.html.erb within layouts/application
+  Rendered boxcats/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 18ms (Views: 14.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/boxcats" for 127.0.0.1 at 2018-05-16 23:01:50 +1000
+Processing by BoxcatsController#index as HTML
+  Rendering boxcats/index.html.erb within layouts/application
+  [1m[36mBoxcat Load (0.2ms)[0m  [1m[34mSELECT "boxcats".* FROM "boxcats"[0m
+  ↳ app/views/boxcats/index.html.erb:7
+  Rendered boxcats/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 20ms (Views: 17.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/boxcats/6" for 127.0.0.1 at 2018-05-16 23:01:51 +1000
+Processing by BoxcatsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mBoxcat Load (0.1ms)[0m  [1m[34mSELECT  "boxcats".* FROM "boxcats" WHERE "boxcats"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/boxcats_controller.rb:26
+  Rendering boxcats/show.html.erb within layouts/application
+  Rendered boxcats/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 19ms (Views: 15.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/boxcats" for 127.0.0.1 at 2018-05-16 23:01:53 +1000
+Processing by BoxcatsController#index as HTML
+  Rendering boxcats/index.html.erb within layouts/application
+  [1m[36mBoxcat Load (0.2ms)[0m  [1m[34mSELECT "boxcats".* FROM "boxcats"[0m
+  ↳ app/views/boxcats/index.html.erb:7
+  Rendered boxcats/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 20ms (Views: 17.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/boxcats/7" for 127.0.0.1 at 2018-05-16 23:01:55 +1000
+Processing by BoxcatsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mBoxcat Load (0.1ms)[0m  [1m[34mSELECT  "boxcats".* FROM "boxcats" WHERE "boxcats"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/boxcats_controller.rb:26
+  Rendering boxcats/show.html.erb within layouts/application
+  Rendered boxcats/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 19ms (Views: 15.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/boxcats" for 127.0.0.1 at 2018-05-16 23:01:59 +1000
+Processing by BoxcatsController#index as HTML
+  Rendering boxcats/index.html.erb within layouts/application
+  [1m[36mBoxcat Load (0.2ms)[0m  [1m[34mSELECT "boxcats".* FROM "boxcats"[0m
+  ↳ app/views/boxcats/index.html.erb:7
+  Rendered boxcats/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 20ms (Views: 16.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/boxcats/8" for 127.0.0.1 at 2018-05-16 23:02:00 +1000
+Processing by BoxcatsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mBoxcat Load (0.1ms)[0m  [1m[34mSELECT  "boxcats".* FROM "boxcats" WHERE "boxcats"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/boxcats_controller.rb:26
+  Rendering boxcats/show.html.erb within layouts/application
+  Rendered boxcats/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 21ms (Views: 17.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/boxcats" for 127.0.0.1 at 2018-05-16 23:02:10 +1000
+Processing by BoxcatsController#index as HTML
+  Rendering boxcats/index.html.erb within layouts/application
+  [1m[36mBoxcat Load (0.2ms)[0m  [1m[34mSELECT "boxcats".* FROM "boxcats"[0m
+  ↳ app/views/boxcats/index.html.erb:7
+  Rendered boxcats/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 21ms (Views: 17.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/boxcats/new" for 127.0.0.1 at 2018-05-16 23:02:43 +1000
+Processing by BoxcatsController#new as HTML
+  Rendering boxcats/new.html.erb within layouts/application
+  Rendered boxcats/new.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 18ms (Views: 15.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/boxcats" for 127.0.0.1 at 2018-05-16 23:02:50 +1000
+Processing by BoxcatsController#index as HTML
+  Rendering boxcats/index.html.erb within layouts/application
+  [1m[36mBoxcat Load (0.2ms)[0m  [1m[34mSELECT "boxcats".* FROM "boxcats"[0m
+  ↳ app/views/boxcats/index.html.erb:7
+  Rendered boxcats/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 22ms (Views: 19.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/boxcats/2" for 127.0.0.1 at 2018-05-16 23:02:52 +1000
+Processing by BoxcatsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mBoxcat Load (0.1ms)[0m  [1m[34mSELECT  "boxcats".* FROM "boxcats" WHERE "boxcats"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/boxcats_controller.rb:26
+  Rendering boxcats/show.html.erb within layouts/application
+  Rendered boxcats/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 18ms (Views: 14.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/boxcats/2/edit" for 127.0.0.1 at 2018-05-16 23:02:54 +1000
+Processing by BoxcatsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mBoxcat Load (0.1ms)[0m  [1m[34mSELECT  "boxcats".* FROM "boxcats" WHERE "boxcats"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/boxcats_controller.rb:30
+  Rendering boxcats/edit.html.erb within layouts/application
+  Rendered boxcats/edit.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 18ms (Views: 14.1ms | ActiveRecord: 0.1ms)
+
+

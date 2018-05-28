@@ -1,0 +1,62 @@
+<% if flash[:errors].present? %>
+  <div class="errors">
+    <ul>
+    <% flash[:errors].each do |key, val| %>
+      <li>
+      <%= key.capitalize %>: <%= val.first %>
+      </li>
+    <% end %>
+    </ul>    
+  </div>
+<% end %>
+
+<div class="beer-form">
+<%= form_for @beer do |f| %>
+  <fieldset class="form-row">
+    <div class="form-label"><%= f.label :brewery, "Brewery" %></div>
+    <div class="input-field">
+      <%= f.select :brewery_id, Brewery.pluck(:name, :id), include_blank: true %>
+    </div>
+  </fieldset>  
+
+  <fieldset class="form-row">
+    <div class="form-label"><%= f.label :name %></div>
+    <div class="input-field"><%= f.text_field :name %></div>
+  </fieldset>
+
+  <fieldset class="form-row">
+    <div class="form-label"><%= f.label :style %></div>
+    <div class="input-field"><%= f.text_field :style %></div>
+  </fieldset>
+
+  <fieldset class="form-row">
+    <div class="form-label"><%= f.label :description %></div>
+    <div class="input-field"><%= f.text_field :description %></div>
+  </fieldset>
+  
+  <fieldset class="form-row">
+    <div class="form-label"><%= f.label :size %></div>
+    <div class="input-field"><%= f.text_field :size %></div>
+  </fieldset>
+
+  <fieldset class="form-row">
+    <div class="form-label"><%= f.label :ABV %></div>
+    <div class="input-field"><%= f.text_field :abv %></div>
+  </fieldset>
+
+  <fieldset class="form-row">
+    <div class="form-label"><%= f.label :"# of Std Drinks" %></div>
+    <div class="input-field"><%= f.text_field :std_drinks %></div>
+  </fieldset>
+
+  <fieldset class="form-row">
+    <div class="form-label"><%= f.label :image %></div>
+    <div class="input-field"><%= f.text_field :image %></div>
+  </fieldset>
+
+  <fieldset class="form-row">
+    <div class="form-label"></div>
+    <div class="input-field"><%= f.submit %></div>
+  </fieldset>
+<% end %>
+</div>

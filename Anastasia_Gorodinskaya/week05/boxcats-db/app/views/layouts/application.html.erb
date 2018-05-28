@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>BoxcatsDb</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all' %>
+    <%= javascript_include_tag 'application' %>
+  </head>
+
+  <body>
+    <h1 class = "indexmain"><marquee loop = 4>If it fits, I sits</marquee></h1>
+    <%= yield %>
+    <footer>
+      <a href="<%=boxcats_new_path %>">Add new cat</a><br>
+      &copy; 😡😝🌎⭐️🐱📦🌈🤩
+    </footer>
+  </body>
+</html>
