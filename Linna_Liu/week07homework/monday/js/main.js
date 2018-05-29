@@ -21,7 +21,9 @@ const getBooks = function(){
 
 
     const books = JSON.parse(xhr.response);
-    console.log(books.items);
+    // console.log(books.items);
+    //clear the previous search
+    $("#results").empty();
 
     let list = books.items
     $.each(list, function (key, value){
@@ -86,6 +88,7 @@ const getBook = function( bookId ){
 
 
   };
+
   let url = `https://www.googleapis.com/books/v1/volumes/${ bookId }`
 
   xhr.open('GET', url)
