@@ -1,0 +1,43 @@
+body {
+    background-color: darkolivegreen;
+    color: red;
+}
+
+#parent {
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    z-index: 1;
+}
+
+#resultContainer {
+    position: relative;
+    top: 413px;
+}
+
+h1, input {
+    margin: 20px;
+}
+
+#infobox {
+    margin: 20px;
+    padding: 20px;
+    background-color: black;
+    height: 200px;
+}
+
+#queryField {
+    font-size: 1.6em;
+}
+
+.link {
+    display: inline-block;
+    border: 5px solid black;
+}
+
+.fade {
+    -webkit-filter: blur(7.5px);
+    -moz-filter: blur(7.5px);
+    filter: blur(7.5px);
+}
+
