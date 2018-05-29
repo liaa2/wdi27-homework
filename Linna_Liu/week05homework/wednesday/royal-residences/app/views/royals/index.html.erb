@@ -1,0 +1,15 @@
+<h1>Royals Index</h1>
+  <!-- <p>Find me in app/views/royals/index.html.erb</p> -->
+
+<ul>
+<% @royals.each do |royal| %>
+  <li>
+    <%= link_to royal.name, royal_path(royal) %>, <%= royal.title %>
+  </li>
+  <br>
+  <% end %>
+</ul>
+
+
+<hr>
+<%= link_to "Add More Royal", new_royal_path %>

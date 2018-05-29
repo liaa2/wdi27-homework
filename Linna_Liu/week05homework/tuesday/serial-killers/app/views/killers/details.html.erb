@@ -1,0 +1,32 @@
+<h2><%= @killer.name %></h2>
+
+<p><strong>Name</strong>: <%= @killer.name %></p>
+<p><strong>Country</strong>: <%= @killer.country  %></p>
+<p><strong>Active from</strong>: <%= @killer.years_active_from %></p>
+<p><strong>Active to</strong>: <%= @killer.years_active_to %></p>
+<p><strong>Proven victims</strong>: <%= @killer.proven_victims %></p>
+<p><strong>Notes</strong>: <%= @killer.notes %></p>
+<br>
+<% if @killer.image.present? %>
+<%= image_tag @killer.image, alt:"serial killer"%>
+<% else %>
+<%= image_tag "http://wickedhorror.thunderroadinc.netdna-cdn.com/wp-content/uploads/2016/02/cd9508fdaa5c1390e9cc329001cf1459-28-your-pain-is-their-pleasure-5-worst-serial-killers-of-the-century.jpg"%>
+<% end %>
+<hr>
+<!-- <a href="<%= killer_edit_path %>">Edit</a><br> -->
+<%= link_to "Edit", killer_edit_path %>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<!-- <a href="<%= killer_delete_path %>">Delete</a><br> -->
+<%= link_to "Delete", killer_delete_path %><br>
+
+<% if @previous_killer_id %>
+<%= link_to "Previous Page", killer_path(@previous_killer_id) %>&nbsp;&nbsp;&nbsp;
+<% end %>
+
+<% @all_ids.each_with_index do |value, index| %>
+<%= link_to "#{index+1}", killer_path(value) %>&nbsp;&nbsp;&nbsp;
+<% end %>
+
+<% if @next_killer_id %>
+<%= link_to "Next Page", killer_path(@next_killer_id) %><br>
+<% end %>
+<a href="<%= killers_path %>">Return to Main Page</a>
