@@ -1,0 +1,2 @@
+class Royal < ApplicationRecord
+end

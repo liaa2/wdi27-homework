@@ -1,0 +1,12 @@
+<h2>💀Serial killers with the highest known victim count☠️</h2>
+
+<ul>
+  <% @killers.each do |i| %>
+  <li>
+    <a href="<%= killer_path(i.id) %>"><%= i.name %></a>
+  </li>
+  <% end %>
+</ul>
+
+<hr>
+<a href="<%= killers_new_path %>">Add More</a>
