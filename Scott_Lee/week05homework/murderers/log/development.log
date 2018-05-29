@@ -4661,3 +4661,65 @@ Processing by MurderersController#index as HTML
 Completed 200 OK in 75ms (Views: 69.4ms | ActiveRecord: 0.3ms)
 
 
+Started GET "/murderers" for 127.0.0.1 at 2018-05-16 09:02:07 +1000
+Processing by MurderersController#index as HTML
+  Rendering murderers/index.html.haml within layouts/application
+  [1m[36mMurderer Load (1.4ms)[0m  [1m[34mSELECT "murderers".* FROM "murderers"[0m
+  ↳ app/views/murderers/index.html.haml:6
+  Rendered murderers/index.html.haml within layouts/application (34.3ms)
+Completed 200 OK in 152ms (Views: 125.8ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/murderers/1" for 127.0.0.1 at 2018-05-16 09:02:09 +1000
+Processing by MurderersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMurderer Load (0.3ms)[0m  [1m[34mSELECT  "murderers".* FROM "murderers" WHERE "murderers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/murderers_controller.rb:33
+  Rendering murderers/show.html.haml within layouts/application
+  Rendered murderers/show.html.haml within layouts/application (9.3ms)
+Completed 200 OK in 107ms (Views: 34.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/murderers/new" for 127.0.0.1 at 2018-05-16 09:02:13 +1000
+Processing by MurderersController#new as HTML
+  Rendering murderers/new.html.haml within layouts/application
+  Rendered murderers/new.html.haml within layouts/application (23.1ms)
+Completed 200 OK in 61ms (Views: 53.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/murderers" for 127.0.0.1 at 2018-05-16 09:02:15 +1000
+Processing by MurderersController#index as HTML
+  Rendering murderers/index.html.haml within layouts/application
+  [1m[36mMurderer Load (0.4ms)[0m  [1m[34mSELECT "murderers".* FROM "murderers"[0m
+  ↳ app/views/murderers/index.html.haml:6
+  Rendered murderers/index.html.haml within layouts/application (13.3ms)
+Completed 200 OK in 58ms (Views: 51.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/murderers" for 127.0.0.1 at 2018-05-16 10:03:36 +1000
+Processing by MurderersController#index as HTML
+  Rendering murderers/index.html.haml within layouts/application
+  [1m[36mMurderer Load (0.2ms)[0m  [1m[34mSELECT "murderers".* FROM "murderers"[0m
+  ↳ app/views/murderers/index.html.haml:6
+  Rendered murderers/index.html.haml within layouts/application (4.0ms)
+Completed 200 OK in 49ms (Views: 43.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/rails/info/routes" for 127.0.0.1 at 2018-05-16 10:03:39 +1000
+Processing by Rails::InfoController#routes as HTML
+  Rendering /Users/scott/.rvm/gems/ruby-2.4.1/gems/railties-5.2.0/lib/rails/templates/rails/info/routes.html.erb within layouts/application
+  Rendered collection of /Users/scott/.rvm/gems/ruby-2.4.1/gems/actionpack-5.2.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb [13 times] (19.9ms)
+  Rendered /Users/scott/.rvm/gems/ruby-2.4.1/gems/actionpack-5.2.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (7.8ms)
+  Rendered /Users/scott/.rvm/gems/ruby-2.4.1/gems/railties-5.2.0/lib/rails/templates/rails/info/routes.html.erb within layouts/application (42.7ms)
+Completed 200 OK in 71ms (Views: 58.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rails/info/routes" for 127.0.0.1 at 2018-05-16 10:04:38 +1000
+Processing by Rails::InfoController#routes as HTML
+  Rendering /Users/scott/.rvm/gems/ruby-2.4.1/gems/railties-5.2.0/lib/rails/templates/rails/info/routes.html.erb within layouts/application
+  Rendered collection of /Users/scott/.rvm/gems/ruby-2.4.1/gems/actionpack-5.2.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb [13 times] (5.0ms)
+  Rendered /Users/scott/.rvm/gems/ruby-2.4.1/gems/actionpack-5.2.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.6ms)
+  Rendered /Users/scott/.rvm/gems/ruby-2.4.1/gems/railties-5.2.0/lib/rails/templates/rails/info/routes.html.erb within layouts/application (16.0ms)
+Completed 200 OK in 36ms (Views: 28.8ms | ActiveRecord: 0.0ms)
+
+

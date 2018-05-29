@@ -1,0 +1,27 @@
+<% if flash[:errors] %>
+  <div class="error">
+    <ul>
+    <% flash[:errors].each do |key, val| %>
+    <li>
+      <%= key.capitalize %>: <%= val.first %>
+    </li>
+    <% end %>
+  </ul>
+  </div>
+
+<% end %>
+
+
+<%= form_for @country do |f| %>
+<fieldset>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+</fieldset>
+
+<fieldset>
+  <%= f.label :image %>
+  <%= f.text_field :image %>
+</fieldset>
+<%= f.submit %>
+
+<% end %>

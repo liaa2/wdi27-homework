@@ -1,0 +1,35 @@
+
+
+<%= form_for @brand do |f| %>
+<fieldset>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+</fieldset>
+
+<fieldset>
+  <%= f.label :origin %>
+  <%= f.text_field :origin %>
+</fieldset>
+
+<fieldset>
+  <%= f.label :founded %>
+  <%= f.text_field :founded %>
+</fieldset>
+
+
+<fieldset>
+  <%= f.label :image %>
+  <%= f.text_field :image %>
+</fieldset>
+
+<fieldset>
+  <%= f.label :country_id, 'Country' %>
+  <%= f.select :country_id, Country.pluck(:name, :id), include_blank: true %>
+</fieldset>
+
+
+
+
+<%= f.submit %>
+
+<% end %>
