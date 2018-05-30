@@ -7,13 +7,14 @@
 
 $(document).ready(function(){
   $('#searchMovie').on('click', getMovie);
-  $('body').on('click','img',getDetail);
+  $('body').on('click','img', getDetail);
 });
 
 const whichMovie = function() {
   return $("#moviename").val()
 }
 
+// get movie details
 const getDetail = function(){
   const mymovieid = $(this).attr('movieid');
   // hide div
@@ -23,16 +24,22 @@ const getDetail = function(){
 
     const movie = JSON.parse(xhr.response);
     console.log(movie);
-    myhtml = "Movie title " + movie.original_title;
-    myhtml += "<br>Description: " + movie.overview;
+    let myhtml = "<strong>Movie Title: </strong>" + movie.original_title + ".";
+    myhtml += "<br><strong>Description: </strong>" + movie.overview + ".";
+    myhtml += "<br><strong>Release date: </strong>" + movie.release_date + ".";
+    myhtml += "<br><strong>Popularity: </strong>" + movie.popularity + ".";
+    myhtml += "<br><strong>Revennue: </strong>" + movie.revenue + ".";
+    myhtml += "<br><strong>Run Time: </strong>" + movie.runtime + " minutes.";
+    myhtml += "<br><strong>Tag Line: </strong>" + movie.tagline + ".";
+
     $p = $('<p>').html(myhtml)
     $('#moviedetails').append($p);
   };
 
   xhr.open('GET', 'https://api.themoviedb.org/3/movie/' + mymovieid + '?api_key=51cff66a16924159a839ae909faba532');
   xhr.send();
-
 };
+
 
 const getMovie = function(){
 
@@ -42,20 +49,17 @@ const getMovie = function(){
 
     const movie = JSON.parse(xhr.response);
 
+    $('#movies').empty();
+    //backticks
     for (let i = 0; i < movie.results.length; i++) {
-      // result = this.results[i];
-
-      console.log(movie.results[i].title);
-      // endpoint for details
-      myhtml = '<img movieid=' + movie.results[i].id + ' src=https://image.tmdb.org/t/p/w200' + movie.results[i].poster_path + ' alt="Oopz, something went wrong.">';
+      let myhtml = '<img movieid=' + movie.results[i].id + ' src="https://image.tmdb.org/t/p/w200' + movie.results[i].poster_path + '" alt="Oopz, something went wrong.">';
       $p = $('<p>').html(myhtml)
       $('#movies').append($p);
     }
-    // console.log(movie.results.length);
   };
 
 
-  xhr.open('GET', 'https://api.themoviedb.org/3/search/movie?api_key=APIhere&query=' + whichMovie());
+  xhr.open('GET', 'https://api.themoviedb.org/3/search/movie?api_key=APIkey&query=' + whichMovie());
   xhr.send();
 
 };
