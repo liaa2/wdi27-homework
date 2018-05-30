@@ -1,7 +1,7 @@
 // Generic function to make an Ajax call to the Zomato API
 const makeAjaxCall = function( urlQuery, methodType, callbackFunc ){
   const urlPrefix = 'https://developers.zomato.com/api/v2.1/';
-  const userKey = '7e48c5f3d6a00d8b23bf53f1cfdbbdff';
+  const userKey = config.userKey;
   let url = urlPrefix + urlQuery;
 
   $.ajax({
