@@ -4661,6 +4661,7 @@ Processing by MurderersController#index as HTML
 Completed 200 OK in 75ms (Views: 69.4ms | ActiveRecord: 0.3ms)
 
 
+
 Started GET "/murderers" for 127.0.0.1 at 2018-05-16 09:02:07 +1000
 Processing by MurderersController#index as HTML
   Rendering murderers/index.html.haml within layouts/application

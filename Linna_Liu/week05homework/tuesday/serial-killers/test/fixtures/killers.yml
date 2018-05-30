@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  image: MyText
+  country: MyString
+  years_active_from: 1
+  years_active_to: 1
+  proven_victims: 1
+  notes: MyText
+
+two:
+  name: MyString
+  image: MyText
+  country: MyString
+  years_active_from: 1
+  years_active_to: 1
+  proven_victims: 1
+  notes: MyText
