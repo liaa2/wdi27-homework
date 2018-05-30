@@ -1,0 +1,12 @@
+<h2>Edit <%= @killer.name %></h2>
+
+<form action="<%= killer_path(@killer.id) %>" method="post">
+  Name: <input type="text" name="name" value="<%= @killer.name %>"><br>
+  Image URL: <input type="text" name="image" value="<%= @killer.image %>"><br>
+  Country: <input type="text" name="country" value="<%= @killer.country %>"><br>
+  Active from: <input type="text" name="years_active_from" value="<%= @killer.years_active_from %>"><br>
+  Active to: <input type="text" name="years_active_to" value="<%= @killer.years_active_to %>"><br>
+  Proven victims: <input type="text" name="proven_victims" value="<%= @killer.proven_victims %>"><br>
+  Notes: <input name="notes" value="<%= @killer.notes %>" class="textbox"><br>
+  <input type="submit" value="Update Killer">
+</form>
