@@ -1,0 +1,14 @@
+<h2>Search results for <%= @query %>:</h2>
+
+<!-- different results -->
+<% @results["results"].each do |movie| %>
+<li>
+  <a href="/search/details/<%= movie["id"] %>">
+  <% if movie["poster_path"]   %>
+      <img src="<%= @img_base_url + movie["poster_path"] %>">
+  <% else %>
+      <img src="http://www.fillmurray.com/185/278" alt="<%=movie["title"]%>">
+  <% end %>
+  </a>
+</li>
+<% end %>

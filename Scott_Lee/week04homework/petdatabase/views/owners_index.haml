@@ -1,0 +1,13 @@
+%h2
+    Owners index
+
+%ul
+    - @owners.each do |a|
+        %li
+            = p a.name
+            %br
+        %li
+            = p a.location
+            %br
+        %li
+            = p a.owns

@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Indie+Flower|Lobster+Two|Montserrat|Raleway|Roboto+Mono');
+
+/* * {
+  padding: 5px;
+} */
+
+/* a:link {
+    color: white;
+} */
+
+a:visited {
+    color: white;
+}
+
+a:hover {
+    color: #F42A65;
+}
+
+body {
+  background-color: #F9C8C7;
+}
+
+/* nav div {
+  display: block;
+  color: white;
+  background-color: black;
+  border: 0;
+  padding: 10px;
+} */
+
+
+img {
+  float: right;
+
+}
+
+h2, p {
+  font-family: 'Roboto Mono', monospace;
+  color: #241514;
+}
+
+h3 {
+  text-decoration: underline;
+}

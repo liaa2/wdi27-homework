@@ -1,0 +1,20 @@
+
+<a href="/men/new">Add tall man</a><br>
+<a href="/supporters/new">Add supporters</a><br>
+
+<form action="/search" method="post">
+<input type="text" placeholder="Search name" name="name">
+<button type="submit"><i >Submit</i></button>
+</form>
+
+<ol>
+  <% @men.each do |i| %>
+  <li>
+    <p><strong><%= i["name"] %></strong></p>
+      <br>
+    <a href="/men/<%= i["id"] %>">
+      <img src="<%= i['image_url'] %>" alt="<%= i['name'] %>">
+    </a>
+  </li>
+  <% end %>
+</ol>

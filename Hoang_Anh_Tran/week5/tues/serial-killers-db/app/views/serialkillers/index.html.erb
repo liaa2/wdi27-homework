@@ -1,0 +1,14 @@
+<h2>All Serial Killers</h2>
+
+<ul>
+
+<% @serialkillers.each do |p| %>
+<li>
+  <a href="<%= serialkiller_path(p.id) %>"><%= p.first_name %> <%= p.last_name %></a>
+
+</li>
+<% end %>
+</ul>
+
+<hr>
+<a href="/serialkillers/new"><strong>ADD NEW KILLER.</strong></a>

@@ -58,6 +58,7 @@ console.log(guessedLetter("k"));
 //
 // 1. Define a function `maxOfTwoNumbers` that takes two numbers as arguments and returns the largest of them.
 //Use the if-then-else construct available in Javascript. You'll have to remember your pre-work, or do some googling to figure this out.
+
 const maxOfTwo = function (num1, num2) {
   if (num1 - num2 === 0) {
     console.log("The numbers are even");
@@ -117,11 +118,67 @@ console.log(checkVowel("o"));
 //For example, `sumArray([1,2,3,4])` should return 10, and `multiplyArray([1,2,3,4])` should return 24.
 //
 
+const sumArray = function(input) {
+  let total = 0;
+  for (let i = 0; i < input.length; i++) {
+    total += input[i];
+  }
+  return total;
+};
+console.log(sumArray([1, 3, 5, 10]));
 
 
+const multipleArray = function(input) {
+  let total = 1;
+  for (var i = 0; i < input.length; i++) {
+    total = total * input[i];
+  }
+  return total;
+}
+console.log(multipleArray([1, 2, 3, 5]));
 
 // ## Bonus
 //
-// 5. Define a function `reverseString` that computes the reversal of a string. For example, reverseString("jag testar") should return the string "ratset gaj".
+// 5. Define a function `reverseString` that computes the reversal of a string.
+//For example, reverseString("jag testar") should return the string "ratset gaj".
+
+const reverseString = function (string) {
+  return string.split("").reverse().join(""); // convert to array, change the position, rejoin
+
+};
+console.log(reverseString("hello world"));
+console.log(reverseString("random people"));
+
+
+
+
 // 6. Write a function `findLongestWord` that takes an array of words and returns the length of the longest one.
-// 7. Write a function `filterLongWords` that takes an array of words and an number `i` and returns the array of words that are longer than i.
+
+const findLongestWord = function(input) {
+  let longestWord = "";
+  for (var i = 0; i < input.length; i++) {
+    if (input[i].length > longestWord.length) {
+      longestWord = input[i];
+    }
+  }
+  return longestWord;
+};
+
+
+console.log(findLongestWord(["hello", "space", "breathtaking", "presumption"]));
+
+// 7. Write a function `filterLongWords` that takes an array of words and a number `i`
+//and returns the array of words that are longer than i.
+
+const filterLongWords = function(input, num) {
+  let longWord = [];
+  for (var i = 0; i < input.length; i++) {
+    if (input[i].length > num) {
+      longWord.push(input[i]);
+    }
+  }
+  return longWord;
+};
+
+
+console.log(filterLongWords(["pig", "chicken", "cow", "camel", "elephant"], 4));

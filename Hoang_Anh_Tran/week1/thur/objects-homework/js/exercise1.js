@@ -11,40 +11,44 @@
 // };
 
 
-let parameterAmount = 0;
 
+//
 const rectangle = {
   length: 4,
-  width: 4,
+  width: 4
+};
+//
 
-  isSquare : function () {
+  const isSquare = function () {
     if (rectangle.length === rectangle.width) {
-     console.log("The rectangle is square");
+     console.log(`The rectangle is square`);
     } else {
-     console.log("Not a square");
-    } // end if statement
-  }, // end function
+     console.log(`The rectangle is not square`);
+   } // end of if statement
+ }; // end of function
+//
 
-  areaCal : function () {
-   // area = (`${this.length * this.width}`);
-   return(`the rectangular area is ${this.length * this.width}`);
-  }, // end function
+  const areaCal =  function () {
 
-  parameter : function () {
-   parameterAmount = 2 * (this.length + this.width);
+   return `the rectangular area is ${rectangle.length * rectangle.width}`;
+ }; // end of function
+//
+  const parameter = function () {
+   parameterAmount = 2 * (rectangle.length + rectangle.width);
    return(`the parameter amount is ${parameterAmount}`);
 
-  } // end function
-
-}; // end of object
+ }; // end of function
 
 
- console.log(rectangle.isSquare());
- console.log(rectangle.areaCal());
- console.log(rectangle.parameter());
+
+console.log(isSquare());
+console.log(areaCal());
+console.log(parameter())
 
 
-console.log("^_______________^");
+
+
+console.log("_________________________________________________________");
 
 // Part 2, Triangle
 // Given the following a triangle object like the one below, write the following functions:
@@ -53,46 +57,47 @@ console.log("^_______________^");
 // isIsosceles - Returns whether the triangle is isosceles or not
 // area - Returns the area of the Triangle
 // isObtuse - Returns whether the triangle is obtuse or not
-// const triangle = {
-//   sideA: 3,
-//   sideB: 4,
-//   sideC: 4
-
-// };
 
 const triangle = {
   sideA: 3,
   sideB: 4,
-  sideC: 4,
+  sideC: 4
 
-  isEdquilateral : function() {
-   if (triangle.sideA === triangle.sideB === triangle.sideC) {
+};
+
+// //
+  const isEdquilateral = function() {
+   if (triangle.sideA === triangle.sideB && triangle.sideA === triangle.sideC) {
     return("triangle is equilateral");
    } else {
-    return("it is not equilateral");
+    return("triangle is not equilateral");
    }
- }, //end of function
-
- isIsosceles : function() {
+ }; //end of function
+//
+ const isIsosceles = function() {
    if (this.sideA === this.sideB || this.sideB === this.sideC || this.sideC === this.sideA) {
      return("triangle is isosceles");
    } else {
      return("triangle is not isosceles");
    }
- } // end of function
-};
-
-console.log(triangle.isEdquilateral());
-console.log(triangle.isIsosceles());
+ }; // end of function
 
 
-console.log("^_______________^");
-console.log("MATHS IS HARD");
+console.log(isEdquilateral());
+console.log(isIsosceles());
+
+
+console.log("_________________________________________________________");
+
+
 //  js-homework-5.md
 // The Cash Register
 // Write a function called cashRegister that takes a shopping cart object. The object contains item names and prices (itemName: itemPrice). The function should return the total price of the shopping cart. Example
 //
 // // Input
+//
+// // Output
+// cashRegister(cartForParty)); // 60.55
 
 
 const cartForParty = {
@@ -109,7 +114,7 @@ const cashRegister = function () {
     for (let key in cartForParty) {
     console.log(`${cartForParty[key]}`);
 
-    totalPrice += cartForParty[key]
+    totalPrice += cartForParty[key] //adding total price
     console.log(totalPrice);
   }
   return (`the total price is ${totalPrice}`);
@@ -117,9 +122,7 @@ const cashRegister = function () {
 console.log(cashRegister());
 
 
-//
-// // Output
-// cashRegister(cartForParty)); // 60.55
+
 
 
 
@@ -129,7 +132,7 @@ console.log(cashRegister());
 //
 
 
-
+console.log("_________________________________________________________");
 
 // Bank
 // There is only one bank. This bank has an array of accounts. The bank needs a method that will return the total sum of money in the accounts. It also needs an addAccount method that will enroll a new account at the bank and add it to the array of accounts. There is no need to create additional functions of the bank to delete accounts, etc.
@@ -144,12 +147,15 @@ const bank = {
   ],
 
   addAccount : function(name, balance) {
-    let newAccount = {name, balance};
+    let newAccount = {
+      name: name,
+      balance: balance
+    };
+    console.log(this.accounts.push(newAccount)); // add new account to the bank
     return newAccount;
-    console.log(bank.push(newAccount)); // add new account to the bank
-  },
-// get the total money in account
+  },//end of function
 
+// get the total money in account
   totalMoney: function() {
     for (let i = 0; i < this.accounts.length; i++) {
      console.log(this.accounts[i].balance);
@@ -157,21 +163,19 @@ const bank = {
    } // end loop
    return (`The total account balance is ${amountAdded}`);
  }
-  // withdrawMoney: function (name, balance) {
-  //   for
-  //   console.log(`${this.account.balance - amount}`);
-  // }
 };
 
 
+// const returnValue = bank.addAccount("Edmond", 3);
+
 
 console.log(bank.addAccount("Jackey", 1000000));
-console.log(bank.addAccount("Edmond", 3));
+// console.log(bank.addAccount("Edmond", 3));
 console.log(bank.totalMoney());
-console.log(bank);
-// console.log(bank.withdrawMoney(10))
+console.log(bank.accounts);
 
-//
+
+
 
 
 

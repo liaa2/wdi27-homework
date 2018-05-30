@@ -1,0 +1,73 @@
+/* * {
+  margin-left: 2%;
+  margin-right: 2%;
+} */
+div#contentMargin {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 30%;
+    padding: 10px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}
+
+
+img#rightAlign {
+  float: right;
+  margin-right: 0 auto;
+}
+
+img#leftAlign {
+  float: left;
+  margin-right: 0 auto;
+}
+
+.centreAlign {
+  display: block;
+  margin: 0 auto;
+}
+
+
+p#blurb {
+  border: 1px solid #9CACBA;
+  overflow: auto;
+  padding: 10px;
+}
+
+h3 {
+  font-weight: normal;
+}

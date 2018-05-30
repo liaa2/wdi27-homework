@@ -1,0 +1,12 @@
+%h2 Magic 8 ball says...
+
+="#{@array[rand(0..@array.length-1)]}"
+
+%hr
+
+%a{ :href => "/magic"}
+    %img{ :src => "http://www.fillmurray.com/200/200"}
+    Ask again?
+%br
+
+%a{ :href => "/"} Go back to home!

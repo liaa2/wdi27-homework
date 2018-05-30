@@ -1,0 +1,17 @@
+Specification:
+A user should be given a menu of operations
+A user should be able to choose from the menu
+A user should be able to enter numbers to perform the operation on
+A user should be shown the result
+The menu should be displayed again, and process should continue until the user selects a quit option from the menu
+Phase 1
+Calculator functionality
+Calculator should be able to do basic arithmetic (+,-, *, /)
+
+
+
+1) Display menu. Command to exit? If yes, then exit. If not...
+2) Valid operation? If not, say incorrect and prompt again. If yes...
+3) Prompt for operation and operand
+4) Return calculated value.
+5) Return to step 1.

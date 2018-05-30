@@ -1,0 +1,11 @@
+<h2>Edit <%= @man["name"] %> </h2>
+<form action="/men/<%= @man["id"] %>" method="post">
+  Name: <input type="text" name="name" value="<%= @man["name"] %>"><br>
+  Country: <input type="text" name="country" value="<%= @man["country"] %>"><br>
+  Height: <input type="text" name="height_in_cm" value="<%= @man["height_in_cm"] %>"><br>
+  Age at death: <input type="text" name="age_at_death" value="<%= @man["age_at_death"] %>"><br>
+  Note: <textarea type="text" name="note" value="<%= @man["note"] %>"></textarea><br>
+  Image URL: <input type="text" name="image_url" value = "<%= @man["image_url"] %>"><br>
+
+  <input type="submit" value="update">
+</form>

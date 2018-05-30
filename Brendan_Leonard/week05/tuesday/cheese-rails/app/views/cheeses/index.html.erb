@@ -1,0 +1,14 @@
+<h2>Cheeses of the World</h2>
+
+<ul>
+  <% @cheeses.each do |e| %>
+    <li>
+      <%= e.name %> (Firmness: <%= e.firmness %>)&nbsp;&nbsp;
+      <%= link_to "Show Detail", cheese_path( e.id ) %>
+    </li>
+  <% end %>
+</ul>
+
+<hr>
+  <%= link_to "Add a New Cheese", cheese_new_path, :class => "nav-links" %>
+

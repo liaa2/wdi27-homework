@@ -1,0 +1,82 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: rgba(120,120,120,0.7);
+    font-family: "Roboto";
+}
+
+nav {
+    background-color: rgb(3, 3, 3);
+    height: 30px;
+    text-align: right;
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    color: rgba(233, 232, 232, 0.671);
+ }
+ 
+li {
+    display: inline-block;
+    padding: 3px;
+    margin: 3px;
+    text-decoration: none;
+}
+
+.profile {
+    height: 600px;
+}
+
+.mainpic {
+    background-color: rgba(50,50,50,0.9);
+    height: 330px;
+}
+
+.mainpic:hover {
+    background-image: url(signature.gif);
+}
+
+#actualpic {
+    border: 5px solid black;
+    margin: 50px 328px 0px 328px;
+    border-radius: 100px;
+}
+
+#actualpic:hover {
+    background-image: url(signature.gif);
+}
+
+.summary {
+    background-color: rgb(3,3,3);
+    color: rgba(233, 232, 232, 0.671);
+    height: 700px;
+}
+
+.summarytext {
+    display: inline-block;
+    width: 30%;
+    border: 5px solid black;
+    vertical-align: top;
+    padding: 5px;
+    margin: 3px;
+}
+
+#lifeanddeath:hover {
+    background-color: white;
+    color: black;
+    border: 5px solid red;
+}
+
+#earlylife:hover {
+    background-color: white;
+    color: black;
+    border: 5px solid red;
+}
+
+#other:hover {
+    background-color: white;
+    color: black;
+    border: 5px solid red;
+}

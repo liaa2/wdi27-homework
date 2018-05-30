@@ -1,0 +1,9 @@
+%h1 Murderers!!!
+
+%h3 Explore!
+
+%ul
+-@murderers.each do |scum|
+    %li
+        %a{ :href => "/murderers/#{scum.id}"}
+            ="#{scum.first_name} #{scum.last_name}"

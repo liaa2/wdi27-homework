@@ -1,0 +1,9 @@
+body {
+  margin: 0;
+}
+.bg {
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+  margin: -2px;
+}

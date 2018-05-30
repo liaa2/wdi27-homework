@@ -1,0 +1,11 @@
+
+<h2>All Supporters</h2>
+
+<ul>
+  <% @supporters.each do |i| %>
+  <li>
+    <a href="/supporters/<%= i.id %>"><strong><%= i.name %></strong></a>
+    <em><%= i.location %></em>
+  </li>
+  <% end %>
+</ul>
