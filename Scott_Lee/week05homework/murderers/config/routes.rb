@@ -11,10 +11,12 @@ Rails.application.routes.draw do
   # read: index of all
   get "/murderers" => "murderers#index"
   # read: single detailed entry
+
   get "/murderers/:id" => "murderers#show", as: "murderer"
 
   # update: form page
   get "/murderers/:id/edit" => "murderers#edit", as: "murderer_edit"
+
   # update: submit
   post "/murderers/:id" => "murderers#update"
 
