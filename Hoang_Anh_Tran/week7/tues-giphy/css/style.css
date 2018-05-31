@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css?family=Fjalla+One');
+
+*{
+  font-family: 'Fjalla One', sans-serif;
+  color: rgb(228, 26, 26);
+}
+
+body {
+  background-image: url('../img/flying-doggo.gif');
+
+  background-repeat: repeat;
+}
+
+#searchForm {
+  font-size: 40px;
+}
