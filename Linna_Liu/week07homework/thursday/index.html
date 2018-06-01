@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Vue Intro</title>
+  <script src="js/vue.js"></script>
+</head>
+<body>
+
+  <h1>Vue.js Intro</h1>
+
+  <div id="app">
+    {{ message }}
+
+
+
+    <ol>
+      <todo-item v-for="item in todos"
+      v-bind:todo="item"
+      v-bind:key="item.id">
+
+      </todo-item>
+      <!-- <todo-item text="First item"></todo-item>
+      <todo-item text="Second item"></todo-item> -->
+      <!-- <li v-for="todo in todos">
+        {{ todo.text }} -->
+        <!-- <img v-bind:src="todo.image"> -->
+      <!-- </li> -->
+    </ol>
+
+    <input type="text" v-model="newItemText">
+    <button v-on:click="addItem">Add to List</button>
+
+
+    <hr>
+    <!-- <input type="text" v-bind:value="message"> -->
+    <input type="text" v-model="message">
+
+    <!-- <button v-on:click="reverseMessage">Reverse!</button> -->
+    <button @click="reverseMessage">Reverse!</button>
+
+    <br><br>
+
+    <span v-if="seen">NOW YOUR SEE ME</span>
+
+    <br><br>
+
+    <div v-bind:title="message">Hover to see a message!</div>
+
+
+    <img v-bind:src="bill">
+  </div>
+
+<script src="js/main.js"></script>
+</body>
+</html>
