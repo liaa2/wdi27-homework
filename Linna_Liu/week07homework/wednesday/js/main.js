@@ -51,7 +51,7 @@ const searchFlickr = searchQuery => {
   // $("<hr>").appendTo("#images");
 
   $.getJSON(URL, {
-    api_key: "2f5ac274ecfac5a455f38745704ad084",
+    api_key: "Your-api-key",
     method: 'flickr.photos.search',
     text: searchQuery,
     format: 'json',
@@ -113,7 +113,7 @@ const getImageDetails = id => {
   $("#images").empty();
   const URL = "https://api.flickr.com/services/rest/"
   $.getJSON(URL, {
-    api_key: "2f5ac274ecfac5a455f38745704ad084",
+    api_key: "Your-api-key",
     method: 'flickr.photos.getInfo',
     photo_id: id,
     format: 'json',

@@ -20,7 +20,7 @@ $(document).ready(function(){
 // xhr.done(function(data) { console.log("success got data", data); });
 
 const getGifDetail = function(id){
-  const URL = `http://api.giphy.com/v1/gifs/${id}?api_key=mGVdrmycKkSjc1Mglppb5cWULxne4p1w`
+  const URL = `http://api.giphy.com/v1/gifs/${id}?api_key=YOUR_API_KEY`
   $("#results").empty();
   $.getJSON(URL)
   .done(function(result){
@@ -40,7 +40,7 @@ const getGifDetail = function(id){
 
 
 const gifSearch = function(query){
-  const URL = `http://api.giphy.com/v1/gifs/search?q=${query}&api_key=mGVdrmycKkSjc1Mglppb5cWULxne4p1w`
+  const URL = `http://api.giphy.com/v1/gifs/search?q=${query}&api_key=YOUR_API_KEY`
   $("#details").empty();
   // $("#results").html("Loading results...")
 

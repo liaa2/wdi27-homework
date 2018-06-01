@@ -29,7 +29,7 @@ const app = new Vue ({
     doSearch: function(){
       // console.log(this.searchText);
       $.getJSON("https://api.flickr.com/services/rest/", {
-        api_key: "2f5ac274ecfac5a455f38745704ad084",
+        api_key: "Your-api-key",
         method: 'flickr.photos.search',
         text: this.searchText,
         format: 'json',
@@ -45,7 +45,7 @@ const app = new Vue ({
       // return;
       //full url: https://api.flickr.com/services/rest/?method=flickr.photos.getInfo&api_key=2f5ac274ecfac5a455f38745704ad084&photo_id=42398798032&format=json&nojsoncallback=1
       $.getJSON("https://api.flickr.com/services/rest/", {
-        api_key: "2f5ac274ecfac5a455f38745704ad084",
+        api_key: "Your-api-key",
         method: 'flickr.photos.getInfo',
         photo_id: photoItem.id,
         format: 'json',
