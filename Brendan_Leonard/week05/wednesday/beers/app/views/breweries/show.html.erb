@@ -1,0 +1,44 @@
+<h2 id="main-header"><%= @brewery.name %></h2>
+<div class="updated-column">
+  <p id="updated">[ Last updated: <%= @brewery.updated_at.in_time_zone('Sydney').strftime("%A %-d %B %Y - %H:%M:%S") %> ]</p>
+</div>
+<div class="nav-links-column">
+  <%= link_to "Back to All Breweries", breweries_path, :class => "nav-links" %>&nbsp;&nbsp;
+  <%= link_to "Delete this Brewery", brewery_path( @brewery.id ), method: "delete", :class => "nav-links" %>&nbsp;&nbsp;
+  <%= link_to "Edit this Brewery", edit_brewery_path( @brewery ), :class => "nav-links" %>&nbsp;&nbsp;
+</div>
+
+<div class="beer-form">
+  <div class="form-row">
+    <div class="form-label"><label for="country">Country:</label></div>
+    <div class="show-field"><p><%= @brewery.country %></p></div>
+  </div>
+  <div class="form-row">
+    <div class="form-label"><label for="region">Region:</label></div>
+    <div class="show-field"><p><%= @brewery.region %></p></div>
+  </div>
+  <div class="form-row">
+    <div class="form-label"><label for="founded">Founded:</label></div>
+    <div class="show-field"><p><%= @brewery.founded %></p></div>
+  </div>
+  <div class="form-row">
+    <div class="form-label"><label for="beers">Beers:</label></div>
+    <div class="show-field">
+      <ul>
+      <% @brewery.beers.each do |beer| %>
+        <li><%= link_to beer.name, beer_path( beer ) %>
+      <% end %>
+      </ul>
+    </div>
+  </div>  
+  <div class="form-row">
+    <div class="form-label">&nbsp;</div>
+    <div class="show-field-noborder">
+      <%= image_tag( @brewery.logo_image , :class => "show-field-image" ) %>
+    </div>
+    <div class="form-row">
+      <div class="form-label"></div>
+      <div class="show-field-noborder"><p><%= @brewery.logo_image %></p></div>
+    </div>
+  </div>
+<div>

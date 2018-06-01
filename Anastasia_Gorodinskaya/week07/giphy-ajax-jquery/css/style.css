@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css?family=BCardo|Caveat|Lobster|Playfair+Display+SC|Rokkitt|Sacramento|Yantramanav|PT+Sans|Permanent+Marker');
+/* font-family: 'Lobster', cursive;
+font-family: 'Sacramento', cursive;
+font-family: 'Caveat', cursive;
+font-family: 'Playfair Display SC', serif;
+font-family: 'Cardo', serif;
+font-family: 'Yantramanav', sans-serif;
+font-family: 'Rokkitt', serif;
+font-family: 'PT Sans', sans-serif;
+font-family: 'Permanent Marker', cursive;
+*/
+
+*{
+  font-family: 'Playfair Display SC', serif;
+  color: #a200ffad;
+  background-color: bisque;
+}
+
+#results{
+   display:none;
+}
+
+#description{
+    display: none;
+}

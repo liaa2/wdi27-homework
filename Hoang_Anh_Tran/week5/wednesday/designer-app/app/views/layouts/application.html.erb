@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>DesignerApp</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all' %>
+    <%= javascript_include_tag 'application' %>
+  </head>
+
+  <body>
+    <div class="main">
+    <h1>Designer Brands and their Origins</h1>
+    <nav>
+      <ul id="navbar">
+        <li><%= link_to "Home", root_path %></li>
+        <li><%= link_to "Countries", countries_path %></li>
+        <li><%= link_to "Brands", brands_path %></li>
+
+
+      </ul>
+    </nav>
+  <hr>
+    <%= yield %>
+  <hr>
+    </div>
+    <iframe width="854" height="480" src="https://www.youtube.com/embed/EbW2UK0b7fQ?autoplay=1" frameborder="0" encrypted-media allowfullscreen></iframe>
+    
+    <div class="footer"> &copy; LUXURY 2018
+  </div>
+  </body>
+</html>

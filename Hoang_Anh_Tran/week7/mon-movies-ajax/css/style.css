@@ -1,0 +1,7 @@
+@import url('https://fonts.googleapis.com/css?family=Play');
+* {
+  font-family: 'Play', sans-serif;
+}
+h1 {
+  background-color: red;
+}

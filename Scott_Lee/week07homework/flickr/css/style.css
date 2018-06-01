@@ -1,0 +1,11 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.wrapper {
+    max-width: 1200px;
+    margin: auto;
+    background-color: black;
+    color: white;
+}

@@ -1,0 +1,93 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+
+ @import url('https://fonts.googleapis.com/css?family=Skranji');
+
+* {
+  text-align: center;
+}
+body {
+  background-color: pink;
+  font-family: 'Skranji', cursive;
+  color: white;
+  background-image: url('designer.gif');
+  background-repeat: repeat;
+  padding: 10px;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+
+}
+
+#navbar li {
+  list-style: none;
+  display: inline-block;
+}
+
+img.countryPic {
+  max-height: 300px;
+}
+
+img.brandMainImage {
+  max-height: 500px;
+}
+
+h1, h2 {
+  text-shadow: 2px 2px red;
+}
+
+fieldset {
+  border: none;
+}
+
+div.error {
+  color: purple;
+}
+
+img {
+  border-radius: 50%;
+}
+
+h1 {
+  background: rgb(20, 159, 219);
+}
+.main {
+flex-grow: 1;
+}
+
+.footer {
+background: rgb(20, 159, 219);
+color: yellow;
+
+}
+
+a:hover {
+  color: rgb(51, 161, 185);
+}
+
+a {
+  color: pink;
+}
+
+li {
+  list-style: none;
+}
+
+iframe {
+  display: none;
+}
