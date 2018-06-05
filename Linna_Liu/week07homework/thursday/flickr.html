@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Vue Flickr Search</title>
+</head>
+<body>
+
+  <h1>Vue Flickr</h1>
+
+  <div id="appRoot">
+
+
+    <input v-on:keyup.enter="doSearch" type="text" v-model="searchText">
+    <!-- <button v-on:click="doSearch">Search</button> -->
+    <button @click="doSearch">Search</button>
+    <br>
+
+    <!-- <div class="result" v-for="photo in results"> -->
+      <!-- <photo-result v-for="result in results" v-bind:photo="result"> -->
+      <!-- if owner is not undefined, i.e. if there is an owner -->
+      <div id="fullscreen" v-if="details.owner">
+        <h2>Image Details</h2>
+        <p>Username: {{ details.owner.username }}</p>
+        <div v-if="details.owner.title">
+          <p>Title: {{ details.owner.title._content }}</p>
+        </div>
+        <p>Photo Taken: {{ details.dates.taken }}</p>
+        <!-- <img v-bind:src=imageSrc> -->
+      </div>
+      <div v-else>
+        <div v-if="!results.length">
+          Please enter a search query...
+        </div>
+        <div v-else>
+          <photo-result
+          v-for="result in results"
+          :photo="result"
+          :key="result.id"
+          @trigger_details="trigger"
+          >
+          </photo-result>
+        </div>
+      </div><!-- v-else when details.owner is empty-->
+    <!-- </div> -->
+  </div>
+
+<script src="js/vue.js"></script>
+<script src="js/jquery.js"></script>
+<script src="js/flickr.js"></script>
+</body>
+</html>

@@ -47,7 +47,7 @@ const getBooks = function(){
   };
 
  let input = $('#books').val()
- let url = `https://www.googleapis.com/books/v1/volumes?q=${input}&key=AIzaSyBpskf5JVqWv7kAPgmuqRgYR9NeN6eeWSY`
+ let url = `https://www.googleapis.com/books/v1/volumes?q=${input}&key=[YOUR API KEY]`
 
   xhr.open('GET', url)
   xhr.send();
