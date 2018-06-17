@@ -1,19 +1,20 @@
-$(document).ready(function(){
+$(document).ready( () => {
     const api_key = "dd7b8a10120a376e04e7430d2fa912d8";
     const $queryField = $('#queryField');
-    const searchMovie = function () {
+    const searchMovie = () => {
+        // pocket variable
         let lengthTracker = 0;
-        return function(){
+        return () => {
             let query = $queryField.val();
             let queryLength = query.length;
-            if (queryLength > lengthTracker){
+            if (queryLength >= lengthTracker){
                 lengthTracker = queryLength;
 
                 // remove all to reset page
                 $('.link').remove();
                 const xhr = new XMLHttpRequest();
                 let searchResult;
-                xhr.onload = function () {
+                xhr.onload = () => {
                     const searchResult = JSON.parse(xhr.response).results;
                     console.log(searchResult);
                     for (var i = 0; i < searchResult.length; i++) {
@@ -41,7 +42,7 @@ $(document).ready(function(){
                                 // xhr for tooltip information
                                 const detailXhr = new XMLHttpRequest();
                                 let deets;
-                                detailXhr.onload = function () {
+                                detailXhr.onload = () => {
                                     deets = JSON.parse(detailXhr.response);
 
                                     var $movieDetail1 = $("<p>").text(`Movie title: ${deets["original_title"]}`).addClass("details");
@@ -63,7 +64,7 @@ $(document).ready(function(){
 
                         }
 
-                        const hideDeets = function() {
+                        const hideDeets = () => {
                             $('.link').removeClass('fade');
 
                             // destroy tooltip
@@ -85,8 +86,8 @@ $(document).ready(function(){
         }
     }
 
-    closedSearchMovie = searchMovie();
+    const closedSearchMovie = searchMovie();
 
     $queryField.on('keyup', closedSearchMovie);
 
-})
+});
