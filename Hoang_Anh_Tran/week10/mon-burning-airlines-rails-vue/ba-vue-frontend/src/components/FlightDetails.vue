@@ -83,20 +83,12 @@
         axios.post(`${BACKEND_URL}/reservation/create`, {
           row: row,
           col: col,
-          flightnum: flightnum
+          flight_id: this.flight.id
         })
-        .then(function (response) {
-          console.log("theodgg");
+        .then(response => {
+          console.log(response);
+          this.flight.reservations.push(response.data);
         })
-
-        this.$router.push({
-          name: 'reservationDetails',
-          params: {
-            row: row,
-            col: col,
-            flightnum: flightnum
-          }
-        });
       },
       seatStatus(row, col){
         // if we could get Rails returned the reservations to us indexed by 'row-col'
