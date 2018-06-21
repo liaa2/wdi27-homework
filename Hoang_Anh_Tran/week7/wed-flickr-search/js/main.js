@@ -25,11 +25,13 @@ $(document).ready(() => {
 });
 
 $(window).on('scroll', _.throttle(function(){
+
   // console.log({
   //  scrollTop: $(window).scrollTop(),
   //  docHeight: $(document).height(),
   //  windowHeight: $(window).height()
   // });
+
 
   const scrollBottom = $(document).height() - ($(window).scrollTop() + $(window).height());
   console.log({scrollBottom});
@@ -69,6 +71,7 @@ const getFlickrDetail = function(photoid){
   $('#details').empty();
 
   console.log("BEARHOUSE :" + photoid);
+
   const URL = 'https://api.flickr.com/services/rest';
 
   $.getJSON(URL, {
@@ -90,7 +93,6 @@ const errorHandler = xhr => {
 };
 
 const getImage = data => {
-  console.log(data);
   // let myhtml = "Greatstuff image id : " + JSON.stringify(data, undefined, '<br>');
   let imageURL = generateImageURL(data.photo, 'b');
 
@@ -109,6 +111,7 @@ const showImages = data => {
 
   _.each(data.photos.photo, photo => {
     // console.log(photo.id)
+
     const imageURL = generateImageURL(photo, 'q');
 
     $('<img>', {src: imageURL}).attr('photoid', photo.id).addClass("imgResult").appendTo('#images');
