@@ -1,3 +1,4 @@
+
 $(document).ready( () => {
     const api_key = "dd7b8a10120a376e04e7430d2fa912d8";
     const $queryField = $('#queryField');
@@ -8,13 +9,16 @@ $(document).ready( () => {
             let query = $queryField.val();
             let queryLength = query.length;
             if (queryLength >= lengthTracker){
+
                 lengthTracker = queryLength;
 
                 // remove all to reset page
                 $('.link').remove();
                 const xhr = new XMLHttpRequest();
                 let searchResult;
+
                 xhr.onload = () => {
+                  
                     const searchResult = JSON.parse(xhr.response).results;
                     console.log(searchResult);
                     for (var i = 0; i < searchResult.length; i++) {
@@ -42,7 +46,9 @@ $(document).ready( () => {
                                 // xhr for tooltip information
                                 const detailXhr = new XMLHttpRequest();
                                 let deets;
+
                                 detailXhr.onload = () => {
+
                                     deets = JSON.parse(detailXhr.response);
 
                                     var $movieDetail1 = $("<p>").text(`Movie title: ${deets["original_title"]}`).addClass("details");
@@ -65,6 +71,7 @@ $(document).ready( () => {
                         }
 
                         const hideDeets = () => {
+
                             $('.link').removeClass('fade');
 
                             // destroy tooltip
@@ -86,8 +93,10 @@ $(document).ready( () => {
         }
     }
 
+
     const closedSearchMovie = searchMovie();
 
     $queryField.on('keyup', closedSearchMovie);
 
 });
+

@@ -26,6 +26,13 @@ $(document).ready(() => {
 
 $(window).on('scroll', _.throttle(function(){
 
+  // console.log({
+  //  scrollTop: $(window).scrollTop(),
+  //  docHeight: $(document).height(),
+  //  windowHeight: $(window).height()
+  // });
+
+
   const scrollBottom = $(document).height() - ($(window).scrollTop() + $(window).height());
   console.log({scrollBottom});
 
@@ -45,6 +52,7 @@ const searchFlickr = searchQuery => {
   console.log({searchQuery});
   const URL = 'https://api.flickr.com/services/rest';
 
+
   $.getJSON(URL, {
     api_key: 'API key',
     method: 'flickr.photos.search',
@@ -61,6 +69,9 @@ const searchFlickr = searchQuery => {
 const getFlickrDetail = function(photoid){
   $('#images').empty();
   $('#details').empty();
+
+  console.log("BEARHOUSE :" + photoid);
+
   const URL = 'https://api.flickr.com/services/rest';
 
   $.getJSON(URL, {
@@ -94,8 +105,12 @@ const getImage = data => {
 }
 
 const showImages = data => {
+  console.log(data);
+
+  // $('#images').empty();
 
   _.each(data.photos.photo, photo => {
+    // console.log(photo.id)
 
     const imageURL = generateImageURL(photo, 'q');
 
