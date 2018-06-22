@@ -16,9 +16,9 @@
         <div class="col-12">Loading...</div>
       </div>
 
-      <div class="row flight-row" v-for="flight in results" @click="flightDetails(flight.id)">
-        <div class="col-4">{{flight.departure_date_formatted}}</div>
-        <div class="col-2">{{flight.flight_number}}</div>
+      <div class="row flight-row" v-for="flight in results" @click="flightDetails(flight.number)">
+        <div class="col-4">{{flight.date}}</div>
+        <div class="col-2">{{flight.number}}</div>
         <div class="col-2">{{flight.airplane.name}}</div>
         <div class="col-2">{{flight.origin}}</div>
         <div class="col-2">{{flight.destination}}</div>
@@ -30,7 +30,8 @@
 </template>
 
 <script>
-const FLIGHT_SEARCH_URL = 'http://localhost:3000/flights/search.json';
+// const FLIGHT_SEARCH_URL = 'http://localhost:3000/flights/search.json';
+const FLIGHT_SEARCH_URL = 'http://localhost:3000/flights/search';
 import axios from 'axios';
   export default{
     //data() guarantees that this is the new object, not several data pointing to the same object. Return make sure a new data is returned.
@@ -46,13 +47,8 @@ import axios from 'axios';
       // code that runs when the component is created
 
       // perform AJAX request to get searh results from Rails
-      axios.get( FLIGHT_SEARCH_URL, {
-        params: {
-          origin: this.origin, // these will become key:val pairs in the URL query strin
-          destination: this.destination // ie.
-        }
-      })
-      // es6 function, not change the "this"
+      axios.get( `${FLIGHT_SEARCH_URL}/${this.origin}/${this.destination}`)
+
       .then(response => {
         console.log('AJAX response', response);
         this.results = response.data;

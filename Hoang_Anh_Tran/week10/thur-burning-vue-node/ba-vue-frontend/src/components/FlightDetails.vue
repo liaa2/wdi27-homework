@@ -11,14 +11,14 @@
       <div class="row">
         <div class="col-2"></div>
         <div class="col-4 title text-right">Flight Number</div>
-        <div class="col-4 text-left">{{ flight.flight_number }}</div>
+        <div class="col-4 text-left">{{ flight.number }}</div>
         <div class="col-2 text-left"></div>
       </div>
 
       <div class="row">
         <div class="col-2"></div>
         <div class="col-4 text-right title">Date</div>
-        <div class="col-4 text-left">{{ flight.departure_date_formatted }}</div>
+        <div class="col-4 text-left">{{ flight.date }}</div>
         <div class="col-2 text-left"></div>
       </div>
 
@@ -41,7 +41,7 @@
           v-for="col in flight.airplane.cols"
           class="plane-seat text-center"
           :class="seatStatus(row, col)"
-          @click="reserveSeat(row, col, flight.flight_number)">
+          @click="reserveSeat(row, col)">
 
 
           {{ col | toSeatLetter }}
@@ -57,10 +57,8 @@
 
 <script>
   // window.iterations = 0;
-  const FLIGHT_DETAILS_URL = "http://localhost:3000/flights"
-
-  const BACKEND_URL = "http://localhost:3000"
-
+  const FLIGHT_DETAILS_URL = "http://localhost:3000/flights";
+  const FLIGHT_RESERVATION_URL = "http://localhost:3000/reservation";
   import axios from 'axios';
   export default {
     props: ['id'],
@@ -72,24 +70,28 @@
     created(){
       // Load the details for this flight (including reservations)
       // from Rails (routes to flights#show)
-      axios.get(`${FLIGHT_DETAILS_URL}/${ this.id }.json`)
+      axios.get(`${FLIGHT_DETAILS_URL}/${ this.id }`)
       .then(response => {
         this.flight = response.data; // store flight data into app state (& re-render)
+
       });
     },
     methods: {
-      reserveSeat(row, col, flightnum){
-
-        axios.post(`${BACKEND_URL}/reservation/create`, {
-          row: row,
-          col: col,
-          flight_id: this.flight.id
-        })
+      
+      reserveSeat(row, col) {
+        console.log('reservation()', row, col);
+        axios.post(FLIGHT_RESERVATION_URL, {flight_number: this.id, row, col})
         .then(response => {
-          console.log(response);
-          this.flight.reservations.push(response.data);
+          console.log('POST response', response.data);
+          if(response.data.nModified === 1 && response.data.ok === 1) {
+            this.flight.reservations.push({row, col});
+          } else {
+            //show some errorrrrr: unable to make reservation
+          }
         })
+        .catch( console.warn );
       },
+
       seatStatus(row, col){
         // if we could get Rails returned the reservations to us indexed by 'row-col'
         // i.e.
