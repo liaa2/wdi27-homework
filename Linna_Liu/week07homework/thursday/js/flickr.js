@@ -2,9 +2,9 @@ Vue.component("photo-result", {
   props: ["photo"],
   // template: '<img v-bind:src="ImageURL(photo)">',
   //or shorten the v-bind:
-  template: '<img @click="doSomething(photo)" :src="ImageURL(photo)" :title="photo.title"></a>',
+  template: '<img @click="doSomething(photo)" :src="imageURL(photo)" :title="photo.title"></a>',
   methods: {
-    ImageURL: function(p){
+    imageURL: function(p){
       return `https://farm${p.farm}.staticflickr.com/${p.server}/${p.id}_${p.secret}_q.jpg`
     },
     doSomething: function(p){
@@ -13,12 +13,37 @@ Vue.component("photo-result", {
   }
 })
 
+Vue.component('photo-fullscreen', {
+  props: ['photo'],
+  template: `
+    <div>
+      <h2>Image Details</h2>
+      <div v-if="photo.owner">
+        <p>Username: {{ photo.owner.username }}</p>
+        <div v-if="photo.owner.title">
+        <p>Title: {{ photo.owner.title._content }}</p>
+        </div>
+      </div>
+      <p>Photo Taken: {{ photo.dates.taken }}</p>
+      <img :src="fullscreenURL(photo)" />
+    </div>
+  `,
+  created: function(){
+    console.log('created!', this.photo);
+  },
+  methods: {
+    fullscreenURL: function(p){
+      console.log({p});
+      return `https://farm${p.farm}.staticflickr.com/${p.server}/${p.id}_${p.secret}_b.jpg`
+    }
+  }
+});
 
 
 const app = new Vue ({
   el: "#appRoot",
   data: {
-    searchText: "",
+    searchText: "dogs",
     id: '',
     page: 1,
     results: [],
@@ -29,7 +54,7 @@ const app = new Vue ({
     doSearch: function(){
       // console.log(this.searchText);
       $.getJSON("https://api.flickr.com/services/rest/", {
-        api_key: "Your-api-key",
+        api_key: "2f5ac274ecfac5a455f38745704ad084",
         method: 'flickr.photos.search',
         text: this.searchText,
         format: 'json',
@@ -45,7 +70,7 @@ const app = new Vue ({
       // return;
       //full url: https://api.flickr.com/services/rest/?method=flickr.photos.getInfo&api_key=2f5ac274ecfac5a455f38745704ad084&photo_id=42398798032&format=json&nojsoncallback=1
       $.getJSON("https://api.flickr.com/services/rest/", {
-        api_key: "Your-api-key",
+        api_key: "2f5ac274ecfac5a455f38745704ad084",
         method: 'flickr.photos.getInfo',
         photo_id: photoItem.id,
         format: 'json',

@@ -21,15 +21,11 @@
     <!-- <div class="result" v-for="photo in results"> -->
       <!-- <photo-result v-for="result in results" v-bind:photo="result"> -->
       <!-- if owner is not undefined, i.e. if there is an owner -->
-      <div id="fullscreen" v-if="details.owner">
-        <h2>Image Details</h2>
-        <p>Username: {{ details.owner.username }}</p>
-        <div v-if="details.owner.title">
-          <p>Title: {{ details.owner.title._content }}</p>
-        </div>
-        <p>Photo Taken: {{ details.dates.taken }}</p>
-        <!-- <img v-bind:src=imageSrc> -->
-      </div>
+
+      <photo-fullscreen
+        v-if="details.owner"
+        :photo="details">
+      </photo-fullscreen>
       <div v-else>
         <div v-if="!results.length">
           Please enter a search query...
