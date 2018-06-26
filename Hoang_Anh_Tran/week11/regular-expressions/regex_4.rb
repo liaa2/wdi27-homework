@@ -5,4 +5,5 @@ require 'pry'
 print "Exercise 4: Matches words with Uppercase and Lowercase: \n"
 ARGF.each do |line|
   puts line if line =~ /[a-z]/ && line =~ /[A-Z]/
+  # puts line if line =~ /[A-Z][a-z]/
 end
