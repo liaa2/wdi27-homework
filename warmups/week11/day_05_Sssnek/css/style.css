@@ -1,0 +1,31 @@
+#canvasWrap {
+  margin: 5% auto;
+  width: 300px;
+  text-align: center;
+}
+
+canvas {
+  border: 1px solid grey;
+}
+
+.flash {
+  animation: rainbow 0.5s infinite;
+}
+
+@keyframes rainbow {
+  0% { background-color: red;  }
+  25% { background-color: green;  }
+  50% { background-color: blue;  }
+  75% { background-color: yellow;  }
+  100% { background-color: red;  }
+}
+
+.container {
+  margin: auto;
+  width: 80%;
+  font-family: arial;
+}
+
+h2, h3 {
+  text-align: center;
+}
